@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="adapter" version="1.5.0">
+	<name>modules</name>
+    <component>com_modules</component>
+	<author>Joomila</author>
+  	<version>1.0</version>
+	<creationDate>Feb 2008</creationDate>
+	<author>joomila - NOIX</author>
+	<authorEmail>joomla@noix.com.br</authorEmail>
+	<authorUrl>http://www.noix.com.br</authorUrl>
+	<copyright>(C) 2009 All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<description>Adapter Module site</description>
+	<files>
+		<filename adapter="modules">modules.xml</filename>
+		<filename type="controller">modules.php</filename>
+        <filename type="plugin" execution="independent" name="PluginModules">plugin.php</filename>
+		<filename>views/site/tmpl/default.php</filename>
+		<filename>views/site/view.html.php</filename>
+	</files>
+	<views>
+		<site application="site" viewname="ModulesViewSite" title="Frontend">
+			<tasks>
+                <task name="Block">block</task>
+             </tasks>
+            <save>
+                <aco_section type="text">com_modules</aco_section>
+                <aco_value type="text">block</aco_value>
+                <axo_section type="var">module</axo_section>
+                <axo_value type="var">moduletitle</axo_value>
+            </save>
+            <load>
+                <field>aco_value</field>
+                <aco_section type="text">com_modules</aco_section>
+                <aco_value type="text">block</aco_value>
+                <axo_section type="var">module</axo_section>
+                <axo_value type="var">moduletitle</axo_value>
+            </load>
+        </site>
+	</views>
+</install>

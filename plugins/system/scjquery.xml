@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<name>System - SC jQuery</name>
+	<author>Phil Snell</author>
+	<authorEmail>phil@snellcode.com</authorEmail>
+	<authorUrl>http://snellcode.com</authorUrl>
+	<creationDate>6/15/2010</creationDate>
+	<copyright>Copyright (C) 2010 Phil Snell - All rights reserved.</copyright>
+	<version>1.0.1</version>
+	<license>GNU / GPL</license>
+	<description><![CDATA[This plugin is used to load jQuery javascript library, and set "no conflict" mode to allow usage with mootools, and other libraries. No conflict mode remove the "$" operator from jQuery, allowing other libraries to use that operator.  If you have questions, please email me at phil@snellcode.com]]></description>
+	<files>
+		<filename plugin="scjquery">scjquery.php</filename>
+		<folder>scjquery</folder>
+	</files>
+	<params addpath="/plugins/system/scjquery/elements">
+		<param name="enable_site" type="radio" default="1" label="Enable plugin for frontend" description="Enable plugin for frontend">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="enable_admin" type="radio" default="0" label="Enable plugin for backend" description="Enable plugin for backend">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>	
+		<param name="enable_ui" type="radio" default="0" label="Load jQuery UI libraies (all)" description="Loads all the jQuery UI libraries.  Or replace the file with your personalized version">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="theme_ui" type="list" default="ui-lightness" label="jQuery UI theme" description="Select a jQuery UI theme" >	
+			<option value="base">base</option>
+			<option value="black-tie">black-tie</option>
+			<option value="blitzer">blitzer</option>
+			<option value="cupertino">cupertino</option>
+			<option value="dot-luv">dot-luv</option>
+			<option value="excite-bike">excite-bike</option>
+			<option value="hot-sneaks">hot-sneaks</option>
+			<option value="humanity">humanity</option>
+			<option value="mint-choc">mint-choc</option>
+			<option value="redmond">redmond</option>
+			<option value="smoothness">smoothness</option>
+			<option value="south-street">south-street</option>
+			<option value="start">start</option>
+			<option value="swanky-purse">swanky-purse</option>
+			<option value="trontastic">trontastic</option>
+			<option value="ui-darkness">ui-darkness</option>
+			<option value="ui-lightness">ui-lightness</option>
+			<option value="vader">vader</option>
+		</param>
+		<param name="code" type="textarea" rows="20" cols="60" default="" label="Enter custom code here" description="Any code here will be executed, and wrapped in to a protected 'document ready' function.  No need to add your own 'document ready'.  Ignored if empty." />
+		<param type="menuitems" name="exclude_menuitems" label="Exclude these menu items" />	
+		<param type="text" name="version_jq" label="jQuery Version" default="1.4.2" />
+		<param type="text" name="version_ui" label="jQuery UI Version" default="1.8.1" />
+	</params>
+</install>

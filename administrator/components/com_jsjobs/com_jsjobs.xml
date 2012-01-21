@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+
+<install type="component" version="1.5">
+	<name>JS Jobs</name>
+	<creationDate>Jan 29th, 2010</creationDate>
+	<author>Joom Sky</author>
+	<authorEmail>ahmad@joomsky.com</authorEmail>
+	<authorURL>www.joomsky.com</authorURL>
+	<copyright>Copyright (c) 2010. All rights reserved.</copyright>
+	<license>GNU Public License Version 2</license>
+	<version>1.0.5.8 beta</version>
+	<description>A component for job posting and resume submission.</description>>
+	<installfile>install.jsjobs.php</installfile>
+	<uninstallfile>uninstall.jsjobs.php</uninstallfile>
+	<files>
+		<filename>controller.php</filename>
+		<filename>jsjobs.php</filename>
+		<filename>router.php</filename>
+		<filename>controllers/jsjobs.php</filename>
+		<filename>models/jsjobs.php</filename>
+		<filename>css/jsjobs01.css</filename>
+		<filename>css/jsjobs02.css</filename>
+		<filename>css/jsjobs03.css</filename>
+		<filename>css/jsjobs04.css</filename>
+		<filename>css/jsjobs05.css</filename>
+		<filename>css/templatetheme.css</filename>
+		
+		<filename>images/appliedjobs.png</filename>
+		<filename>images/company.png</filename>
+		<filename>images/coverletter.png</filename>
+		<filename>images/delete.png</filename>
+		<filename>images/edit.png</filename>
+		<filename>images/job.png</filename>
+		<filename>images/jobcat.png</filename>
+		<filename>images/jsjobs_logo_small.png</filename>
+		<filename>images/loading.gif</filename>
+		<filename>images/new.png</filename>
+		<filename>images/published.png</filename>
+		<filename>images/resume.png</filename>
+		<filename>images/save.png</filename>
+		<filename>images/search.png</filename>
+		<filename>images/view.png</filename>
+		<filename>images/blank_logo.png</filename>
+		<filename>views/fr_jscr.php</filename>
+		<filename>views/jobseeker/view.html.php</filename>
+		<filename>views/jobseeker/metadata.xml</filename>
+		<filename>views/jobseeker/tmpl/controlpanel.php</filename>
+		<filename>views/jobseeker/tmpl/controlpanel.xml</filename>
+		<filename>views/jobseeker/tmpl/emp_view.php</filename>
+		<filename>views/jobseeker/tmpl/formcoverletter.php</filename>
+		<filename>views/jobseeker/tmpl/formcoverletter.xml</filename>
+		<filename>views/jobseeker/tmpl/formresume.php</filename>
+		<filename>views/jobseeker/tmpl/formresume.xml</filename>
+		<filename>views/jobseeker/tmpl/job_apply.php</filename>
+		<filename>views/jobseeker/tmpl/job_filters.php</filename>
+		<filename>views/jobseeker/tmpl/job_searchresults.php</filename>
+		<filename>views/jobseeker/tmpl/jobcat.php</filename>
+		<filename>views/jobseeker/tmpl/jobcat.xml</filename>
+		<filename>views/jobseeker/tmpl/jobsearch.php</filename>
+		<filename>views/jobseeker/tmpl/jobsearch.xml</filename>
+		<filename>views/jobseeker/tmpl/list_jobs.php</filename>
+		<filename>views/jobseeker/tmpl/listnewestjobs.php</filename>
+		<filename>views/jobseeker/tmpl/listnewestjobs.xml</filename>
+		<filename>views/jobseeker/tmpl/my_jobsearches.php</filename>
+		<filename>views/jobseeker/tmpl/myappliedjobs.php</filename>
+		<filename>views/jobseeker/tmpl/myappliedjobs.xml</filename>
+		<filename>views/jobseeker/tmpl/mycoverletters.php</filename>
+		<filename>views/jobseeker/tmpl/mycoverletters.xml</filename>
+		<filename>views/jobseeker/tmpl/myresumes.php</filename>
+		<filename>views/jobseeker/tmpl/myresumes.xml</filename>
+		<filename>views/jobseeker/tmpl/new_injsjobs.php</filename>
+		<filename>views/jobseeker/tmpl/resume_download.php</filename>
+		<filename>views/jobseeker/tmpl/resume_view.php</filename>
+		<filename>views/jobseeker/tmpl/view_coverletter.php</filename>
+		<filename>views/jobseeker/tmpl/view_coverletters.php</filename>
+		<filename>views/jobseeker/tmpl/view_resume.php</filename>
+
+		<filename>views/employer/view.html.php</filename>
+		<filename>views/employer/metadata.xml</filename>
+		<filename>views/employer/tmpl/alljobsappliedapplications.php</filename>
+		<filename>views/employer/tmpl/alljobsappliedapplications.xml</filename>
+		<filename>views/employer/tmpl/controlpanel.php</filename>
+		<filename>views/employer/tmpl/controlpanel.xml</filename>
+		<filename>views/employer/tmpl/formcompany.php</filename>
+		<filename>views/employer/tmpl/formcompany.xml</filename>
+		<filename>views/employer/tmpl/formjob.php</filename>
+		<filename>views/employer/tmpl/formjob.xml</filename>
+		<filename>views/employer/tmpl/job_appliedapplications.php</filename>
+		<filename>views/employer/tmpl/my_resumesearches.php</filename>
+		<filename>views/employer/tmpl/mycompanies.php</filename>
+		<filename>views/employer/tmpl/mycompanies.xml</filename>
+		<filename>views/employer/tmpl/myjobs.php</filename>
+		<filename>views/employer/tmpl/myjobs.xml</filename>
+		<filename>views/employer/tmpl/resume_searchresults.php</filename>
+		<filename>views/employer/tmpl/resumesearch.php</filename>
+		<filename>views/employer/tmpl/resumesearch.xml</filename>
+		<filename>views/employer/tmpl/view_company.php</filename>
+		<filename>views/employer/tmpl/view_job.php</filename>
+		
+	</files>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.com_jsjobs.ini</language>
+	</languages>
+	<administration>
+		<menu>JS Jobs</menu>
+		<files folder="admin">
+			<filename>install.mysql.sql</filename>
+			<filename>install.mysql.utf.sql</filename>
+			<filename>uninstall.mysql.sql</filename>
+			<filename>uninstall.mysql.utf.sql</filename>
+			<filename>admin.jsjobs.php</filename>
+			<filename>controller.php</filename>
+
+			<filename>controllers/jsjobs.php</filename>
+			<filename>models/jsjobs.php</filename>
+
+			<filename>tables/category.php</filename>
+			<filename>tables/city.php</filename>
+			<filename>tables/company.php</filename>
+			<filename>tables/config.php</filename>
+			<filename>tables/country.php</filename>
+			<filename>tables/county.php</filename>
+			<filename>tables/coverletter.php</filename>
+			<filename>tables/emailtemplate.php</filename>
+			<filename>tables/filter.php</filename>
+			<filename>tables/highesteducation.php</filename>
+			<filename>tables/job.php</filename>
+			<filename>tables/jobapply.php</filename>
+			<filename>tables/jobsearch.php</filename>
+			<filename>tables/jobstatus.php</filename>
+			<filename>tables/jobtype.php</filename>
+			<filename>tables/resume.php</filename>
+			<filename>tables/resumesearch.php</filename>
+			<filename>tables/role.php</filename>
+			<filename>tables/salaryrange.php</filename>
+			<filename>tables/shift.php</filename>
+			<filename>tables/state.php</filename>
+			<filename>tables/userallow.php</filename>
+			<filename>tables/userfield.php</filename>
+			<filename>tables/userfielddata.php</filename>
+			<filename>tables/userfieldvalue.php</filename>
+			<filename>tables/userrole.php</filename>
+
+			<filename>include/admin_menu/sdmenu/bottom.gif</filename>
+			<filename>include/admin_menu/sdmenu/collapsed.gif</filename>
+			<filename>include/admin_menu/sdmenu/expanded.gif</filename>
+			<filename>include/admin_menu/sdmenu/linkarrow.gif</filename>
+			<filename>include/admin_menu/sdmenu/sdmenu.css</filename>
+			<filename>include/admin_menu/sdmenu/sdmenu.js</filename>
+			<filename>include/admin_menu/sdmenu/title.gif</filename>
+			<filename>include/admin_menu/sdmenu/toptitle.gif</filename>
+
+			<filename>include/images/categories.png</filename>
+			<filename>include/images/companies.png</filename>
+			<filename>include/images/configurations.png</filename>
+			<filename>include/images/countries.png</filename>
+			<filename>include/images/emailtemplates.png</filename>
+			<filename>include/images/information.png</filename>
+			<filename>include/images/jobs.png</filename>
+			<filename>include/images/js.png</filename>
+			<filename>include/images/jsjobs_logo.png</filename>
+			<filename>include/images/jsjobs_logo_small.png</filename>
+			<filename>include/images/resume.png</filename>
+			<filename>include/images/roles.png</filename>
+			<filename>include/images/salaryrange.png</filename>
+
+			<filename>views/application/view.html.php</filename>
+			<filename>views/application/tmpl/changerole.php</filename>
+			<filename>views/application/tmpl/formcategory.php</filename>
+			<filename>views/application/tmpl/formcity.php</filename>
+			<filename>views/application/tmpl/formcompany.php</filename>
+			<filename>views/application/tmpl/formcountry.php</filename>
+			<filename>views/application/tmpl/formcounty.php</filename>
+			<filename>views/application/tmpl/formhighesteducation.php</filename>
+			<filename>views/application/tmpl/formjob.php</filename>
+			<filename>views/application/tmpl/formjobstatus.php</filename>
+			<filename>views/application/tmpl/formjobtype.php</filename>
+			<filename>views/application/tmpl/formresume.php</filename>
+			<filename>views/application/tmpl/formrole.php</filename>
+			<filename>views/application/tmpl/formsalaryrange.php</filename>
+			<filename>views/application/tmpl/formshift.php</filename>
+			<filename>views/application/tmpl/formstate.php</filename>
+			<filename>views/application/tmpl/formuserfield.php</filename>
+			<filename>views/application/tmpl/state.php</filename>
+			<filename>views/application/tmpl/view_resume.php</filename>
+			<filename>views/application/tmpl/viewresume.php</filename>
+
+			<filename>views/applications/view.html.php</filename>			
+			<filename>views/applications/tmpl/adduserfield.php</filename>
+			<filename>views/applications/tmpl/appliedresumes.php</filename>
+			<filename>views/applications/tmpl/appqueue.php</filename>
+			<filename>views/applications/tmpl/categories.php</filename>
+			<filename>views/applications/tmpl/cities.php</filename>
+			<filename>views/applications/tmpl/companies.php</filename>
+			<filename>views/applications/tmpl/companiesqueue.php</filename>
+			<filename>views/applications/tmpl/conf.php</filename>
+			<filename>views/applications/tmpl/controlpanel.php</filename>
+			<filename>views/applications/tmpl/counties.php</filename>
+			<filename>views/applications/tmpl/countries.php</filename>
+			<filename>views/applications/tmpl/emailtemplate.php</filename>
+			<filename>views/applications/tmpl/empapps.php</filename>
+			<filename>views/applications/tmpl/fieldsordering.php</filename>
+			<filename>views/applications/tmpl/highesteducations.php</filename>
+			<filename>views/applications/tmpl/info.php</filename>
+			<filename>views/applications/tmpl/jobappliedresume.php</filename>
+			<filename>views/applications/tmpl/jobqueue.php</filename>
+			<filename>views/applications/tmpl/jobs.php</filename>
+			<filename>views/applications/tmpl/jobstatus.php</filename>
+			<filename>views/applications/tmpl/jobtypes.php</filename>
+			<filename>views/applications/tmpl/loadaddressdata.php</filename>
+			<filename>views/applications/tmpl/roles.php</filename>
+			<filename>views/applications/tmpl/salaryrange.php</filename>
+			<filename>views/applications/tmpl/shifts.php</filename>
+			<filename>views/applications/tmpl/states.php</filename>
+			<filename>views/applications/tmpl/updates.php</filename>
+			<filename>views/applications/tmpl/userfields.php</filename>
+			<filename>views/applications/tmpl/users.php</filename>
+			<filename>views/menu.php</filename>
+			<filename>views/jscr.php</filename>
+		</files>
+		<languages folder="admin/languages">
+			<language tag="en-GB">en-GB.com_jsjobs.ini</language>
+		</languages>
+	</administration>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.mysql.utf.sql</file>
+			<file driver="mysql">install.mysql.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.mysql.utf.sql</file>
+			<file driver="mysql">uninstall.mysql.sql</file>
+		</sql>
+	</uninstall>
+
+</install>

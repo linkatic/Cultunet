@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install version="1.5" type="module" client="site" method="upgrade">
+	<name>Top Members</name>
+	<author>JomSocial Team</author>
+	<creationDate>20/06/2010</creationDate>
+	<copyright>Copyright (C) 2008 - 2010 JomSocial. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@jomsocial.com</authorEmail>
+	<authorUrl>http://www.jomsocial.com</authorUrl>	
+	<version>1.8.0</version>
+	<description>Show the top members</description>
+	<languages>
+		<language tag="en-GB">en-GB.mod_topmembers.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_topmembers">mod_topmembers.php</filename>
+		<filename>mod_topmembers.xml</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>tmpl/default.php</filename>
+	</files>
+	<params>
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		
+		<param name="count" type="text" default="10" label="Change the number of top member(s) to be display" description="The number of top member(s) to display (default is 10)" />
+		
+		<param name="show_avatar" type="list" default="1" label="Show avatar" description="Select whether to show the avatar">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="show_karma" type="list" default="1" label="Show karma / point" description="Select whether to show the karma or points">
+			<option value="1">Karma</option>
+			<option value="2">Points</option>
+			<option value="0">None</option>
+		</param>
+		
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+</install>

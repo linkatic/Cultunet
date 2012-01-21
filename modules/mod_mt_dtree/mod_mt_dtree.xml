@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: mod_mt_dtree.xml 883 2010-05-27 11:32:45Z cy $ -->
+<install type="module" version="1.5.0" method="upgrade">
+	<name>Dynamic Tree</name>
+	<author>Mosets Consulting</author>
+	<creationDate>May 2010</creationDate>
+	<copyright>(C) 2005-2010 Mosets Consulting http://www.mosets.com/</copyright>
+    <license>GNU General Public License</license>
+	<authorEmail>mtree@mosets.com</authorEmail>
+	<authorUrl>www.mosets.com</authorUrl>
+	<version>2.1.4</version>
+	<description>Mosets Tree dTree is a javascript Tree Menu that lets you browse tree menu in a tree like structure</description>
+	<files>
+		<filename module="mod_mt_dtree">mod_mt_dtree.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_mt_dtree.ini</language>
+	</languages>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="root_image" type="text" label="Root Image" default="components/com_mtree/img/dtree/base.gif" />
+		<param name="cat_image" type="text" label="Category Image" default="components/com_mtree/img/dtree/folder.gif" />
+		<param name="root_catid" type="text" label="Parent Cat ID" default="0" description="The starting(parent) category ID. Default is 0"  />
+		<param name="cat_level" type="text" label="Category Level" default="2" description="The number of category level to show. Enter 0 for unlimited level. Default is 2"  />
+
+		<param name="category_order1" type="list" default="cat_name" label="Category Ordering" description="This decides how the categories are ordered. The custom ordering can be controlled by editing the 'ordering' field in jos_mt_cats table.">
+			<option value="cat_name">Name</option>
+			<option value="cat_created">Created</option>
+			<option value="ordering">Custom Ordering</option>
+		</param>
+		<param name="category_order2" type="list" default="asc" label="Category Ordering Direction" description="The default ordering direction is descending.">
+			<option value="asc">Ascending</option>
+			<option value="desc">Descending</option>
+		</param>
+		<param name="width" type="text" label="Width" default="159" description="Dtree is created on top of its own layer and the width allow you to control the width of dtree. Default is 159 (in pixels)"  />
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+
+		<param name="show_listings" type="radio" default="0" label="Show listings">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="listing_order1" type="list" default="link_name" label="Listing Ordering" description="This decides how the listings are ordered. The custom ordering can be controlled by editing the 'ordering' field in jos_mt_links table.">
+			<option value="link_name">Name</option>
+			<option value="link_created">Created</option>
+			<option value="link_modified">Modified</option>
+			<option value="ordering">Custom Ordering</option>
+		</param>
+		<param name="listing_order2" type="list" default="asc" label="Listing Ordering Direction" description="The default ordering direction is descending.">
+			<option value="asc">Ascending</option>
+			<option value="desc">Descending</option>
+		</param>
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+
+		<param name="show_empty_cat" type="radio" default="-1" label="Show empty category" description="Show a category even there is no sub category and listing">
+			<option value="-1">Use Default</option>
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="show_totalcats" type="radio" default="0" label="Show category count" description="Show the total number of sub categories">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="show_totallisting" type="radio" default="0" label="Show listing count" description="Show the total number of listing">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="closesamelevel" type="radio" default="1" label="Close Same Level" description="Only one category within a parent can be expanded at the same time">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+	</params>
+</install>

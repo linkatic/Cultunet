@@ -1,0 +1,138 @@
+/* Author Dashboard */
+#lyftenbloggie .dashboard{ width:100%;}
+#lyftenbloggie .dashboard .dash_title{ width:100%; border-bottom:1px solid #E2E2E2; padding-bottom:0px; float:left; position:relative;display:block;overflow:hidden;}
+#lyftenbloggie .dashboard .dash_title h1{ font-size:25px; line-height:20px; padding:15px 0 15px 0; margin:0; display:inline-block; float:left;text-shadow:1px 1px 1px #E9E9E9;}
+#lyftenbloggie .dashboard .dash_menu {position:absolute;right:0;bottom:0;}
+#lyftenbloggie .dashboard .dash_menu ul{margin:0; padding:0;list-style:none; float:right;}
+#lyftenbloggie .dashboard .dash_menu ul li {float:left; height:30px; width:auto;margin:0; padding:0 0 0 1px;background:transparent;}
+#lyftenbloggie .dashboard .dash_menu li a, 
+#lyftenbloggie .dashboard .dash_menu li a:visited,
+#lyftenbloggie .dashboard .dash_menu li a.active, 
+#lyftenbloggie .dashboard .dash_menu li a.active:visited {height:30px;margin-left:1px;text-decoration: none;color:#0894a5;font-size:12px; font-weight:bold; outline:0; cursor:pointer; text-transform:uppercase;display:block;line-height:12px;text-shadow:1px 1px 0 #F8F8F8;margin-top:4px;}
+#lyftenbloggie .dashboard .dash_menu li a.active, 
+#lyftenbloggie .dashboard .dash_menu li a.active:visited{color:#494848;text-shadow:1px 1px 0 #E5E5E5;margin-top:0;}
+#lyftenbloggie .dashboard .dash_menu li a span {height:34px; padding-left:5px;background: transparent url(system/images/dash-menu-left.gif) no-repeat top left;display:block;}
+#lyftenbloggie .dashboard .dash_menu li a span span{display:inline-block;height:25px; background: transparent url(system/images/dash-menu-right.gif) no-repeat top right; padding: 9px 7px 0 6px;}
+#lyftenbloggie .dashboard .dash_menu li a.active span {display:block;height:34px; padding-left:5px;background: transparent url(system/images/dash-menu-left-active.gif) no-repeat top left;}
+#lyftenbloggie .dashboard .dash_menu li a.active span span, .dash_menu li a.active:hover span span{display:inline-block;height:25px; background: transparent url(system/images/dash-menu-right-active.gif) no-repeat top right; padding: 9px 7px 0 6px;}
+#lyftenbloggie .dashboard .dash_menu li a:hover{color:#006a77;margin-top:0;}
+#lyftenbloggie .dashboard .dash_menu li a:hover span {background: transparent url(system/images/dash-menu-left-hover.gif) no-repeat top left;}
+#lyftenbloggie .dashboard .dash_menu li a:hover span span {background: transparent url(system/images/dash-menu-right-hover.gif) no-repeat top right;}
+
+#lyftenbloggie .dashboard #dash_sub_menu {height: 15px;padding:5px 0 5px 0;width: 100%;clear:both;background: #EFEFEF;}
+#lyftenbloggie .dashboard #dash_sub_menu div {float:left;display: inline; width: auto;display: block;padding: 0 10px;margin: 0;text-align: auto;border: none;border-right: 1px dotted #AAA;background: none;font-size:11px;line-height:14px;color: #525252;text-decoration: underline;cursor: pointer;}
+#lyftenbloggie .dashboard #dash_sub_menu div:hover {color: #333;background: transparent;padding: 0 10px;border: none;border-right: 1px dotted #AAA;}
+#lyftenbloggie .dashboard #dash_sub_menu div.active {color: #000;font-weight:bold;cursor: default;}
+#lyftenbloggie .dashboard #dash_sub_menu span.settings_actions {display:inline;float:right;height:18px;color:#FFFFFF;padding:1px 10px 0 0;text-align:right;margin:-3px 0 0 0;}
+#lyftenbloggie .dashboard #dash_sub_menu span.settings_actions .rbutton {font-weight: normal;padding: 2px 4px 2px 4px;line-height:12px;-moz-border-radius: 2px;-khtml-border-radius: 2px;-webkit-border-radius: 2px;border-radius: 2px;text-decoration: none;background-color: #D8D8D8;color: #595959;text-shadow: 1px 1px rgba(255,255,255,0.4);box-shadow: 0 1px 1px rgba(0,0,0,0.3);-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3);-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3);}
+#lyftenbloggie .dashboard #dash_sub_menu span.settings_actions .rbutton:hover {background-color: #B9B9B9;color: #FFFFFF;text-shadow:-1px -1px rgba(0,0,0,0.2);}
+
+#lyftenbloggie .dashboard table.gridtable{width:100%;padding:0;border-collapse: collapse; margin-top:15px; float:left; height:auto;}
+#lyftenbloggie .dashboard table.gridtable th {border:1px solid #e5e5e5;background:#ebebeb;text-align:left;padding:8px 0px 8px 10px; font-size:12px;color:#6c6c6c;font-weight:bold;text-shadow:1px 1px 1px #FDFDFD;}
+#lyftenbloggie .dashboard table.gridtable th.check { width:22px;}
+#lyftenbloggie .dashboard table.gridtable th.photo { width:67px;}
+#lyftenbloggie .dashboard table.gridtable th.item_name {width:auto;}
+#lyftenbloggie .dashboard table.gridtable th.status {width:110px;}
+#lyftenbloggie .dashboard table.gridtable th.category {width:120px;}
+#lyftenbloggie .dashboard table.gridtable th.actions {width:170px;}
+
+#lyftenbloggie .dashboard table.gridtable td {border:1px solid #e5e5e5;text-align:left;padding:10px 0px 10px 10px;font-size:13px; font-weight:normal; color:#5e5e5e; background:#FFF; }
+#lyftenbloggie .dashboard table.gridtable td.item_name a{ font-weight:bold;color:#0894a5;}
+#lyftenbloggie .dashboard table.gridtable td.item_name a:hover{ color:#0894a5;text-decoration:none;}
+
+#lyftenbloggie .dashboard table.gridtable td.status span{ padding-left:20px;}
+#lyftenbloggie .dashboard table.gridtable td.status .published{background:url(system/images/published.png) no-repeat  left;} 
+#lyftenbloggie .dashboard table.gridtable td.status .unpublished{ color:#BFC058; background:url(system/images/unpublished.png) no-repeat  left;} 
+#lyftenbloggie .dashboard table.gridtable td.status .pending{ color:#b86464; background:url(system/images/pending.png) no-repeat  left;} 
+#lyftenbloggie .dashboard table.gridtable td.status .delpending{ color:#b86464; background:url(system/images/delpending.png) no-repeat  left;} 
+
+#lyftenbloggie .dashboard table.gridtable td.actions ul,
+#lyftenbloggie .dashboard table.gridtable td.actions li{ float:left; margin:0; padding: 0 0 0 5px;list-style:none;}
+#lyftenbloggie .dashboard table.gridtable td.actions li a:link, #lyftenbloggie .dashboard table.gridtable td.actions li a:visited, #lyftenbloggie .dashboard table.gridtable td.actions li a:active{font-weight:bold; font-size:11px; color:#FFF; text-transform:uppercase;line-height:14px; }
+#lyftenbloggie .dashboard table.gridtable td.actions li a:hover{color:#aef0ff; text-decoration:none;}
+#lyftenbloggie .dashboard table.gridtable td.actions li a span { height:20px;background-repeat:no-repeat; background-position:left;display:block; padding-left:5px;}
+#lyftenbloggie .dashboard table.gridtable td.actions li a span span { height:17px; background-repeat:no-repeat; background-position:right;padding:3px 5px 0 0px; display:inline-block;}
+#lyftenbloggie .dashboard table.gridtable td.actions li a.view span { background-image:url(system/images/view-left.jpg);}
+#lyftenbloggie .dashboard table.gridtable td.actions li a.view span span { background-image:url(system/images/view-right.jpg);}
+#lyftenbloggie .dashboard table.gridtable td.actions li a.edit span { background-image:url(system/images/edit-left.jpg);}
+#lyftenbloggie .dashboard table.gridtable td.actions li a.edit span span { background-image:url(system/images/edit-right.jpg);}
+#lyftenbloggie .dashboard table.gridtable td.actions li a.edit{text-shadow:1px 1px 1px #97C8CF;}
+#lyftenbloggie .dashboard table.gridtable td.actions li a.edit:hover{color:#4B4B4B; text-decoration:none;}
+#lyftenbloggie .dashboard table.gridtable td.actions li  a.delete span { background-image:url(system/images/delete-left.jpg);}
+#lyftenbloggie .dashboard table.gridtable td.actions li  a.delete span span { background-image:url(system/images/delete-right.jpg);}
+#lyftenbloggie .dashboard table.gridtable td.actions li a.delete{text-shadow:1px 1px 1px #DAB6AC;}
+#lyftenbloggie .dashboard table.gridtable td.actions li a.delete:hover{color:#37201B; text-decoration:none;}
+#lyftenbloggie .dashboard table.gridtable td a.img_small {float:left;background:#dcdcdc; padding:2px;display:block;width:52px; height:52px; border:1px solid #ccc; }
+#lyftenbloggie .dashboard table.gridtable td a.img_small:hover {background:#2c9ab4;}
+#lyftenbloggie .dashboard table.gridtable td a.img_small img {width:50px; height:50px; border:1px solid #fff}
+
+.helpTip {text-align: left;font: normal 11px Tahoma,  sans-serif;color: #000;width: 275px;}
+.helptp {cursor: help;color:#0B55C4;}
+
+/* NEW Post Screen */
+#lyftenbloggie .entryForm{min-height:500px;}
+#lyftenbloggie .entryForm ol, #lyftenbloggie .entryForm ul, #lyftenbloggie .entryForm li, #lyftenbloggie .entryForm fieldset, #lyftenbloggie .entryForm form, #lyftenbloggie .entryForm label, #lyftenbloggie .entryForm legend{margin: 0;padding: 0;border: 0;outline: 0;font-weight: inherit;font-style: inherit;font-size: 100%;font-family: inherit;vertical-align: baseline;}
+#lyftenbloggie .entryForm label small{font-size: 11px;}
+#lyftenbloggie .entryForm fieldset legend {display:none;}
+#lyftenbloggie .entryForm ol, #lyftenbloggie .entryForm ul {list-style: none;}
+#lyftenbloggie .entryForm {padding:5px; color:#3a4043}
+#lyftenbloggie .entryForm p {margin:10px 0;}
+#lyftenbloggie .entryForm h3 {color:#1d8895; font-weight:bold; font-size:150%; margin-bottom:10px;}
+#lyftenbloggie .entryForm fieldset {padding-top:10px;}
+#lyftenbloggie .entryForm fieldset ol li {padding:10px;background:#F3F3F3;border-bottom:1px solid #B4B4B4;border-top:1px solid #FFFFFF;}
+#lyftenbloggie .entryForm fieldset ol li.even {background:#E9E9E9;}
+#lyftenbloggie .entryForm input, #lyftenbloggie .entryForm select , #lyftenbloggie .entryForm textarea {padding:5px; border:1px solid #dedede; background:#FFFFFF url(system/images/forms.png) repeat-x 0 -42px;}
+#lyftenbloggie .entryForm select{padding:4px;}
+#lyftenbloggie .entryForm fieldset ol li input[type="radio"], #lyftenbloggie .entryForm fieldset ol li input[type="checkbox"] {border:none; background:none;}
+#lyftenbloggie .entryForm input.txtbox-short {width:122px;}
+#lyftenbloggie .entryForm input.txtbox-middle {width:190px;}
+#lyftenbloggie .entryForm input.txtbox-long, #lyftenbloggie .entryForm fieldset ol li textarea {width:350px;}
+#lyftenbloggie .entryForm fieldset ol li label {float:left; margin-right:15px; display:block;}
+#lyftenbloggie .entryForm fieldset ol li label.field-title {font-weight:bold; width:100px; padding-top:3px;}
+#lyftenbloggie .entryForm fieldset ol li label.field-title em{font-weight:bold; color:#820600;padding-left:2px;}
+#lyftenbloggie .entryForm fieldset ol li div.field-title {font-weight:bold; width:100px; padding-top:3px;}
+#lyftenbloggie .entryForm fieldset ol li div.field-title {font-weight:bold;padding:3px 0 3px 0;}
+#lyftenbloggie .entryForm fieldset ol li div.field-title em {font-style:normal;line-height:1.6em}
+#lyftenbloggie .entryForm span.form-confirm, #lyftenbloggie .entryForm span.form-error {display:none; padding-left:20px;margin-left:10px; height:16px;line-height:16px;}
+#lyftenbloggie .entryForm span.form-confirm {color:#72a101; background:url(system/images/forms.png) no-repeat 0 -21px;}
+#lyftenbloggie .entryForm span.form-error {color:#a10101; background:url(system/images/forms.png) no-repeat 0 0;}
+
+/* Post Screen */
+#lyftenbloggie div.entryForm .settings {background:#F3F3F3;margin:0; padding:0;}
+#lyftenbloggie div.entryForm .settings .settings_content {line-height:12px;padding:10px;margin:0;}
+#lyftenbloggie div.entryForm .setting {margin:0;padding:0;border-bottom:1px solid #D5D5D5;margin-bottom:8px;padding-top:4px}
+#lyftenbloggie div.entryForm .setting .title h3 {font:normal 1.5em sans-serif;color:#567}
+#lyftenbloggie div.entryForm .setting .title h3 a {color:#567;text-decoration:underline}
+#lyftenbloggie div.entryForm .setting .title h3 a:hover {color:#069}
+#lyftenbloggie div.entryForm .setting .settingDescription {padding-top:8px}
+#lyftenbloggie div.entryForm .setting span.highlight {background:#F6FCF6;padding:0 2px}
+
+#lyftenbloggie div.entryForm .settings .timestampdiv {padding:3px 0 10px;}
+#lyftenbloggie div.entryForm .settings .curtime {background-image: url(system/images/date-button.gif);background-repeat: no-repeat;background-position: left 10px;padding:10px 0 10px 18px;}
+
+#lyftenbloggie div.entryForm .front_features {background:#F3F3F3;padding:0px}
+
+#lyftenbloggie div.entryForm ul.options_list {background-image:none; background:none; list-style-image: none;margin:0;list-style:none;padding:0;}
+#lyftenbloggie div.entryForm ul.options_list li.alt {margin:0;padding:0;background-image:none; background:none; list-style-image: none;padding:10px;border-bottom:1px solid #B4B4B4;border-top:1px solid #FFFFFF;background: none;list-style: none;}
+#lyftenbloggie div.entryForm ul.options_list li.alt.first {border-top:0 none;}
+#lyftenbloggie div.entryForm ul.options_list li.alt.last {border-bottom:0 none;}
+
+
+#lyftenbloggie div.entryForm ul.options_list li.alt strong {font:bold 1.3em Georgia,Verdana,Tahoma,sans-serif;letter-spacing:-1px}
+#lyftenbloggie div.entryForm ul.options_list li.alt em {font-style:normal;line-height:1.6em}
+#lyftenbloggie div.entryForm ul.options_list li.alt {background:#F3F3F3}
+#lyftenbloggie div.entryForm ul.options_list li.alt label {font-weight:bold;}
+
+#lyftenbloggie div.entryForm a.togbox {display: block;padding: 0 0 0 20px;margin: 0px;overflow: hidden;color:#7D7F8B;text-decoration:none;}
+#lyftenbloggie div.entryForm .closed a.togbox {background: #F3F3F3 url(system/images/icon_tick.png) no-repeat 0px 1px;height:20px;line-height:20px;}
+#lyftenbloggie div.entryForm a.togbox {background: #F3F3F3 url(system/images/icon_tick.png) no-repeat 0px -16px;}
+
+#lyftenbloggie div.entryForm .inside {margin-left: 20px;margin-top:7px;}
+#lyftenbloggie #authordiv {color:#7D7F8B;font-family:Georgia,Verdana,Tahoma,sans-serif;}
+#lyftenbloggie div.entryForm .taglist {border: 1px solid #ccc;list-style: none;height: 120px;overflow-y: auto;overflow-x:hidden;background: #fff; width:auto;}
+#lyftenbloggie div.entryForm .taglist, #lyftenbloggie div.entryForm .taglist li {margin: 0; padding: 0;}
+#lyftenbloggie div.entryForm .taglist li {background: #FFFFFF; padding: 0; margin:0; height:28px;border-bottom:1px solid #B4B4B4;}
+#lyftenbloggie div.entryForm .taglist label {display: block; padding: 0 0 0 30px; height:28px; width:100%; margin:0; text-indent: -25px; line-height:28px;}
+#lyftenbloggie div.entryForm .taglist label input{margin-right:10px;vertical-align:middle;}
+#lyftenbloggie div.entryForm .taglist label:hover, #lyftenbloggie div.entryForm .taglist label.hover { background: #A8A8A8; color: #fff;}
+* html .taglist label {height: 1%; }

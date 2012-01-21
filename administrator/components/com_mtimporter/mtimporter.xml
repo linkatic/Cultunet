@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+    <name>MT Importer</name>
+    <creationDate>February 2010</creationDate>
+    <author>Mosets Consulting</author>
+    <copyright>This Joomla Component is copyrighted to Mosets Consulting</copyright>
+    <authorEmail>mtree@mosets.com</authorEmail>
+    <authorUrl>http://www.mosets.com/</authorUrl>
+    <version>2.1.4</version>
+    <license>GNU General Public License</license>
+    <description>MT Importer is an import tool that imports data from third party sources to Mosets Tree 2.1.x.</description>
+
+    <installfile>install.mtimporter.php</installfile>
+
+	<administration>
+         <menu>MT Importer</menu>
+         <submenu>
+             <menu task="check_csv">Import from .csv file</menu>
+             <menu task="check_jcontent">Import from Joomla's Content and Web Links</menu>
+             <menu task="check_sobi2">Import from SOBI2 2.9.x</menu>
+             <menu task="check_mosdir">Import from mosDirectory 2.2x</menu>
+             <menu task="check_gossamerlinks">Import from Gossamer Links</menu> 
+             <menu task="check_bookmarks">Import from Bookmarks 2.7</menu> 
+             <menu task="check_esyndicate">Import from eSyndicate 2.2</menu> 
+             <menu task="check_remository">Import from Remository 3.5</menu> 
+         </submenu>
+         <files>
+			 <filename>admin.mtimporter.html.php</filename>
+			 <filename>admin.mtimporter.php</filename>
+			 <filename>mtimporter.xml</filename>
+			 <filename>sample.csv</filename>
+         </files>
+    </administration>
+</install>

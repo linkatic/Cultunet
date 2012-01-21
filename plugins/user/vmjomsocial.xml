@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="user">
+	<name>User - Integración de usuarios entre Virtuemart y Jomsocial</name>
+	<author>Vicente Gimeno Quiles</author>
+	<creationDate>Enero 2011</creationDate>
+	<copyright>Copyright (C) 2011 - 2010 Vicente Gimeno. Todos los derechos reservados.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@linkatic.com</authorEmail>
+	<authorUrl>http://www.linkatic.com</authorUrl>
+	<version>1.0</version>
+	<description>VMJomsocial Plugin sincroniza los usuarios del sistema entre Virtuemart y Jomsocial/description>
+	<files>
+		<filename plugin="vmjomsocial">vmjomsocial.php</filename>
+	</files>
+	<params/>
+</install>

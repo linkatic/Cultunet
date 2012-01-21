@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:mtree="http://www.mosets.com/tree/rss/">
+<channel>
+<title>cultunet.com - Nuevos recursos - Festivales</title>
+<description></description>
+<link>http://www.cultunet.com/</link>
+<lastBuildDate>Thu, 23 Dec 2010 23:35:45 +0100</lastBuildDate>
+<generator>FeedCreator 1.7.3</generator>
+<item>
+	<title>Zinebi</title>
+	<link>http://www.cultunet.com/es/component/mtree/festivales/zinebi</link>
+	<description></description>
+	<author>vgimeno</author>
+	<pubDate>Fri, 08 Oct 2010 21:04:56 +0100</pubDate>
+	<guid>http://www.cultunet.com/es/component/mtree/festivales/zinebi</guid>
+</item>
+<item>
+	<title>Semana de Música Antigua de Estella</title>
+	<link>http://www.cultunet.com/es/component/mtree/festivales/semana-de-musica-antigua-de-estella</link>
+	<description></description>
+	<author>vgimeno</author>
+	<pubDate>Fri, 08 Oct 2010 21:04:56 +0100</pubDate>
+	<guid>http://www.cultunet.com/es/component/mtree/festivales/semana-de-musica-antigua-de-estella</guid>
+</item>
+<item>
+	<title>Semana de Música Religiosa de Cuenca</title>
+	<link>http://www.cultunet.com/es/component/mtree/festivales/semana-de-musica-religiosa-de-cuenca</link>
+	<description></description>
+	<author>vgimeno</author>
+	<pubDate>Fri, 08 Oct 2010 21:04:56 +0100</pubDate>
+	<guid>http://www.cultunet.com/es/component/mtree/festivales/semana-de-musica-religiosa-de-cuenca</guid>
+</item>
+<item>
+	<title>Festival Internacional de Jazz de Getxo</title>
+	<link>http://www.cultunet.com/es/component/mtree/festivales/festival-internacional-de-jazz-de-getxo</link>
+	<description></description>
+	<author>vgimeno</author>
+	<pubDate>Fri, 08 Oct 2010 21:04:56 +0100</pubDate>
+	<guid>http://www.cultunet.com/es/component/mtree/festivales/festival-internacional-de-jazz-de-getxo</guid>
+</item>
+<item>
+	<title>ArtFutura</title>
+	<link>http://www.cultunet.com/es/component/mtree/festivales/artfutura</link>
+	<description></description>
+	<author>vgimeno</author>
+	<pubDate>Fri, 08 Oct 2010 21:04:56 +0100</pubDate>
+	<guid>http://www.cultunet.com/es/component/mtree/festivales/artfutura</guid>
+</item>
+</channel>
+</rss>

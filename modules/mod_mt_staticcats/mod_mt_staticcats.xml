@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: mod_mt_staticcats.xml 585 2009-03-12 05:26:50Z CY $ -->
+<install type="module" version="1.5.0">
+	<name>Static Categories</name>
+	<author>Mosets Consulting</author>
+	<creationDate>March 2009</creationDate>
+	<copyright>(C) 2007-2009 Mosets Consulting http://www.mosets.com/</copyright>
+    <license>GNU General Public License</license>
+	<authorEmail>mtree@mosets.com</authorEmail>
+	<authorUrl>www.mosets.com</authorUrl>
+	<version>2.1.0</version>
+	<description>Static Categories displays categories from a specific parent.</description>
+	<files>
+		<filename module="mod_mt_staticcats">mod_mt_staticcats.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_mt_staticcats.ini</language>
+	</languages>
+	<params>
+		<param name="class_sfx" type="text" default="" label="Menu Class Suffix" description="PARAMMENUCLASSSUFFIX" />
+		<param name="moduleclass_sfx" type="text" default="_menu" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+
+		<param name="parent_cat_id" type="text" default="0" label="Cat ID of the parent category" />
+
+		<param name="primary_order" type="list" default="-1" label="Primary Order">
+			<option value="-1">Use Default</option>
+			<option value="cat_name">Name</option>
+			<option value="cat_featured">Featured</option>
+			<option value="cat_created">Created</option>
+			<option value="cat_cats">Number of Categories</option>
+			<option value="cat_links">Number of Listing</option>
+		</param>
+		<param name="primary_sort" type="list" default="-1" label="Primary Sort">
+			<option value="-1">Use Default</option>
+			<option value="asc">Ascending</option>
+			<option value="desc">Descending</option>
+		</param>
+		<param name="secondary_order" type="list" default="-1" label="Secondary Order">
+			<option value="-1">Use Default</option>
+			<option value="cat_name">Name</option>
+			<option value="cat_featured">Featured</option>
+			<option value="cat_created">Created</option>
+			<option value="cat_cats">Number of Categories</option>
+			<option value="cat_links">Number of Listing</option>
+		</param>
+		<param name="secondary_sort" type="list" default="-1" label="Secondary Sort">
+			<option value="-1">Use Default</option>
+			<option value="asc">Ascending</option>
+			<option value="desc">Descending</option>
+		</param>
+		<param name="show_empty_cat" type="radio" default="-1" label="Show empty category" description="Show a category even there is no sub category and listing">
+			<option value="-1">Use Default</option>
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="show_totalcats" type="radio" default="0" label="Show category count" description="Show the total number of sub categories">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="show_totallisting" type="radio" default="1" label="Show listing count" description="Show the total number of listing">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+	</params>
+</install>

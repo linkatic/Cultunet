@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: mod_mt_menu.xml 910 2010-07-01 10:51:05Z cy $ -->
+<install type="module" version="1.5.0" method="upgrade">
+	<name>Directory Menu</name>
+	<author>Mosets Consulting</author>
+	<creationDate>July 2010</creationDate>
+	<copyright>(C) 2005-2010 Mosets Consulting http://www.mosets.com/</copyright>
+    <license>GNU General Public License</license>
+	<authorEmail>mtree@mosets.com</authorEmail>
+	<authorUrl>www.mosets.com</authorUrl>
+	<version>2.1.5</version>
+	<description>Directory Menu display links used by the component.</description>
+	<files>
+		<filename module="mod_mt_menu">mod_mt_menu.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_mt_menu.ini</language>
+	</languages>
+	<params>
+		<param name="class_sfx" type="text" default="" label="Menu Class Suffix" description="PARAMMENUCLASSSUFFIX" />
+		<param name="moduleclass_sfx" type="text" default="_menu" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="limit_toplist" type="radio" default="0" label="Limit Top List current category" description="If this is enabled, all the top list's links will show top listings from the current category and it's sub-categories only. Setting this 'No' will show top listings from the entire directory.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_home" type="radio" default="0" label="Home" description="Show/Hide the 'Home' link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_browse" type="radio" default="1" label="Browse" description="Show/Hide the 'Browse' link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_addlisting" type="radio" default="1" label="Add Listing" description="Show/Hide the 'Add Listing' link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_addcategory" type="radio" default="1" label="Add Category" description="Show/Hide the 'Add Category' link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_mypage" type="radio" default="1" label="My Page" description="Show/Hide the 'My Page' link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_myfavourites" type="radio" default="1" label="My Favourites" description="Show/Hide the 'My Favourites' link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_newlisting" type="radio" default="1" label="New Listing" description="Show/Hide the 'New Listing' link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_recentlyupdatedlisting" type="radio" default="1" label="Recently Updated Listing" description="Show/Hide the 'Recently Updated Listing' link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_featuredlisting" type="radio" default="1" label="Featured Listing" description="Show/Hide the 'Featured Listing' link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_mostfavoured" type="radio" default="1" label="Favoured Listing" description="Show/Hide the 'Most Favoured Listing' link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_popularlisting" type="radio" default="1" label="Popular Listing" description="Show/Hide the 'Popular Listing' link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_mostratedlisting" type="radio" default="1" label="Most Rated Listing" description="Show/Hide the 'Most Rated Listing' link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_topratedlisting" type="radio" default="1" label="Top Rated Listing" description="Show/Hide the 'Top Rated Listing' link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_mostreviewedlisting" type="radio" default="1" label="Most Reviewed Listing" description="Show/Hide the 'Most Reviewed' link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+
+		<param name="@spacer" type="spacer" default="" label="" />
+
+		<param name="show_addlisting_force" type="radio" default="0" label="Show Add Listing in non-directory pages" description="By default, 'Add Listing' will be hidden in non-directory pages and category which does not accept new submission. Setting this parameter to 'Yes' will make sure 'Add Listing' link is shown all the time.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+
+	</params>
+</install>

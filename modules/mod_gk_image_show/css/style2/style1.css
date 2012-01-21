@@ -1,0 +1,50 @@
+.gk_is_wrapper-style2{
+	overflow: hidden;
+	position: relative;
+}
+.gk_is_wrapper-style2 .gk_is_image{
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+.gk_is_wrapper-style2 .gk_is_text_bg{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	z-index: 95;
+}
+.gk_is_wrapper-style2 .gk_is_text{
+	padding: 0 10px;
+	width: auto;
+	position: absolute;
+	z-index: 96;
+	color: #fff;
+}
+.gk_is_wrapper-style2 .gk_is_preloader{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	background: #efefef url('../../images/style2/variation1/loader.gif') no-repeat center center;
+}
+.gk_is_wrapper-style2 .gk_is_overlay{
+	width: 100%;
+	display: none;
+	height: 100%;
+	position: absolute;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	cursor:pointer;
+	background: #000 url('../../images/style2/variation1/go.png') no-repeat center center;
+}
+.gk_is_wrapper-style2 .gk_is_text_data{
+	display: none;
+}
+.gk_is_wrapper-style2 .gk_is_slide{
+	position: absolute;
+	left: 0;
+	top: 0;
+}

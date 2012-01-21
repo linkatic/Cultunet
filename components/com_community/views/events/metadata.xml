@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="Events">
+		<message>
+			<![CDATA[
+				Events view
+			]]>
+		</message>
+	</view>
+	<state>
+		<name>Events Layout</name>
+		<description>Events listings layout</description>
+	</state>
+</metadata>

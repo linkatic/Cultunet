@@ -1,0 +1,136 @@
+html{
+	overflow-y: scroll;	
+}
+
+div.align_left{
+	text-align: left;
+}
+
+td{
+	vertical-align: top;
+}
+
+table#toolbar{
+	height: 52px;
+}
+
+span.editlinktip{
+	border-bottom: 1px dashed #ccc;
+}
+
+.radio{
+	margin-bottom: -3px;
+}
+
+div#config_link{
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+div#ua_footer{
+	text-align: center;
+	margin-top: 100px;
+}
+
+.sidestep{
+	float: left; 
+	width: 180px;
+	white-space: nowrap;
+}
+
+.sidestep2{
+	float: left; 
+	width: 360px;
+	white-space: nowrap;
+}
+
+.checkbox{
+	margin-bottom: -1px;
+}
+
+#users, #pages, #itemtypes, #sections, #workflow, #components, #toolbars{
+	display: none;	
+}
+
+/* menu tabs */
+
+ul#aua_menu{
+	margin: 0 0 30px 0;
+	padding: 0 0 0 20px;
+	overflow: hidden;
+	background: url(../images/aua_tabs_bg.gif) repeat-x bottom;	
+	font-size: 11px;	
+}
+
+ul#aua_menu li{	
+	margin-right: 3px;
+	float: left;
+	list-style-type: none;
+}
+
+ul#aua_menu a{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;	
+	background: url(../images/aua_tab_off.gif) no-repeat top right;
+	display: block;
+	
+}
+
+ul#aua_menu a span{	
+	background: url(../images/aua_tab_off_left.gif) no-repeat top left;	
+	display: block;
+	padding: 3px 10px;
+}
+
+ul#aua_menu .on{
+	background: url(../images/aua_tab_on.gif) no-repeat top right;
+}
+
+ul#aua_menu a.on:link, ul#aua_menu a.on:visited, ul#aua_menu a.on:active, ul#aua_menu a.on:hover{
+	color: black;
+	text-decoration: none;
+}
+
+ul#aua_menu a.on span{	
+	background: url(../images/aua_tab_on_left.gif) no-repeat top left;	
+}
+
+#general_settings, #users, #page_access, #itemtype_access, #item_access, #section_access, #category_access, #workflow, #component_access, #module_access, #plugin_access, #aec{
+	display: none;
+}
+
+.warning{
+	color: red;
+}
+
+ul, p{
+	text-align: left;
+}
+
+.align_right{
+	text-align: right;
+}
+
+.extra_button_field{
+	width: 650px;
+	height: 200px;
+}
+
+.row{
+	margin-bottom: 10px;
+}
+
+table.adminlist tbody tr.row1:hover td, table.adminlist tbody tr.row0:hover td{ 
+	background-color: #D7FCBC; 
+}
+
+table.adminlist tbody tr td, table.adminlist tbody tr.row1 td{
+	border: 0;
+	padding-top: 10px;
+}
+
+.aua_center{
+	text-align: center;
+	font-weight: bold;
+}

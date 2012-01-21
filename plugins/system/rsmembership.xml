@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<install type="plugin" group="system" version="1.5" method="upgrade">
+	<name>System - RSMembership!</name>
+	<creationDate>May 2009</creationDate>
+	<author>www.rsjoomla.com</author>
+	<copyright>(C) 2007-2009 www.rsjoomla.com</copyright>
+	<authorEmail>support@rsjoomla.com</authorEmail>
+	<authorUrl>www.rsjoomla.com</authorUrl>
+	<version>1.0.0</version>
+	<description>RSM_SYSTEM_PLUGIN_DESC</description>
+	<files>
+		<filename plugin="rsmembership">rsmembership.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_rsmembership.ini</language>
+	</languages>
+	<params>
+	</params>
+</install>

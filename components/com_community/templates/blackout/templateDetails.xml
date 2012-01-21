@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="template">
+	<name>Blackout</name>
+	<version>1.8.0</version>
+	<creationDate>20/04/2010</creationDate>
+	<author>JomSocial Team</author>
+	<authorEmail>support@azrul.com</authorEmail>
+	<authorUrl>http://www.jomsocial.com</authorUrl>
+	<copyright>Copyright 2008 - 2010 by Slashes &amp; Dots Sdn Bhd. All rights reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>Blackout template for JomSocial</description>
+	<files>
+	</files>
+	<params>
+	</params>
+</install>

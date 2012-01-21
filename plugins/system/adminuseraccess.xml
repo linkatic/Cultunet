@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<name>System - Admin-User-Access</name>
+	<author>Carsten Engel</author>
+	<creationDate>april 2011</creationDate>
+	<copyright>Copyright (C) 2011 Carsten Engel, pages-and-items</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>-</authorEmail>
+	<authorUrl>www.pages-and-items.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Enforces various access restrictions as set in component Admin-User-Access. Don't forget to ENABLE this plugin.</description>
+	<files>
+		<filename plugin="adminuseraccess">adminuseraccess.php</filename>		
+	</files>	
+	<languages>
+		<language tag="af-ZA">language/af-ZA.plg_system_adminuseraccess.ini</language>
+		<language tag="ar-EG">language/ar-EG.plg_system_adminuseraccess.ini</language>
+		<language tag="be-BE">language/be-BE.plg_system_adminuseraccess.ini</language>
+		<language tag="bg-BG">language/bg-BG.plg_system_adminuseraccess.ini</language>
+		<language tag="ca-ES">language/ca-ES.plg_system_adminuseraccess.ini</language>
+		<language tag="cs-CZ">language/cs-CZ.plg_system_adminuseraccess.ini</language>
+		<language tag="cy-GB">language/cy-GB.plg_system_adminuseraccess.ini</language>
+		<language tag="da-DK">language/da-DK.plg_system_adminuseraccess.ini</language>
+		<language tag="de-DE">language/de-DE.plg_system_adminuseraccess.ini</language>
+		<language tag="el-GR">language/el-GR.plg_system_adminuseraccess.ini</language>
+		<language tag="en-GB">language/en-GB.plg_system_adminuseraccess.ini</language>
+		<language tag="es-ES">language/es-ES.plg_system_adminuseraccess.ini</language>
+		<language tag="et-EE">language/et-EE.plg_system_adminuseraccess.ini</language>
+		<language tag="fa-IR">language/fa-IR.plg_system_adminuseraccess.ini</language>
+		<language tag="fi-FI">language/fi-FI.plg_system_adminuseraccess.ini</language>
+		<language tag="fr-FR">language/fr-FR.plg_system_adminuseraccess.ini</language>
+		<language tag="ga-IE">language/ga-IE.plg_system_adminuseraccess.ini</language>
+		<language tag="gl-ES">language/gl-ES.plg_system_adminuseraccess.ini</language>
+		<language tag="he-IL">language/he-IL.plg_system_adminuseraccess.ini</language>
+		<language tag="hi-IN">language/hi-IN.plg_system_adminuseraccess.ini</language>
+		<language tag="hr-HR">language/hr-HR.plg_system_adminuseraccess.ini</language>
+		<language tag="ht-NG">language/ht-NG.plg_system_adminuseraccess.ini</language>
+		<language tag="hu-HU">language/hu-HU.plg_system_adminuseraccess.ini</language>
+		<language tag="id-ID">language/id-ID.plg_system_adminuseraccess.ini</language>
+		<language tag="is-IS">language/is-IS.plg_system_adminuseraccess.ini</language>
+		<language tag="it-IT">language/it-IT.plg_system_adminuseraccess.ini</language>
+		<language tag="ja-JP">language/ja-JP.plg_system_adminuseraccess.ini</language>
+		<language tag="ko-KR">language/ko-KR.plg_system_adminuseraccess.ini</language>
+		<language tag="lt-LT">language/lt-LT.plg_system_adminuseraccess.ini</language>
+		<language tag="lv-LV">language/lv-LV.plg_system_adminuseraccess.ini</language>
+		<language tag="mk-MK">language/mk-MK.plg_system_adminuseraccess.ini</language>
+		<language tag="ms-MY">language/ms-MY.plg_system_adminuseraccess.ini</language>
+		<language tag="mt-MT">language/mt-MT.plg_system_adminuseraccess.ini</language>
+		<language tag="nl-NL">language/nl-NL.plg_system_adminuseraccess.ini</language>
+		<language tag="no-NO">language/no-NO.plg_system_adminuseraccess.ini</language>
+		<language tag="pl-PL">language/pl-PL.plg_system_adminuseraccess.ini</language>
+		<language tag="pt-PT">language/pt-PT.plg_system_adminuseraccess.ini</language>
+		<language tag="ro-RO">language/ro-RO.plg_system_adminuseraccess.ini</language>
+		<language tag="ru-RU">language/ru-RU.plg_system_adminuseraccess.ini</language>
+		<language tag="sk-SK">language/sk-SK.plg_system_adminuseraccess.ini</language>
+		<language tag="sl-SI">language/sl-SI.plg_system_adminuseraccess.ini</language>
+		<language tag="sq-AL">language/sq-AL.plg_system_adminuseraccess.ini</language>
+		<language tag="sr-RS">language/sr-RS.plg_system_adminuseraccess.ini</language>
+		<language tag="sv-SV">language/sv-SV.plg_system_adminuseraccess.ini</language>
+		<language tag="sw-TZ">language/sw-TZ.plg_system_adminuseraccess.ini</language>
+		<language tag="th-TH">language/th-TH.plg_system_adminuseraccess.ini</language>
+		<language tag="tl-PH">language/tl-PH.plg_system_adminuseraccess.ini</language>
+		<language tag="tr-TR">language/tr-TR.plg_system_adminuseraccess.ini</language>
+		<language tag="uk-UA">language/uk-UA.plg_system_adminuseraccess.ini</language>
+		<language tag="vi-VN">language/vi-VN.plg_system_adminuseraccess.ini</language>
+		<language tag="yi-IL">language/yi-IL.plg_system_adminuseraccess.ini</language>
+		<language tag="zh-CN">language/zh-CN.plg_system_adminuseraccess.ini</language>
+		<language tag="zh-TW">language/zh-TW.plg_system_adminuseraccess.ini</language>
+	</languages>
+</install>

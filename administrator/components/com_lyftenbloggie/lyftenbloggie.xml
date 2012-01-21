@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0" method="upgrade">
+	<name>LyftenBloggie</name>
+	<creationDate>May 22, 2010</creationDate>
+	<author>Lyften Designs</author>
+	<copyright>(C) 2009-2010 Lyften Designs</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>joomla@lyften.com</authorEmail>
+	<authorUrl>http://www.lyften.com</authorUrl>
+	<version>1.1.0b</version>
+	<description>A blogging system for Joomla. Created by Daniel Stainback</description>
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install/installsql.mysql.utf8.sql</file>
+		</sql>
+	</install>
+
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">install/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+
+	<languages>
+		<language tag="en-GB">languages/site/en-GB.com_lyftenbloggie.ini</language>
+	</languages>
+
+	<files>
+		<filename>admin.zip</filename>
+	</files>
+	
+	<administration>
+
+		<menu img="../administrator/components/com_lyftenbloggie/assets/images/lyftenbloggie.png">LyftenBloggie</menu>
+		
+		<files>
+			<folder>install</folder>
+			<filename>site.zip</filename>
+		</files>
+
+		<languages>
+			<language tag="en-GB">languages/admin/en-GB.com_lyftenbloggie.ini</language>
+		</languages>
+
+	</administration>
+
+	<installfile>install/install.php</installfile>
+	<uninstallfile>install/uninstall.php</uninstallfile>
+
+	<plugins>
+		<plugin name="XMLRPC Plugin" plugin="lyftenbloggie" group="xmlrpc">
+			<files folder="xmlrpc_plugin">
+				<file>lyftenbloggie.php</file>
+				<file>lyftenbloggie.xml</file>
+			</files>
+		</plugin>
+	</plugins>
+
+</install>

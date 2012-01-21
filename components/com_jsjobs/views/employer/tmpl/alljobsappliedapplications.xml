@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="My Jobs - Applied Resume">
+		<message>
+			<![CDATA[Show all of a logined user job applied appliations.]]>
+		</message>
+	</layout>
+	<state>
+		<name>My Jobs - Applied Employment Application</name>
+		<description>Show all applied employment application of a job.</description>
+	</state>
+</metadata>

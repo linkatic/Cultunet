@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: default.xml 8178 2007-07-23 05:39:47Z eddieajau $ -->
+<metadata>
+	<layout title="Blog Layout">
+		<message>
+			<![CDATA[FB CATEGORIES BLOG LAYOUT DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>Blog Layout</name>
+		<description>FB CATEGORIES BLOG LAYOUT DESC</description>
+	</state>
+</metadata>

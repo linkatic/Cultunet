@@ -1,0 +1,32 @@
+M.block_navigation=M.block_navigation||{expandablebranchcount:0,treecollection:[],classes:{},courselimit:20,init:function(Y){M.core_dock.init(Y);if(M.core_dock.genericblock){Y.augment(M.block_navigation.classes.tree,M.core_dock.genericblock);}},init_add_tree:function(Y,id,properties){if(properties.courselimit){this.courselimit=properties.courselimit;}
+M.block_navigation.treecollection[id]=new M.block_navigation.classes.tree(Y,id,properties);}};M.block_navigation.classes.tree=function(Y,id,properties){this.Y=Y;this.id=id;this.key=id;this.errorlog=[];this.ajaxbranches=0;this.expansions=[];this.instance=id;this.cachedcontentnode=null;this.cachedfooter=null;this.position='block';this.skipsetposition=false;this.candock=false;if(properties.expansions){this.expansions=properties.expansions;}
+if(properties.instance){this.instance=properties.instance;}
+if(properties.candock){this.candock=true;}
+var node=this.Y.one('#inst'+this.id);if(node===null){return;}
+node.all('.tree_item.branch').on('click',this.toggleexpansion,this);for(var i in this.expansions){var expandablenode=Y.one('#'+this.expansions[i].id);if(expandablenode){expandablenode.on('ajaxload|click',this.init_load_ajax,this,this.expansions[i]);M.block_navigation.expandablebranchcount++;}else if(M.cfg.debug){Y.one(document.body).append(Y.Node.create('<div class="notification" style="font-size:6pt;">Expandable node within navigation was missing [#'+this.expansions[i].id+']</div>'));}else{}}
+if(node.hasClass('block_js_expansion')){node.on('mouseover',function(e){this.toggleClass('mouseover');},node);node.on('mouseout',function(e){this.toggleClass('mouseover');},node);}
+if(this.candock){this.init(Y,node);}};M.block_navigation.classes.tree.prototype.init_load_ajax=function(e,branch){e.stopPropagation();if(e.target.get('nodeName').toUpperCase()!='P'){return true;}
+var cfginstance='',Y=this.Y;if(this.instance!=null){cfginstance='&instance='+this.instance}
+Y.io(M.cfg.wwwroot+'/lib/ajax/getnavbranch.php',{method:'POST',data:'elementid='+branch.id+'&id='+branch.branchid+'&type='+branch.type+'&sesskey='+M.cfg.sesskey+cfginstance,on:{complete:this.load_ajax,success:function(){Y.detach('click',this.init_load_ajax,e.target);}},context:this,arguments:{target:e.target}});return true;};M.block_navigation.classes.tree.prototype.load_ajax=function(tid,outcome,args){try{var object=this.Y.JSON.parse(outcome.responseText);if(this.add_branch(object,args.target.ancestor('li'),1)){if(this.candock){M.core_dock.resize();}
+return true;}}catch(e){}
+args.target.replaceClass('branch','emptybranch');return true;};M.block_navigation.classes.tree.prototype.add_branch=function(branchobj,target,depth){var branch=new M.block_navigation.classes.branch(this,branchobj);var childrenul=false,Y=this.Y;if(depth===1){if(!branch.children){return false;}
+childrenul=Y.Node.create('<ul></ul>');target.appendChild(childrenul);}else{childrenul=branch.inject_into_dom(target);}
+if(childrenul){var count=0;for(var i in branch.children){if(branch.children[i].type==20){count++;}
+if(typeof(branch.children[i])=='object'){this.add_branch(branch.children[i],childrenul,depth+1);}}
+if(branch.type==10&&count>=M.block_navigation.courselimit){var properties=Array();properties['name']=M.str.moodle.viewallcourses;properties['title']=M.str.moodle.viewallcourses;properties['link']=M.cfg.wwwroot+'/course/category.php?id='+branch.key;properties['haschildren']=false;properties['icon']={'pix':"i/navigationitem",'component':'moodle'};this.add_branch(properties,childrenul,depth+1);}}
+return true;};M.block_navigation.classes.tree.prototype.toggleexpansion=function(e){if(e.target.get('nodeName').toUpperCase()=='A'){e.stopPropagation();return;}
+var target=e.target;if(!target.test('li')){target=target.ancestor('li')}
+if(target&&!target.hasClass('depth_1')){target.toggleClass('collapsed');}
+if(this.candock){M.core_dock.resize();}};M.block_navigation.classes.branch=function(tree,obj){this.tree=tree;this.name=null;this.title=null;this.classname=null;this.id=null;this.key=null;this.type=null;this.link=null;this.icon=null;this.expandable=null;this.expansionceiling=null;this.hidden=false;this.haschildren=false;this.children=false;if(obj!==null){this.construct_from_json(obj);}};M.block_navigation.classes.branch.prototype.construct_from_json=function(obj){for(var i in obj){this[i]=obj[i];}
+if(this.children&&this.children.length>0){this.haschildren=true;}else{this.children=[];}
+if(this.id&&this.id.match(/^expandable_branch_\d+$/)){M.block_navigation.expandablebranchcount++;this.id='expandable_branch_'+M.block_navigation.expandablebranchcount;}};M.block_navigation.classes.branch.prototype.inject_into_dom=function(element){var Y=this.tree.Y;var isbranch=((this.expandable!==null||this.haschildren)&&this.expansionceiling===null);var branchli=Y.Node.create('<li></li>');var branchp=Y.Node.create('<p class="tree_item"></p>');if(isbranch){branchli.addClass('collapsed');branchli.addClass('contains_branch');branchp.addClass('branch');branchp.on('click',this.tree.toggleexpansion,this.tree);if(this.expandable){branchp.on('ajaxload|click',this.tree.init_load_ajax,this.tree,{branchid:this.key,id:this.id,type:this.type});}}
+if(this.myclass!==null){branchp.addClass(this.myclass);}
+if(this.id!==null){branchp.setAttribute('id',this.id);}
+var branchicon=false;if(this.icon!=null&&(!isbranch||this.type==40)){branchicon=Y.Node.create('<img alt="" />');branchicon.setAttribute('src',M.util.image_url(this.icon.pix,this.icon.component));branchli.addClass('item_with_icon');if(this.icon.alt){branchicon.setAttribute('alt',this.icon.alt);}
+if(this.icon.title){branchicon.setAttribute('alt',this.icon.title);}
+if(this.icon.classes){for(var i in this.icon.classes){branchicon.addClass(this.icon.classes[i]);}}}
+if(this.link===null){if(branchicon){branchp.appendChild(branchicon);}
+branchp.append(this.name.replace(/\n/g,'<br />'));}else{var branchlink=Y.Node.create('<a title="'+this.title+'" href="'+this.link+'"></a>');if(branchicon){branchlink.appendChild(branchicon);}
+branchlink.append(this.name.replace(/\n/g,'<br />'));if(this.hidden){branchlink.addClass('dimmed');}
+branchp.appendChild(branchlink);}
+branchli.appendChild(branchp);if(this.haschildren){var childrenul=Y.Node.create('<ul></ul>');branchli.appendChild(childrenul);element.appendChild(branchli);return childrenul}else{element.appendChild(branchli);return false;}};YUI.add('block_navigation',function(Y){M.block_navigation.init(Y);},'0.0.0.1',M.yui.loader.modules.block_navigation.requires);

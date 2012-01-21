@@ -1,0 +1,85 @@
+/* Header icons */
+.icon-48-lyftenbloggie		{ background-image: url(../images/icon-48-lyftenbloggie.png);}
+.icon-48-lbentry			{ background-image: url(../images/icon-48-entry.png); }
+.icon-48-lbentries			{ background-image: url(../images/icon-48-entries.png); }
+.icon-48-lbgroups			{ background-image: url(../images/icon-48-groups.png); }
+.icon-48-lbcategories		{ background-image: url(../images/icon-48-categories.png); }
+.icon-48-lbcategory			{ background-image: url(../images/icon-48-category.png); }
+.icon-48-lbcomments			{ background-image: url(../images/icon-48-comments.png); }
+.icon-48-lbcomment			{ background-image: url(../images/icon-48-comment.png); }
+.icon-48-lbarchive			{ background-image: url(../images/icon-48-archive.png); }
+.icon-48-lbtag				{ background-image: url(../images/icon-48-tag.png); }
+.icon-48-lbtags				{ background-image: url(../images/icon-48-tags.png); }
+.icon-48-lbconfig			{ background-image: url(../images/icon-48-config.png); }
+.icon-48-lbbookmarks		{ background-image: url(../images/icon-48-bookmarks.png); }
+.icon-48-lbsideitems		{ background-image: url(../images/icon-48-sideitems.png); }
+.icon-48-lbsideitem			{ background-image: url(../images/icon-48-sideitem.png); }
+.icon-48-lbprofiles			{ background-image: url(../images/icon-48-profiles.png); }
+.icon-48-lbprofile			{ background-image: url(../images/icon-48-profile.png); }
+
+/* General */
+h2.settingstitle {font-size: 18px;font-weight: bold;margin: 0;padding: 0 5px 5px;color: #0B55C4;}
+#update-nag {background-color: #fffeeb;border-color: #ccc;color: #555;line-height: 29px;font-size: 12px;text-align: center;border-width: 1px 0;border-style: solid none;margin:0 0 10px 0;}
+
+/* Rating Star */
+.rating_bar { width: 85px; background: url(../images/star-gray.gif) 0 0 repeat-x; float:left; display:block;}
+.rating_bar div {height: 17px;background: url(../images/star-blue.gif) 0 0 repeat-x;display:block;float:left;}
+
+/* Dashboard General Stats */
+#dash_generalstats .inside {font-size: 12px;margin:10px;}
+#dash_generalstats .table {background: #f9f9f9;border-top: #ececec 1px solid;border-bottom: #ececec 1px solid;margin: 0 -9px 10px;padding: 0 10px;}
+#dash_generalstats table {width: 100%;}
+#dash_generalstats table  td {border-top: #ececec 1px solid;padding: 3px 0;white-space: nowrap;}
+#dash_generalstats table tr.first td {border-top: none;}
+#dash_generalstats td.b {padding-right: 6px;text-align: right;font-family: Georgia, "Times New Roman", "Bitstream Charter", Times, serif;font-size: 14px;}
+#dash_generalstats td.b a {font-size: 18px;}
+#dash_generalstats td.b a:hover {color: #d54e21;}
+#dash_generalstats .t {font-size: 12px;padding-right: 12px;padding-top: 6px;color: #777;}
+#dash_generalstats td.first,#dash_generalstats td.last {width: 1px;}
+#dash_generalstats .reports {color: red;}
+#dash_generalstats .spam {color: black;}
+#dash_generalstats .waiting {color: #C0AC00;}
+#dash_generalstats .pending {color: orange;}
+#dash_generalstats .approved {color: green;}
+
+
+/* Rating Bar */
+.rating-bar-container {border: 1px solid #E7E6E1;height: 10px;width: 60px;margin: 2px 2px;display: block;}
+.rating-bar {background: url(../images/rate-bar.gif) repeat-x;height: 10px;display: block;}
+
+/* Helptip CSS */
+.helpTip {text-align: left;font: normal 11px Tahoma,  sans-serif;color: #000;width: 275px;}
+.helptp {cursor: help;color:#0B55C4;}
+
+/** Entery Tag CSS **/
+.checklist li {background: none; padding-left: 0;}
+.checklist {	border: 1px solid #ccc;list-style: none;height: 10em;overflow: auto;width: 20em;}
+.checklist, .checklist li {margin: 0; padding: 0;}
+.checklist label {display: block; padding: 0 0.2em 0 25px; text-indent: -25px;}
+.checklist label:hover, .checklist label.hover { background: #777; color: #fff;}
+* html .checklist label {height: 1%; }
+
+/** Config table **/
+table.configtable{/*border: 1px solid #A0A29F;*/font-family: "Trebuchet MS", Verdana;font-size: 13px;}
+table.configtable th, .configlabel {font-family: "Times New Roman", Times, serif;color:#333333;background: url(../images/table_bg.gif);border-bottom:1px solid #999999;border-top:1px solid #e7e7e7;padding: 4px;height: 30px;vertical-align: middle;}
+table.configtable tr {text-indent: 0px;background-color: #f8f8f8;}
+table.configtable th{text-indent: 0px;font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;text-align: left;height: 30px;vertical-align: middle;}
+table.configtable td{height: 26px;padding: 2px 4px;border-bottom: 1px solid #DFDFD0;font-family: Verdana, Arial, Helvetica, sans-serif;color: #666666;font-size: 11px;vertical-align: middle;text-indent: 0px;}
+table.configtable .row1{background-color: #FFFFFF;}
+table.configtable .row2 td{background-color: #FFFFFF;border-bottom:none;}
+table.configtable td.title {width:18%;}
+table.configtable td div input{margin-top:10px;}
+
+/** Menu table **/
+.sidemenu-box {background-color:#F7F7F7;border: 1px solid #CFCFCF;padding-bottom: 10px;}
+.title-box {font-size: 18px;font-weight: bold;margin: 0;padding: 0 5px;color: #0B55C4;margin-bottom: 5px;}
+.sidemenu-box ul {padding-left: 14px;padding-top: 2px;margin-bottom: 2px;margin-top: 0px;}
+.title-menugroup {font-size: 10px;font-weight: bold;text-align: center;}
+.title-menu {margin: 0;border: 1px solid #ccc;padding: 3px;text-indent: 0px;margin-bottom: 2px;color: #666;cursor: pointer;font-size: 10px;background-color: #EBEBEB;}
+.title-submenu {margin-left: 10px;padding-left: 0px;padding-bottom: 2px;}
+.title-submenu ul {margin-left: 3px;}
+.title-submenu li a {font-family: 'Trebuchet MS', 'Lucida Grande',  Verdana, Lucida, Geneva, Helvetica,  Arial, sans-serif;font-size: 11px;font-weight: bold;display: block;cursor: pointer;padding-top: 0px !important;padding-top: 5px;height: 20px;}
+.title-submenu a:hover {color: #0B55C4;}
+
+/** General CSS **/
+.update{color:#FFFFFF;text-align:center;}

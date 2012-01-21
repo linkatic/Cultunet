@@ -1,0 +1,5 @@
+/* Grey Layout */
+#lyftenbloggie .blogcontent .section{border-bottom:solid 1px #434343;}
+#lyftenbloggie .blogcontent .entry-info{background:#545454;}
+#lyftenbloggie .blogcontent .entry-title a, #lyftenbloggie .blogcontent .entry-title a:hover{color:#FFFFFF;}
+#lyftenbloggie .blogcontent .entry-small, #lyftenbloggie .blogcontent .entry-small a{color:#FFFFFF;}

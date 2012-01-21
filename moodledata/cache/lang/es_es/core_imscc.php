@@ -1,0 +1,15 @@
+<?php $this->cache['es_es']['core_imscc'] = array (
+  'cc_import_req_dom' => 'ERROR: La importación Common Cartridge requiere extensión DOM.',
+  'cc_import_req_libxml' => 'ERROR: La importación Common Cartridge requiere extensión LIBXML.',
+  'cc_import_req_libxmlminversion' => 'ERROR: La importación Common Cartridge requiere versión LIBXML 2.6.30 o posterior.',
+  'cc_import_req_php5' => 'ERROR: La importación Common Cartridge requiere PHP 5 o superior.',
+  'cc_import_req_xsl' => 'ERROR: La importación Common Cartridge requiere XSL.',
+  'cc2moodle_checking_schema' => 'Formato CC. Comprobando esquema...',
+  'cc2moodle_invalid_schema' => 'El esquema no es válido',
+  'cc2moodle_manifest_dont_load' => 'No se puede cargar el manifiesto XML',
+  'cc2moodle_req_auth' => 'ERROR: El paquete Common Cartridge requiere autorización.',
+  'cc2moodle_valid_schema' => 'Esquema válido',
+  'enable_cc_import' => 'Habilitar importación CC',
+  'enable_cc_import_description' => 'Esta opción habilita la importación de paquetes Common Cartridge (MS-CC) utilizando la funcionalidad de restauración estándar. Advierta que requiere  que estén instaladas en el servidor las extensiones PHP5, DOM, XSL y LIBXML (2.3.60 o posterior)',
+  'checkingforimscc' => 'Comprobado IMS-CC...',
+);

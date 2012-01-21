@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="LYFTENBLOGGIE MANAGE MY DETAILS">
+		<message>
+			<![CDATA[LYFTENBLOGGIE MANAGE MY DETAILS TIP]]>
+		</message>
+	</layout>
+	<state>
+		<name>LYFTENBLOGGIE MANAGE MY DETAILS</name>
+		<description>LYFTENBLOGGIE MANAGE MY DETAILS DESC</description>
+		<params>
+		</params>
+	</state>
+</metadata>

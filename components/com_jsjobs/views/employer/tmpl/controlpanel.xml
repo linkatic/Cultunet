@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Employer Control Panel">
+		<message>
+			<![CDATA[Employer control panel.]]>
+		</message>
+	</layout>
+	<state>
+		<name>Employer Control Panel</name>
+		<description>Employer Control Panel.</description>
+	</state>
+</metadata>

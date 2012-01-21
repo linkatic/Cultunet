@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>JS Top Jobs</name>
+	<author>Joom Sky</author>
+	<creationDate>Dec 10, 2009</creationDate>
+	<copyright>Copyright (C) 2009. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>ahmad@joomsky.com</authorEmail>
+	<authorUrl>www.joomsky.com</authorUrl>
+	<version>1.0</version>
+	<description>Usage {jstopjobs}. Show most viewed jobs from JS Jobs database. </description>
+	<params>
+		<param name="noofjobs" type="text" default="7" label="Display number of jobs" description="Number of jobs to show" />
+		<param name="noofcols" type="text" default="3" label="Number of Column per Row" description="Number of columns per row" />
+		<param name="theme" type="list" default="2" label="Theme" description="Select theme of this module">
+			<option value="1">JS Jobs Theme</option>
+			<option value="2">Template Theme</option>
+			<option value="0">No Theme</option>
+		</param>
+		<param name="title" type="text" default="Top Jobs" label="Title" description="Title" />
+		<param name="shtitle" type="radio" default="1" label="Title" description="Show/Hide the title">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="company" type="radio" default="1" label="Company" description="Show/Hide the company">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="category" type="radio" default="1" label="Category" description="Show/Hide the category">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="jobtype" type="radio" default="1" label="Job Type" description="Show/Hide the job type">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="posteddate" type="radio" default="1" label="Posted" description="Show/Hide the posted date">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="separator" type="radio" default="1" label="Separator" description="Show/Hide the line separator">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+
+	</params>
+	<files>
+		<filename plugin="jstopjobs">jstopjobs.php</filename>
+	</files>
+</install>

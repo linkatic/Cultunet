@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="LYFTENBLOGGIE MAIN">
+		<message>
+			<![CDATA[LYFTENBLOGGIE MAIN TIP]]>
+		</message>
+	</layout>
+	<state>
+		<name>LYFTENBLOGGIE MAIN</name>
+		<description>LYFTENBLOGGIE MAIN DESC</description>
+		<url addpath="/administrator/components/com_lyftenbloggie/elements">
+			<param name="category" type="categories" default="0" label="SELECT CATEGORY" description="SELECT CATEGORY DESC" />
+		</url>
+		<params>
+			<param name="display_num" type="list" default="10" label="NUM ENTRIES" description="NUMBER OF ENTRIES TO DISPLAY">
+				<option value="5">NUMBER 5</option>
+				<option value="10">NUMBER 10</option>
+				<option value="15">NUMBER 15</option>
+				<option value="20">NUMBER 20</option>
+				<option value="25">NUMBER 25</option>
+				<option value="30">NUMBER 30</option>
+				<option value="50">NUMBER 50</option>
+				<option value="100">NUMBER 100</option>
+				<option value="0">All</option>
+			</param>
+			<param name="page_keywords" type="textarea" default="" label="Keywords" rows="3" cols="30" description="" />
+		</params>
+	</state>
+</metadata>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="adapter" version="1.5.0">
+	<name>K2</name>
+    <component>com_k2</component>
+	<author>Joomila</author>
+  	<version>1.0</version>
+	<creationDate>October 2010</creationDate>
+	<author>joomila - NOIX</author>
+	<authorEmail>joomla@noix.com.br</authorEmail>
+	<authorUrl>http://www.noix.com.br</authorUrl>
+	<copyright>(C) 2009 All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<description>Adapter k2 Components</description>
+	<files>
+		<filename adapter="k2">k2.xml</filename>
+		<filename type="controller">k2.php</filename>
+		<filename type="plugin" name="PluginK2">plugin.php</filename>		
+		<filename>views/admin/tmpl/default.php</filename>
+		<filename>views/admin/view.html.php</filename>
+	</files>
+    <plugin>
+        <admin>admin</admin>
+    </plugin>
+	<views>
+		<admin application="administrator" viewname="K2ViewAdmin" title="Administrator">
+			<tasks>
+				<task name="Add">add</task>
+                <task name="Save">save</task>
+                <task name="Save and New">saveAndNew</task>
+                <task name="Apply">apply</task>
+                <task name="Edit">edit</task>
+                <task name="Cancel">cancel</task>
+                <task name="Featured">featured</task>
+				<task name="Publish">publish</task>
+                <task name="Unpublish">unpublish</task>
+                <task name="Trash">trash</task>
+             </tasks>
+            <save>
+                <aco_section type="text">com_k2</aco_section>
+                <aco_value type="text">category</aco_value>
+                <axo_section type="var">catid</axo_section>
+                <axo_value type="var">tasks</axo_value>
+            </save>
+            <load>
+                <field>axo_value</field>
+                <aco_section type="text">com_k2</aco_section>
+                <aco_value type="text">category</aco_value>
+                <axo_section type="var">catid</axo_section>
+                <axo_value></axo_value>
+            </load>
+        </admin>
+	</views>
+</install>

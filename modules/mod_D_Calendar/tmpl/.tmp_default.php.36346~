@@ -1,0 +1,60 @@
+<?php defined('_JEXEC') or die('Restricted access'); // no direct access ?>
+<?php 
+/**
+Copyright 2010 - Kastaniotis Dimitris - D-Extensions.com
+license GNU/GPL http://www.gnu.org/copyleft/gpl.html
+
+
+This file is part of D Calendar.
+
+D Calendar is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+D Calendar is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with D Calendar.  If not, see <http://www.gnu.org/licenses/>.
+
+**/
+
+$path = JURI::root(); 
+JHTML::_('behavior.tooltip');
+?>
+
+<?php
+$doc =& JFactory::getDocument();
+
+$doc->addScript($path . "modules/mod_D_Calendar/D_Functionality.js");
+
+$doc->addScript($path . "modules/mod_D_Calendar/D_Utilities.js");
+$doc->addScript($path . "modules/mod_D_Calendar/D_Today.js");
+
+$doc->addScript($path . "modules/mod_D_Calendar/D_Event.js");
+$doc->addScript($path . "modules/mod_D_Calendar/D_Day.js");
+$doc->addScript($path . "modules/mod_D_Calendar/D_Week.js");
+$doc->addScript($path . "modules/mod_D_Calendar/D_Month.js");
+$doc->addScript($path . "modules/mod_D_Calendar/D_Calendar.js");
+
+$doc->addScript($path . "modules/mod_D_Calendar/D_API_Methods.js");
+$doc->addScript($path . "modules/mod_D_Calendar/D_API_Events.js");
+
+$doc->addStyleDeclaration($D_Calendar_Style);
+ ?>
+<div id="outer">
+		<div id='calendar'></div>
+		
+</div>
+		
+		<script  type='text/javascript' language='javascript'>
+			//alert(<?php echo $D_Calendar_Mode; ?>);
+			window.addEvent('domready', function(){ createCalendar('<?php echo $D_Calendar_Mode; ?>', '<?php echo $D_Calendar_AltLocation; ?>', '<?php echo $D_Calendar_Tooltips; ?>'); });
+		
+			window.addEvent('domready', function(){ loadCalendar(); });
+			
+		</script>
+		

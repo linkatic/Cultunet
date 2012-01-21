@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="user">
+	<name>User - noixACL</name>
+	<author>NOIX</author>
+	<creationDate>January 2009</creationDate>
+	<copyright>Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>joomla@noix.com.br</authorEmail>
+	<authorUrl>www.noix.com.br</authorUrl>
+	<version>2.0.10</version>
+	<description>multigroup usrers plugin</description>
+	<files>
+		<filename plugin="noixacl">noixacl.php</filename>
+	</files>
+	<params/>
+</install>

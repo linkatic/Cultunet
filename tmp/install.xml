@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<install version="1.5" method="upgrade" client="site" type="language">
+    <name>Português (pt-PT)</name>
+    <tag>pt-PT</tag>
+    <version>Site.1.5.20</version>
+    <creationDate>2010-07-18</creationDate>
+    <author>Comunidade Portuguesa JoomlaPT!</author>
+    <authoremail>geral@joomlapt.com</authoremail>
+    <authorurl>www.joomlapt.com</authorurl>
+    <copyright>Copyright(C) 2005-2010 Comunidade JoomlaPT! Todos os direitos reservados.</copyright>
+    <license>GNU/GPL http://www.gnu.org/licenses/gpl-2.0.html</license>
+    <description>Pacote de idioma Português (Portugal) para o interface do site do CMS Joomla.</description>
+    <files>
+		<filename>pt-PT.com_banners.ini</filename>
+		<filename>pt-PT.com_contact.ini</filename>
+		<filename>pt-PT.com_content.ini</filename>
+		<filename>pt-PT.com_frontpage.ini</filename>
+		<filename>pt-PT.com_mailto.ini</filename>
+		<filename>pt-PT.com_media.ini</filename>
+		<filename>pt-PT.com_messages.ini</filename>
+		<filename>pt-PT.com_newsfeeds.ini</filename>
+		<filename>pt-PT.com_poll.ini</filename>
+		<filename>pt-PT.com_search.ini</filename>
+		<filename>pt-PT.com_user.ini</filename>
+		<filename>pt-PT.com_weblinks.ini</filename>
+		<filename>pt-PT.com_wrapper.ini</filename>
+		<filename>pt-PT.ini</filename>
+		<filename>pt-PT.mod_archive.ini</filename>
+		<filename>pt-PT.mod_banners.ini</filename>
+		<filename>pt-PT.mod_breadcrumbs.ini</filename>
+		<filename>pt-PT.mod_custom.ini</filename>
+		<filename>pt-PT.mod_feed.ini</filename>
+		<filename>pt-PT.mod_footer.ini</filename>
+		<filename>pt-PT.mod_latestnews.ini</filename>
+		<filename>pt-PT.mod_login.ini</filename>
+		<filename>pt-PT.mod_mainmenu.ini</filename>
+		<filename>pt-PT.mod_mostread.ini</filename>
+		<filename>pt-PT.mod_newsflash.ini</filename>
+		<filename>pt-PT.mod_online.ini</filename>
+		<filename>pt-PT.mod_poll.ini</filename>
+		<filename>pt-PT.mod_random_image.ini</filename>
+		<filename>pt-PT.mod_related_items.ini</filename>
+		<filename>pt-PT.mod_search.ini</filename>
+		<filename>pt-PT.mod_sections.ini</filename>
+		<filename>pt-PT.mod_stats.ini</filename>
+		<filename>pt-PT.mod_syndicate.ini</filename>
+		<filename>pt-PT.mod_whosonline.ini</filename>
+		<filename>pt-PT.mod_wrapper.ini</filename>
+		<filename>pt-PT.plg_content_vote.ini</filename>
+		<filename>pt-PT.plg_content_pagebreak.ini</filename>
+		<filename>pt-PT.plg_search_categories.ini</filename>
+		<filename>pt-PT.plg_search_contacts.ini</filename>
+		<filename>pt-PT.plg_search_content.ini</filename>
+		<filename>pt-PT.plg_search_newsfeeds.ini</filename>
+		<filename>pt-PT.plg_search_sections.ini</filename>
+		<filename>pt-PT.plg_search_weblinks.ini</filename>
+		<filename>pt-PT.plg_system_debug.ini</filename>
+		<filename>pt-PT.tpl_beez.ini</filename>
+		<filename>pt-PT.tpl_ja_purity.ini</filename>
+		<filename>pt-PT.tpl_rhuk_milkyway.ini</filename>
+		<filename file="meta">pt-PT.xml</filename>
+		<filename file="meta">pt-PT.ignore.php</filename>
+		<filename file="meta">index.html</filename>	
+	</files>
+	<params />
+</install>

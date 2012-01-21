@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>FlippingBook</name>
+	<creationDate>March 2010</creationDate>
+	<author>Mediaparts Interactive</author>
+	<authorEmail>support@page-flip-tools.com</authorEmail>
+	<authorUrl>www.page-flip-tools.com</authorUrl>
+	<copyright>Copyright Mediaparts Interactive</copyright>
+	<license>Commercial License</license>
+	<version>1.5.10</version>
+	<description>FlippingBook Gallery Component. Copyright Mediaparts Interactive. All rights reserved. Released under Commercial License. www.page-flip-tools.com</description>
+	<installfile>install.eventlist.php</installfile>
+	<uninstallfile>uninstall.eventlist.php</uninstallfile>
+	<install>
+		<sql folder="admin">
+			<file driver="mysql" charset="utf8">install.mysql.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql folder="admin">
+			<file driver="mysql" charset="utf8">uninstall.mysql.sql</file>
+		</sql>
+	</uninstall>
+	<files folder="frontend">
+		<filename>css/black.css</filename>
+		<filename>css/clear.css</filename>
+		<filename>css/white.css</filename>
+		<filename>images/book_list_bg.png</filename>
+		<filename>images/book_list_bg_black.png</filename>
+		<filename>images/book_list_bg_black_r.png</filename>
+		<filename>images/book_list_bg_black_l.png</filename>
+		<filename>images/close.png</filename>
+		<filename>images/print.png</filename>
+		<filename>js/ajax-zoom.css</filename>
+		<filename>js/ajax-zoom.js</filename>
+		<filename>js/expressInstall.swf</filename>
+		<filename>js/flippingbook.js</filename>
+		<filename>js/jquery-1.4.2.min.js</filename>
+		<filename>js/swfobject.js</filename>
+		<filename>models/book.php</filename>
+		<filename>models/categories.php</filename>
+		<filename>models/category.php</filename>
+		<filename>navigationbars/navigation.swf</filename>
+		<filename>navigationbars/navigation_round.swf</filename>
+		<filename>samples/abstract_background_blue.jpg</filename>
+		<filename>samples/abstract_background_green.jpg</filename>
+		<filename>samples/abstract_background_orange.jpg</filename>
+		<filename>samples/abstract_background_red.jpg</filename>
+		<filename>samples/abstract_background_yellow.jpg</filename>
+		<filename>samples/blank.png</filename>
+		<filename>samples/book_preview.png</filename>
+		<filename>samples/category_preview.png</filename>
+		<filename>samples/my-book_01.swf</filename>
+		<filename>samples/my-book_02.jpg</filename>
+		<filename>samples/my-book_03.jpg</filename>
+		<filename>samples/my-book_04.jpg</filename>
+		<filename>samples/my-book_05.jpg</filename>
+		<filename>samples/my-book_06.jpg</filename>
+		<filename>samples/my-book_07.jpg</filename>
+		<filename>samples/my-book_08.jpg</filename>
+		<filename>samples/my-book_zoom_02.jpg</filename>
+		<filename>samples/my-book_zoom_03.jpg</filename>
+		<filename>samples/my-book_zoom_04.jpg</filename>
+		<filename>samples/my-book_zoom_05.jpg</filename>
+		<filename>samples/my-book_zoom_06.jpg</filename>
+		<filename>samples/my-book_zoom_07.jpg</filename>
+		<filename>samples/my-book_zoom_08.jpg</filename>
+		<filename>sounds/glossy_magazine.mp3</filename>
+		<filename>sounds/newspaper.mp3</filename>
+		<filename>sounds/photo_album.mp3</filename>
+		<filename>views/book/index.html</filename>
+		<filename>views/book/metadata.xml</filename>
+		<filename>views/book/view.html.php</filename>
+		<filename>views/book/tmpl/default.php</filename>
+		<filename>views/book/tmpl/default.xml</filename>
+		<filename>views/book/tmpl/index.html</filename>
+		<filename>views/categories/index.html</filename>
+		<filename>views/categories/metadata.xml</filename>
+		<filename>views/categories/view.html.php</filename>
+		<filename>views/categories/tmpl/default.php</filename>
+		<filename>views/categories/tmpl/default.xml</filename>
+		<filename>views/categories/tmpl/index.html</filename>
+		<filename>views/categories/tmpl/list.php</filename>
+		<filename>views/categories/tmpl/list.xml</filename>
+		<filename>views/categories/tmpl/thumbnails.php</filename>
+		<filename>views/categories/tmpl/thumbnails.xml</filename>
+		<filename>views/category/index.html</filename>
+		<filename>views/category/metadata.xml</filename>
+		<filename>views/category/view.html.php</filename>
+		<filename>views/category/tmpl/default.php</filename>
+		<filename>views/category/tmpl/default.xml</filename>
+		<filename>views/category/tmpl/index.html</filename>
+		<filename>views/category/tmpl/list.php</filename>
+		<filename>views/category/tmpl/list.xml</filename>
+		<filename>views/category/tmpl/thumbnails.php</filename>
+		<filename>views/category/tmpl/thumbnails.xml</filename>
+		<filename>controller.php</filename>
+		<filename>flippingbook.php</filename>
+		<filename>flippingbook.swf</filename>
+		<filename>index.html</filename>
+		<filename>metadata.xml</filename>
+		<filename>router.php</filename>
+	</files>
+
+	<administration>
+		<menu img="components/com_flippingbook/images/icon_fb.png">FlippingBook</menu>
+		<submenu>
+			<menu link="option=com_flippingbook&amp;task=configuration" img="components/com_flippingbook/images/icon_config.png">Configuration</menu>
+			<menu link="option=com_flippingbook&amp;task=category_manager" img="components/com_flippingbook/images/icon_cm.png">Manage Categories</menu>
+			<menu link="option=com_flippingbook&amp;task=book_manager" img="components/com_flippingbook/images/icon_bm.png">Manage Books</menu>
+			<menu link="option=com_flippingbook&amp;task=page_manager" img="components/com_flippingbook/images/icon_pm.png">Manage Pages</menu>
+			<menu link="option=com_flippingbook&amp;task=batch_add_pages" img="components/com_flippingbook/images/icon_batch.png">Batch Add Pages</menu>
+			<menu link="option=com_flippingbook&amp;task=file_manager" img="components/com_flippingbook/images/icon_fm.png">Manage Files</menu>
+		</submenu>
+		<files folder="administrator">
+			<filename>elements/book.php</filename>
+			<filename>elements/category.php</filename>
+			<filename>elements/index.html</filename>
+			<filename>help/help.html</filename>
+			<filename>images/batch_help.gif</filename>
+			<filename>images/book_lists.png</filename>
+			<filename>images/icon_batch.png</filename>
+			<filename>images/icon_bm.png</filename>
+			<filename>images/icon_config.png</filename>
+			<filename>images/icon_colors.png</filename>
+			<filename>images/icon_fb.png</filename>
+			<filename>images/icon_cm.png</filename>
+			<filename>images/icon_fm.png</filename>
+			<filename>images/icon_pm.png</filename>
+			<filename>images/icon_preview.png</filename>
+			<filename>images/m_batch.png</filename>
+			<filename>images/m_books.png</filename>
+			<filename>images/m_categories.png</filename>
+			<filename>images/m_config.png</filename>
+			<filename>images/m_filemanager.png</filename>
+			<filename>images/m_pages.png</filename>
+			<filename>tables/flippingbook.php</filename>
+			<filename>tables/flippingcategory.php</filename>
+			<filename>tables/flippingpage.php</filename>
+			<filename>tables/index.html</filename>
+			<filename>views/batch_add_pages.php</filename>
+			<filename>views/book_manager.php</filename>
+			<filename>views/category_manager.php</filename>
+			<filename>views/configuration.php</filename>
+			<filename>views/file_manager.php</filename>
+			<filename>views/index.html</filename>
+			<filename>views/main.php</filename>
+			<filename>views/page_manager.php</filename>
+			<filename>admin.flippingbook.php</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>install.eventlist.php</filename>
+			<filename>install.mysql.sql</filename>
+			<filename>toolbar.flippingbook.php</filename>
+			<filename>toolbar.flippingbook.html.php</filename>
+			<filename>uninstall.eventlist.php</filename>
+			<filename>uninstall.mysql.sql</filename>
+			<filename>updatescript.php</filename>
+		</files>
+
+		<languages folder="administrator">
+			<language tag="en-GB">language/en-GB/en-GB.com_flippingbook.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_flippingbook.menu.ini</language>
+		</languages>
+	</administration>
+</install>

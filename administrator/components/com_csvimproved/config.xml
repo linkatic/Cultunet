@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params>
+		<param name="csvi_license_key" type="text" menu="hide" size="80" default="" label="CSVI_LICENSE_KEY" description="CSVI_LICENSE_KEY_TIP" />
+	</params>
+</config>

@@ -1,0 +1,66 @@
+<install type="component" version="1.5.0" method="upgrade">
+	<name>JCE</name>
+	<author>Ryan Demmer</author>
+	<creationDate>10 November 2010</creationDate>
+	<copyright>(C) 2005 - 2010 Ryan Demmer. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@joomlacontenteditor.net</authorEmail>
+	<authorUrl>www.joomlacontenteditor.net</authorUrl>
+	<version>1.5.7.6</version>
+    <description>JCE ADMIN DESC</description>
+	<installfile>install.php</installfile>
+  	<uninstallfile>install.php</uninstallfile>
+	<files folder="components/com_jce">
+		<folder>controller</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>views</folder>
+		<file>index.html</file>
+		<file>jce.php</file>	
+		<file>popup.php</file>		
+	</files>
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.com_jce.ini</language>
+		<language tag="en-GB">en-GB.com_jce.xml</language>
+		<language tag="en-GB">en-GB.com_jce_advlink.ini</language>
+		<language tag="en-GB">en-GB.com_jce_browser.ini</language>
+		<language tag="en-GB">en-GB.com_jce_imgmanager.ini</language>
+		<language tag="en-GB">en-GB.com_jce_media.ini</language>
+		<language tag="en-GB">en-GB.com_jce_paste.ini</language>
+		<language tag="en-GB">en-GB.com_jce_spellchecker.ini</language>
+	</languages>
+    <administration>
+        <menu img="components/com_jce/img/logo.png" link="option=com_jce">JCE</menu>
+		<submenu>
+			<menu img="templates/khepri/images/menu/icon-16-cpanel.png" link="option=com_jce">JCE MENU CPANEL</menu>
+			<menu img="templates/khepri/images/menu/icon-16-config.png" link="option=com_jce&amp;type=config">JCE MENU CONFIG</menu>
+			<menu img="templates/khepri/images/menu/icon-16-user.png" link="option=com_jce&amp;type=group">JCE MENU GROUPS</menu>
+			<menu img="templates/khepri/images/menu/icon-16-plugin.png" link="option=com_jce&amp;type=plugin">JCE MENU PLUGINS</menu>
+			<menu img="templates/khepri/images/menu/icon-16-install.png" link="option=com_jce&amp;type=install">JCE MENU INSTALL</menu>
+		</submenu>
+		<files folder="administrator/components/com_jce">
+			<folder>config</folder>
+			<folder>controller</folder>
+			<folder>cpanel</folder>
+			<folder>css</folder>
+			<folder>elements</folder>
+			<folder>groups</folder>
+			<folder>img</folder>
+			<folder>installer</folder>
+			<folder>js</folder>
+			<folder>plugins</folder>
+			<file>editor.php</file>
+			<file>helper.php</file>
+			<file>index.html</file>
+			<file>install.php</file>
+			<file>jce.php</file>
+			<file>licence.txt</file>
+			<file>updater.php</file>
+		</files>
+		<languages folder="administrator/language/en-GB">
+			<language tag="en-GB">en-GB.com_jce.ini</language>
+			<language tag="en-GB">en-GB.com_jce.menu.ini</language>
+			<language tag="en-GB">en-GB.plg_editors_jce.ini</language>
+		</languages>   
+    </administration>
+</install>

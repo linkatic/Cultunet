@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="template">
+	<name>Default</name>
+	<version>1.8.0</version>
+	<creationDate>20/04/2010</creationDate>
+	<author>JomSocial Team</author>
+	<authorEmail>support@azrul.com</authorEmail>
+	<authorUrl>http://www.jomsocial.com</authorUrl>
+	<copyright>Copyright 2008 - 2010 by Slashes &amp; Dots Sdn Bhd. All rights reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>Default template for JomSocial</description>
+	<files>
+	</files>
+	<params>
+		<param type="spacer" default="Frontpage" />
+		<param name="frontpageShowSeach" type="radio" default="1" label="Show search box" description="">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+		<param name="frontpageShowLatestGroup" type="radio" default="1" label="Show latest group" description="">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+		<param name="frontpageShowNewPhotos" type="radio" default="1" label="Show new photos" description="">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+		<param name="frontpageShowWhosOnline" type="radio" default="1" label="Show who's online" description="">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+		<param type="spacer" default="Groups" />
+		<param name="groupsPhotosPosition" type="radio" default="1" label="Groups photo album position" description="">
+			<option value="content">Main content</option>
+			<option value="js_groups_side_bottom">Sidebar</option>
+		</param>
+		<param name="groupsVideosPosition" type="radio" default="1" label="Groups video position" description="">
+			<option value="content">Main content</option>
+			<option value="js_groups_side_bottom">Sidebar</option>
+		</param>
+		
+		<param type="spacer" default="Applications" />
+		<param name="appsShowAuthor" type="radio" default="1" label="Show plugin author" description="">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+		
+	</params>
+</install>

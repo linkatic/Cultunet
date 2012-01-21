@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<name>Edit Property Form</name>
+	<params group="publishing">
+		<param name="owner" type="text" default="" label="Owner" />
+		<param name="alias" type="text" default="" label="Alias" />
+		<param name="link_approved" type="radio" default="" label="Approved">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="link_published" type="radio" default="" label="Published">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="link_featured" type="radio" default="" label="Featured">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="link_created" type="calendar" format="%Y-%m-%d 00:00:00" default="" label="Created Date" description="DETAILCREATED" />
+		<param name="publish_up" type="calendar" format="%Y-%m-%d 00:00:00" default="" label="Start Publishing" description="DETAILSTART" />
+		<param name="publish_down" type="calendar" format="%Y-%m-%d 00:00:00" default="" label="Finish Publishing" description="DETAILFINISH" />
+		<param name="link_template" type="folderlist" directory="/components/com_mtree/templates" hide_none="1" default="" label="Template" />
+		<param name="metakey" type="text" size="35" default="" label="META Keywords" />
+		<param name="metadesc" type="textarea" rows="4" cols="30" default="" label="META Description" />
+		<param name="link_rating" type="text" size="10" default="" label="Rating" />
+		<param name="link_votes" type="text" size="10" default="" label="Votes" />
+		<param name="link_hits" type="text" size="10" default="" label="Hits" />
+		<param name="link_visited" type="text" size="10" default="" label="Visited" />
+		
+	</params>
+	<params group="params">
+		<param name="use_map" type="list" default="" label="Show Map" description="Show/Hide Google Maps">
+			<option value="">Use Global</option>
+			<option value="0">Hide</option>
+		</param>
+		<param name="show_map" type="list" default="" label="Show link to map" description="Show/Hide a Map Link">
+			<option value="">Use Global</option>
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="map" type="list" default="" label="Map Provider" description="Use Map from this provider">
+			<option value="">Use Global</option>
+			<option value="yahoomaps">Yahoo! Maps</option>
+			<option value="mapquest">Mapquest</option>
+			<option value="googlemaps">Google Maps</option>
+			<option value="googlemaps_ca">Google Maps Canada</option>
+			<option value="googlemaps_cn">Google Maps China</option>
+			<option value="googlemaps_fr">Google Maps France</option>
+			<option value="googlemaps_de">Google Maps Germany</option>
+			<option value="googlemaps_it">Google Maps Italy</option>
+			<option value="googlemaps_jp">Google Maps Japan</option>
+			<option value="googlemaps_es">Google Maps Spain</option>
+			<option value="googlemaps_uk">Google Maps UK</option>
+		</param>
+		<param name="show_print" type="list" default="" label="Show Print" description="Show/Hide a Print link">
+			<option value="">Use Global</option>
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_recommend" type="list" default="" label="Show Recommend" description="Show/Hide a Recommend link">
+			<option value="">Use Global</option>
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_rating" type="list" default="" label="Show Rating" description="Show/Hide a Rating link">
+			<option value="">Use Global</option>
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_review" type="list" default="" label="Show Review" description="Show/Hide a Review link">
+			<option value="">Use Global</option>
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_visit" type="list" default="" label="Show Visit" description="Show/Hide a Visit link">
+			<option value="">Use Global</option>
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_contact" type="list" default="" label="Show Contact Owner" description="Show/Hide a Contact Owner link">
+			<option value="">Use Global</option>
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_report" type="list" default="" label="Allow Report Listing" description="Allow visitors to report this listing">
+			<option value="">Use Global</option>
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_ownerlisting" type="list" default="" label="Show link to all owner listing" description="Show/Hide a link to view all owner listing">
+			<option value="">Use Global</option>
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+	</params>
+	<params group="notes">
+		<param name="internal_notes" type="textarea" rows="8" cols="30" default="" label="Internal Notes" />
+	</params>
+</form>

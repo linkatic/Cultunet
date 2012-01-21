@@ -1,0 +1,229 @@
+/**
+ * @version 1.1 Beta $Id: hxdmoomenu.css 2009-08-16 HxD $
+ * @package    HXD MooMenu
+ * @subpackage Modules
+ * @link http://www.hexadesigners.com
+ * @license	GNU/GPL, see LICENSE.php
+ * HXD MooMenu is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License 2
+ * as published by the Free Software Foundation.
+
+ * HXD MooMenu is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+
+ * You should have received a copy of the GNU General Public License
+ * along with HXD MooMenu; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+
+/*** HINTS:
+		1) If you want to have multiple HxD MooMenu, copy the code betweeen the comment lines  				
+		   "Copy from here" and "Copy upto here" and paste in the end of file and override CSS(follow HINT 2,3)
+		2) Change the DIV Tag ID '#hxdmoomenu' as you define in the moule parameter "Menu Holder Div ID".
+		   Example: If your type "moomenu2" as "Menu Holder Div ID" module parameter, then change 
+		   #hxdmoomenu to #moomenu2
+	    3) Change the Parent UL Class name ".menuhxdmenu" as you define in the module parameter 
+	       "Menu Class Suffix".
+	       Example: If your type "hxdmenu2" as "Menu Class Suffix" module parameter, then change 
+		   .menuhxdmenu to .menuhxdmenu2
+	  
+	For detailed document check the following link: 
+	http://www.hexadesigners.com/docs/joomla/hxd-moomenu.html ***/
+
+/*** Copy from here ***/
+/*** EDIT THESE CSS CODES WITH CARE: STARTS 					 
+	 Recommended only to change the Div Tag Id name"#hxdmoomenu" and menus parent ul class ".menuhxdmenu"	***/
+.menuhxdmenu,.menuhxdmenu  *{margin:0;padding:0;}
+div#hxdmoomenu{
+z-index:100;}
+#hxdmoomenu li li{margin:0;}
+.menuhxdmenu {line-height:1.0;float:left;margin-bottom:1.5em;position:relative; z-index:101}
+.menuhxdmenu  ul{background:#fff;
+padding:0;}
+.menuhxdmenu  li{float:left;list-style:none;position:relative;}
+div#hxdmoomenu li li a, div#hxdmoomenu li.active li a{display:block;padding:0;margin:0;text-decoration:none;float:none;width:98%;}
+.menuhxdmenu  li ul{float:none;left:-999em;position:absolute;width:170px;z-index:102;}
+.menuhxdmenu  li:hover ul,
+.menuhxdmenu  li.sfHover ul{left:0px;top:25px;}
+.menuhxdmenu  li:hover li ul,
+.menuhxdmenu  li.sfHover li ul,
+.menuhxdmenu  li li:hover li ul,
+.menuhxdmenu  li li.sfHover li ul,
+.menuhxdmenu  li li li:hover li ul,
+.menuhxdmenu  li li li.sfHover li ul{top:-999em;}
+.menuhxdmenu  li li:hover ul,
+.menuhxdmenu  li li.sfHover ul,
+.menuhxdmenu  li li li:hover ul,
+.menuhxdmenu  li li li.sfHover ul,
+.menuhxdmenu  li li li li:hover ul,
+.menuhxdmenu  li li li li.sfHover ul{left:170px;top:0px;}
+.menuhxdmenu  li li{position:relative;float:none;width:100%;}
+/*** EDIT THESE CSS CODES WITH CARE: ENDS ***/
+
+#hxdmoomenu{
+	
+}
+
+#hxdmoomenu ul{
+	margin: 0;
+	padding: 0;
+	background: #AC9999;
+}		
+
+#hxdmoomenu ul li{
+	margin:0;
+	padding:0;
+	display:block;
+}
+
+#hxdmoomenu ul li a{
+	margin:0;
+	display:block;
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 15px;
+}		
+
+#hxdmoomenu ul li a:hover{
+	display:block;
+}		
+
+#hxdmoomenu li.active a {
+	display:block;
+}
+
+#hxdmoomenu li ul {
+	margin-top:0px;
+	margin-left:auto;
+	width:195px;
+}
+
+#hxdmoomenu ul ul ul {
+	margin-top:10px;
+	margin-left:-10px;
+}
+
+#hxdmoomenu ul ul li{
+	display:block;
+	padding:0 0 0 15px;
+	text-align:left;
+	width:180px;
+}
+
+#hxdmoomenu ul ul li a{
+	display:block;
+}
+
+
+#hxdmoomenu li.active li a {
+
+}
+
+#hxdmoomenu ul ul li a:hover,
+#hxdmoomenu ul li.active.parent ul a:hover {
+	display:block;
+}
+/*** Copy upto here ***/
+
+
+/****** DEMO CSS CODE TO DEMONSTRATE THE IMPLEMENTING SECOND MENU START ***/
+/****** These codes are only for demonstration. You can delete this code. ***/
+/*** Changes made from orignal CSS: 	
+	 Replaced parent UL class menuhxdmenu with menuhxd_moodemo_2
+	 Replaced Div ID hxdmoomenu with moomenu2 ***/
+
+.menuhxdmenu2,.menuhxdmenu2  *{margin:0;padding:0;}
+div#moomenu2{
+z-index:55;}
+#moomenu2 li li{margin:0;}
+.menuhxdmenu2 {line-height:1.0;float:left;margin-bottom:1.5em;position:relative; z-index:56}
+.menuhxdmenu2  ul{background:#fff;
+padding:0;}
+.menuhxdmenu2  li{float:left;list-style:none;position:relative;}
+div#moomenu2 li li a, div#moomenu2 li.active li a{display:block;padding:0;margin:0;text-decoration:none;float:none;width:98%;}
+.menuhxdmenu2  li ul{float:none;left:-999em;position:absolute;width:170px;z-index:57;}
+.menuhxdmenu2  li:hover ul,
+.menuhxdmenu2  li.sfHover ul{left:0px;top:25px;}
+.menuhxdmenu2  li:hover li ul,
+.menuhxdmenu2  li.sfHover li ul,
+.menuhxdmenu2  li li:hover li ul,
+.menuhxdmenu2  li li.sfHover li ul,
+.menuhxdmenu2  li li li:hover li ul,
+.menuhxdmenu2  li li li.sfHover li ul{top:-999em;}
+.menuhxdmenu2  li li:hover ul,
+.menuhxdmenu2  li li.sfHover ul,
+.menuhxdmenu2  li li li:hover ul,
+.menuhxdmenu2  li li li.sfHover ul,
+.menuhxdmenu2  li li li li:hover ul,
+.menuhxdmenu2  li li li li.sfHover ul{left:170px;top:0px;}
+.menuhxdmenu2  li li{position:relative;float:none;width:100%;}
+/*** EDIT THESE CSS CODES WITH CARE: ENDS ***/
+
+#moomenu2{
+	
+}
+
+#moomenu2 ul{
+	margin: 0;
+	padding: 0;
+	background: #ACACAC;
+}		
+
+#moomenu2 ul li{
+	margin:0;
+	padding:0;
+	display:block;
+}
+
+#moomenu2 ul li a{
+	margin:0;
+	display:block;
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 15px;
+}		
+
+#moomenu2 ul li a:hover{
+	display:block;
+}		
+
+#moomenu2 li.active a {
+	display:block;
+}
+
+#moomenu2 li ul {
+	margin-top:0px;
+	margin-left:auto;
+	width:195px;
+}
+
+#moomenu2 ul ul ul {
+	margin:0;
+	margin-top:10px;
+}
+
+#moomenu2 ul ul li{
+	display:block;
+	padding:0 0 0 15px;
+	text-align:left;
+	width:180px;
+	height: 25px;
+}
+
+#moomenu2 ul ul li a{
+	display:block;
+}
+
+
+#moomenu2 li.active li a {
+
+}
+
+#moomenu2 ul ul li a:hover,
+#moomenu2 ul li.active.parent ul a:hover {
+	display:block;
+}

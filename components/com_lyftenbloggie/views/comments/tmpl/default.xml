@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="LYFTENBLOGGIE ENTRY COMMENT">
+		<message>
+			<![CDATA[LYFTENBLOGGIE ENTRY COMMENT TIP]]>
+		</message>
+	</layout>
+	<state>
+		<name>LYFTENBLOGGIE ENTRY COMMENT</name>
+		<description>LYFTENBLOGGIE ENTRY COMMENT DESC</description>
+		<url addpath="/administrator/components/com_lyftenbloggie/elements">
+			<param name="id" type="entries" default="0" label="SELECT ENTRY" description="SELECT ENTRY DESC" />
+		</url>
+		<params>
+			<param name="display_num" type="list" default="10" label="NUM COMMENTS" description="NUMBER OF COMMENTS TO DISPLAY">
+				<option value="5">NUMBER 5</option>
+				<option value="10">NUMBER 10</option>
+				<option value="15">NUMBER 15</option>
+				<option value="20">NUMBER 20</option>
+				<option value="25">NUMBER 25</option>
+				<option value="30">NUMBER 30</option>
+				<option value="50">NUMBER 50</option>
+				<option value="100">NUMBER 100</option>
+				<option value="0">All</option>
+			</param>
+		</params>
+	</state>
+</metadata>

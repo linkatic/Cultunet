@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>mad4joomla</name>
+	<author>Fahrettin Kutyol</author>
+	<creationDate>01/16/2010</creationDate>
+	<copyright>Copyright(C) Fahrettin Kutyol - All rights reserved!</copyright>
+	<license>This component is released under the GNU/GPL License http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>joomla@mad4media.com</authorEmail>
+	<authorUrl>http://www.mooj.org</authorUrl>
+	<version>1.2</version>
+  	<description>
+	If you need a version wihtout Copyrightlink please get Mooj Proforms
+ 	</description>
+  	<files>
+		<filename>frontend.defines.mad4joomla.php</filename>
+		<filename>includes/calendar.php</filename>
+		<filename>includes/index.html</filename>
+		<filename>includes/validate.php</filename>
+		<filename>index.html</filename>
+		<filename>js/balloontip/bubble-tooltip.css</filename>
+		<filename>js/balloontip/bubble-tooltip.js</filename>
+		<filename>js/calendar/calendar-blue.css</filename>
+		<filename>js/calendar/calendar-blue2.css</filename>
+		<filename>js/calendar/calendar-brown.css</filename>
+		<filename>js/calendar/calendar-green.css</filename>
+		<filename>js/calendar/calendar-setup.js</filename>
+		<filename>js/calendar/calendar-setup_stripped.js</filename>
+		<filename>js/calendar/calendar-system.css</filename>
+		<filename>js/calendar/calendar-tas.css</filename>
+		<filename>js/calendar/calendar-win2k-1.css</filename>
+		<filename>js/calendar/calendar-win2k-2.css</filename>
+		<filename>js/calendar/calendar-win2k-cold-1.css</filename>
+		<filename>js/calendar/calendar-win2k-cold-2.css</filename>
+		<filename>js/calendar/calendar.js</filename>
+		<filename>js/calendar/calendar_stripped.js</filename>
+		<filename>js/calendar/index.html</filename>
+		<filename>js/calendar/lang/calendar-af.js</filename>
+		<filename>js/calendar/lang/calendar-al.js</filename>
+		<filename>js/calendar/lang/calendar-bg.js</filename>
+		<filename>js/calendar/lang/calendar-big5-utf8.js</filename>
+		<filename>js/calendar/lang/calendar-big5.js</filename>
+		<filename>js/calendar/lang/calendar-br.js</filename>
+		<filename>js/calendar/lang/calendar-ca.js</filename>
+		<filename>js/calendar/lang/calendar-cs-utf8.js</filename>
+		<filename>js/calendar/lang/calendar-cs-win.js</filename>
+		<filename>js/calendar/lang/calendar-da.js</filename>
+		<filename>js/calendar/lang/calendar-de.js</filename>
+		<filename>js/calendar/lang/calendar-du.js</filename>
+		<filename>js/calendar/lang/calendar-el.js</filename>
+		<filename>js/calendar/lang/calendar-en.js</filename>
+		<filename>js/calendar/lang/calendar-es.js</filename>
+		<filename>js/calendar/lang/calendar-fi.js</filename>
+		<filename>js/calendar/lang/calendar-fr.js</filename>
+		<filename>js/calendar/lang/calendar-he-utf8.js</filename>
+		<filename>js/calendar/lang/calendar-hr-utf8.js</filename>
+		<filename>js/calendar/lang/calendar-hr.js</filename>
+		<filename>js/calendar/lang/calendar-hu.js</filename>
+		<filename>js/calendar/lang/calendar-it.js</filename>
+		<filename>js/calendar/lang/calendar-jp.js</filename>
+		<filename>js/calendar/lang/calendar-ko-utf8.js</filename>
+		<filename>js/calendar/lang/calendar-ko.js</filename>
+		<filename>js/calendar/lang/calendar-lt-utf8.js</filename>
+		<filename>js/calendar/lang/calendar-lt.js</filename>
+		<filename>js/calendar/lang/calendar-lv.js</filename>
+		<filename>js/calendar/lang/calendar-nl.js</filename>
+		<filename>js/calendar/lang/calendar-no.js</filename>
+		<filename>js/calendar/lang/calendar-pl-utf8.js</filename>
+		<filename>js/calendar/lang/calendar-pl.js</filename>
+		<filename>js/calendar/lang/calendar-pt.js</filename>
+		<filename>js/calendar/lang/calendar-ro.js</filename>
+		<filename>js/calendar/lang/calendar-ru.js</filename>
+		<filename>js/calendar/lang/calendar-ru_win_.js</filename>
+		<filename>js/calendar/lang/calendar-si.js</filename>
+		<filename>js/calendar/lang/calendar-sk.js</filename>
+		<filename>js/calendar/lang/calendar-sp.js</filename>
+		<filename>js/calendar/lang/calendar-sv.js</filename>
+		<filename>js/calendar/lang/calendar-tr.js</filename>
+		<filename>js/calendar/lang/calendar-zh.js</filename>
+		<filename>js/calendar/lang/cn_utf8.js</filename>
+		<filename>js/calendar/lang/index.html</filename>
+		<filename>js/calendar/m4j.js</filename>
+		<filename>js/calendar/skins/aqua/active-bg.gif</filename>
+		<filename>js/calendar/skins/aqua/dark-bg.gif</filename>
+		<filename>js/calendar/skins/aqua/hover-bg.gif</filename>
+		<filename>js/calendar/skins/aqua/menuarrow.gif</filename>
+		<filename>js/calendar/skins/aqua/normal-bg.gif</filename>
+		<filename>js/calendar/skins/aqua/rowhover-bg.gif</filename>
+		<filename>js/calendar/skins/aqua/status-bg.gif</filename>
+		<filename>js/calendar/skins/aqua/theme.css</filename>
+		<filename>js/calendar/skins/aqua/title-bg.gif</filename>
+		<filename>js/calendar/skins/aqua/today-bg.gif</filename>
+		<filename>js/calendar/skins/index.html</filename>
+		<filename>js/index.html</filename>
+		<filename>language/frontend.english.php</filename>
+		<filename>language/frontend.german.php</filename>
+		<filename>language/frontend.germanf.php</filename>
+		<filename>language/frontend.germani.php</filename>
+		<filename>language/index.html</filename>
+		<filename>mad4joomla.html.php</filename>
+		<filename>mad4joomla.php</filename>
+		<filename>sec/abc.png</filename>
+		<filename>sec/abc_b.png</filename>
+		<filename>sec/css.php</filename>
+		<filename>sec/hover.png</filename>
+		<filename>sec/im.php</filename>
+		<filename>sec/im2.php</filename>
+		<filename>sec/im3.php</filename>
+		<filename>sec/im4.php</filename>
+		<filename>sec/im3.ttf</filename>
+		<filename>sec/im4.ttf</filename>
+		<filename>sec/index.html</filename>
+		<filename>stylesheet.css</filename>
+		<filename>language/frontend.simplified_chinese.php</filename>
+		<filename>language/frontend.traditional_chinese.php</filename>
+		<filename>language/frontend.french.php</filename>
+		<filename>language/frontend.dutch.php</filename>
+		<filename>tmp/index.html</filename>
+		<filename>language/frontend.portugues.php</filename>
+		<filename>language/frontend.slovak.php</filename>
+		<filename>language/frontend.slovaki.php</filename>
+		<filename>language/frontend.slovakf.php</filename>
+		<filename>language/frontend.hungarian.php</filename>
+		<filename>language/frontend.russian.php</filename>
+		<filename>language/frontend.danish.php</filename>
+		<filename>language/frontend.spanish.php</filename>
+		<filename>language/frontend.italian.php</filename>
+		<filename>language/frontend.catalan.php</filename>
+		<filename>language/frontend.croatian.php</filename>
+		<filename>language/frontend.czech.php</filename>
+		<filename>language/frontend.finnish.php</filename>
+		<filename>language/frontend.greek.php</filename>
+		<filename>language/frontend.indonesia.php</filename>
+		<filename>language/frontend.japanese.php</filename>
+		<filename>language/frontend.macedonian.php</filename>
+		<filename>language/frontend.norwegian.php</filename>
+		<filename>language/frontend.polish.php</filename>
+		<filename>language/frontend.romanian.php</filename>
+		<filename>language/frontend.turkish.php</filename>
+		<filename>language/frontend.swedish.php</filename>
+	</files>
+
+	<images>
+		<filename>images/arrow.png</filename>
+		<filename>images/bubble_bottom.gif</filename>
+		<filename>images/bubble_bottom2.gif</filename>
+		<filename>images/bubble_middle.gif</filename>
+		<filename>images/bubble_top.gif</filename>
+		<filename>images/help0.png</filename>
+		<filename>images/help1.png</filename>
+		<filename>images/help2.png</filename>
+		<filename>images/help3.png</filename>
+		<filename>images/help4.png</filename>
+		<filename>images/help5.png</filename>
+		<filename>images/help6.png</filename>
+		<filename>images/reload.png</filename>
+		<filename>images/index.html</filename>
+	</images>
+
+	<install>
+		<queries>
+			<query>
+				DROP TABLE IF EXISTS `#__m4j_captcha`;
+			</query>
+			<query>	
+				CREATE TABLE IF NOT EXISTS `#__m4j_captcha` (
+                  `date` timestamp NOT NULL ,
+                  `user` varchar(64)  NOT NULL,
+                  `captcha` varchar(64)  NOT NULL,
+                  `dead` tinyint(4) DEFAULT '0',
+                  PRIMARY KEY  (`user`)
+                ) ENGINE=MyISAM ; 			
+			</query>
+			<query>			
+				DROP TABLE IF EXISTS `#__m4j_category`;			
+			</query>
+			<query>							
+				CREATE TABLE IF NOT EXISTS `#__m4j_category` (
+				  `cid` int(11) NOT NULL auto_increment,
+				  `name` varchar(64)  default NULL,
+				  `active` tinyint(4) default '1',
+				  `email` varchar(64)  default NULL,
+				  `introtext` text ,
+				  `sort_order` int(11) default NULL,
+				  PRIMARY KEY  (`cid`)
+				) ENGINE=MyISAM  AUTO_INCREMENT=0 ;			
+			</query>
+			<query>			
+				DROP TABLE IF EXISTS `#__m4j_formelements`;			
+			</query>
+			<query>							
+				CREATE TABLE IF NOT EXISTS `#__m4j_formelements` (
+				  `eid` int(11) NOT NULL auto_increment,
+				  `fid` int(11) NOT NULL,
+				  `required` tinyint(4) default NULL,
+				  `active` tinyint(4) default '1',
+				  `question` text  NOT NULL,
+				  `form` int(11) NOT NULL,
+				  `parameters` text ,
+				  `options` text ,
+				  `help` text ,
+				  `html` text ,
+				  `sort_order` int(11) NOT NULL,
+				  PRIMARY KEY  (`eid`)
+				) ENGINE=MyISAM  AUTO_INCREMENT=0 ;			
+			</query>
+			<query>			
+				DROP TABLE IF EXISTS `#__m4j_forms`;				
+			</query>
+			<query>						
+				CREATE TABLE IF NOT EXISTS `#__m4j_forms` (
+				  `fid` int(11) NOT NULL auto_increment,
+				  `name` varchar(64)  NOT NULL,
+				  `description` text ,
+				  `question_width` tinytext ,
+				  `answer_width` tinytext ,
+				  `use_help` tinyint(4) default '1',
+				  `public` tinyint(4) default '1',
+				  PRIMARY KEY  (`fid`)
+				) ENGINE=MyISAM  AUTO_INCREMENT=0 ;			
+			</query>
+			<query>			
+				DROP TABLE IF EXISTS `#__m4j_jobs`;			
+			</query>
+			<query>							
+				CREATE TABLE IF NOT EXISTS `#__m4j_jobs` (
+				  `jid` int(11) NOT NULL auto_increment,
+				  `title` varchar(64)  NOT NULL,
+				  `hidden` text ,
+				  `introtext` text ,
+				  `maintext` text ,
+				  `active` tinyint(4) default NULL,
+				  `fid` int(11) default NULL,
+				  `cid` int(11) default '-1',
+				  `email` varchar(64)  default NULL,
+				  `captcha` tinyint(4) default '1',
+				  `sort_order` int(11) default NULL,
+				  `public` tinyint(4) default '1',
+				  PRIMARY KEY  (`jid`)
+				) ENGINE=MyISAM  AUTO_INCREMENT=0 ;
+			</query>	
+		</queries>
+	</install>
+	
+	<uninstall>
+	<queries>
+	<query>DELETE FROM `#__m4j_captcha`</query>
+	<query>DROP TABLE `#__m4j_captcha`</query>	
+	<query>DELETE FROM `#__m4j_category`</query>
+	<query>DROP TABLE `#__m4j_category`</query>		
+	<query>DELETE FROM `#__m4j_formelements`</query>
+	<query>DROP TABLE `#__m4j_formelements`</query>	
+	<query>DELETE FROM `#__m4j_forms`</query>
+	<query>DROP TABLE `#__m4j_forms`</query>	
+	<query>DELETE FROM `#__m4j_jobs` </query>
+	<query>DROP TABLE `#__m4j_jobs` </query>		
+	</queries>
+	</uninstall>
+	
+	
+	
+	<administration>
+		<menu>Mad4Joomla</menu>
+		
+		<files>
+			<filename>admin.mad4joomla.html.php</filename>
+			<filename>admin.mad4joomla.php</filename>
+			<filename>admin.stylesheet.css</filename>
+			<filename>config.mad4joomla.php</filename>
+			<filename>defines.mad4joomla.php</filename>
+			<filename>includes/category.php</filename>
+			<filename>includes/category_new.php</filename>
+			<filename>includes/config.php</filename>
+			<filename>includes/element.php</filename>
+			<filename>includes/formfactory.php</filename>
+			<filename>includes/forms.php</filename>
+			<filename>includes/form_elements.php</filename>
+			<filename>includes/form_new.php</filename>
+			<filename>includes/functions.php</filename>
+			<filename>includes/help.php</filename>
+			<filename>includes/index.html</filename>
+			<filename>includes/jobs.php</filename>
+			<filename>includes/jobs_new.php</filename>
+			<filename>includes/link.php</filename>
+			<filename>includes/remember_cid.php</filename>
+			<filename>includes/reset_config.php</filename>
+			<filename>index.html</filename>
+			<filename>js/index.html</filename>
+			<filename>js/mad4joomla.js</filename>
+			<filename>js/thickbox/index.html</filename>
+			<filename>js/thickbox/jquery.js</filename>
+			<filename>js/thickbox/loadingAnimation.gif</filename>
+			<filename>js/thickbox/thickbox-normal.js</filename>
+			<filename>js/thickbox/thickbox.css</filename>
+			<filename>js/thickbox/thickbox.js</filename>
+			<filename>language/english/index.html</filename>
+			<filename>language/english/info.php</filename>
+			<filename>language/english.php</filename>
+			<filename>language/german/index.html</filename>
+			<filename>language/german/info.php</filename>
+			<filename>language/german.php</filename>
+			<filename>language/germanf/index.html</filename>
+			<filename>language/germanf/info.php</filename>
+			<filename>language/germanf.php</filename>
+			<filename>language/germani/index.html</filename>
+			<filename>language/germani/info.php</filename>
+			<filename>language/germani.php</filename>
+			<filename>language/index.html</filename>
+			<filename>language/traditional_chinese/info.php</filename>
+			<filename>language/traditional_chinese/index.html</filename>
+			<filename>language/traditional_chinese.php</filename>
+			<filename>language/simplified_chinese/info.php</filename>
+			<filename>language/simplified_chinese/index.html</filename>
+			<filename>language/simplified_chinese.php</filename>
+			<filename>language/french/info.php</filename>
+			<filename>language/french/index.html</filename>
+			<filename>language/french.php</filename>
+			<filename>language/dutch/info.php</filename>
+			<filename>language/dutch/index.html</filename>
+			<filename>language/dutch.php</filename>
+			<filename>includes/evolution.php</filename>
+			<filename>language/slovak.php</filename>
+			<filename>language/slovaki.php</filename>
+			<filename>language/slovakf.php</filename>
+			<filename>language/turkish.php</filename>
+			<filename>language/turkish/info.php</filename>
+			<filename>language/czech.php</filename>
+			<filename>language/czech/info.php</filename>
+			<filename>language/indonesia.php</filename>
+			<filename>language/indonesia/info.php</filename>
+			<filename>language/italian.php</filename>
+			<filename>language/japanese.php</filename>
+			<filename>language/japanese/info.php</filename>
+			<filename>language/macedonian.php</filename>
+			<filename>language/romanian.php</filename>
+			<filename>language/romanian/info.php</filename>
+			<filename>language/russian.php</filename>
+			<filename>language/spanish.php</filename>
+		</files>
+
+		<images>
+			<filename>images/active.png</filename>
+			<filename>images/add.png</filename>
+			<filename>images/admin_small.png</filename>
+			<filename>images/back.png</filename>
+			<filename>images/cancel.png</filename>
+			<filename>images/category.png</filename>
+			<filename>images/config.png</filename>
+			<filename>images/copy.png</filename>
+			<filename>images/copyleft.png</filename>
+			<filename>images/down.png</filename>
+			<filename>images/element_button.png</filename>
+			<filename>images/forms.png</filename>
+			<filename>images/help.png</filename>
+			<filename>images/index.html</filename>
+			<filename>images/jobs.png</filename>
+			<filename>images/left_shadow.png</filename>
+			<filename>images/link.png</filename>
+			<filename>images/link2cat.png</filename>
+			<filename>images/mad4media-3d.png</filename>
+			<filename>images/mad4media.png</filename>
+			<filename>images/new.png</filename>
+			<filename>images/new_category.png</filename>
+			<filename>images/new_job.png</filename>
+			<filename>images/next.png</filename>
+			<filename>images/not_active.png</filename>
+			<filename>images/not_required.png</filename>
+			<filename>images/pen-small.png</filename>
+			<filename>images/preview.png</filename>
+			<filename>images/proceed.png</filename>
+			<filename>images/red_decor.png</filename>
+			<filename>images/remove.png</filename>
+			<filename>images/required.png</filename>
+			<filename>images/right_shadow.png</filename>
+			<filename>images/round_left.png</filename>
+			<filename>images/round_right.png</filename>
+			<filename>images/spacer.png</filename>
+			<filename>images/tableheaderrback.png</filename>
+			<filename>images/tbarhover.png</filename>
+			<filename>images/toolbarback.png</filename>
+			<filename>images/toolbarback_hover.png</filename>
+			<filename>images/up.png</filename>
+			<filename>images/proforms-add-banner-de.png</filename>
+			<filename>images/proforms-add-banner-en.png</filename>
+		</images>
+
+	</administration>
+	<installfile>install.mad4joomla.php</installfile>
+  <uninstallfile>uninstall.mad4joomla.php</uninstallfile>
+</install>

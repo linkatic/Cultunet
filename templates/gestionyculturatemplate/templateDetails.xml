@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
+<install version="1.5" type="template">
+	<name>Gestion y Cultura Template</name>
+	<creationDate>12 de Julio de 2010</creationDate>
+	<author>Lorena Henriquez/Vicente Gimeno</author>
+	<authorEmail>info@linkatic.com</authorEmail>
+	<authorUrl>http://www.linkatic.com</authorUrl>
+	<copyright>Software Comercial con Copyright</copyright>
+	<license>Propietaria - Lorena Henriquez y Vicente Gimeno</license>
+	<version>1.0.0</version>
+	<description>Template para Joomla 1.5 creado para la empresa Area de Trabajo S.L por Lorena Henriquez y Vicente Gimeno. Más información: info@linkatic.com</description>
+	<files>
+		<filename>css/template.css</filename>
+		<filename>css/common.css</filename>
+		<filename>css/index.html</filename>
+		<filename>images/index.html</filename>
+		<filename>images/btn_agenda.png</filename>
+		<filename>images/btn_areatrabajo.png</filename>
+		<filename>images/btn_empleo.png</filename>
+		<filename>images/btn_enred.png</filename>
+		<filename>images/btn_formacion.png</filename>
+		<filename>images/btn_gc.png</filename>
+		<filename>images/btn_libreria.png</filename>
+		<filename>images/btn_mailing.png</filename>
+		<filename>images/btn_recursos.png</filename>
+		<filename>images/logo.png</filename>
+		<filename>images/shadow_content.png</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+		<filename>component.php</filename>
+	</files>
+	<positions>
+		<position>banner_top</position>
+		<position>logo</position>
+		<position>login</position>
+		<position>menu</position>
+		<position>language</position>
+		<position>search</position>
+		<position>breadcrumb</position>
+		<position>icons_redes</position>
+		<position>left_untercio</position>
+		<position>left_untercio_content</position>
+		<position>right_top</position>
+		<position>right_dostercios</position>
+		<position>banner_bottom_l</position>
+		<position>banner_bottom_r</position>
+		<position>menu_footer</position>
+		<position>patrocinadores</position>
+		<position>debug</position>
+	</positions>
+	<params>
+	</params>
+</install>

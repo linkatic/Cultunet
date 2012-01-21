@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- generator="FeedCreator 1.7.3" -->
+<rss version="2.0">
+	<channel>
+		<title>Librería virtual de Cultunet - Últimos productos de la categoría: Suscripción (Formato Impreso)</title>
+		<description>VirtueMart Product Syndication</description>
+		<link>http://www.cultunet.com</link>
+		<lastBuildDate>Thu, 16 Jun 2011 09:05:41 +0100</lastBuildDate>
+        <generator>FeedCreator 1.7.3</generator>
+		<image>
+			<url>http://www.cultunet.com/components/com_virtuemart/shop_image/vendor/__rea_de_Trabajo_4d09e3b3af019.png</url>
+			<title>Librería virtual de Cultunet</title>
+			<link>http://www.cultunet.com</link>
+			<description>VirtueMart Product Syndication</description>
+		</image>
+		<item>
+			<title>Suscripción Internacional</title>
+			<link>http://www.cultunet.com/index.php?product_id=3&amp;page=shop.product_details&amp;category_id=2&amp;flypage=flypage.tpl&amp;option=com_virtuemart&amp;Itemid=10</link>
+			<description>Suscripción internacional a g+c, revista internacional de gestión y cultura contemporáneas (Edición impresa)&lt;img src=&quot;http://www.cultunet.com/components/com_virtuemart/shop_image/product/resized/Suscripci__n_Int_4d111285c597a_150x150.jpg&quot; alt=&quot;Suscripción Internacional&quot; vspace=&quot;5&quot; hspace=&quot;5&quot; align=&quot;left&quot; border=&quot;0&quot; /&gt;&lt;br /&gt;Precio: 
+
+	&lt;span class=&quot;productPrice&quot;&gt;
+		&amp;euro;65.00			&lt;/span&gt;
+
+
+</description>
+			<category>Suscripción (Formato Impreso)</category>
+			<pubDate>Thu, 16 Dec 2010 11:27:22 +0100</pubDate>
+		</item>
+		<item>
+			<title>Suscripción Anual</title>
+			<link>http://www.cultunet.com/index.php?product_id=1&amp;page=shop.product_details&amp;category_id=2&amp;flypage=flypage.tpl&amp;option=com_virtuemart&amp;Itemid=10</link>
+			<description>Suscripción anual a la edición impresa de g+c, revista internacional de gestión y cultura contemporáneas&lt;img src=&quot;http://www.cultunet.com/components/com_virtuemart/shop_image/product/resized/Suscripci__n_Anu_4d1110f8b3084_150x150.jpg&quot; alt=&quot;Suscripción Anual&quot; vspace=&quot;5&quot; hspace=&quot;5&quot; align=&quot;left&quot; border=&quot;0&quot; /&gt;&lt;br /&gt;Precio: 
+
+	&lt;span class=&quot;productPrice&quot;&gt;
+		&amp;euro;49.00			&lt;/span&gt;
+
+
+</description>
+			<category>Suscripción (Formato Impreso)</category>
+			<pubDate>Tue, 14 Dec 2010 21:04:33 +0100</pubDate>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install version="1.5" type="module" client="site" method="upgrade">
+	<name>Latest Members</name>
+	<author>JomSocial Team</author>
+	<creationDate>20/06/2010</creationDate>
+	<copyright>Copyright (C) 2008 - 2010 JomSocial. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@jomsocial.com</authorEmail>
+	<authorUrl>http://www.jomsocial.com</authorUrl>	
+	<version>1.8.0</version>
+	<description>Show the latest members</description>
+	<languages>
+		<language tag="en-GB">en-GB.mod_latestmembers.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_latestmembers">mod_latestmembers.php</filename>
+		<filename>mod_latestmembers.xml</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+	</files>
+	<params>
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="updated_avatar_only" type="list" default="0" label="Updated avatar only" description="Show users with updated avatar only.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="tooltips" type="list" default="1" label="Use Tooltips" description="Select to choose whether to show the tooltips or not.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="count" type="text" default="10" label="Count" description="The number of online user(s) to display (default is 10)" />		
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="loadmootools" type="list" default="1" label="Load mootools" description="Select YES for the module to load mootools, and NO to rely on the template to load it">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install version="1.5" type="module" client="site" method="upgrade">
+	<name>Online Users</name>
+	<author>JomSocial Team</author>
+	<creationDate>20/06/2010</creationDate>
+	<copyright>Copyright (C) 2008 - 2010 JomSocial. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@jomsocial.com</authorEmail>
+	<authorUrl>http://www.jomsocial.com</authorUrl>	
+	<version>1.8.0</version>
+	<description>Show online users</description>
+	<languages>
+		<language tag="en-GB">en-GB.mod_onlineusers.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_onlineusers">mod_onlineusers.php</filename>
+		<filename>mod_onlineusers.xml</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>tmpl/default.php</filename>		
+	</files>
+	<params>
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+
+		<param name="hideAdmin" type="list" default="0" label="Hide administrators" description="Hide administrators from being displayed">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="count" type="text" default="10" label="Count" description="The number of online user(s) to display (default is 10)" />
+		
+		<param name="show_guest" type="list" default="1" label="Show Guest" description="Select which to display the total guest.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+</install>

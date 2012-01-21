@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<metafile version="1.5"  client="site" >
+	<name>Português (pt-PT)</name>
+	<tag>pt-PT</tag>
+	<version>Site.1.5.20</version>
+	<creationDate>2010-07-18</creationDate>
+	<author>Comunidade Portuguesa JoomlaPT!</author>
+	<authorEmail>geral@joomlapt.com</authorEmail>
+	<authorUrl>www.joomlapt.com</authorUrl>
+	<copyright>Copyright (C) 2005-2010 Comunidade JoomlaPT! Todos os direitos reservados.</copyright>
+	<license>GNU/GPL http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<description>Idioma Português (Portugal) para o interface do Site do CMS Joomla.</description>
+	<metadata>
+		<name>Português (pt-PT)</name>
+		<tag>pt-PT</tag>
+		<rtl>0</rtl>
+		<locale>pt_PT.utf8, pt_PT.UTF-8, pt_PT.UTF-8@euro, Portuguese_Standard, Portuguese, pt_PT,</locale>
+		<winCodePage>iso-8859-1</winCodePage>
+		<backwardLang>portuguese</backwardLang>
+		<pdfFontName>freesans</pdfFontName>
+	</metadata>
+		<files>
+		<filename>pt-PT.ignore.php</filename>
+	</files>
+	<params />
+</metafile>

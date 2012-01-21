@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: mod_mt_listing.xml 882 2010-05-27 11:16:52Z cy $ -->
+<install type="module" version="1.5.0" method="upgrade">
+	<name>Top Listings</name>
+	<author>Mosets Consulting</author>
+	<creationDate>May 2010</creationDate>
+	<copyright>(C) 2005-2010 Mosets Consulting http://www.mosets.com/</copyright>
+    <license>GNU General Public License</license>
+	<authorEmail>mtree@mosets.com</authorEmail>
+	<authorUrl>www.mosets.com</authorUrl>
+	<version>2.1.4</version>
+	<description>Top Listing displays top listings sorted by - New, Featured, Popular, Most Rated, Top Rated and Most Reviewed. This can also be used to show random listings.</description>
+	<files>
+		<filename module="mod_mt_listing">mod_mt_listing.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_mt_listing.ini</language>
+	</languages>
+	<params addpath="/administrator/components/com_mtree/elements"> 
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="listingclass" type="text" default="" label="Listing Class" />
+		<param name="type" type="list" default="1" label="Type" description="Select the type of top list you would like to display.">
+			<option value="1">New Listing</option>
+			<option value="7">Recently Updated Listing</option>
+			<option value="2">Featured Listing</option>
+			<option value="3">Popular Listing</option>
+			<option value="4">Most Rated Listing</option>
+			<option value="5">Top Rated Listing</option>
+			<option value="6">Most Reviewed Listing</option>
+			<option value="8">Random Listing</option>
+		</param>
+		<param name="count" type="text" default="5" label="Count" description="Number of listings to display." />
+		<param name="show_from_cat_id" type="text" default="0" label="Show listings from this category" description="This option allow you to show listings from a particular category. Setting this to 0 will disable this feature." />
+		<param name="only_subcats" type="radio" default="0" label="Only Sub-cats listing" description="Selecting this option will display listings from the current category and its sub-categories only.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="shuffle_listing" type="radio" default="1" label="Shuffle Listing" description="Only aplicable to featured listing. Shuffling will generate different featured listing everytime a visitor reload a page.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="show_website" type="radio" default="1" label="Show Website">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="show_category" type="radio" default="1" label="Show Category Name">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="show_rank" type="radio" default="1" label="Show Rank Number" description="Showing Rank will display sequence number besides the listing name.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="show_rel_data" type="radio" default="1" label="Show Related Data" description="Showing related data will display the number of hits, reviews, rating or creation date depending on the list type you assign to this module. All types has related data except Featured type.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="show_more" type="radio" default="1" label="Display 'Show more...'">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="caption_showmore" type="text" default="Show more..." label="'Show more' text" />
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="show_images" type="radio" default="0" label="Show images" description="Show listing's image. If this is enabled, only listing with photos will be displayed.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="trim_long_names" type="radio" default="1" label="Trim long names">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="trim_long_urls" type="radio" default="1" label="Trim long URLs">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="max_name_char" type="text" default="24" label="Max. characters" description="Maximum number of characters to show in listing name before being trimmed." />
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="fields" type="fields" default="" label="Display fields" />
+	</params>
+	
+	<params group="advanced">
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="filterfield" type="filterfield" default="" label="Filter field" size="18" description="This parameter allow you to add a filter to show listings satisfying the condition set here." />
+	</params>
+</install>

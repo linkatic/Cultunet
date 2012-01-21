@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="New Job Posting Form">
+		<message>
+			<![CDATA[New job posting form.]]>
+		</message>
+	</layout>
+	<state>
+		<name>New job posting</name>
+		<description>New job posting Form.</description>
+	</state>
+</metadata>

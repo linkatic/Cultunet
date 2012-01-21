@@ -1,0 +1,577 @@
+body {
+	background: #fff;
+	font-size: 1.2em;
+}
+
+/** Set default value **/
+body #community-wrap {
+	font-size: 1.1em;
+}
+body #community-wrap :focus {
+	outline: none;
+}
+body #community-wrap a,
+body #community-wrap a:link,
+body #community-wrap a:visited {
+	color: #c60;
+	text-decoration: none;
+}
+body #community-wrap button,
+body #community-wrap .button {
+	font-size: 120%;
+}
+
+
+
+body #community-wrap #sitelogo {
+	height: 40px;
+	background: #f0f4f9;
+	position: relative;
+}
+body #community-wrap #sitelogo a.logo {
+	background: transparent url(../images/iphone/logo.png) no-repeat 2px 4px;
+	text-indent: -9999px;
+	height: 40px;
+	display: block;
+	margin: 0 auto;
+}
+body #community-wrap #sitelogo a.logout {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-weight: bold;
+	color: #f00;
+}
+body #community-wrap div.frontpage,
+body #community-wrap div.profile-main,
+body #community-wrap div.friends,
+body #community-wrap div.inbox {
+	padding: 0;
+}
+
+
+/** Toolbar **/
+body #community-wrap ul.toolbar {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 40px;
+}
+body #community-wrap ul.toolbar li {
+	height: 40px;
+	display: block;
+	float: left;
+	width: 25%;
+}
+body #community-wrap ul.toolbar li a {
+	display: block;
+	float: left;
+	height: 40px;
+	color: #fff;
+	line-height: 37px;
+	text-align: center;
+	width: 100%;
+	font-size: 105%;
+	font-weight: bold;
+	background: transparent url(../images/iphone/toolbar-bg.png) repeat-x 0 0;
+}
+body #community-wrap ul.toolbar li.active a {
+	background: transparent url(../images/iphone/toolbar-bg-active.png) repeat-x 0 0;
+	text-shadow: #333 1px 1px 1px;
+}
+
+
+/** Login form **/
+body #community-wrap div.loginform {
+	margin: 0 auto;
+	background: transparent url(../images/iphone/loginform-bg.png) repeat-x 0 0;
+	border-top: solid 2px #7d9b42;
+	border-bottom: solid 2px #7d9b42;
+}
+body #community-wrap div.loginform form {
+	padding: 10px 20px;
+}
+body #community-wrap div.loginform label {
+	font-size: 120%;
+	width: 100%;
+	margin: 0 auto;
+	color: #fff;
+	font-weight: bold;
+	padding-top: 5px;
+}
+body #community-wrap div.loginform .inputbox {
+	width: 95%;
+	padding: 3px;
+	margin: 0 auto 10px;
+	font-size: 120%;
+	font-weight: bold;
+}
+body #community-wrap div.loginform .button {
+	width: 45%;
+	padding: 5px 0;
+}
+
+
+/** Frontpage view **/
+body #community-wrap #latest-members-container {
+	margin-top: 10px;
+}
+body #community-wrap .app-box-footer {
+	font-size: 110%;
+	margin: 10px 5px 20px 0;
+}
+
+
+/* Profile view */
+body #community-wrap div.profile-box {
+	padding: 10px 5px;
+	position: relative;
+	overflow: hidden;
+}
+body #community-wrap div.profile-info {
+	margin: 0 0 0 100px;
+}
+body #community-wrap div.profile-info .contentheading {
+	margin-bottom: 10px;
+	font-size: 200%;
+	text-shadow: #999 1px 1px 2px;
+}
+body #community-wrap div.profile-details-box {
+	margin: 10px 0 0;
+	padding: 0 5px 10px;
+	background: transparent url(../images/iphone/profile-box-bg.png) repeat-x bottom left;
+	border-bottom: solid 1px #cecece;
+}
+body #community-wrap ul.profile-details li {
+	height: 20px;
+	font-size: 110%;
+	width: 100%;
+	padding-bottom: 10px;
+}
+body #community-wrap ul.profile-details li.title {
+	width: 100%;
+	padding-bottom: 0;
+	text-shadow: #999 1px 1px 1px;
+}
+body #community-wrap ul.profile-right-info li {
+	font-size: 105%;
+	line-height: 130%;
+	
+}
+body #community-wrap ul.profile-right-info li.infoGroupTitle {
+	color: #333;
+	text-shadow: #999 1px 1px 2px;
+}
+body #community-wrap .appsBoxTitle {
+	margin-bottom: 10px;
+}
+body #community-wrap .appsBoxTitle,
+body #community-wrap ul.profile-right-info li,
+body #community-wrap ul.avatar-list {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+body #community-wrap div.newsfeed-item {
+	padding: 5px 0;
+	font-size: 110%;
+	line-height: 130%;
+}
+body #community-wrap div.newsfeed-item a {
+	color: inherit;
+	text-decoration: none;
+}
+body #community-wrap div.newsfeed-item table {
+	margin: 0;
+	width: 100%;
+}
+body #community-wrap div.newsfeed-item table td.act-date {
+	text-align: right;
+	vertical-align: top;
+	white-space: nowrap; 
+	font-size: 80%; 
+	color: #666;
+}
+body #community-wrap div.ctitle {
+	margin-bottom: 0;
+	margin-top: 10px;
+	padding: 6px 0 0 5px;
+}
+body #community-wrap div.ctitle.iphone {
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	padding: 6px 0 0 5px;
+	text-shadow: #999 1px 1px 2px;
+}
+body #community-wrap div.profile-info-iphone {
+	position: relative;
+}
+body #community-wrap div.profile-info-iphone a {
+	color: inherit;
+}
+body #community-wrap div.profile-info-iphone-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+body #community-wrap #edit-status-overlay {
+	z-index: 100;
+}
+body #community-wrap #edit-status-overlay,
+body #community-wrap #edit-status-overlay div.overlay,
+body #community-wrap #edit-status-overlay div.form-container {
+	background: transparent;
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+}
+body #community-wrap #edit-status-overlay div.overlay {
+	background: transparent url(../images/iphone/trans.png) 0 0;
+}
+body #community-wrap #edit-status-overlay #loading {
+	background: #000 url(../images/wait.gif) no-repeat center center;
+	margin: 0;
+}
+body #community-wrap #edit-status-overlay textarea {
+	height: 125px;
+	width: 80%;
+	margin: 20px auto 0;
+	padding: 3px;
+	font-family: Helvetica, 'Lucida Grande', 'Helvetica Neue', lucida, san-serif;
+	font-size: 180%;
+}
+body #community-wrap div#profile-status {
+	font-size: 110%;
+	position: relative;
+	border: none;
+	font-family: Helvetica, 'Lucida Grande', 'Helvetica Neue', lucida, san-serif;
+}
+body #community-wrap div.profile-box #edit-link {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+}
+body #community-wrap div.profile-avatar a {
+	line-height: 0;
+}
+/* Profile Tab */
+body #community-wrap #profile-tab {
+	margin: 2px 0 10px !important;
+	padding: 0;
+	list-style: none;
+	float: left;
+	width: 100%;
+}
+body #community-wrap #profile-tab li {
+	width: 25%;
+	display: block;
+	float: left;
+	text-align: center;
+	line-height: 30px;
+	font-weight: bold;
+	background: transparent url(../images/iphone/tab-item-bg.png) repeat-x bottom left;
+	cursor: pointer;
+	color: #fff;
+}
+body #community-wrap #profile-tab li.active {
+	background: #fff;
+	color: #333;
+}
+body #community-wrap #profile-tab li a {
+	color: #fff;
+	font-weight: bold;
+	font-size: 105%;
+	display: block;
+}
+body #community-wrap #profile-tab li.active a {
+	color: #333;
+}
+body #community-wrap .section-item {
+	min-height: 300px;
+}
+body #community-wrap div.black-button {
+	height: 45px;
+	display: block;
+	background: transparent url(../images/iphone/btn-black-bg.png) repeat-x 0 0;
+}
+body #community-wrap div.black-button .btn-blue {
+	padding: 0;
+}
+body #community-wrap div.black-button .btn-blue.btn-prev {
+	margin: 6px 0 0 5px;
+	height: 32px;
+	background: transparent url(../images/iphone/blue-btn-bg.png) repeat-x 0 0;
+	display: block;
+	float: left;
+	color: #fff;
+	font-weight: bold;
+	text-shadow: #333 1px 1px 1px;
+}
+body #community-wrap div.black-button .btn-blue.btn-prev span {
+	height: 32px;
+	background: transparent url(../images/iphone/blue-btn-bg.png) repeat-x 100% -32px;
+	display: block;
+	padding: 0 15px 0 20px;
+	line-height: 32px;
+}
+body #community-wrap div.black-button .btn-blue.btn-next {
+	margin: 6px 5px 0 0;
+	height: 32px;
+	background: transparent url(../images/iphone/blue-btn-bg.png) repeat-x 100% -64px;
+	display: block;
+	float: right;
+	color: #fff;
+	font-weight: bold;
+	text-shadow: #333 1px 1px 1px;
+}
+body #community-wrap div.black-button .btn-blue.btn-next span {
+	height: 32px;
+	background: transparent url(../images/iphone/blue-btn-bg.png) repeat-x 0 -96px;
+	display: block;
+	padding: 0 20px 0 15px;
+	line-height: 32px;
+}
+body #community-wrap div.black-button div.pagenum {
+	margin: 6px 80px 0;
+	height: 40px;
+	line-height: 45px;
+	font-size: 120%;
+	display: block;
+	color: #fff;
+	font-weight: bold;
+	text-shadow: #333 1px 1px 1px;
+	text-align: center;
+}
+
+
+
+body #community-wrap div.black-button .btn-blue.btn-next-disabled {
+	margin: 6px 5px 0 0;
+	height: 32px;
+	background: transparent url(../images/iphone/blue-btn-bg.png) repeat-x 100% -192px;
+	display: block;
+	float: right;
+	color: #fff;
+	font-weight: bold;
+	text-shadow: #333 1px 1px 1px;
+}
+body #community-wrap div.black-button .btn-blue.btn-next-disabled span {
+	height: 32px;
+	background: transparent url(../images/iphone/blue-btn-bg.png) repeat-x 0 -224px;
+	display: block;
+	padding: 0 20px 0 15px;
+	line-height: 32px;
+}
+body #community-wrap div.black-button .btn-blue.btn-prev-disabled {
+	margin: 6px 0 0 5px;
+	height: 32px;
+	background: transparent url(../images/iphone/blue-btn-bg.png) repeat-x 0 -128px;
+	display: block;
+	float: left;
+	color: #fff;
+	font-weight: bold;
+	text-shadow: #333 1px 1px 1px;
+}
+body #community-wrap div.black-button .btn-blue.btn-prev-disabled span {
+	height: 32px;
+	background: transparent url(../images/iphone/blue-btn-bg.png) repeat-x 100% -160px;
+	display: block;
+	padding: 0 15px 0 20px;
+	line-height: 32px;
+}
+
+
+/* Friends view */
+body #community-wrap div.mini-profile {
+	padding: 3px;
+	border: none;
+	border-bottom: 1px solid #ccc; 
+}
+body #community-wrap div.mini-profile-avatar {
+	float: left;
+	padding: 0 3px;
+}
+body #community-wrap div.mini-profile-details {
+	margin: 0 35px 0 64px;
+}
+body #community-wrap div.submenu-l,
+body #community-wrap div.submenu-r {
+	background: none;
+}
+body #community-wrap div.cSubmenu li a {
+	line-height: 20px;
+	font-size: 110%;
+}
+body #community-wrap div.mini-profile-details h3.name a {
+	color: #333;
+	text-shadow: #999 1px 1px 2px;
+}
+
+
+
+/** Inbox view **/
+body #community-wrap div.inbox.iphone div.inbox-toolbar {
+	border-left: 0;
+	border-right: 0;
+}
+body #community-wrap div.inbox.iphone div.inbox-toolbar a {
+	font-weight: bold;
+	color: #c60;
+}
+body #community-wrap div.inbox.iphone div.message-body {
+	margin: 0 38px 0 60px;
+}
+body #community-wrap div.inbox.iphone .avatar-message-view {
+	margin: 0 0 0 5px;
+}
+body #community-wrap div.inbox.iphone .message-info {
+	font-size: 85%;
+}
+body #community-wrap .inbox-reply textarea.replybox {
+	height: 50px;
+	width: 98.5%;
+	font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, lucida, san-serif;
+}
+body #community-wrap form.inbox-reply-form {
+	padding: 10px 5px 0;
+}
+body #community-wrap #inbox-messages {
+	margin-top: 10px;
+}
+body #community-wrap div.inbox-read a.subject,
+body #community-wrap div.inbox-unread a.subject {
+	color: #333;
+	font-size: 90%;
+}
+
+
+/** Wall section **/
+body #community-wrap .app-box {
+	padding: 0;
+	width: 100%;
+}
+body #community-wrap #wall-message {
+	height: 50px;
+	padding: 5px;
+	width: 95%;
+	font-size: 120%;
+	margin: 0 auto;
+	font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, lucida, san-serif;
+}
+body #community-wrap .wall-cocs {
+	margin: 10px 0 0;
+}
+body #community-wrap .wall-coc-form textarea {
+	font-size: 120%;
+	font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, lucida, san-serif;
+	height: 70px;
+}
+body #community-wrap div.cavatar.iphone {
+	width: 55px;
+	padding-left: 5px;
+}
+body #community-wrap #wallContent .avatar {
+	width: 45px;
+}
+body #community-wrap div.ccontent-avatar {
+	margin-left: 60px;
+	font-size: 120%;
+}
+body #community-wrap .wallcmt {
+	font-size: 80%;
+	color: #666;
+}
+body #community-wrap .wallcmt p {
+	font-size: 120%;
+	color: #333;
+	padding: 5px 0;
+	margin-top: 15px;
+}
+body #community-wrap #wallContent .wall-post {
+	cursor: pointer;
+}
+body #community-wrap #wallContent .wall-info {
+	line-height: 20px;
+	background: #ecebeb;
+	padding: 3px 5px;
+	margin-bottom: 5px;
+}
+#community-wrap .app-box-content {
+	margin: 0;
+}
+
+
+/** App box header */
+body #community-wrap .app-box-header {
+	background: none;
+	padding: 0 0 0 5px;
+	height: 25px;
+}
+body #community-wrap .app-box-menus {
+	display: none;
+}
+body #community-wrap .app-box-title {
+	margin: 10px 0;
+}
+
+
+/** System Message **/
+body #system-message {
+	margin: 0;
+	padding: 10px 0;
+	background: #fcc;
+	border-bottom: solid 2px #c00;
+}
+body #system-message dt.error {
+	width: 70%;
+	margin: 0 auto;
+	font-size: 150%;
+	font-weight: bold;
+	color: #c00;
+	text-shadow: #300 1px 1px 1px;
+}
+body #system-message dd.error {
+	width: 70%;
+	margin: 0 auto;
+}
+body #system-message dd.error ul {
+	background: none;
+	padding: 0;
+	list-style: none;
+	border: 0;
+}
+body #system-message dd.error ul li {
+
+}
+
+
+body #community-wrap .mini-profile a.remove,
+body #community-wrap #inbox-listing a.remove {
+	height: 30px;
+	width: 30px;
+	background: transparent url(../images/iphone/remove-button.png) no-repeat 0 0;
+	z-index: 1000; 
+	cursor: pointer; 
+	position: absolute; 
+	top: 50%; 
+	right: 5px; 
+	display: block; 
+	text-decoration: none;
+	margin-top: -15px;
+}
+body #community-wrap #inbox-listing .inbox-read,
+body #community-wrap #inbox-listing .inbox-unread {
+	position: relative;
+}
+body #community-wrap #inbox-listing .inbox-read a.remove,
+body #community-wrap #inbox-listing .inbox-unread a.remove {
+	margin-top: 0;		
+}

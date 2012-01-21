@@ -1,0 +1,155 @@
+/* Control panel */
+#cpanel {
+   display: block;
+   float: left;
+}
+
+.cpanel_button {
+   display: block;
+   float:left;
+}
+
+.template_header {
+	background-color: #CFCFCF;
+	margin-bottom: 0em;
+}
+.template_label,.template_input {
+	display: block;
+	width: 15em;
+	float: left;
+	margin-bottom: .3em;
+}
+
+.template_label {
+	text-align: left;
+	width: 15em;
+	padding-right: 1em;
+}
+.longtext {
+	width: 65em;
+}
+#template_name {
+	width: 20em;
+}
+.delimiter {
+	width: 1.2em;
+}
+.thumbs {
+	width: 3em;
+}
+.checkbox {
+	width: 1.2em;
+	margin-left: 0em;
+}
+br {
+	clear: left;
+}
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+/* End hide from IE-mac */
+
+.debug {
+	display: none; 
+	border-bottom: 1px dashed #000000; 
+	padding: 0.2em;
+	margin-bottom: 0.3em;
+}
+
+.sqlerror {
+	font-size: 14px; 
+	color: #FF0000;
+}
+
+IMG {
+	border: none;
+}
+
+.smallprint {
+	font-size: 10px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+#filterbox {
+	text-align: left;
+	margin: 0.2em;
+}
+
+#templatesettings {
+	display: block;
+	float: left;
+	width: 50%;
+}
+
+#systemlimits {
+	display: block;
+	float: right;
+	width: 50%;
+}
+
+#templateconfig {
+	display: block;
+}
+
+.templateconfig-active {
+	background-color: #CECECE;
+	border: 0.2em ridge #000000;
+}
+
+#templateconfig #templateconfig-header {
+	display: block;
+	margin-top: 1.5em;
+	font-size: 120%;
+}
+
+#templateconfig #templateconfig-content {
+	display: block;
+	text-align: left;
+	margin-top: 3.5em;
+	margin-left: 2em;
+}
+
+#templateconfig #templateconfig-content .submit, #templateconfig-steps .submit {
+	border: 0.2em ridge #000000;
+	background: transparent;
+}
+.msgtitle {
+	margin-right:0.4em;
+	padding-right: 0.4em;
+	border-right: 0.2em solid #CECECE;
+}
+.msgtitle a {
+	cursor: pointer;
+}
+
+.showexportoption {
+	cursor: pointer;
+}
+
+.userfilename {
+	text-align: center;
+	font-size: 1.5em;
+	padding: 0.5em;
+	border: 1px solid #EFEFE0;
+}
+.column_header_input {
+	width: 25em;
+}
+
+#importcontinue {
+	color: #FF0000;
+	float: right;
+	display: block;
+	font-size: 16px;
+	padding: 0.2em;
+}

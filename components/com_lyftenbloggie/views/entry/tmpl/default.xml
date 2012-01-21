@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="LYFTENBLOGGIE ENTRY">
+		<message>
+			<![CDATA[LYFTENBLOGGIE ENTRY TIP]]>
+		</message>
+	</layout>
+	<state>
+		<name>LYFTENBLOGGIE ENTRY</name>
+		<description>LYFTENBLOGGIE ENTRY DESC</description>
+		<url addpath="/administrator/components/com_lyftenbloggie/elements">
+			<param name="id" type="entries" default="0" label="SELECT ENTRY" description="SELECT ENTRY DESC" />
+		</url>
+	</state>
+</metadata>

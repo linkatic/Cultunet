@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5" method="upgrade">
+<name>RSMembership!</name>
+<creationDate>07/07/2009</creationDate>
+<author>www.rsjoomla.com</author>
+<copyright>(C) 2009-2010 www.rsjoomla.com</copyright>
+<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license> 
+<authorEmail>support@rsjoomla.com</authorEmail>
+<authorUrl>www.rsjoomla.com</authorUrl>
+<version>1.0.0 R15</version>
+<description>RSMembership! allows you to sell and manage memberships, handle digital downloads, share content from your website and more.</description>
+
+<installfile>install.rsmembership.php</installfile>
+<uninstallfile>uninstall.rsmembership.php</uninstallfile>
+
+<install>
+	<sql>
+		<file driver="mysql" charset="utf8">install.mysql.utf8.sql</file>
+		<file driver="mysql">install.mysql.nonutf8.sql</file>
+	</sql>
+</install>
+
+<uninstall>
+	<sql>
+		<file driver="mysql" charset="utf8">uninstall.mysql.sql</file>
+		<file driver="mysql">uninstall.mysql.sql</file>
+	</sql>
+</uninstall>
+
+<files folder="site">
+	<filename>controller.php</filename>
+	<filename>index.html</filename>
+	<filename>router.php</filename>
+	<filename>rsmembership.php</filename>
+	<folder>assets</folder>
+	<folder>models</folder>
+	<folder>views</folder>
+</files>
+
+<languages>
+		<language tag="en-GB">languages/site/en-GB.com_rsmembership.ini</language>
+	</languages>
+
+<administration>
+
+	<menu img="../administrator/components/com_rsmembership/assets/images/rsmembership.gif">RSMembership!</menu>
+	<submenu>
+		<menu link="option=com_rsmembership">Overview</menu>
+		<menu link="option=com_rsmembership&amp;view=transactions">Transactions</menu>
+		<menu link="option=com_rsmembership&amp;view=memberships">Memberships</menu>
+		<menu link="option=com_rsmembership&amp;view=categories">Membership Categories</menu>
+		<menu link="option=com_rsmembership&amp;view=extras">Membership Extras</menu>
+		<menu link="option=com_rsmembership&amp;view=upgrades">Membership Upgrades</menu>
+		<menu link="option=com_rsmembership&amp;view=payments">Payment Integrations</menu>
+		<menu link="option=com_rsmembership&amp;view=files">Files</menu>
+		<menu link="option=com_rsmembership&amp;view=terms">File Terms &amp; Conditions</menu>
+		<menu link="option=com_rsmembership&amp;view=users">Users</menu>
+		<menu link="option=com_rsmembership&amp;view=fields">Custom Fields</menu>
+		<menu link="option=com_rsmembership&amp;view=configuration">Configuration</menu>
+		<menu link="option=com_rsmembership&amp;view=updates">Updates</menu> 
+	</submenu>
+	
+	<files>
+		<filename>install.rsmembership.php</filename>
+		<filename>uninstall.rsmembership.php</filename>
+		<filename>install.mysql.utf8.sql</filename>
+		<filename>install.mysql.nonutf8.sql</filename>
+		<filename>uninstall.mysql.sql</filename>
+	</files>
+	
+	<files folder="admin">
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>rsmembership.php</filename>
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>elements</folder>
+		<folder>helpers</folder>
+		<folder>models</folder>
+		<folder>tables</folder>
+		<folder>views</folder>
+	</files>
+
+	<languages>
+		<language tag="en-GB">languages/admin/en-GB.com_rsmembership.ini</language>
+	</languages>
+
+</administration>
+
+<params />
+
+<plugins>
+	<plugin plugin="rsmembership" name="System - RSMembership!" order="100" group="system">
+			<files folder="plg_rsmembership">
+				<file>rsmembership.php</file>
+				<file>rsmembership.xml</file>
+			</files>
+			
+		<media />
+	</plugin>
+	<plugin plugin="rsmembershipwire" name="System - RSMembership! - Wire Transfer" order="100" group="system">
+			<files folder="plg_rsmembershipwire">
+				<file>rsmembershipwire.php</file>
+				<file>rsmembershipwire.xml</file>
+			</files>
+			
+		<media />
+	</plugin>
+</plugins>
+
+<check>
+	<directory>/plugins/system</directory>
+	<extension name="rsmembership" type="plugins" field="published" value="1">element='rsmembership'</extension>
+	<extension name="rsmembershipwire" type="plugins" field="published" value="1">element='rsmembershipwire'</extension>
+</check>
+
+</install>

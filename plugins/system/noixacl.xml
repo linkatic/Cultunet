@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>System - noixACL</name>
+	<author>NOIX</author>
+	<creationDate>May 2009</creationDate>
+	<copyright>Copyright (C) 2009 Holder. All rights reserved.</copyright>
+	<license>GNU General Public License</license>
+	<authorEmail>joomla@noix.com.br</authorEmail>
+	<authorUrl>http://www.noix.com.br</authorUrl>
+	<version>2.0.10</version>
+	<description>noixACL</description>
+	<files>
+		<filename plugin="noixacl">noixacl.php</filename>
+	</files>
+	<params>
+	</params>
+</install>

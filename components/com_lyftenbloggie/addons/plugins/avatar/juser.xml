@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install component="lyftenbloggie" type="plugin" version="2.0" group="avatar">
+	<title>JUser Avatar</title>
+	<author>Daniel Stainback</author>
+	<email>joomla@lyften.com</email>
+	<website>http://www.lyften.com</website>
+	<version>1.0.0</version>
+	<license></license>
+	<copyright></copyright>
+	<date>March 20, 2010</date>
+	<description>JUser avatar for LyftenBloggie</description>
+	<files>
+		<file plugin="juser">juser.php</file>
+	</files>
+	<params>
+	</params>
+</install>

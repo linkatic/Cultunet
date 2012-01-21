@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>Modules</name>
+  <author>A. Kempkens</author>
+  <version>1.0</version>
+  <description>Definition for Mambo modules</description>
+  <copyright>2003 - 2009, Think Network GmbH, Munich</copyright>
+  <reference>
+  	<table name="modules">
+  		<field type="referenceid" name="id" translate="0">ID</field>
+  		<field type="titletext" name="title" translate="1">Title</field>
+  		<field type="htmltext" name="content" translate="1">Content</field>
+  		<field type="checked_out_by" name="checked_out" translate="0">Check out by</field>
+  		<field type="checked_out_date" name="checked_out_time" translate="0">Check out date</field>
+  	</table>
+  </reference>
+</joomfish>

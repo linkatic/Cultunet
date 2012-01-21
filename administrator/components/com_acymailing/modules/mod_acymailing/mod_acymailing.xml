@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+	<name>AcyMailing Module</name>
+	<creationDate>September 2009</creationDate>
+	<version>1.5.0</version>
+	<author>Acyba</author>
+	<authorEmail>dev@acyba.com</authorEmail>
+	<authorUrl>http://www.acyba.com</authorUrl>
+	<copyright>Copyright (C) 2009-2010 ACYBA SARL - All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<description>Subscribe / Unsubscribe Module for AcyMailing</description>
+	<files>
+		<filename module="mod_acymailing">mod_acymailing.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<params addpath="/components/com_acymailing/params">
+		<param name="help" type="help" default="module" label="Help" description="Click on the help button to get some help" />
+		<param name="effect" type="radio" default="normal" label="Display Effect" description="Select the effect you want to add to your module">
+			<option value="normal">Normal (no effect)</option>
+			<option value="mootools-slide">Mootools (slide effect)</option>
+			<option value="mootools-box">Mootools (open in a new box)</option>
+		</param>
+		<param name="lists" type="lists" default="None" label="Visible Lists" description="The following selected lists will be added on the Module and will be visible (if they are not selected as automatically subscribed to)." />
+		<param name="hiddenlists" type="lists" default="All" label="Automatically subscribe to" description="The user will be automatically subscribed to the selected lists. They won't be displayed on your module but if the user subscribes, he will be subscribed to those lists as well" />
+		<param name="displaymode" type="radio" default="vertical" label="Display Mode" description="Select whether you want to display the form in a line or vertically">
+			<option value="inline">Inline</option>
+			<option value="vertical">Vertical</option>
+		</param>
+		<param name="checkmode" type="radio" default="0" label="Check lists Mode" description="if you select the first option 'Subscription of the user', the visible lists will be checked depending on the subscription of the recognized user. If you select 'Default Checked lists', the visible lists will be always checked depending on the selected checked lists and not depending on the user subscription">
+			<option value="0">Subscription of the user</option>
+			<option value="1">Default checked lists only</option>
+		</param>
+		<param name="listschecked" type="lists" default="All" label="Lists checked by default" description="The selected lists will be checked by default on your module. This option does only apply to visible lists as hidden lists will be always checked." />
+		<param name="dropdown" type="radio" default="0" label="Lists in a dropdown" description="Display the visible lists in a dropdown">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="overlay" type="radio" default="0" label="Description as an overlay" description="Add the description of each visible list as an overlay of the list name. Be careful, you might have conflicts using this option if you have some flash elements on your website.">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="link" type="radio" default="1" label="Linked to the archive" description="Add a link to the archive section for each list.">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="customfields" type="customfields" default="name,email" label="Displayed fields" description="Select the fields you want to display on your subscription module" />
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+
+		<param name="nametext" type="text" size="50" default="" label="Name Caption" description="Text displayed on the name field. If you don't specify anything, the default value will be used from the current language file" />
+		<param name="emailtext" type="text" size="50" default="" label="Email Caption" description="Text displayed on the e-mail field. If you don't specify anything, the default value will be used from the current language file" />
+		<param name="fieldsize" type="text" size="10" default="15" label="Field size" description="Specify the size of the email and name fields on your subscription form" />
+		<param name="displayfields" type="radio" default="0" label="Display Text Mode" description="Display the Name and E-mail text inside or outside the field?">
+			<option value="0">Inside</option>
+			<option value="1">Outside</option>
+		</param>
+		<param name="introtext" type="textarea" rows="5" cols="35" default="" label="Intro Text" description="This text will be displayed before the form inside a span class=acymailing_introtext" />
+		<param name="finaltext" type="textarea" rows="5" cols="35" default="" label="Post Text" description="This text will be displayed after the form inside a span class=acymailing_finaltext" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="showsubscribe" type="radio" default="1" label="Subscribe button" description="Display the subscribe button on the module">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="showunsubscribe" type="radio" default="0" label="Unsubscribe button" description="Display the unsubscribe button on the module">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="subscribetext" type="text" size="50" default="" label="Subscribe Caption" description="Text displayed on the subscribe button. If you don't specify anything, the default value will be used from the current language file" />
+		<param name="unsubscribetext" type="text" size="50" default="" label="Unsubscribe Caption" description="Text displayed on the unsubscribe button. If you don't specify anything, the default value will be used from the current language file" />
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="redirectmode" type="radio" default="0" label="Redirect Mode" description="After submitting the form, the user can be redirected to the previous page, to the Acymailing archive page or to a custom link (in that case, please write the url in the next field)">
+			<option value="0">Previous page</option>
+			<option value="1">AcyMailing Archive</option>
+			<option value="2">Custom Redirect Link</option>
+		</param>
+		<param name="redirectlink" type="text" size="50" default="" label="Redirect Link" description="If you selected the mode 'Custom Redirect Link', the user will be redirected to this url after clicking on the button subscribe" />
+		<param name="redirectlinkunsub" type="text" size="50" default="" label="Unsubscribe Redirect Link" description="If you selected the mode 'Custom Redirect Link', the user will be redirected to this url after clicking on the button unsubscribe" />
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+
+		<param name="showterms" type="radio" default="0" label="Terms and Conditions" description="Display the 'Accept Terms and Conditions' box">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="showtermspopup" type="radio" default="1" label="Terms in a popup" description="If you select 'Yes', the article linked to the terms and conditions will be displayed in a popup, otherwise it will be displayed as a separated page">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="termscontent" type="termscontent" default="0" label="Terms and Conditions Content" description="The selected article will be displayed if the user clicks on the link 'Terms and Conditions'" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="mootoolsintro" type="textarea" rows="5" cols="35" default="" label="Intro Text for Mootools" description="This text will be displayed before the Mootools button in case of you use the Mootools effect" />
+		<param name="mootoolsbutton" type="text" size="50" default="" label="Mootools Button Text" description="Text displayed on the Mootools button in case of you use the Mootools effect. If you don't specify anything, the default value will be used from the current language file" />
+		<param name="boxwidth" type="text" size="5" default="200" label="Mootools Box width" description="If you use the Mootools Box effect, you can set the width of the box in this area" />
+		<param name="boxheight" type="text" size="5" default="150" label="Mootools Box height" description="If you use the Mootools Box effect, you can set the height of the box in this area" />
+
+	</params>
+
+	<params group="advanced">
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="textalign" type="list" default="0" label="Module Alignment" description="This option enables you to align the text inside the module">
+			<option value="none">Default CSS alignment</option>
+			<option value="right">Right</option>
+			<option value="left">Left</option>
+			<option value="center">Center</option>
+		</param>
+		<param name="loggedin" type="radio" default="1" label="Auto identify logged in users" description="Do you want the logged in users to be automatically identified in the module?">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+	</params>
+</install>

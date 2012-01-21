@@ -1,0 +1,187 @@
+/**
+ * Changelog
+ *
+ * @package     Advanced Module Manager
+ * @version     1.9.7
+ *
+ * @author      Peter van Westen <peter@nonumber.nl>
+ * @link        http://www.nonumber.nl
+ * @copyright   Copyright (C) 2010 NoNumber! All Rights Reserved
+ * @license     http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+
+/**
+ * + Added
+ * ! Removed
+ * ^ Changed
+ * # Fixed
+ */
+
+24-Jul-2010 : v1.9.7
+ ^ Changed way version and license information are displayed (now via ajax)
+ ^ Changed way versions and licenses are checked (no more base64)
+
+19-July-2010 : v1.9.6
+ + Added option to also show the tooltip (now custom description) as a separate column
+ ^ Changed some layout
+ # Fixed issue with assignment to browsers not working correctly
+
+12-July-2010 : v1.9.5
+ + Added assignment to browsers (was not added in v1.9.3 & 1.9.4)
+
+07-July-2010 : v1.9.3
+ + Added assignment to browsers
+ # Fixed issue with some regex in assignment to url not working
+ # Fixed issue with errors when assigned to Mighty Resource categories
+
+29-Jun-2010 : v1.9.2
+ ^ Improved url match assignment to also work with html entities in url
+ # Fixed issue with assignment to url not working
+ # Fixed issue with layout of GK modules (in admin) being messed up
+ # Fixed issue with errors when assigned to K2 categories
+ # Fixed issue with include children of K2 and Mighty Resource categories not working
+
+23-Jun-2010 : v1.9.1
+ # Fixed issue with code looping, causing page timeouts
+
+22-June-2010 : v1.9.0
+ + Added Mighty Resource support in assignments
+ ^ Changed K2 item id field to a select field
+ ^ Split URL assignment into 2 fields, one for SEF, one for non-SEF
+ # Fixed issue with errors on creation of new admin modules
+
+14-May-2010 : v1.8.5
+ ^ Small change in module helper file (to match MetaMod's file)
+
+01-May-2010 : v1.8.4
+ ^ Improved check for empty modules (takes certain empy html tags into consideration)
+ ! Removed an unused language string
+ # Fixed issue with modules not showing up on non-content pages if assigned to exclude content pages
+ # Fixed issue with assignment to multiline urls not woking
+ # Fixed issue with assignment to multiline php not woking
+ # Fixed issue with mirroring modules not working correctly
+
+13-Apr-2010 : v1.8.3
+ # Fixed errors caused by assignment to PHP
+
+12-Apr-2010 : v1.8.1
+ # Fixed issue with K2 categories/items assignment not working correctly
+ # Fixed issue with PHP assignment not working correctly
+
+07-Apr-2010 : v1.8.0
+ ^ Made compatible with MetaMod (thanks to Stephen Brandon)
+ # Fixed issue with assignment to date (Finish Publishing) not working correctly
+ # Fixed issue with PHP assignment field not saving correctly
+ # Fixed issue with assignment to component not working correctly in some occasions
+
+29-Mar-2010 : v1.7.2
+ # Fixed issue with sites breaking (blank page) on some setups
+ # Fixed issue with modules assigned to article id also showing up on non article pages
+
+26-Mar-2010 : v1.7.1
+ + Added field to add a tooltip description for each module (used in module list)
+ + Added filter for menu item selection (All/Varies/None)
+ ^ Displays disabled menu items as italic in menu item select box
+ # Fixed issue with trashed menu items appearing in menu item select box (was not fixed in v1.7.0
+ # Fixed issue with assignment to date not working correctly
+ # Fixed issue with error about attempt to assign property of non-object
+ # Fixed layout issues with AdminPraise 2 template
+ # Fixed issue with RokTab editor toolbars being hidden
+
+28-Feb-2010 : v1.7.0
+ + Added option to move selection of modules to other position
+ + Added filter for access level in module list
+ ! Removed Pages column from module list
+ ^ Optimized more code to make it all a lot faster/lighter
+ # Fixed issue with position select box not working on IE
+ # Fixed issue with mirroring modules not working correctly
+ # Fixed issue with trashed menu items appearing in menu item select box
+ # Fixed some layout issues for APLite template
+ # Fixed issue with modules assigned to K2 categories also appearing on other pages
+ # Fixed issue with links pointing to com_advancedmodules when option is com_modules
+ # Fixed issue with admin modules giving errors in edit screen
+ # Fixed issue with database table not being created (for real this time)
+
+14-Feb-2010 : v1.6.1
+ # Fixed issue with database table not being created
+
+12-Feb-2010 : v1.6.0
+ + Added more assignment filters (url matching, user ids, k2 categories, php evaluation)
+ ^ Changed display of position combobox (text field and pulldown separately)
+ ^ Changed assignment checks to use global plugin
+ ^ Reduced number of queries
+ ^ Optimized more code (= faster)
+ # Fixed ordering of module list in menu items view
+ # Fixed issue with mirror module not working correctly
+ # Fixed issue with sections/categories assignments not working correctly
+ # Fixed issue with modal links breaking on titles with special characters
+ # Fixed issue with deprecated syntax for php 5.3+
+ # Fixed issue with errors about registry for php 5.0.5
+
+19-Jan-2010 : v1.5.0
+ + Added save button to module popup (modal) window
+ + Added option to mirror assignment settings of other module
+ + Added option to choose AND / OR method of assignments matching
+ + Added option to also show/hide on child menu items
+ + Added extra options to hide certain settings
+ ^ Reduced number of queries
+ ^ Optimized code a little (= faster)
+ ^ Moved elements to separate global plugin (also used by other extensions)
+ ^ Changed the License Code check (now controlled by the License Manager)
+ # Fixed ordering field in module edit screen not working
+ # Fixed location of Joomla! DTD files
+
+03-Jan-2010 : v1.4.3
+ # Fixed issue with error on Custom HTML module admin pages
+
+02-Jan-2010 : v1.4.2
+ # Fixed issue with error on plugin settings page (due to License check)
+
+01-Jan-2010 : v1.4.1
+ + Added Commercial License Code support
+ ^ Moved Module Assignment options to parameter tabs
+ # Fixed issue with assignment to JACL user group levels not working correctly
+ # Fixed issue with modules assigned to articles/categories/sections also showing on other pages
+
+18-Dec-2009 : v1.3.3
+ # Fixed issue with database query error on installation
+
+14-Dec-2009 : v1.3.2
+ # Fixed issue with php warning if no modules are published
+ # Fixed issue with ordering of modules on some setups
+
+04-Dec-2009 : v1.3.1
+ ^ Reduced amount of queries (thanks to Omar Ramos)
+ ^ Improved some code
+ # Fixed issue with jos_ instead of #__ being used in 2 queries
+
+01-Dec-2009 : v1.3.0
+ ^ Changed name from Advanced Modules to Advanced Module Manager
+ ^ Changed size of modal window to maximum
+ ^ Changed order of filter options
+ ^ Changed titles and descriptions of filters (publish on instead of limit by)
+ ^ Improved User Group Level selection
+ ^ Improved some code
+
+18-Nov-2009 : v1.2.0
+ + Added extra option to not render module if it has not output
+ + Added extra limit filters (date, sections / categories, articles, user group levels, components, languages, templates)
+ # Fixed issue with php syntax error for php4 setups
+ # Fixed issue with error on uninstallation of plugin
+
+28-Oct-2009 : v1.0.0
+ + First stable release
+ # Fixed issue with new module screen returning blank (when selecting type and clicking next)
+ # Fixed issue with menu item edit screen returning blank on some setups
+ # Fixed issue with toggling of settings
+
+13-Oct-2009 : v0.2.2
+ ^ Changed file encoding to UTF-8
+ ^ Changed some code to make it a bit lighter
+ # Fixed issue with module ordering not working correctly (wasn't fixed in v0.2.1)
+
+12-Oct-2009 : v0.2.1
+ # Fixed issue with module ordering not working correctly
+
+09-Oct-2009 : v0.2.0
+ + First beta release

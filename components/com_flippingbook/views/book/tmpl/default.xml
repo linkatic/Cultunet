@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: default.xml 8178 2007-07-23 05:39:47Z eddieajau $ -->
+<metadata>
+	<layout title="Standard Book Layout">
+		<message>
+			<![CDATA[STANDARD BOOK LAYOUT DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>Standard Book Layout</name>
+		<description>STANDARD BOOK LAYOUT DESC</description>
+		<url addpath="/administrator/components/com_flippingbook/elements">
+			<param name="id" type="book" default="" label="Select Book" description="The book to link to" />
+			<param name="page" type="text" size="3" default="1" label="Page #" description="The number of start page" />
+		</url>
+	</state>
+</metadata>

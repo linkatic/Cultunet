@@ -1,0 +1,135 @@
+.main {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bolder;
+	color: #FF0000;
+}
+
+.sectionheadline{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bolder;
+	color: #990000;
+	border-bottom:1px solid black; 
+}
+.maintext{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+}
+
+
+.jobstatusmsg {
+	color: Red;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+}
+/* form validation */
+.invalid { border-color: #ff0000; }
+label.invalid { color: #ff0000; }
+	/* -------------------------------------------------- */
+	/* resume links */
+	/* -------------------------------------------------- */
+	dl.tabs {
+		float: left;
+		margin: 10px 0 -1px 0;
+		z-index: 50;
+	}
+
+	dl.tabs dt {
+		float: left;
+		padding: 4px 10px;
+		margin-left: 3px;
+		font-weight: bold;
+	}
+
+	dl.tabs dt.open {
+		background: #F9F9F9;
+		border-bottom: 1px solid #F9F9F9;
+		z-index: 100;
+	}
+
+	div.current { 
+		clear: both; 
+		padding: 10px 10px;
+	}
+
+	div.current dd 
+	{ 
+		padding: 0; 
+		margin: 0;
+	}
+.tbfilters {
+	border: 1px solid ;
+	background-color: #F9F9F9;
+}
+	/* -------------------------------------------------- */
+	/* toplinks */
+	/* -------------------------------------------------- */
+	#toplinks {
+		clear:left;
+		float:left;
+		width:100%;
+		line-height:0px;
+		font-family:Trebuchet MS, Helvetica, sans-serif;
+		overflow:hidden;
+	}
+	#toplinks ul {
+		clear:left;
+		float:left;
+		list-style:none;
+		margin:0;
+		padding:0;
+		position:relative;
+		left:50%;
+		text-align:center;
+	}
+	#toplinks ul span {
+		display:block;
+		float:left;
+		list-style:none;
+		margin:0;
+		padding:0;
+		position:relative;
+		right:50%;
+	}
+	#toplinks ul span.first {
+		border-left:1px solid;
+	}
+	#toplinks ul span.last {
+		border-right:1px solid;
+	}
+	#toplinks ul span a {
+		display:block;
+		margin:0;
+		padding:.3em .9em;
+		padding-top:.5em;
+		text-decoration:none;
+		border-left:1px solid ;
+		border-right:1px solid;
+		line-height:1.1em;
+	}
+	#toplinks ul li a span {
+		font-weight:bold;
+	}
+	#toplinks ul span a:hover {
+	}	
+	#toplinks ul span a span {
+		display:block;
+	}
+	/* -------------------------------------------------- */
+	/* captcha label*/
+	/* -------------------------------------------------- */
+	.captchalab{
+		font-size: 12px;
+		font-weight: bolder;
+		color: red;
+	}
+.jsjobsmsg{
+	font-size: 12px;
+	font-weight: bolder;
+	color: red;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}

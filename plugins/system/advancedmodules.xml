@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://www.joomla.org/xml/dtd/1.5/plugin-install.dtd">
+<install version="1.5.0" type="plugin" group="system">
+	<name>System - Advanced Module Manager</name>
+	<description>Advanced Module Manager - advanced options for modules in Joomla!</description>
+	<version>1.9.7</version>
+	<creationDate>July 2010</creationDate>
+	<author>NoNumber! (Peter van Westen)</author>
+	<authorEmail>peter@nonumber.nl</authorEmail>
+	<authorUrl>http://www.nonumber.nl</authorUrl>
+	<copyright>Copyright (C) 2010 NoNumber! All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+
+	<!-- Files -->
+	<files>
+		<filename plugin="advancedmodules">advancedmodules.php</filename>
+		<folder>advancedmodules</folder>
+	</files>
+
+	<!-- Parameters -->
+	<params addpath="/plugins/system/nonumberelements/elements">
+		<param name="@loadlanguage" type="loadlanguage" extension="plg_system_advancedmodules" />
+		<param name="@license" type="license" extension="Advanced Module Manager" />
+		<param name="@version" type="version" extension="Advanced Module Manager" xml="plugins/system/advancedmodules.xml" />
+		<param name="@dependency" type="dependency"
+			label="the Advanced Module Manager component"
+			file="/administrator/components/com_advancedmodules/admin.advancedmodules.php" />
+		<param name="@title" type="title"
+			label="Advanced Module Manager"
+			description="With Advanced Module Manager you have extra options and functionalities to control your modules"
+			image="/plugins/system/advancedmodules/images/logo.png"
+			image_w="60" image_h="80"
+			url="http://www.nonumber.nl/advancedmodulemanager"
+			help_url="http://www.nonumber.nl/advancedmodulemanager" />
+
+		<param name="show_activemodules" type="radio" default="1" label="Show active modules" description="Show active modules (description)">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="open_in_modals" type="radio" default="1" label="Edit modules in modals" description="Edit modules in modals (description)">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_tooltip" type="radio" default="1" label="Show Custom Description" description="Show Custom Description (description)">
+			<option value="1">Tooltip</option>
+			<option value="2">Extra Column</option>
+			<option value="3">Both</option>
+		</param>
+
+		<param name="@title" type="title" label="Show extra Publishing options" />
+		<param name="show_hideempty" type="radio" default="1" label="Hide if empty" description="Show Publishing option">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_mirror_module" type="radio" default="1" label="Mirror Module" description="Show Publishing option">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_match_method" type="radio" default="1" label="-Matching Method" description="Show Publishing option">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="@toggler" type="toggler" param="show_match_method" value="1" />
+			<param name="match_method" type="radio" default="and" label="Default" description="Select default option">
+				<option value="and">-AND</option>
+				<option value="or">-OR</option>
+			</param>
+		<param name="@toggler" type="toggler" />
+		<param name="show_assignto_secscats" type="radio" default="1" label="-Sections / Categories" description="Show Publishing option">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_assignto_k2cats" type="radio" default="1" label="-K2 Categories" description="Show Publishing option">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_assignto_mrcats" type="radio" default="1" label="-Mighty Resource Categories" description="Show Publishing option">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_assignto_articles" type="radio" default="1" label="-Articles" description="Show Publishing option">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_assignto_components" type="radio" default="1" label="-Components" description="Show Publishing option">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_assignto_urls" type="radio" default="1" label="-URL" description="Show Publishing option">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_assignto_browsers" type="radio" default="1" label="-Browsers" description="Show Publishing option">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_assignto_date" type="radio" default="1" label="-Date" description="Show Publishing option">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_assignto_usergrouplevels" type="radio" default="1" label="-User Group Levels" description="Show Publishing option">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_assignto_users" type="radio" default="1" label="-Users" description="Show Publishing option">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_assignto_languages" type="radio" default="1" label="-Languages" description="Show Publishing option">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_assignto_templates" type="radio" default="1" label="-Templates" description="Show Publishing option">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_assignto_php" type="radio" default="1" label="-PHP" description="Show Publishing option">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+
+	</params>
+</install>

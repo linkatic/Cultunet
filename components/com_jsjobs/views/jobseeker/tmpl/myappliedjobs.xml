@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="My Applied Jobs">
+		<message>
+			<![CDATA[My applied jobs.]]>
+		</message>
+	</layout>
+	<state>
+		<name>My Applied Jobs</name>
+		<description>My applied jobs.</description>
+	</state>
+</metadata>

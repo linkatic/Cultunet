@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="BLOG ADD ENTRY">
+		<message>
+			<![CDATA[BLOG ADD ENTRY TIP]]>
+		</message>
+	</layout>
+	<state>
+		<name>BLOG ADD ENTRY</name>
+		<description>BLOG ADD ENTRY DESC</description>
+		<params>
+		</params>
+	</state>
+</metadata>

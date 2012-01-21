@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install version="1.5" type="module" client="site" method="upgrade">
+	<name>JomSocial Connect</name>
+	<author>JomSocial Team</author>
+	<creationDate>20/06/2010</creationDate>
+	<copyright>Copyright (C) 2008 - 2010 JomSocial. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@jomsocial.com</authorEmail>
+	<authorUrl>http://www.jomsocial.com</authorUrl>	
+	<version>1.8.0</version>
+	<description>Displays facebook connect logo</description>
+	<files>
+		<filename module="mod_jomsocialconnect">mod_jomsocialconnect.php</filename>
+		<filename>mod_jomsocialconnect.xml</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<params>
+	</params>
+</install>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: mtree_listings.xml 911 2010-07-01 11:15:21Z cy $ -->
+<install version="1.5" type="plugin" group="finder" method="upgrade">
+	<name>Finder - Mosets Tree</name>
+	<group>finder</group>
+	<version>1.1</version>
+	<creationDate>July 2010</creationDate>
+	<author>Mosets Consulting</author>
+	<authorEmail>mtree@mosets.com</authorEmail>
+	<authorUrl>http://www.mosets.com/</authorUrl>
+	<copyright>Mosets Consulting</copyright>
+	<description>FINDER_MTREE_DESC</description>
+
+	<files>
+		<file plugin="mtree_listings">mtree_listings.php</file>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">en-GB.plg_finder_mtree_listings.ini</language>
+	</languages>
+	
+	<params />
+</install>

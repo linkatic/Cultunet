@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="user">
+	<name>Authorization - AEC Access</name>
+	<author>David Deutsch</author>
+	<creationDate>24.02.2008</creationDate>
+	<copyright>Copyright (C) 2008 David Deutsch</copyright>
+	<license>GNU/GPL Version 2.0 or later - http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>skore@valanx.org</authorEmail>
+	<authorUrl>https://valanx.org</authorUrl>
+	<version>0.6</version>
+	<description>The AEC Access Plugin regulates overall access to Joomla! based on the subscription status of a user within the AEC.</description>
+	<files>
+		<filename plugin="aecaccess">aecaccess.php</filename>
+	</files>
+	<params/>
+</install>

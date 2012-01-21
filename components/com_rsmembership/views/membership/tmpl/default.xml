@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="RSM_SINGLE_MEMBERSHIP_LAYOUT">
+		<message>
+			<![CDATA[RSM_SINGLE_MEMBERSHIP_LAYOUT]]>
+		</message>
+	</layout>
+	<state>
+		<name>RSM_DEFAULT_LAYOUT</name>
+		<url addpath="/administrator/components/com_rsmembership/elements">
+			<param name="cid" type="membership" default="0" label="Select Membership" description="Select Membership" />
+		</url>
+	</state>
+</metadata>

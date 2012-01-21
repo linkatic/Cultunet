@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<install type="plugin" version="1.5" method="upgrade" group="acymailing">
+	<name>NewsFeeds plugin for AcyMailing</name>
+	<creationDate>December 2010</creationDate>
+	<version>1.0.0</version>
+	<author>Acyba</author>
+	<authorEmail>dev@acyba.com</authorEmail>
+	<authorUrl>http://www.acyba.com</authorUrl>
+	<copyright>Copyright (C) 2009-2011 ACYBA SARL - All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>This AcyMailing plugin enables you to include NewsFeeds in your Newsletters</description>
+	<files>
+		<filename plugin="newsfeeds">newsfeeds.php</filename>
+	</files>
+	<params addpath="/components/com_acymailing/params">
+		<param name="help" type="help" label="Help" description="Click on the help button to get some help" default="plugin-newsfeeds"/>
+		<param name="maxheight" type="text" size="10" default="150" label="Max picture height" description="If you select the resized option, AcyMailing will resize your pictures. Please specify the maximum height." />
+		<param name="maxwidth" type="text" size="10" default="150" label="Max picture width" description="If you select the resized option, AcyMailing will resize your pictures. Please specify the maximum width." />
+	</params>
+	<config>
+		<fields name="params" addfieldpath="/components/com_acymailing/params">
+			<fieldset name="basic">
+				<field name="help" type="help" label="Help" description="Click on the help button to get some help" default="plugin-newsfeeds"/>
+				<field name="maxheight" type="text" size="10" default="150" label="Max picture height" description="If you select the resized option, AcyMailing will resize your pictures. Please specify the maximum height." />
+				<field name="maxwidth" type="text" size="10" default="150" label="Max picture width" description="If you select the resized option, AcyMailing will resize your pictures. Please specify the maximum width." />
+			</fieldset>
+		</fields>
+	</config>
+</install>

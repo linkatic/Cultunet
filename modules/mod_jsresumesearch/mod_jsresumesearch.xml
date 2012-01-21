@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5">
+	<name>JS Resume Search</name>
+	<author>Joom Sky</author>
+	<creationDate>Oct 29th, 2009</creationDate>
+	<copyright>(C) 2009. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>ahmad@joomsky.com</authorEmail>
+	<authorUrl>www.joomsky.com</authorUrl>
+	<version>1.0</version>
+	<description>Resume Search form for JS Jobs. </description>
+	<params>
+		<param name="title" type="radio" default="1" label="Application Title" description="Show/Hide the application title">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="name" type="radio" default="1" label="Name" description="Show/Hide the name">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="natinality" type="radio" default="1" label="Natinality" description="Show/Hide the natinality">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="gender" type="radio" default="1" label="Gender" description="Show/Hide the gender">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="iamavailable" type="radio" default="1" label="I am available" description="Show/Hide the i am available">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+
+
+		<param name="category" type="radio" default="1" label="Category" description="Show/Hide the category">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="jobtype" type="radio" default="1" label="Job Type" description="Show/Hide the job type">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="salaryrange" type="radio" default="1" label="Salary Range" description="Show/Hide the salary range">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="heighesteducation" type="radio" default="1" label="Heighest Education" description="Show/Hide the heighest education">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="experience" type="radio" default="1" label="Experience" description="Show/Hide the experience">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+
+	</params>
+	<files>
+	<filename module="mod_jsresumesearch">mod_jsresumesearch.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_jsresumesearch.ini</language>
+	</languages>
+</install>

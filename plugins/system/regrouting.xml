@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install version="1.5" type="plugin" group="system">
+  <name>JomSocial Registration Routing</name>
+  <version>1.0</version>
+  <creationDate>April 2010</creationDate>
+  <author>Stéphane Bouey</author>
+  <authorEmail>stephane.bouey@faboba.com</authorEmail>
+  <authorUrl>http://www.faboba.com/</authorUrl>
+  <copyright>faboba</copyright>
+  <license>This extension is released under the GNU/GPL License</license>
+  <description><![CDATA[JomSocial Registration Routing should be used to redirect registration requests from the joomla core system to JomSocial.]]></description>
+  <files>  	
+	<filename plugin="regrouting">regrouting.php</filename>
+  </files>
+  <params>
+            <param name="displaymenu" type="radio" default="1" label="Activate menu" description="Enable/Disable menu on users JomSocial profile page.">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+            </param>
+  </params>
+</install>

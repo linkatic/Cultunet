@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+<name>AEC Module</name>
+<creationDate>24.02.2008</creationDate>
+<author>Helder Garcia, David 'skOre' Deutsch</author>
+<copyright>This module is released under the GNU/GPL License.  </copyright>
+<authorEmail>skore@valanx.org</authorEmail>
+<authorUrl>www.valanx.org</authorUrl>
+<version>0.12.6</version>
+<description>Module for use with Account Expiration Control Component.</description>
+<files>
+	<filename module="mod_acctexp">mod_acctexp.php</filename>
+	<filename>mod_acctexp_language/brazilian_portuguese.php</filename>
+	<filename>mod_acctexp_language/english.php</filename>
+	<filename>mod_acctexp_language/french.php</filename>
+	<filename>mod_acctexp_language/german.php</filename>
+	<filename>mod_acctexp_language/germani.php</filename>
+	<filename>mod_acctexp_language/italian.php</filename>
+	<filename>mod_acctexp_language/spanish.php</filename>
+	<filename>mod_acctexp_language/simplified_chinese.php</filename>
+	<filename>mod_acctexp_language/dutch.php</filename>
+</files>
+<params>
+	<param name="pretext" type="text" default="" label="Pre Text" description="Text that you want to display before the automatically generated text." />
+	<param name="posttext" type="text" default="" label="Post Text" description="Text that you want to display after the automatically generated text." />
+	<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+	<param name="show_expiration" type="list" default="1" label="Subscription Expiration Date" description="Choose if you want to display the end date of subscription." >
+		<option value="0">Do not show</option>
+		<option value="1">Show</option>
+	</param>
+	<param name="displaypipeline" type="list" default="1" label="DisplayPipeline" description="If you have MicroIntegrations that write to the DisplayPipeline, enable this feature to actually display things." >
+		<option value="0">Disable</option>
+		<option value="1">Enable</option>
+	</param>
+	<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+		<option value="1">Use global</option>
+		<option value="0">No caching</option>
+	</param>
+</params>
+</install>

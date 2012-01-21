@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="RSM_TERM_LAYOUT">
+		<message>
+			<![CDATA[RSM_TERM_LAYOUT]]>
+		</message>
+	</layout>
+	<state>
+		<name>RSM_DEFAULT_LAYOUT</name>
+		<url addpath="/administrator/components/com_rsmembership/elements">
+			<param name="cid" type="term" default="0" label="Select Terms" description="Select Terms" />
+		</url>
+	</state>
+</metadata>

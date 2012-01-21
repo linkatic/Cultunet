@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="community" method="upgrade">
+	<name>RSMembership!</name>
+	<creationDate>13/11/2009</creationDate>
+	<author>www.rsjoomla.com</author>
+	<copyright>This component is released under the GNU/GPL License</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorEmail>support@rsjoomla.com</authorEmail>
+	<authorUrl>www.rsjoomla.com</authorUrl>
+	<version>1.0</version>
+	<isapplication>true</isapplication>
+	<description>
+		RSMembership! Application for JomSocial
+	</description>
+	<languages>
+	    <language tag="en-GB">en-GB.plg_rsmembership.ini</language>
+	</languages>
+	<files>
+		<file plugin="plg_rsmembership">plg_rsmembership.php</file>
+		<file>plg_rsmembership/favicon.png</file>
+		<file>plg_rsmembership/style.css</file>
+	</files>
+	
+	<params>
+		<param name="coreapp" type="list" default="0" label="Core Application" description="Causes this application to not appearin the users applications list but it will allow this application to appear in the user profile automatically if selected.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this plugin">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="itemid" type="text" default="0" label="Custom Itemid" description="Set the custom Itemid you want to use with your RSMembership! links" />
+	</params>	
+</install>

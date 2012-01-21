@@ -1,0 +1,118 @@
+/**
+* Gavick News Show GK3 - CSS
+* @package Joomla!
+* @Copyright (C) 2008-2009 Gavick.com
+* @ All rights reserved
+* @ Joomla! is Free Software
+* @ Released under GNU/GPL License : http://www.gnu.org/copyleft/gpl.html
+* @version $Revision: 3.2 $
+**/
+
+h4.ta_center, p.ta_center{text-align: center;}
+h4.ta_left, p.ta_left{text-align: left;}
+h4.ta_right, p.ta_right{text-align: right;}
+p.ta_justify{text-align: justify;}
+img.i_left{display: block;float: left;}
+img.i_right{display: block;float: right;}
+img.i_center{display: block;margin: 0 auto;}
+
+a.readon_class{}
+
+a.p_left{
+	float: left !important;
+}
+
+a.p_right{
+	float: right !important;
+}
+
+a.p_center{
+	margin: 0 auto !important;
+}
+
+h4.gk_news_show_news_header {
+	margin: 0 0 8px;
+	padding:0;
+}
+
+a.gk_news_show_news_readmore {}
+
+a.gk_news_show_news_readmore_inline {
+	margin-left: 10px;
+}
+
+p.gk_news_show_news_text {
+	margin-top: 0px;
+}
+
+table.gk_news_show_table {}
+
+td.gk_news_show_tablerow_top {}
+
+div.gk_news_show_panel {
+	padding: 6px 0 0 0;
+}
+
+div.gk_news_show_panel_amount {
+	float: right;
+	width: 50px;
+	padding: 0;
+}
+
+div.gk_news_show_panel_amount_plus,
+div.gk_news_show_panel_amount_minus {
+	width: 12px;
+	height: 12px;
+	float:left;
+	line-height: 12px;
+	padding: 0;
+	text-align: center;
+	cursor: pointer;
+	margin-right: 3px;
+	border: 1px solid #EEE;
+}
+
+span.gk_news_show_panel_amount_value {
+	display: block;
+	float:left;
+	font-size: 10px;
+	margin-left: 4px;
+}
+
+div.gk_news_show_panel_tools,
+div.gk_news_show_panel_tools_hidden {
+	cursor: pointer;
+	padding: 0;
+	float:right;
+	font-size: 10px;	
+}
+
+td.gk_news_show_panel-border {
+    border-top: 1px dotted #ccc;
+}
+
+tr.gk_news_show_tablerow {}
+
+td.gk_news_show_left {}
+
+td.gk_news_show_center {}
+
+td.gk_news_show_right {}
+
+td.gk_news_show_tablerow_bottom  ul.gk_news_show_list_floated {}
+
+ul.gk_news_show_list {}
+
+tr.gk_news_show_tablerow{}
+
+tr.gk_news_show_tablerow_invisible{
+	display: none;
+}
+
+li.block{
+	display: block;
+}
+
+li.none{
+	display: none;
+}

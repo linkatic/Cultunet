@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="theme" version="2.0">
+	<title>Simple</title>
+	<author>Lyften Designs</author>
+	<email>joomla@lyften.com</email>
+	<website>http://www.lyften.com</website>
+	<version>1.1.0</version>
+	<license>GNU/Lesser General Public License</license>
+	<copyright>Copyright 2009-2010 Lyften Designs</copyright>
+	<date>March 20, 2010</date>
+	<description>Simple and classic</description>
+	<files>
+		<file theme="simple">index.html</file>
+		<folder>css</folder>
+		<folder>images</folder>
+	</files>
+	<params>
+		<param name="left_object" type="list" default="image" label="Left Colum Object" description="">
+			<option value="0">None</option>
+			<option value="image">Image</option>
+			<option value="avatar">Author's Avatar</option>
+		</param>
+		<param name="leftcol_width" type="text" default="240px" label="Left Colum Width" description="" />
+	</params>
+</install>

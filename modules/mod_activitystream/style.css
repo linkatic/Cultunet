@@ -1,0 +1,38 @@
+div.joms-newsfeed-item {
+	display: block;
+	margin: 0;
+	padding: 5px 0 25px !important;
+	
+	position: relative;
+	overflow: hidden;
+	border-bottom: 1px dotted #ccc;
+	}
+div.joms-newsfeed-item .newsfeed-avatar {
+	width: 40px;
+	float: left;
+	}
+div.joms-newsfeed-item .newsfeed-favicon {
+	width: 20px;
+	position: absolute;
+	right: 0;
+	bottom: 3px;
+	}
+	.no-avatar .newsfeed-favicon { top: 6px; left: 2px; }
+div.joms-newsfeed-item .newsfeed-content {
+    margin: 0 0 0 45px;
+    }
+    div.no-avatar .newsfeed-content { margin: 0 0 0 25px; }
+div.joms-newsfeed-item .newsfeed-date {
+	position: absolute;
+	bottom: 2px;
+	left: 0;
+	}
+div.joms-newsfeed-item .newsfeed-content-top {
+	margin: 0;
+	}
+div.joms-newsfeed-item .newsfeed-remove  {
+    display:none;
+    position:absolute;
+    right:0;
+    top:7px;
+    }

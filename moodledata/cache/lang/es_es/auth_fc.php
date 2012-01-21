@@ -1,0 +1,16 @@
+<?php $this->cache['es_es']['auth_fc'] = array (
+  'auth_fcconnfail' => 'Fallo de conexión con Errno: {$a->no} and Error String: {$a->str}',
+  'auth_fccreators' => 'Lista de grupos cuyos miembros pueden crear nuevos cursos. Separe los distintos grupos con \';\'. Los nombres deben escribirse exactamente igual que en el servidor FirstClass. El sistema diferencia entre mayúsculas y minúsculas.',
+  'auth_fccreators_key' => 'Creadores',
+  'auth_fcdescription' => 'Este método usa un servidor FirstClass para comprobar si un nombre de usuario o contraseña determinados son válidos.',
+  'auth_fcfppport' => 'Puerto de servidor (3333 es el más común)',
+  'auth_fcfppport_key' => 'Puerto',
+  'auth_fcchangepasswordurl' => 'URL para cambio de contraseña',
+  'auth_fcpasswd' => 'Contraseña de la cuenta anterior.',
+  'auth_fcpasswd_key' => 'Contraseña',
+  'auth_fcuserid' => 'Identificador de usuario de la cuenta FirstClass con privilegios de \'Subadministrador\'.',
+  'auth_fcuserid_key' => 'ID del Usuario',
+  'auth_fchost' => 'Dirección del servidor FirstClass. Utilice el número de IP o el nombre DNS.',
+  'auth_fchost_key' => 'Host:',
+  'pluginname' => 'Usar servidor FirstClass',
+);

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Job Search">
+		<message>
+			<![CDATA[Search jobs.]]>
+		</message>
+	</layout>
+	<state>
+		<name>Job Search</name>
+		<description>Job search.</description>
+	</state>
+</metadata>

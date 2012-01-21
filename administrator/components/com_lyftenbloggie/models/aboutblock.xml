@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<name>Article Edit Form</name>
+	<params group="settings">
+		<param name="mainBlogDesc" type="textarea" default="" label="Blog description" rows="3" cols="30" description="" />
+		<param name="showFeedLink" type="radio" default="0" label="Show Feed Link" description="">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</param>
+		<param name="showFaceBookLink" type="radio" default="0" label="Facebook Header Link" description="">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</param>
+		<param name="facebookURL" type="text" default="" label="Facebook URL" description="If left blank icon will not appear" />
+		<param name="diggURL" type="text" default="" label="Digg URL" description="If left blank icon will not appear" />
+		<param name="deliciousURL" type="text" default="" label="Delicious URL" description="If left blank icon will not appear" />
+		<param name="technoratiURL" type="text" default="" label="Technorati URL" description="If left blank icon will not appear" />
+		<param name="twitterURL" type="text" default="" label="Twitter URL" description="If left blank icon will not appear" />
+		<param name="flickrURL" type="text" default="" label="Flickr URL" description="If left blank icon will not appear" />
+		<param name="mybloglogURL" type="text" default="" label="MyBlogLog URL" description="If left blank icon will not appear" />
+		<param name="ffindURL" type="text" default="" label="FriendFeed URL" description="If left blank icon will not appear" />	
+	</params>
+</form>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="Home">
+		<message>
+			<![CDATA[
+				Jom Social Front page view
+			]]>
+		</message>
+	</view>
+	<state>
+		<name>JomSocial Frontpage</name>
+		<description>Frontpage for JomSocial</description>
+	</state>
+</metadata>

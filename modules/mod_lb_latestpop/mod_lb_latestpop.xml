@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+	<name>LyftenBloggie Latest and Popular Blog</name>
+	<creationDate>August 2010</creationDate>
+	<author>Lyften Designs</author>
+	<copyright>(C) 2009-2010 Lyften Designs</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>joomla@lyften.com</authorEmail>
+	<authorUrl>http://www.lyften.com</authorUrl>
+	<version>1.1.0b</version>
+	<description>This module shows a list of the most recently published and most popular blog entries.</description>
+	<files>
+		<filename module="mod_lb_latestpop">mod_lb_latestpop.php</filename>
+		<filename>index.html</filename>		
+		<filename>helper.php</filename>
+		<filename>style.css</filename>
+		<folder>tmpl</folder>
+	</files>
+
+    <languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_lb_latestpop.ini</language>
+	</languages>
+
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="module_width" type="text" default="280" label="Module Width" description="" />
+		<param name="limitTitle" type="text" default="0" label="Limit Title Length" description="Shortens the title length by some many characters. NOTE: 0 = unlimited" />
+		<param name="moduleType" type="list" default="recent" label="Module Type" description="Select whether to display Recent or Popular Posts">
+			<option value="recent">Recent Posts</option>
+			<option value="popular">Popular Posts</option>
+		</param>
+		<param name="showAuthor" type="list" default="1" label="Show Author" description="Select whether to display the author">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="image" type="list" default="image" label="Image Type" description="">
+			<option value="none">None</option>
+			<option value="image">Image</option>
+			<option value="avatar">Author's Avatar</option>
+		</param>
+		<param name="count" type="text" default="5" label="Count" description="The number of items to display (default 5)" />
+		<param name="ordering" type="list" default="create_dsc" label="Ordering" description="Ordering options">
+			<option value="c_dsc">Recently Added First</option>
+			<option value="m_dsc">Recently Modified First</option>
+	  	</param>
+		<param name="user_id" type="text" default="" label="Authors" description="User User IDs and separate with commas. [62,67,88]" />
+		<param name="catid" type="text" default="" label="Category ID" description="" />
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>

@@ -1,0 +1,96 @@
+/* RESET CSS*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; background:transparent;}
+body {line-height:1;}
+ol, ul {list-style:none;}
+blockquote, q {quotes:none;}
+
+	/* remember to define focus styles! */
+:focus {outline:0;}
+
+	/* remember to highlight inserts somehow! */
+ins {text-decoration:none;}
+del {text-decoration:line-through;}
+
+	/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse:collapse; border-spacing:0;}
+
+
+.clearfix:after{display:block; visibility:hidden; clear:both; height:0; content: '.';}
+.clearfix{display:inline-block;}
+* html .clearfix{height:1%;}
+.clearfix{display:block;}
+
+.clear{display:block; visibility:hidden; overflow:hidden; clear:both; width:0; height:0;}
+
+
+/* AUXILIARES */
+.floatleft{display:inline; float:left;}
+.floatright{display:inline; float:right;}
+
+img.left {float:left; padding:0px 20px 20px 0;}
+img.right {float:right; padding:0px 0px 20px 20px;}
+
+.txtleft{text-align:left;}
+.txtright{text-align:right;}
+.txtcenter{text-align:center;}
+
+.first {margin-left:0; padding-left:0;}
+.last{margin-right:0!important; border:0 none!important;}
+
+.hide{display:none;}
+
+.padding10{padding:10px;}
+
+/*GRID*/
+.ml5{margin-left:5px;}
+.ml10{margin-left:10px;}
+.ml15{margin-left:15px;}
+.ml20{margin-left:20px;}
+
+.mr5{margin-right:5px;}
+.mr10{margin-right:10px;}
+.mr15{margin-right:15px;}
+.mr20{margin-right:20px;}
+
+.mt1{margin-top:1px;}
+.mt5{margin-top:5px;}
+.mt10{margin-top:10px;}
+.mt15{margin-top:15px;}
+.mt20{margin-top:20px;}
+
+.mb1{margin-bottom:1px;}
+.mb5{margin-bottom:5px;}
+.mb10{margin-bottom:10px;}
+.mb15{margin-bottom:15px;}
+.mb20{margin-bottom:20px;}
+
+
+/**** anchos *****/
+.wp5{width:5%;}
+.wp10{width:10%;}
+.wp15{width:15%;}
+.wp20{width:20%;}
+.wp25{width:25%;}
+.wp30{width:30%;}
+.wp33{width:33.33%;}
+.wp35{width:35%;}
+.wp40{width:40%;}
+.wp45{width:45%;}
+.wp50{width:50%;}
+.wp55{width:55%;}
+.wp60{width:60%;}
+.wp65{width:65%;}
+.wp67{width:66.67%;}
+.wp70{width:70%;}
+.wp75{width:75%;}
+.wp80{width:80%;}
+.wp85{width:85%;}
+.wp90{width:90%;}
+.wp95{width:95%;}
+.wp100{width:100%;}
+
+
+/*** colores ***/
+
+.txtcolorRed{color:#FF3300}
+

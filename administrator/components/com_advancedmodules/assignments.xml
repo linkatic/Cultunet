@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params group="mirror_module" addpath="/plugins/system/nonumberelements/elements">
+		<param name="mirror_module" type="radio" default="0" label="Mirror Module" description="Mirror Module (description)">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="@toggler" type="toggler" param="mirror_module" value="1" />
+			<param name="mirror_moduleid" type="text" default="" label="Mirror Module ID" description="Mirror Module ID (description)" />
+		<param name="@toggler" type="toggler" />
+	</params>
+
+	<params group="match_method">
+		<param name="match_method" type="radio" default="and" label="-Matching Method" description="-Matching Method (description)">
+			<option value="and">-AND</option>
+			<option value="or">-OR</option>
+		</param>
+		<param name="@toggler" type="toggler" param="match_method" value="and" />
+			<param name="@title" type="title" description="-AND (description)" />
+		<param name="@toggler" type="toggler" />
+		<param name="@toggler" type="toggler" param="match_method" value="or" />
+			<param name="@title" type="title" description="-OR (description)" />
+		<param name="@toggler" type="toggler" />
+	</params>
+
+	<params group="assignto_menuitems">
+		<param name="@title" type="title" start="1" blocktype="fieldset" label="-Menu Items" />
+			<param name="assignto_menuitems" type="radio" default="0" label="-Assign to" description="-Assign to (description)">
+				<option value="1">-Selection</option>
+				<option value="2">-Exclude Selection</option>
+				<option value="0">-All</option>
+			</param>
+			<param name="@toggler" type="toggler" param="assignto_menuitems" value="1,2" />
+				<param name="assignto_menuitems_inc_children" type="radio" default="0" label="-Also on child items" description="-Also on child items (description)">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</param>
+				<param name="assignto_menuitems_selection" type="menuitems" default="" label="-Menu Items" description="-Menu Items (description)" />
+				<param name="assignto_menuitems_inc_noitemid" type="radio" default="0" label="-Include no Itemid" description="-Include no Itemid (description)">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</param>
+			<param name="@toggler" type="toggler" />
+		<param name="@title" type="title" end="1" blocktype="fieldset" />
+	</params>
+
+	<params group="assignto_secscats">
+		<param name="@title" type="title" start="1" blocktype="fieldset" label="-Sections / Categories" />
+			<param name="assignto_secscats" type="radio" default="0" label="-Assign to" description="-Assign to (description)">
+				<option value="1">-Selection</option>
+				<option value="2">-Exclude Selection</option>
+				<option value="0">-All</option>
+			</param>
+			<param name="@toggler" type="toggler" param="assignto_secscats" value="1,2" />
+				<param name="assignto_secscats_inc" type="checkbox" default="inc_secs,inc_cats,inc_arts" label="-Page types" description="-Page types (description)">
+					<option value="inc_secs">-Sections</option>
+					<option value="inc_cats">-Categories</option>
+					<option value="inc_arts">-Articles</option>
+					<option value="inc_others">-Others</option>
+				</param>
+				<param name="assignto_secscats_selection" type="secscats" multiple="1" default="" label="-Sections / Categories" description="-Sections / Categories (description)" />
+			<param name="@toggler" type="toggler" />
+		<param name="@title" type="title" end="1" blocktype="fieldset" />
+	</params>
+
+	<params group="assignto_articles">
+		<param name="@title" type="title" start="1" blocktype="fieldset" label="-Articles" />
+			<param name="assignto_articles" type="radio" default="0" label="-Assign to" description="-Assign to (description)">
+				<option value="1">-Selection</option>
+				<option value="2">-Exclude Selection</option>
+				<option value="0">-All</option>
+			</param>
+			<param name="@toggler" type="toggler" param="assignto_articles" value="1,2" />
+				<param name="assignto_articles_selection" type="articles" multiple="1" default="" label="-Article IDs" description="-Article IDs (description)" />
+			<param name="@toggler" type="toggler" />
+		<param name="@title" type="title" end="1" blocktype="fieldset" />
+	</params>
+
+	<params group="assignto_k2cats">
+		<param name="@title" type="title" start="1" blocktype="fieldset" label="-K2 Categories" />
+			<param name="assignto_k2cats" type="radio" default="0" label="-Assign to" description="-Assign to (description)">
+				<option value="1">-Selection</option>
+				<option value="2">-Exclude Selection</option>
+				<option value="0">-All</option>
+			</param>
+			<param name="@toggler" type="toggler" param="assignto_k2cats" value="1,2" />
+				<param name="assignto_k2cats_inc_children" type="radio" default="0" label="-Also on child items" description="-Also on child items (description)">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</param>
+				<param name="assignto_k2cats_selection" type="categoriesk2" multiple="1" size="5" default="0" label="-K2 Category" description="" />
+				<param name="assignto_k2cats_inc" type="checkbox" default="inc_cats,inc_items" label="-Page types" description="-Page types (description)">
+					<option value="inc_cats">-Categories</option>
+					<option value="inc_items">-Items</option>
+				</param>
+			<param name="@toggler" type="toggler" />
+		<param name="@title" type="title" end="1" blocktype="fieldset" />
+	</params>
+
+	<params group="assignto_mrcats">
+		<param name="@title" type="title" start="1" blocktype="fieldset" label="-Mighty Resource Categories" />
+			<param name="assignto_mrcats" type="radio" default="0" label="-Assign to" description="-Assign to (description)">
+				<option value="1">-Selection</option>
+				<option value="2">-Exclude Selection</option>
+				<option value="0">-All</option>
+			</param>
+			<param name="@toggler" type="toggler" param="assignto_mrcats" value="1,2" />
+				<param name="assignto_mrcats_inc_children" type="radio" default="0" label="-Also on child items" description="-Also on child items (description)">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</param>
+				<param name="assignto_mrcats_selection" type="categoriesmr" multiple="1" default="" label="-Category IDs" description="-Category IDs (description)" />
+				<param name="assignto_mrcats_inc" type="checkbox" default="inc_cats,inc_items" label="-Page types" description="-Page types (description)">
+					<option value="inc_cats">-Categories</option>
+					<option value="inc_items">-Items</option>
+				</param>
+			<param name="@toggler" type="toggler" />
+		<param name="@title" type="title" end="1" blocktype="fieldset" />
+	</params>
+
+	<params group="assignto_components">
+		<param name="@title" type="title" start="1" blocktype="fieldset" label="-Components" />
+			<param name="assignto_components" type="radio" default="0" label="-Assign to" description="-Assign to (description)">
+				<option value="1">-Selection</option>
+				<option value="2">-Exclude Selection</option>
+				<option value="0">-All</option>
+			</param>
+			<param name="@toggler" type="toggler" param="assignto_components" value="1,2" />
+				<param name="assignto_components_selection" type="components" admin="0" default="" label="-Components" description="-Components (description)" />
+			<param name="@toggler" type="toggler" />
+		<param name="@title" type="title" end="1" blocktype="fieldset" />
+	</params>
+
+	<params group="assignto_urls">
+		<param name="@title" type="title" start="1" blocktype="fieldset" label="-URL" />
+			<param name="assignto_urls" type="radio" default="0" label="-Assign to" description="-Assign to (description)">
+				<option value="1">-Selection</option>
+				<option value="2">-Exclude Selection</option>
+				<option value="0">-All</option>
+			</param>
+			<param name="@toggler" type="toggler" param="assignto_urls" value="1,2" />
+				<param name="assignto_urls_selection" type="textareaplus" texttype="regex" default="" resize="1" label="-URL parts Non-SEF" description="-URL parts Non-SEF (description)" />
+				<param name="assignto_urls_selection_sef" type="textareaplus" texttype="regex" default="" resize="1" label="-URL parts SEF" description="-URL parts SEF (description)" />
+			<param name="@toggler" type="toggler" />
+		<param name="@title" type="title" end="1" blocktype="fieldset" />
+	</params>
+
+	<params group="assignto_browsers">
+		<param name="@title" type="title" start="1" blocktype="fieldset" label="-Browsers" />
+			<param name="assignto_browsers" type="radio" default="0" label="-Assign to" description="-Assign to (description)">
+				<option value="1">-Selection</option>
+				<option value="2">-Exclude Selection</option>
+				<option value="0">-All</option>
+			</param>
+			<param name="@toggler" type="toggler" param="assignto_browsers" value="1,2" />
+				<param name="assignto_browsers_selection" type="browsers" default="" label="-Browsers" description="-Browsers (description)" />
+			<param name="@toggler" type="toggler" />
+		<param name="@title" type="title" end="1" blocktype="fieldset" />
+	</params>
+
+	<params group="assignto_date">
+		<param name="@title" type="title" start="1" blocktype="fieldset" label="-Date" />
+			<param name="assignto_date" type="radio" default="0" label="-Assign to" description="-Assign to (description)">
+				<option value="1">-Selection</option>
+				<option value="2">-Exclude Selection</option>
+				<option value="0">-All</option>
+			</param>
+			<param name="@toggler" type="toggler" param="assignto_date" value="1,2" />
+				<param name="assignto_date_publish_up" type="calendar" default="" label="-Start Publishing" description="-Start Publishing (description)" />
+				<param name="assignto_date_publish_down" type="calendar" default="" label="-Finish Publishing" description="-Finish Publishing (description)" />
+			<param name="@toggler" type="toggler" />
+		<param name="@title" type="title" end="1" blocktype="fieldset" />
+	</params>
+
+	<params group="assignto_usergrouplevels">
+		<param name="@title" type="title" start="1" blocktype="fieldset" label="-User Group Levels" />
+			<param name="assignto_usergrouplevels" type="radio" default="0" label="-Assign to" description="-Assign to (description)">
+				<option value="1">-Selection</option>
+				<option value="2">-Exclude Selection</option>
+				<option value="0">-All</option>
+			</param>
+			<param name="@toggler" type="toggler" param="assignto_usergrouplevels" value="1,2" />
+				<param name="assignto_usergrouplevels_selection" type="grouplevel" multiple="1" notregistered="1" default="" label="-User Group Levels" description="-User Group Levels (description)" />
+			<param name="@toggler" type="toggler" />
+		<param name="@title" type="title" end="1" blocktype="fieldset" />
+	</params>
+
+	<params group="assignto_users">
+		<param name="@title" type="title" start="1" blocktype="fieldset" label="-Users" />
+			<param name="assignto_users" type="radio" default="0" label="-Assign to" description="-Assign to (description)">
+				<option value="1">-Selection</option>
+				<option value="2">-Exclude Selection</option>
+				<option value="0">-All</option>
+			</param>
+			<param name="@toggler" type="toggler" param="assignto_users" value="1,2" />
+				<param name="assignto_users_selection" type="text" default="" label="-User IDs" description="-User IDs (description)" />
+			<param name="@toggler" type="toggler" />
+		<param name="@title" type="title" end="1" blocktype="fieldset" />
+	</params>
+
+	<params group="assignto_languages">
+		<param name="@title" type="title" start="1" blocktype="fieldset" label="-Languages" />
+			<param name="assignto_languages" type="radio" default="0" label="-Assign to" description="-Assign to (description)">
+				<option value="1">-Selection</option>
+				<option value="2">-Exclude Selection</option>
+				<option value="0">-All</option>
+			</param>
+			<param name="@toggler" type="toggler" param="assignto_languages" value="1,2" />
+				<param name="assignto_languages_selection" type="languages" multiple="1" default="" label="-Languages" description="-Languages (description)" />
+			<param name="@toggler" type="toggler" />
+		<param name="@title" type="title" end="1" blocktype="fieldset" />
+	</params>
+
+	<params group="assignto_templates">
+		<param name="@title" type="title" start="1" blocktype="fieldset" label="-Templates" />
+			<param name="assignto_templates" type="radio" default="0" label="-Assign to" description="-Assign to (description)">
+				<option value="1">-Selection</option>
+				<option value="2">-Exclude Selection</option>
+				<option value="0">-All</option>
+			</param>
+			<param name="@toggler" type="toggler" param="assignto_templates" value="1,2" />
+				<param name="assignto_templates_selection" type="templates" multiple="1" subtemplates="0" default="" label="-Templates" description="-Templates (description)" />
+			<param name="@toggler" type="toggler" />
+		<param name="@title" type="title" end="1" blocktype="fieldset" />
+	</params>
+
+	<params group="assignto_php">
+		<param name="@title" type="title" start="1" blocktype="fieldset" label="-PHP" />
+			<param name="assignto_php" type="radio" default="0" label="-Assign to" description="-Assign to (description)">
+				<option value="1">-Selection</option>
+				<option value="2">-Exclude Selection</option>
+				<option value="0">-All</option>
+			</param>
+			<param name="@toggler" type="toggler" param="assignto_php" value="1,2" />
+				<param name="assignto_php_selection" type="textareaplus" texttype="regex" default="" resize="1" label="-PHP" description="-PHP (description)" />
+			<param name="@toggler" type="toggler" />
+		<param name="@title" type="title" end="1" blocktype="fieldset" />
+	</params>
+</config>

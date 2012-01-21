@@ -1,0 +1,35 @@
+/* CSS IE7 */
+#layer_nav #menu_extra{width:260px;}
+#layer_nav #menu_extra #search input.button{margin-top:-22px;}
+#header #login fieldset.input{width:560px;}
+#header #login .input input.button{width:90px;}
+#header #login {#margin:0px; width:545px; float:right;}
+#header #login #form-login {float:right;}
+#login #user-zone #user-thumb{display:inline; float:left; margin:-10px 0px 0px 0px;}
+#login #user-zone #user-thumb img{margin:15px 0px 0px 18px;}
+
+#login #user-zone{float:right; padding:0px 20px; margin-top:-10px; color:#999; width:230px;}
+#login #user-zone #user-name{padding-left:10px; }
+
+
+/** Formulario de registro **/
+#content .m4j_form_wrap td{vertical-align:middle; width:400px;}
+
+#community-wrap div.profile-toolbox-bl {
+background:url("../images/toolbar/profile-toolbar-bl.gif") no-repeat scroll left bottom #EEEEEE;
+margin:0 0 10px;
+width:360px;
+}
+
+#layer_nav #hxdmoomenu ul#hxdmenu li a {
+color:#000000;
+text-align:center;
+width:74px;
+}
+
+img{
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (enabled=true,sizingMethod='scale');
+}
+
+#layer_nav #hxdmoomenu ul#hxdmenu li a:hover{color:#777}
+

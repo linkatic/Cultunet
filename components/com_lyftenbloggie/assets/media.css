@@ -1,0 +1,24 @@
+html,body{margin:0;padding:0;height:100%;border:none}
+body{padding: 1px 1px 1px 1px;margin: 0px 0px 0px 0px;background-color: #EBEBEB;height:100%;}
+div.SelectThumb{clear: none;padding: 5px;margin: 5px;float: left;border: #d3d3d3 1px solid;background-color: #ffffff;cursor: default;}
+div.SelectThumb:hover{border: #E4E4D2 1px solid;background-color:#FFFFEB;}
+div.SelectThumb table img {display: block;}
+tr.SelectThumb{border: #d3d3d3 1px solid;cursor: pointer;cursor: default;}
+tr.SelectThumb td{padding: 2px;}
+.SelectFileName, .SelectFileSize{margin-top: 3px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+div.SelectFileName, div.SelectFileSize{width: 100px;text-align: center;}
+td.SelectFileName{text-align: left;}
+td.SelectFileSize{text-align: right;}
+.Select_Title{font-weight: bold;font-size: 14pt;color: #FFFFFF;background-color: #9F9F9F;padding: 3px 10px 3px 10px;}
+.borderBlock{color: #2B2B2B;background-color: #9F9F9F;}
+.borderBlock h2{color: #2B2B2B;font-size:20px; padding:2px 0 2px 10px;margin:0;}
+.borderBlock form{display:inline;}
+.borderBlock label{color: #2B2B2B;padding:6px 6px 6px 0;margin:0;display:inline;}
+.borderBlock  .msgText{display:inline;font-size:16px; font-weight:bold; margin-left:10px; color:#7A0C0C;}
+#treeview {padding: 10px;width: 190px;overflow: auto;border: 0;}
+#folderview {}
+#folderview .path {margin-bottom: 10px;}
+#folderview .view {display: block;margin: 0;padding: 0;height: 360px;}
+#folderview input#folderpath {width: 65%;background-color: #EEE;}
+#folderview input#foldername {width: 20%;}
+#folderview iframe#folderframe {height: 100%;}

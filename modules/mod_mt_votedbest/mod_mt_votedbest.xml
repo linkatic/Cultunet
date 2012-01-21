@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: mod_mt_votedbest.xml 580 2009-03-12 03:55:02Z CY $ -->
+<install type="module" version="1.5.0">
+	<name>Voted Best</name>
+	<author>Mosets Consulting</author>
+	<creationDate>March 2009</creationDate>
+	<copyright>(C) 2005-2009 Mosets Consulting http://www.mosets.com/</copyright>
+    <license>GNU General Public License</license>
+	<authorEmail>mtree@mosets.com</authorEmail>
+	<authorUrl>www.mosets.com</authorUrl>
+	<version>2.1.0</version>
+	<description>Mosets Tree Voted Best displays a table of listings with the top rated first.</description>
+	<files>
+		<filename module="mod_mt_votedbest">mod_mt_votedbest.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_mt_votedbest.ini</language>
+	</languages>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="parent_cat" type="text" default="0" label="Parent Cat. ID" description="Enter a parent category's ID. The module will load all the listings under this category and its sub-categories only." />
+		<param name="only_subcats" type="radio" default="1" label="Only Sub-cats listing" description="Selecting this option will display listings from the current category and its sub-categories only. Ignores Parent Cat. ID value">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="count" type="text" default="5" label="Count" />
+		<param name="show_more" type="radio" default="1" label="Display 'Show more...'">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="caption_showmore" type="text" default="Show more..." label="'Show more' text" />
+		<param name="caption_rank" type="text" default="Rank" label="'Rank' text" />
+		<param name="show_header" type="radio" default="1" label="Show table's header">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="use_alternating_bg" type="radio" default="0" label="Use alternating background">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="order_rank" type="list" default="1" label="Rank's Order" description="Order the columns">
+			<option value="0">Hide</option>
+			<option value="1">1: first</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5: last</option>
+		</param>
+		<param name="order_name" type="list" default="2" label="Name's Order">
+			<option value="0">Hide</option>
+			<option value="1">1: first</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5: last</option>
+		</param>
+		<param name="order_category" type="list" default="0" label="Category's Order">
+			<option value="0">Hide</option>
+			<option value="1">1: first</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5: last</option>
+		</param>
+		<param name="order_rating" type="list" default="0" label="Rating's Order">
+			<option value="0">Hide</option>
+			<option value="1">1: first</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5: last</option>
+		</param>
+		<param name="order_votes" type="list" default="0" label="Votes' Order">
+			<option value="0">Hide</option>
+			<option value="1">1: first</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5: last</option>
+		</param>
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="max_name_char" type="text" default="24" label="Max. characters" description="Maximum number of characters to show in listing name before being trimmed. Enter 0 to disable this feature." />
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+	</params>
+</install>

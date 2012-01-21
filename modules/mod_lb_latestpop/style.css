@@ -1,0 +1,7 @@
+.lb_latestpop {list-style: none;float: left;margin: 0px;padding:0;overflow: hidden;position:relative;}
+.lb_latestpop li {margin:0;float: left;padding: 10px 0px 10px 60px;border-top: #DFDFDF 1px solid;border-bottom: #DFDFDF 1px solid;margin-top: -1px;position:relative;}
+.lb_latestpop li:last-child {border-bottom: 0px;}
+.lb_latestpop li a {font-size: 12px;font-weight: bold;line-height: 20px;text-decoration: none;color: #AA331F;display: block;}
+.lb_latestpop li a.smallLink {font-size: 10px;font-weight: normal;line-height: 10px;text-decoration: none;color: #AA331F;display: inline;}
+.lb_latestpop .lb_lpImg {position: absolute;left:0;top:12px;}
+.lb_latestpop .lb_lpImg img{width: 50px;height: 50px;}

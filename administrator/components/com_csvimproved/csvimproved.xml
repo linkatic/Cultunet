@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE install SYSTEM "http://www.joomla.org/xml/dtd/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>CSV Improved</name>
+	<creationDate>16 August 2009</creationDate>
+	<author>RolandD Cyber Produksi</author>
+	<authorEmail>contact@csvimproved.com</authorEmail>
+	<authorUrl>http://www.csvimproved.com/</authorUrl>
+	<copyright>2006 - 2009 RolandD Cyber Produksi</copyright>
+	<license>Creative Commons Attribution-No Derivative Works 3.0 Netherlands License</license>
+	<version>1.9</version>
+	<description>Import/Export component for VirtueMart</description>
+	
+	<!-- Custom installer -->
+	<installfile>install.csvimproved.php</installfile>
+	
+	<!-- Custom uninstaller -->
+	<uninstallfile>uninstall.csvimproved.php</uninstallfile>
+	
+	<!-- SQL queries -->
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	
+	<!-- Uninstall SQL queries -->
+	<uninstall>
+		<sql>
+		</sql>
+	</uninstall>
+	
+	<!-- Image files -->
+	<!-- These are actually for the administrator but this is not supported by Joomla -->
+	<media folder="" destination="">
+	</media>
+	
+	<administration>
+		<!-- Menu entries -->
+		<menu img="components/com_csvimproved/assets/images/csvivirtuemart_logo_16.png" task="csvi">CSVI VirtueMart</menu>
+		<submenu>
+			<menu img="components/com_csvimproved/assets/images/csvivirtuemart_template_16.png" task="templates" controller="templates">Templates</menu>
+			<menu img="components/com_csvimproved/assets/images/csvivirtuemart_import_16.png" task="import" controller="import">Import</menu>
+			<menu img="components/com_csvimproved/assets/images/csvivirtuemart_export_16.png" task="export" controller="export">Export</menu>
+			<menu img="components/com_csvimproved/assets/images/csvivirtuemart_maintenance_16.png" task="maintenance" controller="maintenance">Maintenance</menu>
+			<menu img="components/com_csvimproved/assets/images/csvivirtuemart_log_16.png" task="log" controller="log">Log</menu>
+			<menu img="components/com_csvimproved/assets/images/csvivirtuemart_av_fields_16.png" task="availablefields" controller="availablefields">Available fields</menu>
+			<menu img="components/com_csvimproved/assets/images/csvivirtuemart_about_16.png" task="about" controller="about">About</menu>
+		</submenu>
+		
+		<!-- Core files -->
+		<files folder="admin">
+			<filename>changelog.txt</filename>
+			<filename>csvimproved.php</filename>
+			<filename>config.xml</filename>
+			<filename>index.html</filename>
+			<filename>controller.php</filename>
+			<filename>install.csvimproved.php</filename>
+			<filename>install.mysql.utf8.sql</filename>
+			<filename>uninstall.csvimproved.php</filename>
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+		
+		<!-- Language files -->
+		<languages folder="admin/languages">
+			<language tag="en-GB">en-GB.com_csvimproved.ini</language>
+			<language tag="en-GB">en-GB.com_csvimproved.menu.ini</language>
+			<!-- German -->
+			<language tag="de-DE">de-DE.com_csvimproved.ini</language>
+			<language tag="de-DE">de-DE.com_csvimproved.menu.ini</language>
+			<!-- French -->
+			<language tag="fr-FR">fr-FR.com_csvimproved.ini</language>
+			<language tag="fr-FR">fr-FR.com_csvimproved.menu.ini</language>
+			<!-- Croatian -->
+			<language tag="hr-HR">hr-HR.com_csvimproved.ini</language>
+			<language tag="hr-HR">hr-HR.com_csvimproved.menu.ini</language>
+			<!-- Hungarian -->
+			<language tag="hu-HU">hu-HU.com_csvimproved.ini</language>
+			<language tag="hu-HU">hu-HU.com_csvimproved.menu.ini</language>
+			<!-- Dutch -->
+			<language tag="nl-NL">nl-NL.com_csvimproved.ini</language>
+			<language tag="nl-NL">nl-NL.com_csvimproved.menu.ini</language>
+			<!-- Portugese Brazilian -->
+			<language tag="pt-BR">pt-BR.com_csvimproved.ini</language>
+			<language tag="pt-BR">pt-BR.com_csvimproved.menu.ini</language>
+			<!-- Portugese -->
+			<language tag="pt-PT">pt-PT.com_csvimproved.ini</language>
+			<language tag="pt-PT">pt-PT.com_csvimproved.menu.ini</language>
+			<!-- Romanian -->
+			<language tag="ro-RO">ro-RO.com_csvimproved.ini</language>
+			<language tag="ro-RO">ro-RO.com_csvimproved.menu.ini</language>
+			<!-- Russian -->
+			<language tag="ru-RU">ru-RU.com_csvimproved.ini</language>
+			<language tag="ru-RU">ru-RU.com_csvimproved.menu.ini</language>
+			<!-- Slovenian -->
+			<language tag="si-SI">si-SI.com_csvimproved.ini</language>
+			<language tag="si-SI">si-SI.com_csvimproved.menu.ini</language>
+			<!-- Swedish -->
+			<language tag="sv-SE">sv-SE.com_csvimproved.ini</language>
+			<language tag="sv-SE">sv-SE.com_csvimproved.menu.ini</language>
+			
+		</languages>
+		
+	</administration>
+</install>

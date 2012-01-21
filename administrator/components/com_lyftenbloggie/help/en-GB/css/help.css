@@ -1,0 +1,8 @@
+body {font-family: verdana, arial, sans-serif;font-size: 9pt;margin:0;padding:5px;}
+h1 {color: #6D9D2E;font-size: 1.5em;margin:5px 0px 0px 0px;padding: 0 0 2px 5px;}
+h2 {color: #6D9D2E;font-weight:bold;font-size: 15px;margin: 1px 0 1px 0;padding:0;}
+h3 {color: #000000;font-weight:bold;font-size: 12px;text-decoration:underline;margin: 1px 0 1px 0;padding:0;}
+pre {text-align: left;background-color: #fff;border-left: 1px solid #aaa;padding: 5px;}
+div.helpform {font-family: arial, verdana;font-size:12px;background-color: #F7F8F9;border: solid 1px #d5d5d5;width: 97%;padding: 5px;margin:5px;border-collapse: collapse;}
+a:link, a:visited{color:#666666;text-decoration:underline;}
+a:hover{color:#666666;text-decoration:none;}

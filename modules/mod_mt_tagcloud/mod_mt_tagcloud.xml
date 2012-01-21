@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: mod_mt_categories.xml 585 2009-03-12 05:26:50Z CY $ -->
+<install type="module" version="1.5.0" method="upgrade">
+	<name>Tag Cloud</name>
+	<author>Mosets Consulting</author>
+	<creationDate>May 2010</creationDate>
+	<copyright>(C) 2009-2010 Mosets Consulting http://www.mosets.com/</copyright>
+    <license>GNU General Public License</license>
+	<authorEmail>mtree@mosets.com</authorEmail>
+	<authorUrl>www.mosets.com</authorUrl>
+	<version>2.1.4</version>
+	<description>Displays popular tags in Mosets Tree.</description>
+	<files>
+		<filename module="mod_mt_tagcloud">mod_mt_tagcloud.php</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>css/mod_mt_tagcloud.css</filename>
+		<filename>css/index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_mt_tagcloud.ini</language>
+	</languages>
+	<params addpath="/administrator/components/com_mtree/elements"> 
+		
+		<param name="cf_id" type="tagfields" default="28" label="Tags Field" description="Choose a Tag field" />
+		
+		<param name="class_sfx" type="text" default="" label="List Class Suffix" description="PARAMMENUCLASSSUFFIX" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+
+		<param name="maxTags" type="list" default="30" label="Maximum Number of Tags" description="The maximum number of tags to show." >
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="15">15</option>
+			<option value="20">20</option>
+			<option value="25">25</option>
+			<option value="30">30</option>
+			<option value="40">40</option>
+			<option value="50">50</option>
+			<option value="75">75</option>
+			<option value="100">100</option>
+		</param>
+		<param name="hide_list" type="text" default="" size="40" label="Hide List" description="PARAMHIDELIST" />
+		
+	</params>
+</install>

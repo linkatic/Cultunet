@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="theme" version="2.0">
+	<title>Default Theme</title>
+	<author>Daniel Stainback</author>
+	<email>joomla@lyften.com</email>
+	<website>http://www.lyften.com</website>
+	<version>1.1.0</version>
+	<license>GNU/Lesser General Public License</license>
+	<copyright>Copyright 2009-2010 Lyften Designs</copyright>
+	<date>May 5, 2010</date>
+	<description>Designed to be mutliple author friendly</description>
+	<files>
+		<file theme="default">index.html</file>
+		<folder>css</folder>
+		<folder>images</folder>
+	</files>
+	<params>
+		<param name="style" type="list" default="0" label="Style" description="">
+			<option value="0">Default</option>
+			<option value="grey">Grey</option>
+			<option value="blue">Blue</option>
+			<option value="green">Green</option>
+			<option value="brown">Brown</option>
+		</param>
+		<param name="left_object" type="list" default="avatar" label="Left Object" description="">
+			<option value="0">None</option>
+			<option value="image">Image</option>
+			<option value="avatar">Author's Avatar</option>
+		</param>
+		<param name="leftobj_width" type="text" default="48px" label="Left Object Width" description="" />
+		<param name="leftobj_height" type="text" default="48px" label="Left Object Height" description="" />
+	</params>
+</install>

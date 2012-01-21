@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Resume Search">
+		<message>
+			<![CDATA[Search Resume.]]>
+		</message>
+	</layout>
+	<state>
+		<name>Resume Search</name>
+		<description>Resume search.</description>
+	</state>
+</metadata>

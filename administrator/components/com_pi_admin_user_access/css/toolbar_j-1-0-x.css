@@ -1,0 +1,13 @@
+/* CSS Document */
+
+#pi_ua_menu a{
+	font-weight: normal; 											
+}					
+
+#pi_ua_menu ul li {
+	width: 15em;
+	background: #F1E8E6; 
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #C24733;	
+	border-right: 1px solid #C24733;
+}

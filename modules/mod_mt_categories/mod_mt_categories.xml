@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: mod_mt_categories.xml 585 2009-03-12 05:26:50Z CY $ -->
+<install type="module" version="1.5.0">
+	<name>Categories</name>
+	<author>Mosets Consulting</author>
+	<creationDate>March 2009</creationDate>
+	<copyright>(C) 2005-2009 Mosets Consulting http://www.mosets.com/</copyright>
+    <license>GNU General Public License</license>
+	<authorEmail>mtree@mosets.com</authorEmail>
+	<authorUrl>www.mosets.com</authorUrl>
+	<version>2.1.0</version>
+	<description>Mosets Tree Categories displays all the available categories in the current path</description>
+	<files>
+		<filename module="mod_mt_categories">mod_mt_categories.php</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_mt_categories.ini</language>
+	</languages>
+	<params>
+		<param name="class_sfx" type="text" default="" label="Menu Class Suffix" description="PARAMMENUCLASSSUFFIX" />
+		<param name="moduleclass_sfx" type="text" default="_menu" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+
+		<param name="primary_order" type="list" default="-1" label="Primary Order">
+			<option value="-1">Use Default</option>
+			<option value="cat_name">Name</option>
+			<option value="cat_featured">Featured</option>
+			<option value="cat_created">Created</option>
+			<option value="cat_cats">Number of Categories</option>
+			<option value="cat_links">Number of Listing</option>
+		</param>
+		<param name="primary_sort" type="list" default="-1" label="Primary Sort">
+			<option value="-1">Use Default</option>
+			<option value="asc">Ascending</option>
+			<option value="desc">Descending</option>
+		</param>
+		<param name="secondary_order" type="list" default="-1" label="Secondary Order">
+			<option value="-1">Use Default</option>
+			<option value="cat_name">Name</option>
+			<option value="cat_featured">Featured</option>
+			<option value="cat_created">Created</option>
+			<option value="cat_cats">Number of Categories</option>
+			<option value="cat_links">Number of Listing</option>
+		</param>
+		<param name="secondary_sort" type="list" default="-1" label="Secondary Sort">
+			<option value="-1">Use Default</option>
+			<option value="asc">Ascending</option>
+			<option value="desc">Descending</option>
+		</param>
+
+
+		<param name="show_empty_cat" type="radio" default="-1" label="Show empty category" description="Show a category even there is no sub category and listing">
+			<option value="-1">Use Default</option>
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="show_totalcats" type="radio" default="0" label="Show category count" description="Show the total number of sub categories">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="show_totallisting" type="radio" default="1" label="Show listing count" description="Show the total number of listing">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="show_back" type="radio" default="0" label="Always show back link" description="Show a link to go to parent category. Disabling this option will only show the link when there is no sub categories.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="back_symbol" type="text" default="&lt;&lt;" label="Back Symbol" description="Default is &lt;&lt;" />
+	</params>
+</install>

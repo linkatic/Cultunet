@@ -1,0 +1,69 @@
+<?php
+	
+	/*--------------------------------------------------------------
+	# Gestion y Cultura Template - Julio 2010 (para Joomla 1.5)
+	# Copyright (C) 2010 Linkatic. Todos los derechos reservados.
+	# Licencia: Copyrighted Commercial Software
+	# Autores: Lorena Hernandez y Vicente Gimeno
+	# Website: http://www.linkatic
+	# Soporte: info@linkatic.com 
+	---------------------------------------------------------------*/
+	
+	// no direct access
+	defined('_JEXEC') or die('Restricted access');
+	
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>" >
+<head>
+	<jdoc:include type="head" />
+	<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/components/com_mtree/templates/m2/template.css" type="text/css" />
+	<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/css/template.css" type="text/css" />
+	<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/css/common.css" type="text/css" />
+</head>
+	<body id="gc">
+		<div id="page">
+			<div id="top-header">
+				<div class="banner_t"><jdoc:include type="modules" name="banner_top" style="xhtml" /></div>
+			</div>
+			<div id="container" class="clearfix">
+				<div id="header">
+					<div id="logo">
+						<jdoc:include type="modules" name="logo" />
+						<a href="<?php echo $this->baseurl ?>">
+							<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/images/logo.png" alt="<?php echo JText::_('g+x, gestionycultura.com'); ?>" />
+						</a>
+					</div>
+					<div id="login"><jdoc:include type="modules" name="login" style="xhtml" /></div>
+				</div><!-- Fin header -->
+				<div id="layer_nav">
+					<div id="menu">
+						<jdoc:include type="modules" name="menu" />
+					</div>
+					<div id="menu_extra">
+						<div id="language"><jdoc:include type="modules" name="language" style="xhtml" /></div>
+						<div id="search"><jdoc:include type="modules" name="search" style="xhtml" /></div>
+					</div>
+				</div><!-- Fin layer_nav -->
+				<div id="content">
+					<div class="untercio">
+						<jdoc:include type="modules" name="left_untercio" style="xhtml" />
+					</div>
+					<div class="dostercios ml20">
+						<jdoc:include type="modules" name="right_top" style="xhtml" />
+						<jdoc:include type="component" />
+						<jdoc:include type="modules" name="right_dostercios" style="xhtml" />
+					</div>
+					<div class="clear">&nbsp;</div>
+				</div><!-- Fin content -->
+			</div><!-- Fin container -->
+			<div id="footer">
+				<div class="unmedio"><div class="banner_bl"><jdoc:include type="modules" name="banner_bottom_l" style="xhtml" /></div></div>
+				<div class="unmedio"><div class="banner_br"><jdoc:include type="modules" name="banner_bottom_r" style="xhtml" /></div></div>
+				<div id="menu_footer"><jdoc:include type="modules" name="menu_footer" style="xhtml" /></div>
+				<div id="patrocinadores"><jdoc:include type="modules" name="patrocinadores" style="xhtml" /></div>
+			</div>
+		</div>
+		<jdoc:include type="modules" name="debug" />
+	</body>
+</html>

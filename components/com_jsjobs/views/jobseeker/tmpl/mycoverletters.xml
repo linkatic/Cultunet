@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="My Cover Letters">
+		<message>
+			<![CDATA[My cover letters.]]>
+		</message>
+	</layout>
+	<state>
+		<name>My Cover Letters</name>
+		<description>My cover letters.</description>
+	</state>
+</metadata>

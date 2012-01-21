@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+    
+	<name>gk3_photoslide</name>
+	<author>Gavick.com</author>
+	<creationDate>03/05/2009</creationDate>	
+	<copyright>Copyright by Gavick.com</copyright>
+	<authorEmail>info@gavick.com</authorEmail>
+	<authorUrl>http://www.gavick.com</authorUrl>
+	<version>3.0.0</version>	
+	
+	<description>Photoslide GK3</description>
+		   
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	
+	<installfile>install.php</installfile>
+	<uninstallfile>uninstall.php</uninstallfile>
+	
+	<files>
+		<filename>index.html</filename>
+		<folder>thumbs_small/</folder>
+  		<folder>thumbs_big/</folder>
+  		<folder>original/</folder>
+	</files>
+	
+	<administration>
+	
+		<menu img="components/com_gk3_photoslide/interface/images/com_logo_gk3.png">Gavick Photoslide GK3</menu>
+		
+		<languages>
+   			<language tag="en-GB">language/en-GB.com_gk3_photoslide.ini</language>
+		</languages>
+		
+		<files>
+			<filename>install.mysql.utf8.sql</filename>
+			<filename>uninstall.mysql.utf8.sql</filename>
+			<filename>admin.gk3_photoslide.php</filename>
+			<filename>toolbar.gk3_photoslide.php</filename>
+			<filename>install.php</filename>
+			<filename>uninstall.php</filename>
+			<filename>index.html</filename>
+			<folder>views/</folder>
+			<folder>models/</folder>
+			<folder>controllers/</folder>
+            <folder>interface/</folder>
+			<folder>classes/</folder> 			
+		</files>
+		
+	</administration>
+	
+</install>

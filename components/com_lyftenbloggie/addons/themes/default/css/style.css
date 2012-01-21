@@ -1,0 +1,27 @@
+/* Layout Style */
+#lyftenbloggie .blogcontent .section{padding:10px 4px;font-size:normal;line-height:normal;clear:both;border-bottom:solid 1px #E7E7E7;}
+#lyftenbloggie .blogcontent .section h1 a:link,#lyftenbloggie .blogcontent .section h1 a:visited{font-size:14px;line-height:18px;}
+#lyftenbloggie .blogcontent .section .entry-state{font-size:12px;line-height:12px;padding:0;margin:0;color:#FF0000;font-weight:bold;}
+#lyftenbloggie .blogcontent .section .entry-state.pub{color:#00C000;}
+#lyftenbloggie .blogcontent .section h1 a:hover{color:#000;text-decoration:underline;}
+#lyftenbloggie .blogcontent .section h1.entry-title{font-size:26px;font-weight:bold;line-height:26px;margin:0;padding:0;}
+#lyftenbloggie .blogcontent .section .entry-subtitle{font-size:12px;line-height:12px;margin:0;padding:0;}
+#lyftenbloggie .blogcontent .section h2{color:#323232;}
+#lyftenbloggie .blogcontent .section p{padding-top:6px;}
+#lyftenbloggie .blogcontent .section a:hover{color:#000;}
+#lyftenbloggie .blogcontent .section img{margin-bottom:6px;}
+#lyftenbloggie .blogcontent .entry-title{font-size:15px; font-weight:bold; line-height:19px; margin:6px 0 0 8px; display:block;}
+#lyftenbloggie .blogcontent .entry-small{font-size:11px; line-height:11px;padding:0; margin:0 0 0 8px; border:0;}
+#lyftenbloggie .blogcontent .entry-info{background:#F7F7F7; height:55px;padding:1px 0 0 1px; margin-bottom:6px;}
+#lyftenbloggie .blogcontent .left_obj{float:left;background:#fff;padding:3px;border-right:solid 1px #dfdfdf;border-bottom:solid 1px #dfdfdf;margin-right:8px;}
+#lyftenbloggie .blogcontent .catpost a:link, #lyftenbloggie .blogcontent .catpost a:visited{text-decoration:none;padding-bottom:2px;font-weight: normal;line-height:normal;}
+#lyftenbloggie .blogcontent .catpost a:hover{border:none;}
+#lyftenbloggie .blogcontent .entry-options{height:16px;border-top:solid 1px #DFDFDF;line-height:16px;font-size:11px;margin:0 0 20px 0;padding:0;}
+#lyftenbloggie .blogcontent.entry .entry-options{border-bottom:solid 1px #DFDFDF;height:26px;}
+#lyftenbloggie .blogcontent .entry-options li{float:left;margin:4px 0;margin-right:10px;display:block;border-right:solid 1px #DFDFDF;padding-right:10px;height:16px;line-height:16px;}
+#lyftenbloggie .blogcontent .entry-options li:last-child{border-right:none;}
+#lyftenbloggie .blogcontent .entry-options a:link, #lyftenbloggie .blogcontent .entry-options a:visited{height:16px;line-height:16px;color:#555;}
+#lyftenbloggie .blogcontent .entry-options a:hover{text-decoration:underline;}
+#lyftenbloggie .blogcontent .entry-options-actions{background:url(default/images/icon-actions.png) no-repeat;padding-left:20px;}
+#lyftenbloggie .blogcontent .entry-options-tag{background:url(default/images/icon-tag.png) no-repeat;padding-left:20px;}
+#lyftenbloggie .blogcontent .entry-options-comments{background:url(default/images/icon-comments.png) no-repeat;padding-left:22px;}

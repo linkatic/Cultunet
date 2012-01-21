@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="theme" version="2.0">
+    <name>classic</name>
+	<title>Classic Theme</title>
+	<author>Lyften Designs</author>
+	<email>joomla@lyften.com</email>
+	<website>http://www.lyften.com</website>
+	<version>1.1.0</version>
+	<license>GNU/Lesser General Public License</license>
+	<copyright>Copyright 2008-2010 Lyften Designs</copyright>
+	<date>October 2009</date>
+	<description>The original LyftenBloggie theme</description>
+	<files>
+		<file>index.html</file>
+		<folder>css</folder>
+		<folder>images</folder>
+	</files>
+</install>

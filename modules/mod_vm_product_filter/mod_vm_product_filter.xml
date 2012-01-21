@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://www.joomla.org/xml/dtd/1.5/module-install.dtd">
+<install type="module" version="1.5.0">
+	<name>VirtueMart Product Type Filter</name>
+	<creationDate>December 2010</creationDate>
+	<author>webGobe</author>
+	<authorEmail>wirtuemart@webgobe.com</authorEmail>
+	<authorUrl>http://www.webgobe.com</authorUrl>
+	<copyright>Copyright (C) 2010 Szekely Denes aka webGobe. All rights	reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.1.0</version>
+	<description>MODULE DESCRIPTION</description>
+     <files>
+		<filename>mod_vm_product_filter.xml</filename>
+        <filename module="mod_vm_product_filter">mod_vm_product_filter.php</filename>
+		<filename>index.html</filename>
+        <folder>lib</folder>
+     </files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_vm_product_filter.ini</language>
+	</languages>
+    <params addpath="/modules/mod_vm_product_filter/lib">
+        <param name="text_before" type="textarea" cols="20" rows="3" default="" label="TEXT ABOVE" description="TEXT ABOVE DESC" />
+		<param name="Itemid" type="text" default="1" label="ITEMID" description="ITEMID DESCRIPTION" />
+		<param name="product_type_id" type="producttypes" label="SELECT PRODUCT TYPE"  description="SELECT PRODUCT TYPE DESC"/>
+     </params>
+	<params group="advanced">
+		<param name="moduleclass_sfx" type="text" default="" label="MODULE CLASS SUFFIX" description="MODULE CLASS DESCRIPTION" />
+	 	<param name="cache" type="radio" default="0" label="CACHE" description="CACHE DESCRIPTION">
+    		<option value="0">NO</option>
+   			<option value="1">YES</option>
+    	</param>
+     </params>
+</install>

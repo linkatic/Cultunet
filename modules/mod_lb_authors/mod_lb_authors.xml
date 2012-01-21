@@ -1,0 +1,27 @@
+<?xml version="1.0" ?> 
+<install type="module" version="1.5.0" method="upgrade">
+	<name>LyftenBloggie Authors</name>
+	<creationDate>October 2009</creationDate>
+	<author>Lyften Designs</author>
+	<copyright>(C) 2009 Lyften Designs</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>joomla@lyften.com</authorEmail>
+	<authorUrl>http://www.lyften.com</authorUrl>
+	<version>1.1.0</version>
+	<description>Show LyftenBloggie's authors</description>
+	<files>
+		<filename module="mod_lb_authors">mod_lb_authors.php</filename>
+		<filename>index.html</filename>		
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="maxAuthorLimit" type="text" default="5" label="Author Limit" description="Max number of authors to display. NOTE: 0 = unlimited" />
+		<param name="cache" type="radio" default="0" label="Enable Cache" description="Select whether to cache the content of this module">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>

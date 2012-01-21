@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="RSM_SHOW_SUBSCRIBER_ACCOUNT_LAYOUT">
+		<message>
+			<![CDATA[RSM_SHOW_SUBSCRIBER_ACCOUNT_LAYOUT]]>
+		</message>
+	</layout>
+	<state>
+		<name>RSM_SHOW_SUBSCRIBER_ACCOUNT_LAYOUT</name>
+		<params></params>
+	</state>
+</metadata>

@@ -1,0 +1,10 @@
+/* CSS Document */
+
+#pi_ua_menu a.active{
+	border-bottom: 0;
+}
+
+#pi_ua_menu_line{
+	height: 1px; 
+	background: #ccc;
+}

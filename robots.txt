@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /administrator/
+Disallow: /tienda/
+Disallow: /es/tienda/
+Disallow: /pt/tienda/
+

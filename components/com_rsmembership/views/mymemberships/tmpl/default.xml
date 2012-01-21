@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="RSM_SHOW_SUBSCRIBER_MEMBERSHIPS_LAYOUT">
+		<message>
+			<![CDATA[RSM_SHOW_SUBSCRIBER_MEMBERSHIPS_LAYOUT]]>
+		</message>
+	</layout>
+	<state>
+		<name>RSM_SHOW_SUBSCRIBER_MEMBERSHIPS_LAYOUT</name>
+		<params>
+			<param name="show_headings" type="radio" default="1" label="Table Headings" description="Show/Hide the Table Headings">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="show_pagination" type="list" default="1" label="Pagination" description="Show/Hide Pagination support">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name="show_price" type="radio" default="1" label="Price" description="Show/Hide Price">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="show_status" type="radio" default="1" label="Status" description="Show/Hide Status">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="show_expire" type="radio" default="1" label="Start and Expire Date" description="Show/Hide Start and Expire Dates">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+		</params>
+	</state>
+</metadata>

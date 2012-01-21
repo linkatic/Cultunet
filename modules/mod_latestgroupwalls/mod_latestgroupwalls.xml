@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install version="1.5" type="module" client="site" method="upgrade">
+	<name>Latest group walls</name>
+	<author>JomSocial Team</author>
+	<creationDate>20/06/2010</creationDate>
+	<copyright>Copyright (C) 2008 - 2010 JomSocial. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@jomsocial.com</authorEmail>
+	<authorUrl>http://www.jomsocial.com</authorUrl>	
+	<version>1.8.0</version>
+	<description>Show recent wall posts from groups</description>
+	<files>
+		<filename module="mod_latestgroupwalls">mod_latestgroupwalls.php</filename>
+		<filename>mod_latestgroupwalls.xml</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<params>
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="count" type="text" default="5" label="Count" description="The number of wall posts to display (default is 5)" />
+		<param name="charcount" type="text" default="100" label="Comment character count" description="The number of characters to be displayed for the comments" />
+		<param name="show_avatar" type="list" default="1" label="Show group avatar" description="Select whether to show the avatar of the group">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+</install>

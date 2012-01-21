@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="user">
+	<name>User - Set Special Level</name>	<author>Paul Lautman</author>	<creationDate>June 2010</creationDate>	<copyright>Copyright (C) 2010 Something Whizzy. All rights reserved.</copyright>	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>	<authorEmail>paul@somethingwhizzy.co.uk</authorEmail>	<authorUrl>www.somethingwhizzy.co.uk</authorUrl>	<version>1.0</version>
+	<description>DESCPLGUSERSETSPECIAL</description>
+	<files>
+		<filename plugin="setspecial">setspecial.php</filename>
+	</files>  
+	<languages folder="language">
+		<language tag="en-GB">en-GB.plg_user_setspecial.ini</language>
+   	</languages>	
+	<params>
+		<param name="bar" type="list" default="Registered" label="LABELSETSPECIALLEVEL" description="DESCSETSPECIALLEVEL">
+  <option value="Registered">Registered</option>
+  <option value="Author">Author</option>
+  <option value="Editor">Editor</option>
+  <option value="Publisher">Publisher</option>
+  <option value="Manager">Manager</option>
+  <option value="Administrator">Administrator</option>
+</param>
+	</params>
+</install>

@@ -1,0 +1,38 @@
+/* Comment Layout */
+#lb_comment_container{margin:1.5em 0;width:100%;min-width:180px;float:none;letter-spacing:normal!important;text-align:left;width:auto;}
+#lb_comment_container .lb_comments,#lb_comment_container .lb_new_comment{margin:0 0 1.5em;}
+#lb_comment_container div *{font-weight:normal;letter-spacing:0!important;margin:0;padding:0;text-indent:0;}
+#lb_comment_container div div div{text-transform:none;}
+#lb_comment_container img{border:none;background:none;padding:0;}
+#lb_comment_container span{display:inline;}
+#lb_comment_container strong{font-weight:bold!important;}
+#lb_comment_container a{background-image:none;clear:none!important;float:none;font-weight:normal;display:inline;border:none!important;padding:0!important;}
+#lb_comment_container div{background:none;clear:left;display:block;float:none;margin:0;width:auto;font-size:13px;line-height:1.3em;overflow:visible;position:static;}
+#lb_comment_container h3{background:none;border:none;letter-spacing:0;padding:0;margin:0 0 8px;clear:none;text-align:left;font-weight:normal;font-size:22px;line-height:1.3em;}
+#lb_comment_container .lb_text{background:#fff url(system/images/comment.png) repeat-x 0 -112px;border:1px solid #ccc;border-top:1px solid #b0b0b0;color:#000;cursor:text;float:left;padding:3px;margin:0 4px 4px 0;font-size:12px;line-height:1.3em;font:normal 12px/1.3em Helvetica,Arial,sans-serif;-moz-border-radius:4px;-khtml-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;width:90%;}
+#lb_comment_container textarea.lb_textarea{background:#fff url(system/images/comment.png) repeat-x 0 -112px;border:1px solid #ccc;border-top:1px solid #b0b0b0;color:#000!important;float:left;height:100px!important;padding:3px;margin:0 0 4px;font-size:12px;line-height:1.3em;font:normal 12px/1.3em Helvetica,Arial,sans-serif;width:97%;-moz-border-radius:4px;-khtml-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;}
+#lb_comment_container label{clear:none;display:inline;float:left;line-height:1.3em;width:auto;}
+#lb_comment_container p{clear:left;margin:0 0 8px;}
+#lb_comment_container ul{background:none;display:block;float:none;border:none;margin:0;padding:0;}
+#lb_comment_container .lb_comoment_content,#lb_comment_container .lb_postcomment{float:none;width:auto;}
+#lb_comment_container .lb_comoment_content{min-height:26px;margin-bottom:10px;}
+#lb_comment_container .lb_comoment_content .lb_com_header_block{background:url(system/images/comment.png) 100% 0;height:32px;margin:0 0 8px;}
+#lb_comment_container .lb_comoment_content .lb_com_header{height:28px;margin:0 0 0 2px;padding:2px 2px 2px 0;}
+#lb_comment_container .lb_comoment_txt{margin:0 0 8px;overflow:hidden;}
+#lb_comment_container .lb_comoment_content .lb_user{clear:none;line-height:28px;height:28px;margin:0 0 0 8px;}
+#lb_comment_container .lb_comoment_content .lb_usertime{color:#666;font-size:11px;}
+#lb_comment_container .lb_com_header img.lb_user_ava{padding:1px;margin-right:5px;width:26px;height:26px; background:#ccc;float:left;overflow:hidden;}
+#lb_comment_container .lb_userdata{clear:left;position:relative;}
+#lb_comment_container .lb_userdata .lb_postcolumn{clear:none;float:left;width:33%;position:relative;}
+#lb_comment_container .lb_userdata label{width:90%;display:block;overflow:hidden;vertical-align:baseline; padding:4px 0 0;width:auto;}
+#lb_comment_container .lb_userdata .commentCaptcha{right:23px;line-height:20px;margin-top:21px;display:inline;position:absolute;z-index:10;}
+#lb_comment_container .lb_actions{display:inline;float:right!important;margin:5px 2px 0 0;}
+#lb_comment_container .lb_actions .lb_loader{display:inline;float:left;padding:0;margin:0px 4px 0 0;display:none;}
+#lb_comment_container .lb_actions .lb_votetotal, #lb_comment_container .lb_actions .lb_result{display:inline;float:left;line-height:18px!important;margin:0 6px 0 0;}
+#lb_comment_container .lb_actions a{background:url(system/images/comment.png) no-repeat 0 -54px;clear:none;display:inline-block;float:left;height:18px;margin:0 3px 0 0;width:18px;}
+#lb_comment_container .lb_actions a span{display:none;}
+#lb_comment_container a.lb_voteup:hover{background-position:0 -72px;}
+#lb_comment_container a.lb_votedown{background-position:-18px -54px;}
+#lb_comment_container a.lb_votedown:hover{background-position:-18px -72px;}
+#lb_comment_container a.lb_report{background-position:0 -90px;}
+#lb_comment_container a.lb_report:hover{background-position:-18px -90px;}

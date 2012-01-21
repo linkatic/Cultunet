@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="New Company Form">
+		<message>
+			<![CDATA[New company form.]]>
+		</message>
+	</layout>
+	<state>
+		<name>New company</name>
+		<description>New Company Form.</description>
+	</state>
+</metadata>

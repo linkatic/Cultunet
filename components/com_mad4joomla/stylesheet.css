@@ -1,0 +1,236 @@
+.m4j_heading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333333;
+	text-align: left;
+	vertical-align: top;
+	display: block;
+	margin: 0px;
+	overflow: hidden;
+	height: 16px;
+	width: auto;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 2px;
+	padding-left: 0px;
+}
+
+.m4j_header_text {
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	text-align: left;
+	vertical-align: top;
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 16px;
+	padding-left: 0px;
+}
+
+.m4j_wrap {
+	text-align: left;
+	vertical-align: top;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	overflow: hidden;
+
+}
+.m4j_list_heading {
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-align: left;
+	vertical-align: top;
+	display: block;
+	width: 100%;
+	overflow: hidden;
+}
+
+.m4j_list_intro {
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	text-align: left;
+	vertical-align: top;
+	display: block;
+	padding: 0px;
+	width: 100%;
+	overflow: hidden;
+}
+.m4j_list_wrap {
+	text-align: left;
+	vertical-align: top;
+	display: block;
+	margin: 0px;
+	width: 100%;
+	overflow: hidden;
+	padding-top: 8px;
+	padding-right: 0px;
+	padding-bottom: 8px;
+	padding-left: 0px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: dotted;
+	border-right-style: dotted;
+	border-bottom-style: dotted;
+	border-left-style: dotted;
+	border-top-color: #000000;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	border-left-color: #000000;
+}
+.m4j_footer{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	text-align: right;
+	vertical-align: middle;
+	display: block;
+	margin: 0px;
+	height: 20px;
+	width: 100%;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	overflow: hidden;
+	padding-top: 8px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+.m4j_footer a, .m4j_footer a:visited, .m4j_footer a:active
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+}
+.m4j_footer a:hover
+{
+	color: #FF0000;
+	text-decoration: underline;
+}
+
+.m4j_form_wrap {
+	text-align: left;
+	vertical-align: top;
+	display: block;
+	margin: 0px;
+	width: 100%;
+	overflow: hidden;
+	padding-top: 8px;
+	padding-right: 0px;
+	padding-bottom: 8px;
+	padding-left: 0px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+}
+.m4j_form_table {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	overflow: hidden;
+}
+.m4j_error {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FF0000;
+	text-align: left;
+	vertical-align: middle;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	height: auto;
+	width: 100%;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+}
+.m4j_submit_wrap {
+	text-align: center;
+	vertical-align: middle;
+	display: block;
+	width: 100%;
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 16px;
+	padding-left: 0px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: dotted;
+	border-right-style: dotted;
+	border-bottom-style: dotted;
+	border-left-style: dotted;
+	border-top-color: #333333;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #333333;
+}
+.m4j_submit{
+
+}
+.m4j_toRight {
+	float: right;
+}
+.m4j_toLeft {
+	float: left;
+}
+
+.m4j_help {
+	float: right;
+	display: block;
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 8px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+}
+.m4j_captcha_table {
+	background-color: #E9E9E9;
+	border: 1px dotted #333333;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	display: table;
+}
+
+.m4j_captcha_advice {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+}
+.m4j_required {
+	font-weight: bold;
+	color: #FF0000;
+	text-decoration: none;
+}

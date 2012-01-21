@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+    <!-- Name of the Module -->
+        <name>D Calendar Module</name> 
+ 
+    <!-- Name of the Author -->
+        <author>Dimitris Kastaniotis - D-Extensions.com</author> 
+ 
+    <!-- Version Date of the Module -->
+        <creationDate>2010-03-26</creationDate> 
+ 
+    <!-- Copyright information -->
+        <copyright>All rights reserved by D-Extensions.com 2010</copyright> 
+ 
+    <!-- License Information -->
+        <license>GPL</license> 
+ 
+    <!-- Author's email address -->
+        <authorEmail>info@d-extensions.com</authorEmail> 
+ 
+    <!-- Author's website -->
+        <authorUrl>www.d-extensions.com</authorUrl> 
+ 
+    <!-- Module version number -->
+        <version>2.0.0</version> 
+ 
+    <!-- Description of what the module does -->
+        <description>MOD_DESC</description>
+ 
+    <!-- Listing of all files that should be installed for the module to function -->
+        <files>
+        <!-- The "module" attribute signifies that this is the main controller file -->
+          <filename module="mod_D_Calendar">mod_D_Calendar.php</filename>
+          <filename>index.html</filename>
+          <filename>helper.php</filename>
+          <filename>tmpl/default.php</filename>
+          <filename>tmpl/index.html</filename>
+          <filename>images/down-arrow-32.png</filename>
+          <filename>images/up-arrow-32.png</filename>
+          <filename>images/left-arrow-32.png</filename>
+          <filename>images/right-arrow-32.png</filename>
+          <filename>images/index.html</filename>
+          
+          <filename>D_Calendar.js</filename>
+          <filename>D_API_Events.js</filename>
+          <filename>D_API_Methods.js</filename>
+          <filename>D_Day.js</filename>
+          <filename>D_Event.js</filename>
+          <filename>D_Functionality.js</filename>
+          <filename>D_Month.js</filename>
+          <filename>D_Utilities.js</filename>
+          <filename>D_Week.js</filename>
+          <filename>D_Today.js</filename>
+          <filename>D_Data.js</filename>
+
+        </files>
+ 
+ 
+  <languages>
+    <language tag="en-GB">language/en-GB/en-GB.mod_D_Calendar.ini</language>
+  </languages>
+
+    <!-- Optional parameters -->
+        <params>
+        <param type="spacer" default="ARTICLE_INTRO" />
+        <param type="spacer" default="CUSTOM_INTRO" />
+          <param name="D_Calendar_Mode" type="radio" default="month" label="Select a Mode" description="Controls the mode in which D Calendar appears">
+            <option value="week">Week</option>
+            <option value="month">Month</option>
+            <option value="bimonth">2 Months</option>
+          </param>
+          <param name="D_Calendar_Tooltips" type="radio" default="0" label="Select a tooltip Style" description="Enables mootools tooltips.">
+            <option value="0">Mootips</option>
+            <option value="1">Browser Tooltips</option>
+          </param>
+          <param name="D_Calendar_AltLocation" type="text" default="calendar" label="Name of the alternative Div location" description="Enter here the name of the div in which you want D Calendar to render itself. If the div does not exist anywhere in the page, D Calendar will render itself on its default location in the module area." size="10" />
+
+
+          <param name="D_Calendar_Style" type="textarea" default="
+ .hour_line{ border-style: none none solid;border-width: 1px; vertical-align:top;}\n
+ .non_business_hour_line{ border-style: none none solid; border-width: 1px; vertical-align:top; background-color:#D6D6D6;}\n
+ .D_Calendar {font-family: Tahoma; font-size:12px;font-weight: normal;padding: 3px; width: 180px; horizontal-align:center; vertical-align:top; background-color:#f7f7f7; border-width:1px; border-style:solid}\n
+ .month_up {text-align:center;width:30px}\n
+ .month_down {text-align:center;width:30px}\n
+ .month_text {text-align:center;font-weight:bold;width:172px;}\n
+ .footer {text-align:center;}
+ .day_table{border-collapse:separate;border-spacing:1px;}
+ .day_name {padding:0px;text-align:center; text-align: center;font-size: 11px; background-color:#FFFFFF}
+ .day {padding:0px;text-align:center; text-align: center;font-size: 11px;width:30px;border-width:1px;border-style:solid;border-color:#f7f7f7; }
+ .activeDay {font-weight:bold;text-align:center; text-align: center;font-size: 11px;width:30px;border-color:#f7f7f7;border-width:1px;border-style:solid; }
+ .today {padding:0px;text-align:center; text-align: center;font-size: 11px;width:30px; border-color:red;border-width:1px;border-style:solid; }
+ .selected {padding:0px;text-align:center; text-align: center;font-size: 11px;width:30px; border-color:blue;border-width:1px;border-style:solid; }
+ .activeToday {font-weight:bold;text-align:center; text-align: center;font-size: 11px;width:30px; border-color:red;border-width:1px;border-style:solid; }
+ .activeSelected {font-weight:bold;text-align:center; text-align: center;font-size: 11px;width:30px; border-color:blue;border-width:1px;border-style:solid; }
+ a.linkActive {font-weight:bold}
+ 
+" label="CSS Style" description="The CSS style the Calendar uses." rows="30" cols="70"/>
+
+        </params>
+</install>

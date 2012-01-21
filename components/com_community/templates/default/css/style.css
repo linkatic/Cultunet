@@ -1,0 +1,5205 @@
+/**
+ * COMMUNITY : #community-wrap
+ * main ID that hold core JomSocial all togather
+ * this class is reusable across the JomSocial application
+ */
+#community-wrap {
+	display: inline-block;
+	width: 100%;
+		
+	/* display: inline-block + width: 100% was 
+	   used to cope with uncleared floats that
+	   often is present in various Joomla! templates.
+	   
+	   Without it, contents within #community-wrap
+	   may get pulled down to the line where the
+	   uncleared float element ends.
+	     
+	   The css property combination above inherits
+	   the width of the parent container IRRESPECTIVE
+	   of the padding value of the parent container.
+	   
+	   Therefore, if you are experiencing issues where
+	   #community-wrap appears wider than the width
+	   provided by its parent container, you may either:
+	   
+	   - Add margin-left & margin-right 
+	     with the value taken from the
+	     padding value of the parent container.
+	   
+       - Replace display: inline-block;
+         with    display: block;
+         (If you are certain uncleared floats won't appear)
+         
+       - Set a fixed width (Usually parent width - parent padding)
+	*/
+
+	position: relative;
+	text-align: left;
+	min-height: 450px;
+	min-width: 650px;
+	margin: 0 0 30px;
+}
+
+
+/**
+ * COMMUNITY : .cLayout
+ * .cMain    : Fluid width for main section 
+ * .cSidebar : Fixed width for sidebar
+ * this class is reusable across the JomSocial application
+ */
+body #community-wrap .cLayout {
+	position: relative;
+	width: 100%;
+	}
+body #community-wrap .cMain {
+	margin-right: 235px;
+	}
+body #community-wrap .cSidebar {
+	width: 220px;
+	float: right;
+	}
+body #community-wrap .cRow {
+	margin: 0 0 30px;
+	}
+
+
+/**
+ * COMMUNITY : .cModule
+ * this class is reusable across the JomSocial application
+ */ 
+#community-wrap .cModule {
+	border: 1px solid #ddd;
+	border-bottom: 1px solid #ccc;
+	padding: 5px;
+	margin: 0 0 15px;
+	position: relative;
+	
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	}
+#community-wrap .cModule h3 {
+	border-bottom: 1px solid #ddd;
+	color: #4E6221;
+	font-size: 12px;
+	text-shadow: none;
+	padding: 5px 0;
+	margin: 0 0 7px 0;
+	}
+#community-wrap .cModule h4 {
+	border-bottom: 1px dotted #ccc;
+	color: #333;
+	font-size: 90%;
+	font-weight: 700;
+	margin: 0;
+	padding: 0 0 5px 0;
+	}
+#community-wrap .cModule fieldset {
+	background: none;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	}
+
+
+/**
+ * COMMUNITY : CONTENT TITLE
+ * this class is reusable across the JomSocial application
+ */
+div.ctitle {
+	font-weight: bold;
+	margin: 0 0 5px !important;
+	padding: 5px 0 !important;	
+	border-bottom: 2px solid #ddd;
+	}
+body #community-wrap div.ctitle h2 {
+	font-size: 120%;
+	font-weight: 100;
+	padding: 3px 0;
+	margin: 0;
+	border: none;
+	}
+
+
+/**
+ * COMMUNITY : ELEMENT STANDARD STYLING
+ * standart styling for all html elements in JomSocial application
+ * this section also included HTML-fix to support JomSocial application
+ */
+#community-wrap .clr,
+#cWindowContent .clr {
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	}
+#community-wrap .clrfix {
+	clear:none;
+	}
+#community-wrap .clrfix:after {
+	display: block; 
+	visibility: hidden; 
+	clear: both; 
+	height: 0; 
+	content: " ";
+	font-size: 0;
+	}
+#community-wrap :focus {
+	outline-style: none;
+	}
+
+
+#community-wrap hr {
+	height: 1px;
+	}
+#community-wrap fieldset {
+	overflow: hidden;
+	border-left: outset;
+	}
+#community-wrap legend {
+	font-size: 1.3em;
+	color: #666666;
+	overflow: hidden;
+	}
+#community-wrap img {
+	background: none;
+	}
+#community-wrap dl,
+#community-wrap dd,
+#community-wrap dt {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: none;
+	}
+#community-wrap ul.pagination {
+	margin: 15px auto;
+	padding: 10px 0;
+	}
+#community-wrap .inputbox,
+#community-wrap textarea,
+#community-wrap select {
+    font: normal 13px/1 Tahoma;
+    padding: 2px;
+    }
+textarea {
+    height: 110px;
+    width: 100%;
+    }
+/**
+ * COMMUNITY : RESET LIST STYLING
+ * applying reset styling for UL/OL in application.	
+ */
+#community-wrap .cResetList,
+#community-wrap .cResetList li {
+    background: none;
+    border: none;
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    }
+
+/**
+ * COMMUNITY : THUMBNAIL LISTING STYLE
+ *	
+ * use in:
+ * 		New members (Frontpage)
+ * 		Who's Online (Frontpage)
+ * 		New Photos (Frontpage)
+ * 		Latest Groups (Frontpage)
+ * 		Friend list (Profile)
+ * 		Members (Groups)
+ * 		Guest (Event)
+ */
+#community-wrap .cThumbList,
+#community-wrap .cThumbList li{ 
+    list-style: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    }
+#community-wrap .cThumbList {
+    margin-right: -5px
+    }
+#community-wrap .cThumbList li {
+	float: left;
+	display: inline-block;
+	padding: 0 4px 4px 0;
+	}
+#community-wrap .cThumbList li img {
+    float: left;
+    display: inline-block;
+    }
+    
+
+
+/**
+ * COMMUNITY : 3 COLUMN LIST STYLE
+ *	
+ * use in:
+ * 		All Videos (Categories)
+ * 		All Groups (Categories)
+ * 		All Events (Categories)
+ */
+#community-wrap .c3colList,
+#community-wrap .c3colList li    { 
+    list-style: none;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    }
+#community-wrap .c3colList li {
+	float: left;
+	display: inline-block;
+	width: 33%;
+	}
+
+/**
+ * COMMUNITY : SUBMENU TOOLBAR
+ * this class is reusable across the JomSocial application
+ */
+#community-wrap .cSubmenu {
+	margin: 0 0 10px;
+	height: 25px;
+	
+	background: #eee;
+	border: solid 1px #ccc;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	}
+/*we will make this global*/
+#community-wrap ul.submenu,
+#community-wrap ul.submenu li {
+	list-style: none;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    }
+#community-wrap ul.submenu {
+	height: 25px;
+	}
+#community-wrap ul.submenu li {
+	font-size: 11px;
+	float: left;
+	line-height: 25px;
+	}
+#community-wrap ul.submenu li a,
+#community-wrap ul.submenu li span {
+	color: #0B55C4;
+	text-decoration: none;
+	
+	height: 12px;
+	padding: 0 8px;
+	border-right: 1px solid #ccc;
+	}
+	#community-wrap ul.submenu li span {
+		color: #555;
+		}
+#community-wrap ul.submenu li.action {
+	float: right;
+	margin-right: -1px;
+	}
+#community-wrap ul.submenu li a.active:link,
+#community-wrap ul.submenu li a.active:visited,
+#community-wrap ul.submenu li a.active:hover {
+	text-decoration: underline;
+	color: #000;
+	}
+
+/**
+ * COMMUNITY : SUBMENU TOOLBAR FOR IPHONE
+ * this class is reusable across the JomSocial application
+ * Affected files:
+   - toolbar.submenu.iphone.php
+ */
+#community-wrap .submenu-l {
+	background: transparent url(../images/submenu.bg.png) no-repeat 0 0;
+	height: 26px;
+	margin: 0 0 20px;
+	padding-left: 5px;
+	}
+#community-wrap .submenu-r {
+	background: transparent url(../images/submenu.bg.png) no-repeat 100% 0;
+	height: 26px;
+	}
+#community-wrap .submenu-l .submenu-r ul.submenu {
+	height: 26px;
+	list-style: none;
+	}
+#community-wrap .submenu-l .submenu-r ul.submenu li {
+	background: none;
+	float: left;
+	font-weight: 800;
+	line-height: 26px;
+	list-style-type: none;
+	}
+
+/*
+ * COMMUNITY : .avatar / .small / small
+ * intended to define this classes once
+ * this class is reusable across the JomSocial application
+ */
+#community-wrap a img.avatar {
+	border: 1px solid #ccc;
+	padding: 1px;
+	}
+#community-wrap a:hover img.avatar {
+	border: 1px solid #999;
+	}
+body #community-wrap .small,
+body #community-wrap small {
+	font-size: 90% !important;
+	}
+
+
+/*
+ * COMMUNITY : SYSTEM MESSAGE
+ * this class is reusable across the JomSocial application
+ */
+body #community-wrap div.info,
+body #community-wrap div.error,
+body #community-wrap div.warning {
+	font-weight: bold;
+	margin: 0 0 10px 0;
+	padding: 10px;
+	}
+body #community-wrap div.error {
+	color: #CC0000;	
+	background: #E6C0C0;
+	border-bottom: 3px solid #DE7A7B;
+	border-top: 3px solid #DE7A7B;
+	}
+body #community-wrap div.info {
+	color: #336699;
+	background: #C3D2E5;
+	border-bottom: 2px solid #84A7DB;
+	border-top: 2px solid #84A7DB;
+	}
+body #community-wrap div.warning {
+	color: #CC0000;
+	background: #EFE7B8;
+	border-bottom: 3px solid #F0DC7E;
+	border-top: 3px solid #F0DC7E;
+	}
+body #community-wrap div.info {
+	color: #0055BB;
+	background-color: #C3D2E5;
+	border-bottom: 3px solid #84A7DB;
+	border-top: 3px solid #84A7DB;
+	}
+	body #community-wrap div.info a.friend { 
+		background: url(../images/action/icon-user-add.png) no-repeat scroll 0 0 transparent;
+		padding: 2px 0 2px 22px;
+		font-weight: bold;
+		}
+
+
+/*
+ * COMMUNITY : APPLICATION BOX
+ * this class is reusable across the JomSocial application
+ */
+#community-wrap .app-box {
+    float: left;
+	width: 100%;
+	margin-bottom: 15px;
+	display: inline-block;
+	zoom: 1;
+	}
+#community-wrap .app-box-header {
+	background: transparent url(../images/app-box-header.png) no-repeat 0 0;
+	height: 30px;
+	padding: 0 0 0 10px;
+	margin: 0 10px 10px 0;
+	position: relative;
+	}      
+#community-wrap .app-box-header .app-box-header {
+	background-position: 100% 0;
+	padding: 0; 
+	padding-right: 10px;
+	margin-right: -10px;
+	}   
+#community-wrap .app-box-header.no-background,
+#community-wrap .app-box-header.no-background .app-box-header {
+	background: none;
+	padding: 0;
+	}
+#community-wrap .app-box-title {
+	color: #4E6221;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 30px;
+	background: none;
+	margin: 0; 
+	padding: 0;
+	text-shadow: none;
+	border: none;
+	}
+#community-wrap .app-box-menus {
+	position: absolute;
+	top: 0; right: 0;
+	margin: 7px;
+	}
+#community-wrap .app-box-menu {
+	float: right;
+	cursor: pointer;
+	margin-left: 5px;
+	}
+#community-wrap .app-box-menu-title {
+	display: block;
+	text-indent: -9999px;
+	}
+#community-wrap .app-box-menu-icon {
+	background-image: url(../images/app-box-menu-icon.png);
+	background-repeat: no-repeat;
+	height: 16px;
+	width: 16px;
+	line-height: 0; 	
+	display: block;
+	}
+#community-wrap .app-box-menu-icon:focus {
+	outline: none;
+	}
+#community-wrap .app-box-menu.options .app-box-menu-icon { background-position: 0 0; } /* options menu */
+
+
+/*
+ * COMMUNITY : TOGGLE EXPAND / COLLAPSE MENU
+ * this class is reusable across the JomSocial application
+ */
+#community-wrap .app-box-menu.toggle .app-box-menu-icon { background-position: -16px 0; }
+#community-wrap .app-box.collapse .app-box-menu.toggle .app-box-menu-icon {
+	background-position: -32px 0;
+	}
+#community-wrap .app-box-content {
+	position: relative;
+	zoom: 1; /* Content dissapears after collapsing and expanding again */
+	}
+#community-wrap .app-box-info {}
+#community-wrap .app-box-actions {
+	text-align: right;
+	}
+#community-wrap .app-box-header + .app-box-actions {
+	padding: 4px 0;
+	border-bottom: 1px solid #eceff5;
+	}
+#community-wrap .app-box-header + .app-box-actions.no-border {
+	padding: 4px 0 0;
+	border: none;
+	}
+#community-wrap .app-box-action {
+	padding: 0 5px;
+	outline: none;
+	}
+#community-wrap .app-box-footer a.app-box-action{
+	background:none;
+	}
+#community-wrap .app-box-action + .app-box-action {
+	border-left: 1px solid #aaa;
+	}
+#community-wrap .app-box-action.active {
+	font-weight: 700;
+	}
+#community-wrap .app-box-footer {
+	border-top: 1px solid #ddd;
+	font-size: 90%;
+	padding: 5px 0 0;
+	}
+	/* DIFFERENT margin STYLING FOR .app-box-footer FOR EACH .cMain AND .cModule */
+	#community-wrap .cMain   .app-box-footer { margin: 0; }
+	#community-wrap div.app-widget .app-box-footer { padding: 4px 0 !important; }
+	
+#community-wrap .app-box-footer a {
+	background: url(../images/app-box-footer-a.png) 0 2px no-repeat;
+	padding-left: 10px;
+	}
+#community-wrap .app-box-footer div.app-box-foot-note {
+	padding-bottom: 5px;
+	}
+#community-wrap .app-box-footer .no-border {
+	border: none;
+	padding: 0;
+	}
+#community-wrap .app-box-footer .app-box-info {
+	float: left;
+	}
+
+
+#community-wrap .app-box.collapse .app-box-actions,
+#community-wrap .app-box.collapse .app-box-footer,
+#community-wrap .app-box.collapse .app-box-content {
+	display: none;
+	}
+/*
+ * APPS FIX
+ */
+#community-wrap div#application-group li img,
+#community-wrap div#application-photo li img {
+	width: 45px;
+	height: 45px;
+	}
+
+
+
+
+/*
+ * COMMUNITY : ADD REMOVE BUTTON
+ * this class is reusable across the JomSocial application
+ */
+
+/* Remove Button */
+body #community-wrap a.remove,
+body #community-wrap a.block {
+	background: transparent url(../images/remove-button.gif) no-repeat 0 0;
+	display: block;
+	outline-style: none;
+	text-indent: -9999px;
+	float: right;
+	width: 12px;
+	height: 12px;
+	}
+body #community-wrap a.remove:hover {
+	background: transparent url(../images/remove-button.gif) no-repeat 0 -12px;
+	}
+
+/* Add Button */
+body #community-wrap a.add {
+	background: transparent url(../images/add-button.gif) no-repeat 0 0;
+	display: inline-block;
+	padding: 0 0 0 20px;
+	outline-style: none;
+	
+	height: 16px;
+	line-height: 16px;
+	}
+body #community-wrap a.add:hover {
+	background: transparent url(../images/add-button.gif) no-repeat 0 -16px;
+	}
+
+
+
+
+/*
+ * INTENDED TO HAVE SOME SPACE HERE. THANKS
+ * Silence is communication.
+ */
+
+
+
+
+/*
+ * COMMUNITY : ACTIVITY STREAM
+ * Affected file
+   - frontpage.index.iphone.php
+	 - frontpage.index.php
+	 - profile.index.php
+	 - activity stream plugin
+
+ * the styling was defined as global (.joms-newsfeed-item) in order to support the element outside (#community-wrap)
+ */
+
+#community-wrap #activity-stream-container div.ctitle {
+	margin: 15px 0 5px 0 !important;
+	}
+div.joms-newsfeed-item {
+	display: block;
+	margin: 0;
+	padding: 5px 0 25px !important;
+	
+	position: relative;
+	overflow: hidden;
+	border-bottom: 1px dotted #ccc;
+	}
+	#community-wrap div.joms-newsfeed-item { 
+		padding: 5px 0 !important;
+		}
+	
+div.joms-newsfeed-item .newsfeed-avatar {
+	width: 40px;
+	float: left;
+	}
+div.joms-newsfeed-item .newsfeed-favicon {
+	width: 20px;
+	position: absolute;
+	right: 0;
+	bottom: 3px;
+	}
+	.no-avatar .newsfeed-favicon { top: 6px; left: 2px; }
+	#community-wrap .joms-newsfeed-item .newsfeed-favicon {
+		left: 45px;
+		top: 5px;
+		}
+	#community-wrap .no-avatar .newsfeed-favicon { left: 2px; }
+
+div.joms-newsfeed-item .newsfeed-content {
+	margin: 0 0 0 45px;
+	}
+    div.no-avatar .newsfeed-content { margin: 0 0 0 25px; }
+	#community-wrap .joms-newsfeed-item .newsfeed-content {
+		margin: 0 10px 0 70px;
+		}
+	#community-wrap .no-avatar .newsfeed-content {
+	    margin: 0 10px 0 30px;
+        }
+div.joms-newsfeed-item .newsfeed-content-top {
+	margin: 0;
+	}
+	body #community-wrap .joms-newsfeed-item .newsfeed-content-top {
+		margin: 0 65px 0 0;
+		text-indent: 0;
+		}
+
+div.joms-newsfeed-item .newsfeed-content-hidden {
+	margin: 10px 0;
+	padding: 6px;	
+	display: none;
+	
+	background: #f1f1f1;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	}
+div.joms-newsfeed-item .newsfeed-quote {
+	padding: 0 0 0 20px;
+	background: url(../images/activity-quote.png) 1px 1px no-repeat;
+	}
+div.joms-newsfeed-item div.newsfeed-content-hidden span div.avatarWrap {
+	padding-left: 0;
+	background: none;
+	}
+div.joms-newsfeed-item div.newsfeed-content-hidden div.newsfeed-quote {
+	padding-left: 20px;
+	background: url(../images/activity-quote.png) 0 0 no-repeat;
+	}
+div.joms-newsfeed-item .newsfeed-date {
+	position: absolute;
+	bottom: 2px;
+	left: 0;
+	}
+	body #community-wrap div.joms-newsfeed-item .newsfeed-date {
+		top: 5px;
+		right: 0;
+		left: auto;
+		text-align: right;
+		}
+
+#community-wrap div.joms-newsfeed-item.isMine:hover .newsfeed-date { display: none; }
+
+#community-wrap div.joms-newsfeed-item.isSuperAdmin:hover .newsfeed-date { display: none; }
+
+#community-wrap div.joms-newsfeed-item .newsfeed-remove {
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 7px;
+	}
+	#community-wrap div.joms-newsfeed-item:hover .newsfeed-remove { display: block; }
+
+
+/*
+ * VIEW : GROUP + EVENT
+ * this section was dedicated to JomSocial's EVENT and GROUP view
+ * Affected files:
+   - groups.viewgroup.php
+   - events.viewevent.php
+ */
+#community-wrap .group-top,
+#community-wrap .event-top {
+	margin: 0 0 20px;
+	overflow: hidden;
+	}
+#community-wrap .group-top .group-main,
+#community-wrap .event-top .event-main {
+	margin-left: 180px;
+	}
+#community-wrap .group-top .group-desc,
+#community-wrap .event-top .event-desc {
+	border-top: 1px solid #ddd;
+	margin-top: 15px;
+	}
+#community-wrap .group-top .group-desc h2,
+#community-wrap .event-top .event-desc h2 {
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: none;
+	border: none !important;
+	}
+#community-wrap .group-left,
+#community-wrap .event-left {
+	float: left;
+	width: 164px;
+	border: 1px solid #ccc;
+	background: #eee;
+	}
+#community-wrap .group-avatar,
+#community-wrap .event-avatar {
+	float: left;
+	margin: 0;
+	padding: 2px;
+	background: #eee;
+	border-bottom: none;
+	position: relative;
+	z-index: 1;
+	}
+#community-wrap .group-avatar .tag-this,
+#community-wrap .event-avatar .tag-this {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	text-indent: -9999px;
+	top: 0;
+	left: 5px;
+	z-index: 100;
+	}
+	#community-wrap div.cowner { background: url(../images/action/icon-star-1.png) 0 6px no-repeat; }
+	#community-wrap div.cadmin { background: url(../images/action/icon-star-2.png) 0 6px no-repeat; }
+				
+#community-wrap .group-info,
+#community-wrap .event-info {
+	margin: 0;
+	}
+#community-wrap .group-info .cparam,
+#community-wrap .event-info .cparam {
+	padding-left:0;
+	position:relative;
+	}
+#community-wrap .group-info .clabel,
+#community-wrap .event-info .clabel {
+	font-weight: bold;
+	position: relative;
+	width: 100%;
+	}
+#community-wrap .group-info .cdata,
+#community-wrap .event-info .cdata {
+	padding-bottom: 3px;
+	margin-bottom: 3px;
+	}
+#community-wrap .event-info .cinput,
+#community-wrap .group-info .cinput {
+	display: none;
+	}
+#community-wrap .event-info .event-created .cdata span {
+	font-weight: bold;
+	color: #666;			
+	text-transform: uppercase;
+	width: 30px;
+	display: inline-block;
+	}
+
+
+/*
+ * VIEW : GROUP'S ANNOUNCEMENT
+ * This section was dedicated to JomSocial's GROUP's announcement section
+ * Affected files:
+   - groups.bulletinlist.php
+ */
+#community-wrap .groups-news-row {
+	position: relative;
+	}
+#community-wrap .groups-news-row + .groups-news-row,
+#community-wrap .group-discussion + .group-discussion  {
+	border-top: 1px solid #ddd;
+	padding-top: 5px;
+	}
+#community-wrap div.groups-news-title {
+	background: url(../images/action/icon-announcement.png) no-repeat scroll 0 0 transparent;
+	padding: 0 40px 3px 25px;
+	font-size: 14px;
+	}
+#community-wrap .groups-news-meta,
+#community-wrap .group-discussion-author {
+	margin: 0 0 5px 25px;
+	padding: 0;
+	color: #888;
+	}
+#community-wrap div.groups-news-text {
+	border-top: 1px solid #ddd;
+	margin: 0 0 5px 25px;
+	padding: 5px 0 0 0;
+	}
+#community-wrap div.groups-news-text p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    }
+
+
+/*
+ * VIEW : GROUP'S DISCUSSION
+ * This section was dedicated to JomSocial's GROUP's discussion section
+ * Affected files:
+   - groups.discussionlist.php
+ */ 
+#community-wrap .group-discussion {
+	overflow: hidden;
+	padding: 0;
+	}
+#community-wrap .group-discussion-title {
+	background: transparent url(../images/action/icon-discussion.png) 0 3px no-repeat;
+	width: auto;
+	float: none;
+	font-size: 14px;
+	font-weight: 100 !important;
+	margin: 0;
+	padding: 0px 30% 5px 25px;
+	position: relative;
+	}
+#community-wrap .group-discussion-replies {
+	font-size: 90%;
+	position: absolute;
+	right: 0;
+	top: 5px;
+	
+	max-width: 30%;
+	overflow: hidden;
+	}
+#community-wrap .wall-tittle {
+	font-weight: bold;
+	padding: 0 0 10px;
+	}
+
+
+/*
+ * VIEW : GROUP'S PHOTOS
+ * Affected files:
+   - groups.viewgroup.php (photo album)
+ */
+#community-wrap #community-group-photos img.avatar {
+	width: 64px;
+	height: 64px;
+	}
+
+#community-wrap #community-group-photos .album-list a {
+    float: left;
+    display: inline-block;
+    margin: 0px 4px 4px 0;
+    }
+
+
+/*
+ * VIEW : GROUP (ANNOUNCEMENT + DISCUSSION) DETAIL
+ * Affected files:
+   - groups.viewdiscussion (group's discussion)
+	 - groups.viewbulletin   (group's announcement)
+ */
+#community-wrap #group-discussion-topic,
+#community-wrap #group-buletin-topic {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 10px;
+	}
+#community-wrap #group-discussion-topic .author-avatar,
+#community-wrap #group-buletin-topic    .author-avatar {
+	float: left;
+	}
+#community-wrap #group-discussion-topic .discussion-detail,
+#community-wrap #group-buletin-topic    .buletin-detail {
+	margin-left: 80px;
+	}
+#community-wrap #group-discussion-topic .discussion-created,
+#community-wrap #group-buletin-topic    .buletin-created {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 10px;
+	padding: 3px 0 10px 25px;
+	background: url(../images/action/icon-discussion.png) 0 2px no-repeat;
+	font-size: 90%;
+	color: #888;
+	}
+#community-wrap #group-buletin-topic .buletin-created {
+	background: url(../images/action/icon-announcement.png) 0 2px no-repeat;
+	}
+#community-wrap #group-discussion-topic .discussion-entry,
+#community-wrap #group-buletin-topic    .buletin-entry {
+	margin: 0 10px 20px 0;
+	}
+#community-wrap #group-buletin-topic #bulletin-edit-data {
+	border-top: 5px solid #eee;
+	padding: 10px 0 20px;
+	}
+
+
+/** EVENT + GROUP CONTROL **/
+#community-wrap #community-group-action,
+#community-wrap #community-event-action {
+	background: #eee;
+	}
+#community-wrap #community-group-action h3,
+#community-wrap #community-event-action h3 {
+	color: #333;
+	margin-bottom: 0;
+	}
+#community-wrap ul.event-menus,
+#community-wrap ul.event-menus li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: none;
+	}
+#community-wrap ul.event-menus li {
+	display: block;
+	}
+#community-wrap ul.group-menus li a,
+#community-wrap ul.event-menus li a {
+	font-weight: bold;
+	color: #336699;
+	line-height: normal;
+	text-decoration: none;
+	
+	border-bottom: 1px solid #ddd;
+	
+	display: block;
+	padding: 8px 0 8px 30px;
+	margin: 0;	
+	}
+	#community-wrap ul.group-menus li a:hover,
+	#community-wrap ul.event-menus li a:hover {
+		color: #003366;
+		text-decoration: underline;
+		}
+	#community-wrap ul.group-menus li.important a,
+	#community-wrap ul.event-menus li.important a {
+		color: #933;
+		}
+		#community-wrap ul.group-menus li.important a:hover,
+		#community-wrap ul.event-menus li.important a:hover {
+			color: #900;
+			}
+	#community-wrap ul.group-menus li a.group-edit-avatar,
+	#community-wrap ul.event-menus li a.event-edit-avatar {
+		background: transparent url(../images/action/icon-image-edit.png) 2px 6px no-repeat;
+		}
+	#community-wrap ul.group-menus li a.group-edit-info,
+	#community-wrap ul.event-menus li a.event-edit-info {
+		background: transparent url(../images/action/icon-pencil-go.png) 2px 5px no-repeat;
+		}
+	#community-wrap ul.group-menus li a.group-delete,
+	#community-wrap ul.event-menus li a.event-delete {
+		background: transparent url(../images/action/icon-cross.png) 2px 6px no-repeat;
+		}
+	#community-wrap ul.group-menus li a.group-print,
+	#community-wrap ul.event-menus li a.event-print {
+		background: transparent url(../images/action/icon-printer.png) 2px 6px no-repeat;
+		}
+	#community-wrap ul.group-menus li a.group-export-ical,
+	#community-wrap ul.event-menus li a.event-export-ical {
+		background: transparent url(../images/action/icon-ical.png) 2px 6px no-repeat;
+		}
+	#community-wrap ul.group-menus li a.group-join,
+	#community-wrap ul.event-menus li a.event-join {
+		background: transparent url(../images/action/icon-arrow-join.png) 2px 5px no-repeat;
+		}
+	#community-wrap ul.group-menus li a.group-leave,
+	#community-wrap ul.event-menus li a.event-leave {
+		background: transparent url(../images/action/icon-door-out.png) 2px 5px no-repeat;
+		}
+	#community-wrap ul.group-menus li a.group-invite-friend,
+	#community-wrap ul.event-menus li a.event-invite-friend {
+		background: transparent url(../images/action/icon-group-go.png) 2px 5px no-repeat;			
+		}
+
+	#community-wrap ul.event-menus li a.event-invite-email {
+		background: transparent url(../images/action/icon-email-go.png) 2px 5px no-repeat;		
+		}
+
+	#community-wrap ul.group-menus li a.group-add-bulletin {
+		background: transparent url(../images/action/icon-buletin-add.png) 2px 5px no-repeat;	
+		}
+	#community-wrap ul.group-menus li a.group-add-discussion {
+		background: transparent url(../images/action/icon-discussion-add.png) 2px 5px no-repeat;	
+		}
+	#community-wrap ul.group-menus li a.group-add-photo {
+		background: transparent url(../images/action/icon-camera.png) 2px 5px no-repeat;	
+		}
+	#community-wrap ul.group-menus li a.group-add-album {
+		background: transparent url(../images/action/icon-album-add.png) 2px 5px no-repeat;	
+		}
+	#community-wrap ul.group-menus li a.group-add-video {
+		background: transparent url(../images/action/icon-video-add.png) 2px 5px no-repeat;	
+		}
+	#community-wrap ul.group-menus li a.group-unpublish {
+		background: transparent url(../images/action/icon-group-unpublish.png) 2px 5px no-repeat;	
+		}
+		
+#community-group-side-photos a img {
+	width: 45px;
+	height: 45px;
+	margin: 0 3px 4px 0;
+	}
+
+
+/** EVENT ADMIN LIST **/
+#community-wrap .cThumbList li.event-admin-list {
+	width: 100%;
+	list-style-type:none;
+	margin:0;
+	padding:0 0 8px;
+	}
+#community-wrap .event-admin-thumb {
+	float: left;
+	width: 55px;
+	}
+#community-wrap .event-admin-info {
+	margin-left: 55px;
+	}
+#community-wrap #event-admin-name {
+	font-weight: bold;
+	}
+#community-wrap #event-admin-is {}
+#community-wrap #event-admin-write {}
+
+/** EVENT RESPOND **/
+#community-wrap #community-event-rsvp-status {
+	background: #e0e0b8;
+	border: 1px solid #c1c196
+	}
+#community-wrap #community-event-rsvp-status h3 {
+	border-bottom: 1px solid #c3c397;
+	}
+#community-wrap #community-event-rsvp-status .app-box-footer {
+	border-top:1px solid #c9c991;
+	margin: 7px 5px 0 0;
+	}
+
+/*
+ * GLOBAL : EVENT EMAIL
+ * :: new styling for email invitation for events
+ */
+body #community-wrap .event-email {
+	padding: 0 0 30px;
+	}
+body #community-wrap .event-email label { 
+	display: block;
+	font-weight: bold;
+	}
+body #community-wrap .event-email .instruction {
+	margin-bottom: 20px;
+	}
+body #community-wrap .event-email div.event-email-row {
+	padding: 5px 0;
+	margin-bottom: 10px;
+	width: 100%;
+	float: left;
+	display: inline;
+	}
+body #community-wrap .event-email div.event-email-row input {
+	width: 480px;
+	}
+body #community-wrap .event-email div.event-email-row textarea {
+	width: 100%;
+	}
+#community-wrap .cSubmenu ul.submenu li.instruction {
+	margin-left: 5px;
+	}
+#community-wrap .cSubmenu ul.submenu li.back-link {
+	float: right;
+	}
+#community-wrap .cSubmenu ul.submenu li.back-link a {
+	border-right: none !important;
+	border-left: 1px solid #ccc;
+	}
+
+/*
+ * VIEW : GROUP LISTING
+ * Affected files:
+   - group.index.php
+ */
+#community-wrap ul.cTextList,
+#community-wrap ul.cTextList li {
+	list-style: none;
+	background: none;
+	padding: 0;
+	margin: 0;
+	}
+#community-wrap ul.cTextList li {
+	display: block;
+	border-bottom: 1px solid #ddd;
+	}
+#community-wrap ul.cTextList li.group-discussion-list {
+	background: transparent url(../images/action/icon-discussion.png) 0 2px no-repeat;
+	padding: 0 5px 5px 25px;
+	margin: 0 5px 5px 0;
+	}
+#community-wrap ul.cTextList li.group-discussion-list a.title {
+	display: block;
+	}
+
+/*
+ * VIEW : GROUP + EVENT LISTING
+ * some shared styling between GROUP and EVENT listing
+ * Affected files:
+   - group.index.php
+	 - event.list.php
+ */
+.community-events-results-item,
+.community-groups-results-item {
+	float: left;
+	display: inline;
+	width: 100%;
+	padding: 0;
+	margin: 0 0 10px;
+	
+	position: relative;
+	
+	border:1px solid #ddd;
+	border-bottom: 1px solid #ccc;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	}
+.community-events-results-left,
+.community-groups-results-left {
+	float:left;
+	margin: 10px;
+	}
+	.community-events-results-left img.avatar {
+		width: 64px;
+		height: 64px;
+		}
+	.community-events-results-left .eventDate {
+		font: bold 120% Arial;
+		text-align: center !important;
+		text-transform: uppercase;
+		padding: 2px;
+		
+		background: #eee;
+		border: 1px solid #ddd;
+		border-top: none;
+		}
+.community-events-results-right,
+.community-groups-results-right {
+	float: none !important;
+	margin: 10px 10px 10px 90px
+	}
+.community-events-results-right h3,
+.community-groups-results-right h3 {
+	margin: 0;
+	padding: 0;
+	text-indent: 0 !important;
+	margin-bottom: 5px;
+	}
+#community-wrap .eventActions,
+#community-wrap .groupActions {
+	margin-top: 5px;
+	}
+	#community-wrap .eventActions a span { font-weight: bold; }
+divbody #community-wrap span.selected {
+	font-weight: 700;
+	text-decoration: underline;
+	}
+div#community-event-info-actions,
+div#community-group-info-actions {
+	display: none;
+	padding: 0 0 0 170px;
+	}
+div#community-events-news h3,
+div#community-events-join h3,
+div#community-groups-news h3,
+div#community-groups-join h3 {
+	border-bottom: solid 1px;
+	margin: 0 0 5px 0;
+	padding: 0;
+	width: 100%;
+	float: left;
+	}
+input#news-title{
+	width: 400px;
+	}
+textarea#news-description {
+	height: 200px;
+	width: 400px;
+	}
+div#community-groups-news div {
+	padding-top: 10px;
+	}
+#community-wrap div.empty {
+	color: #888;
+	padding: 0 0 2px 0;
+	}
+div.community-events-action,
+div.community-groups-action {
+	padding-top: 10px;
+	text-align: right;
+	}
+
+/*
+ * COMMUNITY : DEFAULT LISTING
+ * 
+ * Affected files:
+   - Friend list
+	 - Video list
+	 - Latest video (Frontpage)
+	 - Search result
+ */
+#community-wrap .cDetailList,
+#community-wrap .cDetailList li { 
+    list-style: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    line-height: 17px;
+    }
+#community-wrap .cDetailList .item {
+	background-image:	none;
+	display: block;
+	float: left;
+	list-style-type: none;
+	margin: 0 2px 0 0;
+	padding: 10px 0;
+	width: 100%;
+	}
+
+#community-wrap .cDetailList .avatarWrap {
+	float: left;
+	width: 75px;
+	}
+#community-wrap .cDetailList .detailWrap {
+	margin: 0 10px 0 75px;
+	}
+	#community-wrap .detailWrap.alpha {
+		margin: 0 10px 0 0;
+		color: #666;
+		}
+#community-wrap .cDetailList .detailWrap h4 {
+	line-height: 100%;
+	margin: 0;
+	padding: 0 0 10px;
+	}
+#community-wrap .cDetailList .detailWrap .status {
+	height: auto;
+	min-height: 25px;
+	}
+#community-wrap .cDetailList .detailWrap .icons {
+	font-size: 90%;
+	padding: 5px 0 0;
+	}
+
+#community-wrap .cDetailList .cActivityAction {
+	float: right;
+	margin-top: 20px;
+	}			
+#community-wrap .cDetailList .cActivityAction a {
+	background: #ececec;
+	border: solid 1px #ccc;
+	color: #666;
+	font-size: 90%;
+	padding: 2px 5px;
+	text-decoration: none;
+	}
+#community-wrap .cDetailList .cActivityAction a:hover {
+	background: #fcc;
+	border: solid 1px #c99;
+	color: #633;
+	}
+
+/*
+ * Latest group listing 
+ */
+#community-wrap .cModule.latest-groups {}
+#community-wrap .cModule.latest-groups li.featured {
+	text-align: center;
+	margin: 0 4px 0 0;
+	width: 208px;
+	}
+#community-wrap .cModule.latest-groups li.featured a { 
+	width: 100%;
+    float: left;
+    display: inline-block;
+    margin: 0 0 10px;
+	}
+#community-wrap .cModule.latest-groups li.featured a img {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    }
+body #community-wrap .cModule.latest-groups li.featured h3.title {
+	font-size: 150% !important;
+	padding: 5px 0;
+	margin: 0;
+	text-align: center;
+	border: none !important;
+	}
+#community-wrap .cModule.latest-groups li.featured .desc-details {
+	padding: 5px 0 10px;
+	margin-bottom: 5px;
+	text-align: center;
+	border-bottom: none !important;
+	line-height: 1.4;
+	}
+
+/*
+ * COMMUNITY : WALL COMMENT'S FORM
+ * this class is reusable across the JomSocial application
+ */
+#community-wrap #wallForm,
+#community-wrap #community-photo-walls { /* for photo comment styling */
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    }
+#community-wrap #wall-message {
+	display:block;
+	min-height: 110px;
+	}
+.wall-comment-view-all {
+	position: absolute;
+	top: 0px;
+	right: 0;
+	}
+.wall-respond-area {
+	position: relative;
+	margin-top: 10px;
+	}
+#cProfileWrapper .wall-respond-area {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    }
+
+/*
+ * COMMUNITY : WALL COMMENT ROW
+ * This class is reusable across the JomSocial application
+ * Affected file
+   - wall.content.php
+ */
+#community-wrap div.wallComments {
+	border-bottom: 1px solid #ddd;
+	padding: 0 0 5px;
+	margin: 0 0 10px;
+	}
+body #community-wrap div.ccontent {
+	padding: 6px 0 6px 80px;
+}
+body #community-wrap div.cavatar {
+    float:left;
+    height:45px;
+    width:45px;
+    }
+body #community-wrap div.cavatar img {
+    width: 36px;
+    height: 36px;
+    }
+body #community-wrap div.ccontent-avatar {
+	margin: 0 0 0 50px;
+	padding: 0 5px 5px 5px;
+	}	
+#community-wrap div.ccontent-avatar .createby a {
+	font-weight: bold;
+	}
+	
+#community-wrap div.ccontent-avatar .content {
+	margin: 5px 0;
+	padding: 0;
+	line-height: 15px;	
+	}
+#community-wrap div.ccontent-avatar .date .createdate {
+	height: 20px;
+	background: transparent url(../images/comment_clock.png) left 0px no-repeat;
+	padding: 2px 0 0 20px;
+	vertical-align: middle;
+	}
+#community-wrap div.ccontent-avatar .date .remove {
+	font-size: 90%;
+	}
+#community-wrap .wall-cocs {
+	font-size:90%;
+	margin: 8px 20px 0 0;
+	}
+body #community-wrap div.ccontent div.ccontent-min-height {
+	height:40px;
+	float:right;
+	width:1px;
+	}
+
+/** Comment On Comment **/
+
+#community-wrap .wallcmt {
+	padding: 4px;
+	background-color: #f1f1f1;
+	margin-bottom: 2px;
+	min-height:32px;
+	
+	position: relative;
+	padding-left: 40px; /* 32px avatar + 4px padding-left + 4px padding-right */
+}
+#community-wrap .wallcmt p {
+	margin: 0;
+}
+#community-wrap .wall-coc-avatar {
+	width: 32px;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	border: none;
+}
+
+#community-wrap .wall-coc-form {
+	display: none;
+}
+
+#community-wrap .wall-coc-form-actions {
+	text-align: left;
+}
+#community-wrap .wall-coc-form-actions button {
+    margin-right: 5px;
+    }
+
+#community-wrap .wall-coc-form textarea {
+	float: left;
+}
+
+
+/*
+ * COMMUNITY : VIDEO (LISTING)
+	- frontpage.index.php
+	- groups.viewgroup.php
+	- videos.list.php
+ */
+body #community-wrap ul.profile-details li.video {
+	padding-top: 3px;
+	}
+body #community-wrap a.icon-videos {
+	background: url("../images/icons/icons-16x16.gif") no-repeat scroll 0 -398px transparent;
+	padding-left: 20px;
+	}
+body #community-wrap a.icon-videos-remove {
+	background: url(../images/action/icon-video-remove.png) no-repeat;
+	padding: 2px 0 0 23px;
+	font-size: 90%;
+	}
+
+body #community-wrap .video-items {
+	margin: 0 -5px;
+	}
+body #community-wrap .video-item {
+	float: left;
+	width: 50%;
+	}
+body #community-wrap #latest-videos .video-item,
+body #community-wrap #community-group-videos .video-item,
+body #community-wrap #community-group-side-videos .video-item {
+    float: none;
+	overflow: hidden;
+	display: block;
+	width: auto;
+	}
+
+body #community-wrap .video-item .video-item {
+	/* Reset from parent (body #community-wrap .video-item) */
+	float: none; width: auto;
+	
+	position: relative;
+	margin: 5px;
+	
+	border: 1px solid #ddd;
+	border-bottom: 1px solid #ccc;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	}
+body #community-wrap .video-thumb {
+	float: left;
+	padding: 10px; /* Did not use margin because it breaks on IE6/7 */
+	position: relative;
+	}
+body #community-wrap .video-thumb img {
+	/* Avoid .jomTips interference */
+	margin: 0 !important; 
+	}
+body #community-wrap .video-thumb-url {
+	display: block;
+	background: url(../../../assets/video_thumb.png) no-repeat center;
+	overflow: hidden;
+	}
+body #community-wrap .video-durationHMS {
+	position: absolute;
+	bottom: 10px; left: 10px;	/* Due to .video-thumb's using padding and not margin */
+	
+	background: black;
+	opacity: 0.7;
+	color: #FFF;
+	
+	font-size: 80%;
+	font-weight: bold;
+	padding: 0 5px;
+	}
+body #community-wrap .video-summary {
+	margin: 10px;
+	margin-bottom: 0;
+	}
+body #community-wrap .video-title {
+	overflow: hidden;
+	position: relative;
+	white-space: nowrap;
+	margin: 0; padding: 0; /* Remove any possible <h3> inheritance from Joomla! template */
+	}
+body #community-wrap .video-description {
+	margin: 0; padding: 0; /* Remove any possible <p> inheritance from Joomla! template */
+	}
+
+/*
+	.video-add
+*/
+body #cWindow .video-addType {
+	vertical-align: top;
+	width: 50%;
+	height: 200px;
+	padding: 10px;
+	
+	position: relative;
+}
+body #cWindow .video-addType.link {
+}
+body #cWindow .video-addType.upload {
+	border-left: 1px solid #DDD;
+}
+body #cWindow .video-addType-name {
+	font-weight: bold;
+	
+	/* Reset inheritance from Joomla! template */
+	margin: 0; padding: 0;
+}
+body #cWindow .video-addType-description {
+	/* Reset inheritance from Joomla! template */
+	margin: 10px 0; padding: 0;
+}
+body #cWindow .video-providers {
+	padding-left: 15px;
+	margin: 0;
+}
+body #cWindow .video-provider {
+	width: 49%;
+	float: left;
+	/* Reset inheritance from Joomla! template */
+	margin: 0; padding: 0; background: none;
+	list-style-type: disc; line-height: 150%;
+}
+body #cWindow .video-uploadRules {
+	padding-left: 15px;
+	margin: 0;
+}
+body #cWindow .video-uploadRule {
+	/* Reset inheritance from Joomla! template */
+	margin: 0; padding: 0; background: none;
+	list-style-type: disc; line-height: 150%;	
+}
+body #cWindow .video-action {
+
+}
+body #cWindow .video-addType.link .video-action {
+	margin-top: 15px;
+}
+body #cWindow .video-addType.upload .video-action {
+	margin-top: 20px;
+}
+
+/*
+ * COMMUNITY : PROFILE / CHANGE PROFILE VIDEO
+	- profile.linkvideo.php
+	- videos.video.php
+ */
+#community-wrap .vidSubmenu {
+	margin: 0 0 10px;
+	background: #eee;
+	border: solid 1px #ccc;
+	
+	border-radius: 0 0 3px 3px;
+	-moz-border-radius: 0 0 3px 3px;
+	-webkit-border-radius: 0 0 3px 3px;
+	}
+	#community-wrap .vidSubmenu .submenu {
+		border-top: 1px solid #ccc;
+		}
+	#community-wrap .vidSubmenu .action a {
+		border-left: 1px solid #ccc;
+		}
+body #community-wrap .video-permalink { 
+	padding: 10px 0;
+	position: relative;
+	}
+	body #community-wrap .video-permalink .video-label {
+		width: 72px;
+		font-weight: bold;
+		height: 20px;
+		line-height: 20px;
+		position: absolute;
+		left: 5px;
+		top: 10px;
+		}
+	body #community-wrap .video-permalink div.video-link {
+	    display: block !important;
+		margin: 0 8px 0 80px;
+		padding: 0;
+		}
+	body #community-wrap .video-permalink input {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		height: 20px;
+		line-height: 20px;
+		}
+
+
+#community-wrap .video-full {}
+
+/* change profile video */
+#community-wrap .video-head {
+	position: relative;
+	}
+	#community-wrap .video-remove {
+		position: absolute;
+		right: 0;
+		top: 7px;
+		}
+body #community-wrap .video-player {
+	text-align: center;
+	background: #d1d1d1;
+	padding: 15px 0;
+	border-bottom: 1px solid #aaa;
+	border-top: 1px solid #aaa;
+	}
+body #community-wrap .video-full .video-summary {
+	padding: 10px;
+	height: auto; margin: 0; /* reset inheritance from .video */
+	}
+body #community-wrap .video-full .video-actions {
+	display: block;
+	margin-top: 10px;
+	position: relative; /* Remove inheritance */
+	}
+
+#linkVideo #videoLinkUrl {
+	width: 100%;
+	}
+#uploadVideo #videoTitle {
+	width: 100%;
+	}
+#uploadVideo #description {
+	width: 100%;
+	height: 135px;
+	}
+
+
+/*
+ * COMMUNITY : MY APPS FIX for WALL COMMENT
+ */
+ 
+#community-wrap .cModule #wall-message {
+    width: 203px !important;
+    }
+#community-wrap .cModule .wall-respond-area {
+    margin: 0 5px 0 0;
+    }
+#community-wrap .app-widget-content .wall-respond-area {
+    padding: 10px 0;
+    }
+#community-wrap .app-widget-content .wallComments img {
+    width: 32px;
+    height: 32px;
+    }
+#community-wrap .app-widget-content div.ccontent-avatar {
+    margin: 0 0 0 40px;
+    padding: 0;
+    position:relative;
+    }
+#community-wrap .app-widget-content div.ccontent-avatar .date {
+    width: 100%;
+    float: left;
+    }
+#community-wrap .app-widget-content div.wall-cocs {
+    margin: 5px 0;
+}
+#community-wrap .app-widget-content div.ccontent-avatar .content  {
+	margin: 0;
+}
+
+#community-wrap .app-widget-content .wall-cocs .wall-coc-date {
+
+}
+
+body #community-wrap .app-widget-content div.cavatar {
+	width: 32px;
+	height: 32px;	
+}
+
+#community-wrap .app-widget-content div.wallComments {
+	margin: 0px;
+	padding: 5px 0;
+}
+#community-wrap .app-widget-content .wallcmt img.wall-coc-avatar {
+	height: 24px !important;
+	width: 24px !important;
+}
+
+#community-wrap .app-widget-content div.ccontent-avatar .date .createdate {
+	background: url("../images/comment_clock.png") no-repeat scroll left 0 transparent;
+	display: block;
+	font-size: 75%;
+	height: 16px;
+	line-height: 16px;
+	padding: 0 0 0 18px;
+	vertical-align: middle;
+}
+#community-wrap .app-widget-content div.ccontent-avatar .date .remove {
+	position: absolute;
+	top: 2px;
+	right: 0;
+	background-image: url("../images/remove-button.gif");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	display: block;
+	height: 12px;
+	width: 12px;
+	outline-style: none;
+	text-indent: -9999px;
+}
+#community-wrap .app-widget-content div.ccontent-avatar .date .remove a {
+	width: 12px;
+	height: 12px;
+	display: block;
+}
+#community-wrap .app-widget-content div.ccontent-avatar .date .remove:hover {
+	background-position: 0 -12px;
+}
+
+#community-wrap .app-widget-content .wallcmt {
+	padding: 4px 4px 4px 32px;
+}
+
+#community-wrap .app-widget-content .wallComments .createby {
+	background: none;
+	padding: 2px 16px 2px 0;
+	line-height: 110%;
+}
+
+	
+/*
+ * COMMUNITY : MY APPS FIX for TWITTER UPDATE
+ */
+
+
+/********************************************************************* KICK KICK KICK *********************************************************************/
+
+
+
+
+
+
+
+
+
+
+/** FORM ELEMENTS **/
+body #community-wrap .label,
+body #cWindow .label {
+	font-weight: 700;
+	text-align: right;
+}
+
+body #community-wrap .lblradio,
+body #cWindow .lblradio {
+	display: inline;
+	font-weight: normal;
+}
+
+body #community-wrap .lblradio-block,
+body #cWindow .lblradio-block {
+	display: block;
+	font-weight: normal;
+}
+
+body #community-wrap .inputbox.fullwidth,
+body #cWindow .inputbox.fullwidth {
+	width: 98%;
+}
+body #community-wrap .inputbox.halfwidth,
+body #cWindow .inputbox.halfwidth {
+	width: 50%;
+}
+body #community-wrap .button,
+body #cWindow .button {
+	}
+body #community-wrap .hints,
+body #cWindow .hints {
+	font-style: italic;
+	line-height: 140%;
+	}
+
+
+
+/* table for form elements */
+body #community-wrap .formtable,
+body #cWindow .formtable {
+	width: 100%;
+}
+body #community-wrap .formtable td,
+body #community-wrap .admintable td,
+body #cWindow .formtable td,
+body #cWindow .admintable td {
+	padding: 5px;
+	vertical-align: top;
+}
+body #community-wrap .formtable td.key,
+body #community-wrap .admintable td.paramlist_key,
+body #community-wrap td.listkey,
+body #community-wrap td.paramlist_key,
+body #cWindow .formtable td.key,
+body #cWindow .admintable td.paramlist_key {
+	font-weight: bold;
+	text-align: right;
+	width: 130px;
+}
+body #community-wrap td.listvalue,
+body #community-wrap td.paramlist_value,
+body #community-wrap .formtable td.value,
+body #community-wrap .admintable td.paramlist_value,
+body #cWindow .formtable td.value,
+body #cWindow .admintable td.paramlist_value {
+
+}
+body #community-wrap tr.noLabel td.key,
+body #community-wrap tr.noLabel td.paramlist_key,
+body #cWindow tr.noLabel td.key,
+body #cWindow tr.noLabel td.paramlist_key {
+	border: none;
+	background: none;
+}
+body #community-wrap tr.hidden td,
+body #cWindow tr.hidden td {
+	display: none;
+}
+
+
+/** Standard Application Box Elements **/
+body #community-wrap .appsBoxTitle {
+	font-size: 18px;
+	font-weight: 700;
+	color: #693;
+}
+body #community-wrap .infoGroupTitle {
+	margin: 0 0 10px;
+	color: #333;
+	font-weight: 700;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+
+#community-wrap .infoTitle {
+	color: #666;
+	font-size: 90%;
+}
+#community-wrap .infoDesc {
+    font-size: 90%;
+}
+
+	#community-wrap .infoDesc a {
+		text-decoration: none;
+	}
+	
+	#community-wrap .infoDesc a:hover {
+		text-decoration: underline;
+	}
+
+
+
+
+/** form styling **/
+label {
+	display: block;
+}
+.selectbox {
+	padding: 2px;
+	border: solid 1px #ccc;
+}
+input.fullwidth,
+textarea.fullwidth{
+	width: 98%;
+}
+
+/** custom textarea **/
+body #community-wrap textarea.replybox {
+	width: 98%;
+	height: 115px;
+}
+
+
+
+
+/** Profile **/
+body #community-wrap .profile-addfriend{
+	background: transparent url(../images/user_add.png) no-repeat scroll 0 2px;
+	padding: 3px 3px 3px 20px;
+}
+body #community-wrap .profile-message{
+	background: transparent url(../images/Mail_16x16.png) no-repeat scroll 0 2px;
+	padding: 3px 3px 3px 20px;
+}
+body #community-wrap .profile-star {
+	background: transparent url(../images/Star_16x16.png) no-repeat scroll 0 2px;
+	padding: 3px 3px 3px 20px;
+}
+body #community-wrap .profile-media {
+	background: transparent url(../images/photos.png) no-repeat scroll 0 2px;
+	padding: 3px 3px 3px 20px;
+}
+
+body #community-wrap #profile-info h1 {
+	margin-top:8px;
+	margin-bottom:8px;
+}
+
+
+
+/** Tables **/
+body #community-wrap table.grid td{
+	border-top: 1px solid #CCCCCC;
+	padding: 8px;
+}
+body #community-wrap div.listing {
+	border-top: 1px solid #CCCCCC;
+	padding: 8px;
+}
+body #community-wrap div.listing div.avatar {
+	float: right;
+	padding: 2px;
+}
+body #community-wrap div.listing div.content {
+	padding: 2px;
+}
+body #community-wrap td.info-key {
+	text-align: right;
+	width: 120px;
+}
+body #community-wrap div.ccontent table.ccontentTable {
+	margin-left: -60px;
+}
+body #community-wrap table.ccontentTable tr {
+	height: 1.6em;
+}
+body #community-wrap table.ccontentTable td {
+	padding: 0 10px 5px 0;
+	vertical-align: top;
+}
+
+body #community-wrap ul.avatar-list {
+	margin: 0; 
+	padding: 0; 
+	list-style: none;
+}
+body #community-wrap ul.avatar-list li {
+	display: inline; 
+	padding: 0; 
+	background: none; 
+	margin: 0 3px 0 0 !important;
+}
+/** table header **/
+body #community-wrap div.masterhead td.profile{
+	border: none;
+}
+
+body #community-wrap div.masterhead td{
+	padding: 4px;
+}
+
+/** Tiny icons + newsfeed **/
+body #community-wrap div.sprite-favicons {
+	background: transparent url(../images/icons.png) no-repeat scroll 0 0;
+	padding: 3px 3px 3px 3px;
+	height: 20px;
+	width: 20px;
+	float: left;
+}
+
+body #community-wrap div.created {
+	text-align: right;
+	width: 65px;
+	float: right;
+	color: #9ab070;
+	font-weight: 700;
+	font-size: 11px;
+}
+
+body #community-wrap img.icon {
+	vertical-align: middle;
+	padding: 0 4px 0 0;
+}
+
+body #community-wrap div.news-separator {
+	/*background:#D8DFEA none repeat scroll 0 0;*/
+	border: medium none;
+	color: #D8DFEA;
+	height: 1px;
+	margin-top: 2px;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+
+/*******************************************************************************************/
+
+
+
+
+
+
+
+/* SEND MESSAGE WINDOW STYLE */
+#writeMessageContainer {
+}
+#writeMessageContainer .receiverContainer {
+	padding: 5px;
+	border: solid 1px #ccc;
+	background: #f2fde9;
+}
+
+#writeMessageContainer .inputbox {
+	float: right;
+	width: 290px;
+	display: block;
+	line-height: normal;
+}
+/* SEND MESSAGE WINDOW STYLE */
+
+
+/* ADD NEW FRIEND WINDOW STYLE */
+#addFriendContainer {
+}
+#addFriendContainer form#addfriend {
+	display: block !important; /* If it's inline from Joomla! template, child elements won't render to cWindow width */
+	position: relative;
+	padding-left: 65px !important;
+	margin: 5px 0 !important;
+}
+#addFriendContainer img.avatar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50px;
+}
+#addFriendContainer textarea.inputbox {
+	width: 100%;
+	height: 50px;
+	padding: 1px 0;
+	margin: 0;
+}
+/* ADD NEW FRIEND WINDOW STYLE */
+
+
+/** Message **/
+body #community-wrap div.avatar {
+	/*background:transparent url(../images/left-arrow.jpg) no-repeat scroll right 10px;*/
+	width: 100%;
+}
+
+
+
+body #community-wrap div.inbox-toolbar {
+	background: #fff;
+	border: solid 1px #ccc;
+	padding: 3px;
+}
+body #community-wrap div.inbox-toolbar a {
+	color: #666;
+	font-size: 11px;
+}
+body #community-wrap div.inbox-read {
+	padding: 3px;
+	border-bottom: solid 1px #ccc;
+	position: relative;
+}
+body #community-wrap div.inbox-read a.subject {
+	text-decoration: none;
+}
+body #community-wrap div.inbox-unread {
+	background: #f5fdeb;
+	padding: 3px;
+	border-bottom: solid 1px #ccc;
+	position: relative;
+}
+body #community-wrap div.inbox-unread a.subject {
+	font-weight: 700;
+	text-decoration: none;
+	
+}
+body #community-wrap div.inbox-toolbar .checkbox,
+body #community-wrap div.inbox-message .checkbox {
+	margin: 1px 0 0;
+}
+body #community-wrap div.avatar {
+	float: left;
+	width: 50px;
+}
+body #community-wrap div.message-body {
+	margin: 0 50px;
+}
+body #community-wrap .message-info {
+	font-size: 10px;
+	color: #666;
+}
+body #community-wrap .message-subject {
+	padding: 3px 0;
+	text-indent: 20px;
+}
+body #community-wrap .message-subject a:link {
+	text-decoration: none;
+	font-size: 1.3em;
+	font-weight: 700;
+}
+body #community-wrap .message-subject a:visited {
+	text-decoration: underline;
+	font-size: 1.3em;
+	font-weight: normal;
+}
+body #community-wrap .message-subject a:hover {
+
+}
+body #community-wrap .bubble-arrow {
+    background: transparent url(../images/message-arrow.gif) no-repeat top left;
+	float: left;
+	width: 100%;
+}
+body #community-wrap .bubble-content {
+	background: #fff;
+	border-top: solid 1px #c5d8e7;
+	border-right: solid 1px #c5d8e7;
+	border-bottom: solid 1px #c5d8e7;
+	margin: 0 0 0 12px;
+	padding: 10px 10px 5px;
+	width: 100%;
+}
+body #community-wrap .avatar-message-view {
+	margin: 10px 0 0;
+}
+
+/** Ajax **/
+body #community-wrap div.ajax-wait{
+	background-image:url(../images/wait.gif);
+	width:16px;
+	height:16px;
+}
+
+/** OLD SYSTEM MESSAGE
+body #community-wrap div.info, 
+body #community-wrap div.error, 
+body #community-wrap div.warning {
+	background: none;
+	font-weight:bold;
+	padding-left:25px;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding:10px;
+	
+	border-bottom:3px solid #DE7A7B;
+	border-top:3px solid #DE7A7B;
+	background-color:#E6C0C0;
+	color:#CC0000;
+}*/
+
+
+
+
+/** drag **/
+body #community-wrap td.dragHandle {
+cursor:move;
+}
+body #community-wrap .showDragHandle {
+	background-image: url(../images/drag.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: move;
+}
+
+/**
+ * Unordered list for displaying avatars
+ **/ 
+body #community-wrap ul.community-avatar-list li {
+	background:transparent none repeat scroll 0 0;
+	display:inline;
+	line-height:200%;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0;
+	padding: 6px 6px 0px 0px;
+}
+body #community-wrap ul.community-avatar-list li img {
+	padding:0;
+}
+
+/**
+ * Show-more link
+ **/
+body #community-wrap div.community-show-more,
+body #community-wrap span.community-show-mores{
+	text-align: right;
+} 
+
+
+/*******************************************************************************************/
+/** FRONTPAGE **/
+.app-box .actor-link {
+	width: 100%;
+}
+div.groups-news-title,
+span.groups-news-title {
+	background: transparent url(../images/groups_news_title.gif) no-repeat scroll 0pt 5px;
+	padding: 3px 3px 3px 20px;
+}
+/* Guest section */
+body #community-wrap div.greybox {
+	border: solid 1px #ccc;
+	margin: 0 0 15px;
+}
+body #community-wrap div.greybox div {
+	border: solid 1px #fff;
+}
+body #community-wrap div.greybox div div {
+	border: none;
+	background: #fff url(../images/greybox.gif) repeat-x top left;
+}
+body #community-wrap div.greybox div div div {
+	background: none;
+}
+body #community-wrap div.greybox div div div h1,
+body #community-wrap div.greybox div div div h2 {
+	padding: 0;
+	margin: 0;
+}
+body #community-wrap div.greybox div div div h1 {
+	letter-spacing: -1px;
+	font-size: 32px;
+	margin: 0 0 20px;
+	padding: 0 0 10px;
+	line-height: 35px;
+}
+body #community-wrap div.greybox div div div h2 {
+	color: #666;
+	margin: 0 0 15px;
+}
+body #community-wrap div.greybox div div div.introduction {
+	margin: 0;
+	padding: 30px 0 0 70px;
+}
+body #community-wrap div.greybox div div div.loginform {
+	width: 200px;
+	float: right;
+	padding: 20px 15px 20px 30px;
+	background: transparent url(../images/greybox-separator.gif) no-repeat top left;
+	height: 225px;
+}
+body #community-wrap div.greybox div div div.loginform input.frontlogin {
+	padding: 3px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #666;
+	width: 90%;
+}
+body #community-wrap ul#featurelist {
+	list-style: none;
+	margin: 20px 0;
+}
+body #community-wrap ul#featurelist li {
+	font-size: 14px;
+	color: #999;
+	background: transparent url(../images/add-button.gif) no-repeat 0 0;
+	line-height: 16px;
+	height: 16px;
+	font-weight: bold;
+	margin: 0 0 5px !important;
+	padding: 0 0 0 25px;
+	list-style-type: none;
+	list-style-image:   none;
+}
+body #community-wrap div.greybox a#joinButton {
+	background: transparent url(../images/join-button-big-empty.gif) no-repeat 0 0;
+	width: 278px;
+	height: 49px;
+	/*text-indent: -9999px;*/
+	display: block;
+	outline: none;
+	font-size: 19px;
+	font-weight: 700;
+	line-height: 46px;
+	text-shadow: #333 0 1px 2px;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+}
+body #community-wrap div.greybox a#joinButton:hover {
+	background: transparent url(../images/join-button-big-empty.gif) no-repeat 0 -49px;
+	text-decoration: none;
+}
+body #community-wrap div.greybox a#joinButton2 {
+	background: transparent url(../images/join-button-big.gif) no-repeat 0 0;
+	width: 278px;
+	height: 49px;
+	text-indent: -9999px;
+	display: block;
+}
+body #community-wrap div.greybox a#joinButton2:hover {
+	background: transparent url(../images/join-button-big.gif) no-repeat 0 -49px;
+}
+body #community-wrap div.frontColLeft {
+	margin: 20px 280px 0 0;
+}
+body #community-wrap div.frontColRight {
+	width: 250px;
+	float: right;
+}
+body #community-wrap div.yellowbox h3 {
+	padding: 0;
+	margin: 0 0 10px;
+	color: #7b7948;
+}
+body #community-wrap h3.frontTitle {
+	margin: 0;
+	padding: 10px 0;
+	color: #789539;
+	font-family: "Segoe UI",Arial,Helvetica,sans-serif;
+	font-size: 150%;
+	font-weight: 700;
+	line-height: 100%;
+}
+body #community-wrap div.rightColContainer {
+	width: 230px;
+	height: auto;
+	float: right;
+}
+body #community-wrap div.leftColContainer {
+	margin-right: 250px;
+}
+body #community-wrap div.yellowbox-tl {
+    background: transparent url(../images/yellowbox-tl.gif) no-repeat top left;
+    margin: 0 0 10px;
+}
+body #community-wrap div.yellowbox-tr {
+    background: transparent url(../images/yellowbox-tr.gif) no-repeat top right;
+}
+body #community-wrap div.yellowbox-bl {
+    background: transparent url(../images/yellowbox-bl.gif) no-repeat bottom left;
+}
+body #community-wrap div.yellowbox-br {
+    background: transparent url(../images/yellowbox-br.gif) no-repeat bottom right;
+}
+body #community-wrap div.center {
+	padding: 0px 10px 10px 16px;
+}
+/** FRONTPAGE **/
+/*******************************************************************************************/
+
+
+
+/*******************************************************************************************/
+/** USER PROFILE **/
+#community-wrap #profile-header ul.actions {
+	list-style: none;
+	width: 33%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	background: none;
+}
+	#community-wrap #profile-header ul.actions li {
+		padding: 0 0 0 17px;
+		margin: 5px 3px 5px 0 !important;
+		background: none;
+		display: block;
+		float: left;
+		width: 85%;
+		font-size: 90%;
+		height: 10px;
+		line-height: 10px;
+		text-align: left;
+		border: 0;
+	}
+	#community-wrap #profile-header ul.actions li.profile {
+	    background: transparent url(../images/icon_10px.gif) no-repeat 0 0;
+	}
+	#community-wrap #profile-header ul.actions li.avatar {
+	    background: transparent url(../images/icon_10px.gif) no-repeat 0 -10px;
+	}
+	#community-wrap #profile-header ul.actions li.privacy {
+		background: transparent url(../images/icon_10px.gif) no-repeat 0 -20px;
+	}
+	#community-wrap #profile-header ul.actions li.apps {
+	    background: transparent url(../images/icon_10px.gif) no-repeat 0 -30px;
+	}
+	#community-wrap #profile-header ul.actions li.group {
+	    background: transparent url(../images/icon_10px.gif) no-repeat 0 -40px;
+	}
+	#community-wrap #profile-header ul.actions li.photo {
+	    background: transparent url(../images/icon_10px.gif) no-repeat 0 -50px;
+	}
+	#community-wrap #profile-header ul.actions li.write {
+	    background: transparent url(../images/icon_10px.gif) no-repeat 0 -60px;
+	}
+	#community-wrap #profile-header ul.actions li.inbox {
+	    background: transparent url(../images/icon_10px.gif) no-repeat 0 -70px;
+	}
+	#community-wrap #profile-header ul.actions li.invite {
+	    background: transparent url(../images/icon_10px.gif) no-repeat 0 -80px;
+	}
+	#community-wrap #profile-header ul.actions li.video {
+	    background: transparent url(../images/icon_10px.gif) no-repeat 0 -90px;
+	}
+	#community-wrap #profile-header ul.actions li.events {
+	    background: transparent url(../images/icon_10px.gif) no-repeat 0 -100px;
+	}
+	#community-wrap #profile-header ul.actions a,
+	#community-wrap #profile-header ul.actions a:hover {
+		font-size: 100% !important;
+	}
+
+#community-wrap .js-box-grey {
+	padding: 0 20px 15px 20px;
+}
+
+
+#community-wrap div.mini-profile {
+	padding: 10px 0 !important;
+	border: solid 1px #ccc;
+	margin: 0 0 5px;
+	position: relative;
+	
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	}
+body #community-wrap div.mini-profile-avatar {
+	float: left;
+	padding: 0 10px;
+}
+body #community-wrap div.mini-profile-details {
+	margin: 0 10px 0 100px;
+}
+body #community-wrap div.mini-profile-details-status {
+	min-height:18px;
+	font-style:italic;
+}
+body #community-wrap div.mini-profile-details-action {
+	margin-top:4px;
+	position: relative;
+	z-index: 100;
+}
+body #community-wrap div.mini-profile-details h3.name {
+	margin: 0;
+	padding: 0 0 5px;
+	font-size: 120%;
+}
+body #community-wrap div.mini-profile-details div.status {
+	margin: 0;
+	padding: 0 0 5px;
+	font-size: 90%;
+}
+#cWindow div.mini-profile table,
+#cWindow div.mini-profile table td {
+	vertical-align: top !important;
+}
+
+
+
+/**
+ * Application listing
+ */
+
+#community-wrap .app-item {
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+    
+	padding: 10px 0;
+	border: solid 1px #ccc;
+	margin: 0 0 5px;
+	position: relative;
+}
+
+#community-wrap .app-avatar {
+	float: left;
+	padding: 0 0 0 20px;
+}
+#community-wrap .app-item-details {
+	font-size: 90%;
+	margin: 0 10px 0 100px;
+}
+#community-wrap .app-item-description {
+	margin: 0 120px 15px 100px;
+}
+#community-wrap .app-item h3 {
+	padding: 0 0 5px;
+	font-size: 120%;
+	margin: 0 10px 0 100px;
+}
+#community-wrap .app-item .added-ribbon {
+	height: 16px;
+	line-height: 16px;
+	padding: 0 5px 0 10px;
+	position: absolute;
+	right: 0;
+	top: 7px;
+	font-size: 85%;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	background: transparent url(../images/online.png) no-repeat 0 0;
+} 
+#community-wrap .app-item .added-button {
+	height: 20px;
+	line-height: 20px;
+	padding: 0 15px;
+	position: absolute;
+	right: 10px;
+	top: 35px;
+	font-size: 85%;
+	font-weight: 700;
+	color: #b3ca8f;
+	text-transform: uppercase;
+	background: #e1f4c4;
+	border: solid 1px #b3ca8f;
+	text-decoration: none;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+		
+} 
+#community-wrap .app-item .added-button:hover {
+ 	border: solid 1px #5d7d3d;
+ 	color: #5d7d3d;
+}
+#community-wrap .app-item .remove-button {
+	height: 20px;
+	line-height: 20px;
+	padding: 0 15px;
+	position: absolute;
+	right: 10px;
+	top: 35px;
+	font-size: 85%;
+	font-weight: 700;
+	color: #eab3b3;
+	text-transform: uppercase;
+	background: #ffd3d3;
+	border: solid 1px #eab3b3;
+	text-decoration: none;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+} 
+#community-wrap .app-item .remove-button:hover {
+ 	border: solid 1px #b97a7a;
+ 	color: #b97a7a;
+}
+
+#community-wrap .app-item-empty {
+	margin: 0 20px;	
+	text-align: center;
+}
+
+/* for sortable item */
+#community-wrap #apps-mine .app-item.dragHandle {
+ 	cursor: move;
+}
+#community-wrap #apps-core .app-item.dragHandle {
+
+}
+#community-wrap .app-item.dragHandle .app-item-details {
+	margin: 0 20px 0 100px;
+}
+#community-wrap .app-item.dragHandle .app-item-description {
+	margin: 0 20px 15px 100px;
+}
+#community-wrap .app-item.dragHandle h3 {
+	margin: 0 20px 0 100px;
+}
+
+#community-wrap .app-item.onDrag {
+	opacity: 0.5;
+	filter:alpha(opacity=50);
+}
+#community-wrap .app-item.onDrag a {
+	color: #8e58b7;
+}
+
+
+/** Profile View **/
+body #community-wrap div.profile-main {
+	margin: 0 0 0 0;
+	overflow: hidden;
+}
+body #community-wrap .profile-right {
+	float: right;
+	width: 160px;
+	margin-left: 15px;
+}
+
+
+/**
+ * profile.about.php
+ * 
+ * user information here
+ */   
+#community-wrap dl.profile-right-info {
+	margin: 10px 0 0;
+	padding: 0;
+	list-style: none;
+}
+	#community-wrap dl.profile-right-info dt {
+		background: none;
+		color: #777;
+		font-size: 90%;
+		padding: 0;
+		line-height: normal;
+	}
+	#community-wrap dl.profile-right-info dd {
+		color: #222;
+		font-size: 90%;
+		margin: 0 0 10px;
+	}
+	
+		#community-wrap dl.profile-right-info dd a {
+		 	text-decoration: none;
+		}
+
+
+
+body #community-wrap div.profile-box {
+	padding: 8px;
+	border: solid 1px #ecebeb;
+	margin: 0;
+}
+body #community-wrap .profile-avatar {
+	vertical-align: top;
+	float: left;
+}
+
+body #community-wrap .profile-avatar img {
+	border: solid 5px #e4e3d1;
+}
+
+body #community-wrap div.profile-info {
+	margin: 0 0 0 180px;
+}
+body #community-wrap div.profile-info .contentheading {
+	/* Remove inheritance from Joomla! template:
+	   - JA Relevant
+	*/
+	margin: 0;
+	padding: 0;
+	border: none !important;
+	height: auto !important;
+	background: none;
+}
+body #community-wrap div.profile-name {
+	font-size: 22px;
+	font-weight: 700;
+	color: #333;
+	margin: 0 0 10px;
+}
+body #community-wrap div#profile-status {
+	border-bottom: 1px dotted #CCCCCC;
+	color: #777;
+	font-size: 11px;
+	line-height: 14px;
+	padding: 4px 0;
+	}
+body #community-wrap #profile-status-edit {
+	float: right;
+	font-size: 10px;
+	width: 50px;
+	text-align: right;
+	cursor: pointer;
+}
+
+/**
+ * User information in profile page
+ * 
+    * Karma
+    * Member since
+    * Last online
+    * Profile views
+*/
+  
+#community-wrap ul.profile-details,
+#community-wrap ul.profile-details li {
+    list-style: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+	#community-wrap ul.profile-details li {
+		line-height: normal;
+		width: 100%;
+		
+		/*clearing IE spacing*/
+		float: left;
+		display: inline;
+
+	}
+	
+	#community-wrap ul.profile-details li.title {
+		font-weight: bold;
+		margin: 10px 0 0 0;
+	}
+
+
+
+
+
+
+#community-wrap ul.friend-right-info {
+	list-style: none;
+}
+body #community-wrap ul.friend-right-info li {
+	background: none;
+	line-height: normal;
+	padding: 2px;
+	color: #666;
+	float: left;
+}
+body #community-wrap div.profile-toolbox-bl ul.small-button {
+	margin: 0;
+	padding: 0 0 0 20px;
+	list-style: none;
+	height: 32px;
+}
+body #community-wrap div.profile-toolbox-bl ul.small-button li {
+	background: none;
+	line-height: 33px;
+	padding: 0;
+	margin: 0;
+	display: block;
+	float: left;
+/*	background: transparent url(../images/toolbar/profile-toolbar-separator.gif) no-repeat top right; */
+}
+body #community-wrap div.profile-toolbox-bl ul.small-button li a {
+	display: block;
+	float: left;
+    text-decoration: none;
+    height: 20px;
+    line-height: 16px;
+    padding: 0 0 0 20px;
+    margin: 8px 15px 0 0;
+}
+/*
+body #community-wrap div.profile-toolbox-bl ul.small-button li.add-friend a {
+    background: transparent url(../images/toolbar/profile-toolbar-icons.gif) no-repeat 0 0;
+}
+body #community-wrap div.profile-toolbox-bl ul.small-button li.gallery a {
+    background: transparent url(../images/toolbar/profile-toolbar-icons.gif) no-repeat 0 -21px;
+}
+body #community-wrap div.profile-toolbox-bl ul.small-button li.write-message a {
+    background: transparent url(../images/toolbar/profile-toolbar-icons.gif) no-repeat 0 -104px;
+}
+body #community-wrap div.profile-toolbox-bl ul.small-button li.favourite a {
+    background: transparent url(../images/toolbar/profile-toolbar-icons.gif) no-repeat 0 -63px;
+}
+body #community-wrap div.profile-toolbox-bl ul.small-button li.blog a {
+    background: transparent url(../images/toolbar/profile-toolbar-icons.gif) no-repeat 0 -42px;
+}
+body #community-wrap div.profile-toolbox-bl ul.small-button li.videos a {
+    background: transparent url(../images/toolbar/profile-toolbar-icons.gif) no-repeat 0 -83px;
+}
+*/
+
+body #community-wrap ul.small-button li.btn-add-friend a {
+    background: transparent url(../images/toolbar/profile-toolbar-icons.gif) no-repeat 0 0;
+}
+body #community-wrap ul.small-button li.btn-gallery a {
+    background: transparent url(../images/toolbar/profile-toolbar-icons.gif) no-repeat 0 -21px;
+}
+body #community-wrap ul.small-button li.btn-blog a {
+    background: transparent url(../images/toolbar/profile-toolbar-icons.gif) no-repeat 0 -42px;
+}
+body #community-wrap ul.small-button li.btn-videos a {
+    background: transparent url(../images/toolbar/profile-toolbar-icons.gif) no-repeat 0 -83px;
+}
+body #community-wrap ul.small-button li.btn-write-message a {
+    background: transparent url(../images/toolbar/profile-toolbar-icons.gif) no-repeat 0 -104px;
+}
+body #community-wrap ul.small-button li.btn-favourite a {
+    background: transparent url(../images/toolbar/profile-toolbar-icons.gif) no-repeat 0 -63px;
+}
+body #community-wrap ul.small-button li.btn-discussions a {
+    background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -259px;	
+}
+body #community-wrap ul.small-button li.btn-members a {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat scroll 0 -60px;
+}
+
+
+
+
+/** Profile Toolbox */
+#community-wrap div.profile-toolbox-bl {
+	background: #eee url(../images/toolbar/profile-toolbar-bl.gif) no-repeat bottom left;
+	margin: 0 0 10px;
+}
+#community-wrap div.profile-toolbox-br {
+	background: transparent url(../images/toolbar/profile-toolbar-br.gif) no-repeat bottom right;
+}
+#community-wrap div.profile-toolbox-tl {
+	background: transparent url(../images/toolbar/profile-toolbar-tl.gif) repeat-x top;
+	padding: 10px 0 0 0;
+}
+#community-wrap #miniheader div.profile-toolbox-tl {
+    padding: 0;
+}
+#community-wrap div.profile-toolbox-bl h2.app-box-title {
+	font-family: Tahoma, Verdana, Helvetica, san-serif;
+	font-size: 150%;
+	padding: 10px 10px 0;
+	font-weight: 700;
+	color: #fff;
+	text-align: left;
+}
+
+
+#community-wrap .cToolbarNav + #miniheader,
+#community-wrap .cToolbar + #miniheader {
+	margin-top: -10px;
+}
+
+
+/**
+ * User Status Text at Profile Page
+ */ 
+body #community-wrap #profile-new-status {
+	padding: 15px 20px 10px;
+}
+body #community-wrap #profile-new-status label {
+	font-weight: bold;
+	font-size: 120%;
+}
+body #community-wrap #profile-new-status textarea#statustext {
+	display: block;
+	border: 1px solid #CCCCCC;
+
+	height: 50px;
+	margin: 2px 0;
+	padding: 4px;
+}
+
+body #community-wrap #profile-new-status.inactive textarea#statustext {
+	color: #888888;
+}
+body #community-wrap #profile-new-status.inactive #save-status {
+	display: none;
+}
+body #community-wrap #profile-new-status.inactive #profile-status-notice {
+	display: none;
+}
+
+body #community-wrap div#community-photo-caption input#captiontext {
+	font-size: 16px;
+	color: #999;
+	margin: 0 0 0 10px;
+	width: 50%;
+}
+
+body #community-wrap div#community-photo-caption #save-caption {
+	padding: 3px 10px;
+	background: #333;
+	color: #fff;
+	font-size: 11px;
+	font-weight: 700;
+	border: solid 1px #666;
+	height: 28px;
+	line-height: 28px;
+}
+
+body #community-wrap div.profile-toolbox-bl td {
+	text-align: center;
+}
+body #community-wrap div.profile-toolbox-bl td a {
+	text-align: center;
+	text-decoration: none;
+	float: left;
+	display: block;
+	width: 100%;
+	background: #eee;
+	color: #360;
+	font-size: 11px;
+	font-weight: 700;
+}
+body #community-wrap div.profile-toolbox-bl td a span {
+	float: left;
+	display: block;
+	width: 100%;
+	padding: 50px 0 0;
+	cursor: pointer;
+}
+body #community-wrap div.profile-toolbox-bl td a.btn-invite:link,
+body #community-wrap div.profile-toolbox-bl td a.btn-invite:visited {
+	background: #eee url(../images/icons/profile-toolbox-icons.gif) no-repeat 0 0px;
+}
+body #community-wrap div.profile-toolbox-bl td a.btn-invite:hover {
+    background: #eee url(../images/icons/profile-toolbox-icons.gif) no-repeat 0 -80px;
+    color: #690;
+}
+body #community-wrap div.profile-toolbox-bl td a.btn-photo:link,
+body #community-wrap div.profile-toolbox-bl td a.btn-photo:visited {
+	background: #eee url(../images/icons/profile-toolbox-icons.gif) no-repeat 0 -160px;
+}
+body #community-wrap div.profile-toolbox-bl td a.btn-photo:hover {
+    background: #eee url(../images/icons/profile-toolbox-icons.gif) no-repeat 0 -240px;
+    color: #690;
+}
+body #community-wrap div.profile-toolbox-bl td a.btn-video:link,
+body #community-wrap div.profile-toolbox-bl td a.btn-video:visited{
+	background: #eee url(../images/icons/profile-toolbox-icons.gif) no-repeat 0 -320px;
+}
+body #community-wrap div.profile-toolbox-bl td a.btn-video:hover {
+    background: #eee url(../images/icons/profile-toolbox-icons.gif) no-repeat 0 -400px;
+    color: #690;
+}
+body #community-wrap div.profile-toolbox-bl td a.btn-group:link,
+body #community-wrap div.profile-toolbox-bl td a.btn-group:visited {
+	background: #eee url(../images/icons/profile-toolbox-icons.gif) no-repeat 0 -480px;
+}
+body #community-wrap div.profile-toolbox-bl td a.btn-group:hover {
+    background: #eee url(../images/icons/profile-toolbox-icons.gif) no-repeat 0 -560px;
+    color: #690;
+}
+body #community-wrap div.profile-toolbox-bl td a.btn-apps:link,
+body #community-wrap div.profile-toolbox-bl td a.btn-apps:visited {
+	background: #eee url(../images/icons/profile-toolbox-icons.gif) no-repeat 0 -640px;
+}
+body #community-wrap div.profile-toolbox-bl td a.btn-apps:hover {
+    background: #eee url(../images/icons/profile-toolbox-icons.gif) no-repeat 0 -720px;
+    color: #690;
+}
+
+
+
+/**
+ * New updates in profile page
+ */ 
+#community-wrap div.profile-toolbox-bl ul.updates {
+	margin: 10px;
+	padding: 0 0 10px;
+	list-style: none;
+}
+
+	#community-wrap div.profile-toolbox-bl ul.updates li {
+		background: none;
+		padding: 0 5px;
+		text-align: left;
+	}
+	
+	#community-wrap div.profile-toolbox-bl ul.updates li.title {
+		font-weight: 700;
+		border-bottom: solid 1px #ccc;
+		padding: 3px 5px;
+		color: #900;
+	}
+	
+		#community-wrap div.profile-toolbox-bl ul.updates li a {
+			color: #666;
+			text-decoration: none;
+		}
+		
+		#community-wrap div.profile-toolbox-bl ul.updates li a:hover {
+			text-decoration: underline;
+		}
+
+
+
+
+
+a.inbox {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -120px;
+	padding: 0 0 0 22px;
+}
+a.friend {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 0;
+	padding: 0 0 0 22px;
+}
+/** USER PROFILE **/
+/*******************************************************************************************/
+
+
+
+
+/*******************************************************************************************/
+/** GROUPS **/
+div#community-groups-wrap { }
+div#community-groups-wrap span.info {
+	font-size: 11px;
+	margin: 0 0 10px 0;
+}
+div#community-groups-wrap div textarea {
+	width: 45%;
+}
+div#community-groups-wrap div span.title {
+	width: 20%;
+	float: left;
+}
+div#community-groups-wrap div.items {
+	margin-top: 10px;
+}
+div#community-groups-wrap div.submit {
+	margin: 30px 0 0 0;
+	width: 70%;
+	text-align: center;
+}
+div#community-groups-wrap div.title {
+	font-weight: bold;
+	text-decoration: underline;
+}
+div#community-groups-wrap fieldset {
+	background: none;
+	border: 1px solid #EEE;
+	float: left;
+	width: 50%;
+	padding: 8px;
+}
+div#community-groups-wrap fieldset legend {
+	color: #999;
+	text-decoration: underline;
+	font-size: 12px;
+}
+div#community-groups-wrap fieldset div.avatar {
+	width: 30%;
+	float: left;
+}
+div#community-groups-wrap fieldset div.caption {
+	float: left;
+}
+div#community-groups-wrap div.upload {
+	margin: 20px 0 0 0;
+}
+div#community-groups-wrap div.community-groups {
+    border-bottom: 1px solid #789539;
+    margin: 0 0 10px;
+}
+
+div.community-groups-right div.heading {
+	font-weight: 700;
+	font-size: 12px;
+	background-color: #F4F4F4;
+	border: 1px solid #eee;
+	padding: 4px;
+}
+
+
+
+
+
+
+
+/*******************************************************************************************/
+/* PHOTO: ALBUM LIST ITEM 
+   Affected files:
+   - templates/photos.myphotos.php
+ */
+
+body #community-wrap .albums {
+	margin: 0 -5px;
+	}
+body #community-wrap .album {
+	float: left;
+	width: 50%;
+	border: none;
+	}
+body #community-wrap .album .album {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+	border-radius: 5px;
+
+	float: none;
+	width: auto;
+	border:1px solid #ddd;
+	border-bottom:1px solid #ccc;
+	min-height: 95px;
+	margin: 5px;
+	height: auto !important;
+	height: 120px; /* for IE to behave */
+	}
+
+body #community-wrap .album-cover {
+	float: left;
+	margin: 10px;
+}
+
+body #community-wrap .album-summary {
+	 margin: 8px;
+	 margin-bottom: 0;
+}
+
+body #community-wrap .album-name {
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+
+
+
+
+/** PHOTO: ALBUM LIST ITEM **/
+/*******************************************************************************************/
+
+
+/*******************************************************************************************/
+/** PHOTO: PHOTO LIST ITEM **/
+/*
+ * Affected files:
+ * - templates/photos.album.php
+ *
+ */
+
+body #community-wrap .photo-list-item {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #CCC;	
+	display: inline-block;
+	width: 100%;
+}
+
+body #community-wrap .photo-list-item .container {
+	padding: 5px;
+}
+
+body #community-wrap .photo-list-item .photo-item {
+	float: left;
+	margin: 5px;
+	position: relative;
+
+	/*
+	Used for variable-proportioned thumbnails.
+	Didn't fare so great when used with sortables.
+	float: none;
+	margin: 5px;
+	position: relative;
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	*/
+}
+
+body #community-wrap .photo-list-item .photo-item:hover .photo-action {
+	display: block;
+}
+
+body #community-wrap .photo-list-item .photo-item a {
+	display: block;
+}
+
+body #community-wrap .photo-list-item .photo-item img {
+	border: 1px solid #CCC;
+	padding: 3px;
+	margin: 0 !important; /* Prevent margin inheritance from ".jomTips img" */
+}
+
+/* Resize all image within photo items*/
+				
+.avatarWrap img,
+.album-cover img,
+.photo-item img {
+	width: 64px;
+	height:64px;
+}
+
+/** PHOTO: PHOTO LIST ITEM **/
+/*******************************************************************************************/
+
+
+
+/*******************************************************************************************/
+/** FORM ELEMENTS **/
+
+#writeMessageForm .receiverList #selections {
+	width: 140px;
+}
+#writeMessageForm textarea.inputbox {
+	margin: 0;
+}
+#writeMessageForm td {
+	vertical-align: top;
+}
+/** FORM ELEMENTS **/
+/*******************************************************************************************/
+
+/** Use in app box if there are no item to show **/
+div.content-nopost {
+	margin: 0 10px 0 31px;
+	min-height: 22px;
+	line-height: 1.1em;
+}
+div.icon-nopost {
+	float: left;
+	min-height: 22px;
+	padding: 4px 10px 0 5px;
+}
+/** Use in app box if there are no item to show **/
+
+
+
+/* blockUnregister */
+body #cWindowContent .blockUnregister {}
+body #cWindowContent .blockUnregister div.message {
+	background: #fde2e2;
+	border-top: solid 2px #d19393;
+	border-bottom: solid 2px #d19393;
+	padding: 5px 10px;
+}
+body #cWindowContent .blockUnregister h3 {
+	font-size: 15px;
+	color: #333;
+	padding: 0;
+	margin: 0 0 10px;
+}
+body #cWindowContent div.loginform label,
+body #cWindowContent div.loginform input {
+	margin: 0;
+}
+body #cWindowContent div.loginform .frontlogin {
+	padding: 3px;
+	margin: 0 0 3px;
+}
+body #cWindowContent .blockUnregister div.loginform,
+body #cWindowContent .blockUnregister div.right-col {
+	background: transparent url(../images/separator.gif) no-repeat center left;
+	padding-left: 10px;
+}
+body #cWindowContent .blockUnregister ul#featurelist {
+	list-style: none;
+	margin: 10px 0 !important;
+	padding: 0;
+}
+body #cWindowContent .blockUnregister ul#featurelist li {
+	font-size: 11px;
+	color: #999;
+	background: transparent url(../images/add-button.gif) no-repeat 0 0;
+	line-height: 16px;
+	height: 16px;
+	margin: 0 0 5px !important;
+	padding: 0 0 0 25px;
+}
+body #cWindowContent .blockUnregister a#joinButton2 {
+	background: transparent url(../images/register-button-small.gif) no-repeat 0 0;
+	width: 149px;
+	height: 46px;
+	text-indent: -9999px;
+	display: block;
+	outline-style: none;
+	margin: 0 auto;
+}
+body #cWindowContent .blockUnregister a#joinButton2:hover {
+	background: transparent url(../images/register-button-small.gif) no-repeat 0 -46px;
+}
+/* blockUnregister */
+
+/*
+ * GENERAL LINK ICON
+ * All small 16x16 icons please use these classes
+ * we will use it for all templates
+ */
+
+#community-wrap .page-action a {
+	font-size: 90%;
+	}
+.icon-user,
+.icon-calendar,
+.icon-remove,
+.icon-write,
+.icon-group,
+.icon-leave,
+.icon-online,
+.icon-offline,
+.icon-add-friend,
+.icon-remove-friend,
+.icon-approve,
+.icon-unapprove,
+.icon-discuss,
+.icon-wall,
+.icon-edit,
+.icon-replies,
+.icon-bubble,
+.icon-photos,
+.icon-report,
+.icon-videos,
+.icon-edit2,
+.icon-save,
+.icon-blog,
+.icon-addfeatured,
+.icon-removefeatured,
+.icon-bookmark,
+.icon-blockuser,
+.icon-block-user {
+	line-height: 15px;
+	margin: 10px 15px 0 0;
+	padding: 3px 3px 3px 20px;
+	display: inline;
+	text-decoration: none; 
+	}
+.icon-waitingapproval {
+	line-height: 15px;
+	margin: 10px 10px 0 0;
+	padding: 3px 3px 3px 20px;
+	color: #666;
+	}
+.icon-user { 
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 2px;
+	}
+.icon-calendar {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -20px;
+	}
+.icon-remove {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -37px;
+	}
+.icon-group {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -58px;
+	}
+.icon-write {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -118px;
+	}
+.icon-join {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -100px;
+	}
+.icon-leave {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -80px;
+	}
+.icon-online {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -138px;
+	}
+.icon-offline {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -158px;
+	}
+.icon-add-friend {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -180px;
+	}
+.icon-remove-friend {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -200px;
+	}
+.icon-block-user {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -200px;
+	}
+.icon-remove-avatar {
+	background: transparent url(../images/icons/delete.png) no-repeat 0;
+	}
+.icon-approve {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -218px;
+	}
+.icon-unapprove {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -37px;
+	}
+.icon-waitingapproval {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -238px;
+	}
+.icon-discuss {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -256px;
+	}
+.icon-wall {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -276px;
+	}
+.icon-edit {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -337px;
+	}
+.icon-replies {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -297px;
+	}
+.icon-bubble {
+	background: transparent url(../images/icons/bubble.gif) no-repeat 0 3px;
+	}
+.icon-photos {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -356px;
+	}
+.icon-report {
+	background: transparent url(../images/action/icon-alert-big.png)	no-repeat 0 2px;
+	}
+.icon-videos {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -398px;
+	}
+.icon-edit2 {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -419px;
+	}
+.icon-save {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -440px;
+	}
+.icon-blog {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -457px;
+	}
+.icon-addfeatured {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -480px;
+	}
+.icon-removefeatured {
+	background: transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -501px;
+	}
+.icon-bookmark {
+	background: transparent url(../images/action/share-abstract.png)	no-repeat 0 2px;
+	}
+.icon-blockuser {
+	background: transparent url(../images/action/icon-ban.png)	no-repeat 0 2px;
+	}
+.icon-block-user {
+	background: transparent url(../images/action/icon-user-block.png)	no-repeat 0 2px;
+	}
+
+
+.paramlist_key label.jomTips { margin: 0; }
+.ajax-notice-apps-added {}
+.ajax-notice-apps-removed {}
+.ajax-notice-apps-configure {}
+
+body #community-wrap .loading {
+	width: 50px;
+	height: 11px;
+	background: transparent url(../images/wait.gif) no-repeat 0 0;
+}
+body #community-wrap div.see-all {
+	font-size: 90%;
+	margin: 0 0 10px;
+	padding: 2px;
+	text-align: right;
+}
+
+/* Group Invite */
+body #community-wrap ul#friends-list {
+	margin: 0px;
+	padding: 0px;
+	height: 250px;
+}
+body #community-wrap ul#friends-list li {
+	width: 32%;
+	background: none;
+	margin: 0 0 5px;
+	padding: 3px;
+	list-style: none;
+	float: left;
+}
+body #community-wrap ul#friends-invited li {
+	background: none;
+	margin: 0 0 5px;
+	padding: 3px;
+	list-style: none;
+	float: left;
+}
+body #community-wrap ul#friends-invited li a,
+body #community-wrap ul#friends-list li a {
+	text-decoration: none;
+	font-weight: 700;
+}
+body #community-wrap ul#friends-invited li a:hover,
+body #community-wrap ul#friends-list li a:hover {
+	text-decoration: underline;
+}
+body #community-wrap ul#friends-list li.friend-list {
+	margin: 0 0 10px !important;
+}
+body #community-wrap ul#friends-list li.friend-list img {
+	border: solid 1px #eee;
+	padding: 2px;
+}
+body #community-wrap ul#friends-list li.friend-list:hover {
+	background: #f2f2f2;
+}
+
+body #community-wrap ul#friends-list li.friend-list:hover img {
+	border: solid 1px #fff;
+}
+body #community-wrap ul#friends-invited li img,
+body #community-wrap ul#friends-list li img {
+	float: left;
+}
+body #community-wrap ul#friends-invited li .friend-name,
+body #community-wrap ul#friends-list li .friend-name {
+    margin: 0 0 0 10px;
+}
+body #community-wrap ul#friends-invited li span.friend-name,
+body #community-wrap ul#friends-list li div.friend-name,
+body #community-wrap ul#friends-invited li div.friend-name{
+	margin: 0 0 0 55px;
+	vertical-align: middle;
+}
+body #community-wrap div#friend-selected-list {
+    border: 1px solid gray;
+	padding: 5px;
+	overflow: scroll;
+	margin-left: 20px;
+	float: left;
+	width: 20%;
+	height: 250px;
+	margin-top: 45px;
+}
+body #community-wrap ul#friends-invited {
+	margin: 0;
+	padding: 0;
+}
+body #community-wrap ul#friends-invited li {
+	font-weight: 700;
+}
+body #community-wrap ul#friends-invited li.friend-list {
+	font-weight: 700;
+	padding: 0;
+	margin: 0 0 5px !important;
+	background: none;
+	width: 100%;
+	float: left;
+	display: inline-block;
+}
+body #community-wrap ul.application-group-avatars {
+	list-style: none;
+}
+body #community-wrap ul.application-group-avatars li {
+	display: inline;
+	margin: 0 3px 0 0 !important;
+}
+body #community-wrap div.see-all {
+	position: relative;
+}
+body #community-wrap div.loading {
+    display: none;
+	float: right;
+	margin: 5px 5px 0 0;
+}
+body #community-wrap div.filterlink {
+	outline-style: none;
+	padding: 0 10px;
+	height: 11px;
+	border-bottom: 0;
+	padding: 0 0 3px;
+	font-size: 90%;
+	margin: 0 0 10px;
+	text-align: right;
+}
+body #community-wrap div.filterlink a {
+	border-right: solid 1px #ccc;
+	padding: 0 6px;
+	outline: none;
+	text-align: right;
+	text-decoration: none;
+	}
+body #community-wrap div.filterlink a:hover {
+	text-decoration: underline;
+	}
+body #community-wrap a.active-state {
+	padding: 0 6px;
+	text-decoration: none !important;
+	font-weight: bold;
+}
+
+/* Standard Avatar List */
+body #community-wrap ul.avatar-list {
+	margin: 0;
+	padding: 0pt;
+	list-style: none;
+}
+body #community-wrap ul.avatar-list li,
+body #community-wrap ul.avatar-list li.avatar-list-item {
+	display: inline;
+	padding: 0;
+	background: none;
+	margin: 0 3px 0 0;
+}
+body #community-wrap ul.avatar-list li a {
+	text-decoration: none;
+}
+body #community-wrap ul.avatar-list li.first {
+	width: 100%;
+	display: block;
+	text-align: center;
+	padding-bottom: 20px;
+}
+body #community-wrap ul.avatar-list li.first a.avatar-link {
+	display: block;
+	position: relative;
+}
+body #community-wrap ul.avatar-list .title {
+	font-weight: 700;
+	font-size: 160%;
+	margin-bottom: 10px;
+}
+body #community-wrap ul.avatar-list .title a {
+	text-decoration: none;
+}
+body #community-wrap ul.avatar-list .desc-title {
+	font-size: 90%;
+	text-align: left;
+	line-height: normal;
+	border-bottom: 1px solid #ccc;
+	padding: 2px 0;
+	margin: 0 0 5px;
+	font-weight: 700;
+}
+body #community-wrap ul.avatar-list .desc-details {
+	color: #666;
+	text-align: left;
+}
+body #community-wrap .tag-new {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	background: transparent url(../images/tag-new.gif) no-repeat 0 0;
+}
+
+body #community-wrap .col-left,
+body #community-wrap .col-right {
+	margin: 0;
+	padding: 0;
+}
+body #cWindowContent .button {
+	padding: 2px 15px;
+	background: #333 !important;
+	border: solid 1px #666 !important;
+	cursor: pointer;
+	color: #ccc !important;
+	font-size: 11px;
+}
+body #cWindowContent .button:hover {
+	background: #1c1d22 !important;
+	border: solid 1px #666;
+}
+body #community-wrap div.greybox table {
+    margin: 0 0 25px;
+}
+body #community-wrap div.greybox table td {
+    vertical-align: top;
+}
+body #community-wrap #profile-edit .inputbox {
+	width: 290px;
+}
+body #community-wrap #profile-edit .select {
+	width: auto;
+}
+body #community-wrap #profile-edit .validate-custom-date {
+	width: auto;
+}
+
+/*******************************************************************************************/
+body #community-wrap .facebook {
+	background: transparent url(../../../assets/favicon/facebook.gif) no-repeat 0 0;
+	margin: 5px 0 0;
+	padding-left: 20px;
+	text-decoration: underline;
+	}
+body #community-admin-wrapper
+{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	
+	margin: 0 0 10px;
+	border:solid 1px #ffd5d5;
+	padding: 6px 0px;
+	background: #FFEBEB none repeat scroll 0 0;
+}
+
+body #community-admin-wrapper a
+{
+	border:none;
+	text-decoration:none;
+	padding: 5px;
+}
+
+body #community-admin-wrapper a:hover
+{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	
+	background-color:#fbc6c6;
+	border:none;
+	text-decoration:none;
+	padding: 5px;
+}
+body #community-admin-wrapper #community-admin-controls,
+body #community-admin-wrapper #community-admin-controls li {
+    background: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body #community-admin-wrapper #community-admin-controls li
+{
+	display: inline;
+	padding:0 0 0 4px;
+	background:none;
+}
+
+body #community-admin-wrapper #community-admin-controls li a span
+{
+	text-decoration: none;
+}
+
+
+
+body #community-wrap .pos-rel {
+	position: relative;
+}
+
+body #community-wrap div.error-box
+{
+	border: 1px solid #FF0000; padding: 20px; background-color: #FFEAEA;
+}
+
+
+/** Activity stream **/
+#activity-stream-container {
+	margin-bottom: 20px;
+}
+body #community-wrap .newsfeed-item {
+	padding: 2px 0; 
+	margin: 0; 
+	border-bottom: 1px solid #ccc;
+	position: relative; 
+	overflow: hidden; 
+	display: block;
+}
+
+
+.denied-box {
+	padding: 15px;
+	border: 1px solid #CCCCCC;
+	background: url(../images/greybox.gif) repeat-x top left	
+}
+
+/*******************************************************************************************/
+/** cFilterBar **/
+/*
+ * Affected files:
+ * - libraries/filterbar.php
+ *
+ */
+body #community-wrap #cFilterBar {
+	position: relative;
+	border: 1px solid #EEE;
+	margin-bottom: 10px;
+}
+
+body #community-wrap #cFilterBar .filterGroup {
+	border: none;
+	padding: 4px 6px;
+}
+
+body #community-wrap #cFilterBar .filterGroup#cFilterType_Sort {
+	text-align: right;
+}
+
+body #community-wrap #cFilterBar .filterGroup#cFilterType_Filter {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+body #community-wrap #cFilterBar .filterName {	
+	display: inline;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+body #community-wrap #cFilterBar .filterOptions,
+body #community-wrap #cFilterBar .filterOption {
+	/* Remove inheritance from Joomla! template */
+	background: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+body #community-wrap #cFilterBar .filterOptions {
+	display: inline;
+}
+
+body #community-wrap #cFilterBar .filterOption {
+	display: inline;
+	font-size: 12px;
+	padding-left: 2px;
+}
+
+body #community-wrap #cFilterBar .active {
+	font-weight:bold;
+}
+/*******************************************************************************************/
+
+
+body #community-wrap div.featured-items
+{
+	float: left;
+	display: inline-block;
+	text-align: center;
+	width: 150px;
+	padding: 10px 5px 10px 0;
+}
+body #community-wrap div.featured-items a
+{
+	outline: none;
+}
+body #community-wrap div.featured-items img.avatar {
+	float: none;
+	width: 64px;
+	height: 64px;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+body #community-wrap div.empty-message {
+	text-align: center;
+	padding: 30px;
+	border: solid 2px #c8e1a1;
+	background: #edfed2;
+	margin: 20px 0;
+	font-size: 110%;
+	color: #455d1e;
+	font-weight: 700;
+}
+
+body #community-wrap div.newsfeed-item div.newsfeed-content-hidden
+{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+    
+	padding: 6px;
+	background:#f4f5f6;
+	border: none;
+	margin-top:10px;
+	margin-bottom:10px;
+	display:none;
+}
+
+body #community-wrap div.filterlink a.popular-videos
+{
+	border-right: none;
+}
+
+
+div#cWindowContent p {
+	padding: 0;
+	margin: 0;
+}
+
+/**
+ * Share this
+ * Social bookmark list
+ */ 
+div#cWindowContent ul.bookmarks-list
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background: none;
+}
+
+	div#cWindowContent ul.bookmarks-list li
+	{
+		list-style: none;
+		padding: 0;
+		margin-bottom: 10px;
+		margin-left: 0;
+		background: none;
+		float: left;
+		width: 33%;
+	}
+	
+		div#cWindowContent ul.bookmarks-list li a
+		{
+			background: transparent url(../images/bookmarks.gif) no-repeat 0 0;
+			text-decoration: none;
+			display: table-cell;
+			line-height: 16px;
+			padding-left: 20px;
+			color: #666;
+		}
+		div#cWindowContent ul.bookmarks-list li a:hover {
+			color: #000;
+		}
+		
+		div#cWindowContent ul.bookmarks-list li a.newsvine {
+			background-position: 0 0;
+		}
+		div#cWindowContent ul.bookmarks-list li a.stumbleupon {
+			background-position: 0 -20px;
+		}
+		div#cWindowContent ul.bookmarks-list li a.technorati {
+			background-position: 0 -40px;
+		}
+		div#cWindowContent ul.bookmarks-list li a.twine {
+			background-position: 0 -60px;
+		}
+		div#cWindowContent ul.bookmarks-list li a.twitter {
+			background-position: 0 -80px;
+		}
+		div#cWindowContent ul.bookmarks-list li a.xanga {
+			background-position: 0 -100px;
+		}
+		div#cWindowContent ul.bookmarks-list li a.ybookmarks {
+			background-position: 0 -120px;
+		}
+		div#cWindowContent ul.bookmarks-list li a.aim {
+			background-position: 0 -140px;
+		}
+		div#cWindowContent ul.bookmarks-list li a.bebo {
+			background-position: 0 -160px;
+		}
+		div#cWindowContent ul.bookmarks-list li a.blinklist {
+			background-position: 0 -180px;
+		}
+		div#cWindowContent ul.bookmarks-list li a.blogmarks {
+			background-position: 0 -200px;
+		}
+		div#cWindowContent ul.bookmarks-list li a.delicious {
+			background-position: 0 -220px;
+		}
+		div#cWindowContent ul.bookmarks-list li a.digg {
+			background-position: 0 -240px;
+		}
+		div#cWindowContent ul.bookmarks-list li a.diigo {
+			background-position: 0 -260px;
+		}
+		div#cWindowContent ul.bookmarks-list li a.facebook {
+			background-position: 0 -280px;
+		}
+		div#cWindowContent ul.bookmarks-list li a.faves {
+			background-position: 0 -300px;
+		}
+		div#cWindowContent ul.bookmarks-list li a.friendster {
+			background-position: 0 -320px;
+		}
+		div#cWindowContent ul.bookmarks-list li a.furl {
+			background-position: 0 -340px;
+		}
+		div#cWindowContent ul.bookmarks-list li a.google {
+			background-position: 0 -360px;
+		}
+		div#cWindowContent ul.bookmarks-list li a.linkedin {
+			background-position: 0 -380px;
+		}
+		div#cWindowContent ul.bookmarks-list li a.live {
+			background-position: 0 -400px;
+		}
+		div#cWindowContent ul.bookmarks-list li a.myspace {
+			background-position: 0 -420px;
+		}
+		
+
+div#cWindowContent input.bookmarks-email
+{
+	width: 95%;
+}
+
+div#cWindowContent textarea.bookmarks-message
+{
+	width: 95%;
+	height: 90px;
+}
+
+
+
+/*
+ ******************************************************************************
+ * TinyMCE Fixes 
+ */
+body #community-wrap table.mceLayout {
+	margin-bottom: 10px;
+}
+body #community-wrap table.mceLayout tr td {
+	padding: 0;
+}
+body #community-wrap table.mceLayout tr.mceFirst td {
+	padding-top: 2px;
+}
+body #community-wrap .mceToolbar td,
+body #community-wrap table.mceLayout tr.mceLast td {
+	padding: 0;
+}
+body #community-wrap .defaultSkin .mceIframeContainer {
+	border-right: 1px solid #ccc;
+}
+
+
+/*
+ ******************************************************************************
+ * Other Fixes
+ */
+
+/** catch this on yoothemes */
+div#cWindowContent form div {
+	margin: 0;
+}
+div#cWindowContent .inputbox {
+	background: #fff;
+}
+body #community-wrap form div {
+	margin: 0;
+}
+
+/** catch this on ja_purity */
+#community-wrap .radio {
+	padding: 0;
+	margin: 0;
+}
+
+
+#report-form select#report-predefined {
+	width: 280px;
+}
+#report-form textarea#report-message {
+	height: 100px;
+	width: 273px;
+}
+#report-form #report-message-error {
+	display: block;	
+}
+
+body #community-wrap div.inbox-message-heading
+{
+	margin-bottom: 5px;
+	border-bottom: 1px solid #eee;
+	padding: 5px;
+}
+
+
+/*
+ ******************************************************************************
+ Page actions
+ */
+#community-wrap .page-actions {
+	margin-bottom: 10px;
+	display: block;
+	text-align: right;
+	width: 100%;
+}
+#community-wrap .page-action {
+	display: inline;
+	margin-left: 5px;	
+}
+#community-wrap .page-action a {
+	margin: 0;
+	outline: none;
+}
+
+
+/*
+ ******************************************************************************
+ group.created.php
+ */
+#community-wrap ul.linklist {
+	list-style: none;
+}
+	
+	#community-wrap ul.linklist li {
+	 	background: transparent url(../images/group_actions.png) no-repeat 0 0;
+	 	text-indent: 22px;
+	 	height: 20px;
+	 	line-height: 16px;
+	 	margin-bottom: 5px;
+	 	padding: 0;
+	}
+	
+	#community-wrap ul.linklist li.upload_avatar {
+	 	background-position: 0 0;
+	}
+	
+	#community-wrap ul.linklist li.add_news {
+	 	background-position: 0 -20px;
+	}
+	
+	#community-wrap ul.linklist li.group_edit {
+	 	background-position: 0 -40px;
+	}
+	
+	#community-wrap ul.linklist li.group_view {
+	 	background-position: 0 -60px;
+	} 
+	
+	#community-wrap ul.linklist li.event_invite {
+	 	background-position: 0 -20px;
+	}
+	
+	#community-wrap ul.linklist li.event_edit {
+	 	background-position: 0 -40px;
+	}
+	
+	#community-wrap ul.linklist li.event_view {
+	 	background-position: 0 -60px;
+	}
+	
+
+
+
+
+#community-wrap .pagination-container {
+	text-align: center;
+}
+
+
+
+/**
+ * new online icon
+ */
+#community-wrap .icon-online-overlay,
+#community-wrap .icon-offline-overlay {
+	height: 16px;
+	line-height: 16px;
+	padding: 0 5px 0 10px;
+	position: absolute;
+	right: 0;
+	top: 7px;
+	font-size: 85%;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	background: transparent url(../images/online.png) no-repeat 0 0;
+	}
+#community-wrap .icon-offline-overlay {
+	background: transparent url(../images/offline.png) no-repeat 0 0;
+	}
+
+/*******************************************************************************************/
+/** SUBMENU TOOLBAR **/
+
+				
+				
+				
+				
+				
+
+	
+
+
+/**
+ * Searchbox
+ */
+#community-wrap .cModule.searchbox { 
+ 	
+}
+
+	#community-wrap .cModule.searchbox .input_wrap {
+	 	background: 				transparent url(../images/searchbox.png) no-repeat 0 0;
+	 	height:						26px;
+	 	padding-left: 				5px;
+	 	margin-right: 				10px;
+	}
+	
+	    #community-wrap .cModule.searchbox .input_wrap .inputbox { 
+	    	background:					transparent;
+	    	border: 					0;   
+	    	margin:						4px 0 0;
+			padding:					2px;
+			width:						80%;
+	    }
+	    
+	    #community-wrap .cModule.searchbox .input_wrap .inputbox:focus {
+	    	background: 				transparent;
+	    	border:						0;
+	    }
+ 
+		#community-wrap .cModule.searchbox .input_wrap .search_button {
+			background: transparent url(../images/searchbox.png) no-repeat 100% 0;
+			display: block;
+			float: right;
+			height: 26px; 
+			margin-right: -5px;
+			width: 35px;	
+		}
+		
+			#community-wrap .cModule.searchbox .input_wrap .search_button span {
+				position:					absolute;
+				top:						-9999px;
+				height: 					0;
+				text-indent:				-9999px;
+			}
+	
+    #community-wrap .cModule.searchbox .small {
+	 	text-align:					center;
+	} 
+
+
+/**
+ * Photo uploader
+ */ 
+div#community-wrap #photoupload-container div.upload-form
+{
+	border: 1px solid #eee;
+	margin: 0pt 0pt 10px;
+	padding: 10px;
+	display:none; 
+}
+
+div#community-wrap button.upload-photos-button
+{
+	margin-left: 10px;
+}
+
+body #community-wrap div.add-new-upload
+{
+	margin-bottom: 15px;
+}
+
+body #community-wrap a.add-upload:link,
+body #community-wrap a.add-upload:visited
+{
+	padding: 0 0 0 20px;
+	display: inline;
+	text-indent: 0px;
+}
+
+body #community-wrap #photoupload-container span.error
+{
+	font-weight: 700;
+	color: red;
+}
+
+body #community-wrap #photoupload-container span.success
+{
+	font-weight: 700;
+	color: green;
+}
+body #community-wrap a.add.add-upload:link {
+	text-indent: 20px;
+	width: auto;
+}
+
+
+
+/**
+ * Small edit link user details module
+ */ 
+#community-wrap .edit-this {
+	background:				transparent url(../images/edit-profile.png) no-repeat 0 0;
+	height:					12px;
+   	position:				absolute;
+   	right:					10px;
+   	text-indent:			-9999px;
+   	top:					9px;
+   	width:					13px;
+}
+
+#community-wrap .edit-this:hover {
+ 	background-position:	0 -12px;
+}
+
+				
+/**  fix rt_affinity */
+#body #community-wrap .leftColContainer {
+	overflow: hidden;
+}								
+
+/** To integrate RT Input Styling **/
+body #community-wrap .button {
+    cursor: pointer;
+    }
+html #community-wrap .rokradios,
+html #community-wrap .rokchecks {
+	cursor: pointer;
+	-moz-user-select: none;
+}
+
+html #community-wrap .formtable .value .rokradios,
+html #community-wrap .formtable .value .rokchecks {
+	padding: 0 0 0 20px;
+}
+
+.on-rt_somaxiom_j15 .cModule.latest-groups li.featured a {
+    float: none !important;
+    display: block !important;
+}
+
+body #rt-main #community-wrap .cModule h3.title  {
+    font-size: 16px !important;
+    line-height: 18px;
+    padding: 0; margin: 0;
+    border: none !important;
+    }
+
+/*
+
+Credits to SinisaKrisan.
+http://www.jomsocial.com/webforum/memberlist.php?mode=viewprofile&u=6632
+__________________________________________________________
+Catch this on Gantry based templates
+_________________________________________________________________*/
+#community-wrap .pagination-container .tab {
+   display: inline-block;
+   margin-right: 8px;
+}
+#community-wrap .pagination-container .tab .page-active {
+   background: none;
+}
+#community-wrap .pagination-container .page-block {
+   display: inline-block;
+   margin-right:4px;
+   font-weight: bold;
+}
+#community-wrap .pagination-container .page-active, .list-footer .page-inactive {
+   padding: 0 4px;
+}
+#community-wrap .pagination-container .page-inactive:hover {
+   cursor: pointer;
+}
+#community-wrap .pagination-container .rt-results {
+   margin-bottom: 5px;
+}
+/* End of Gantry based templates fix */
+
+
+#community-wrap .moduletable {
+	padding: 0 !important;
+	background: none !important;	
+}
+.jsModulePosition {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+		border-radius: 5px;
+		
+    border: 3px dashed #999999;
+    background: #CCCCCC;
+    height: 80px;
+    line-height: 80px;
+    font-family: Consolas;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    color: #222222;
+    text-align: center;
+}
+
+.jsModulePosition#js_profile_side_top {
+	height: 80px;
+	line-height: 80px;
+}
+
+
+
+
+/**
+ * Jom Social Toolbar
+ */
+body #community-wrap #cToolbarNav {
+	background: transparent url(../images/toolbar/toolbar-bg.gif) no-repeat 0 0;
+	height: 50px;
+	margin: 0 0 10px;
+	padding: 0;
+	}
+body #community-wrap #cToolbarNav ul {
+	list-style: none;
+	line-height: 1;
+	z-index: 6600;
+	position: relative;
+	}
+body #community-wrap #cToolbarNavInner {
+	background: transparent url(../images/toolbar/toolbar-bg.gif) no-repeat 100% -50px;
+	height: 50px;
+	}
+body #community-wrap #cToolbarNav ul#cToolbarNavList {
+	height: 50px;
+	padding: 0 0 0 10px;
+	margin: 11px 0 0;
+	float: left;
+	}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li {
+	float: left;
+	background: none;
+	line-height: 27px;
+	margin: 11px 0 0 3px !important;
+	background: transparent url(../images/toolbar/toolbar-item-off-left.gif) no-repeat top left;
+	list-style-position: outside;
+	list-style-type: none;	
+	overflow: visible; /* Fixes templates with overflow: hidden on <li>, e.g. JA_Seleni */
+	}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li a {
+	display: block;
+	padding: 0 14px;
+	color: #fff;
+	text-decoration: none;
+	background: transparent url(../images/toolbar/toolbar-item-off-right.gif) no-repeat top right;
+}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li a:hover {
+	color: #fff;
+}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li.toolbar-active {
+	float: left;
+	background: none;
+	line-height: 27px;
+	margin: 11px 0 0 3px;
+	background: transparent url(../images/toolbar/toolbar-item-on-left.gif) no-repeat top left;
+}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li.toolbar-active a {
+	display: block;
+/*	padding: 0 20px; */
+	color: #fff;
+	text-decoration: none;
+	background: transparent url(../images/toolbar/toolbar-item-on-right.gif) no-repeat top right;
+}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li.toolbar-active div {
+	background: #789539;
+}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li.toolbar-active div a:link,
+body #community-wrap #cToolbarNav ul#cToolbarNavList li.toolbar-active div a:visited {
+	background: #789539;
+	border-bottom: solid 1px #8cae44;
+	width: 90%;
+}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li.toolbar-active div a:hover {
+	background: #97bb48;
+}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li div {
+	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	width: 150px;
+	z-index: 10;
+	overflow: hidden;
+}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li div a {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 5px 10px;
+	width: 100%;
+	white-space: nowrap;
+	text-align: left;
+	text-decoration: none;
+	background: #444;
+	color: #fff;
+	border-bottom: solid 1px #666;
+	line-height: normal;
+}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li div a:hover	{
+	background: #555;
+	color: #fff;
+}
+body #community-wrap #cToolbarNav div.toolbar-myname {
+	float: right;
+	height: 40px;
+	line-height: 40px;
+	font-weight: 700;
+	margin-right: 20px;
+}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li.toolbar-active div a.has-separator {
+    border-bottom: solid 3px #8cae44;
+}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li div a.has-separator {
+	border-bottom: solid 3px #666;
+}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li#toolbar-item-notify {
+	background: transparent url(../images/toolbar/toolbar-item-notify-off-left.gif) no-repeat top left;
+}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li#toolbar-item-notify a {
+	background: transparent url(../images/toolbar/toolbar-item-notify-off-right.gif) no-repeat top right;
+}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li#toolbar-item-notify span {
+	font-size: 11px;
+	height: 27px;
+	line-height: 17px;
+	display: block;
+	padding-left: 2px;
+	text-decoration:none;
+	color:#FFFFFF;
+}
+/**
+ * Jom Social Toolbar
+ */
+ 
+
+ /**
+ * New toolbar styling
+ */
+#community-wrap .cToolbar {
+	background: 		transparent url(../images/toolbar.png) no-repeat 0 0;
+	height: 			50px;
+	padding-left:		10px;
+	margin-bottom:		10px;
+}
+/* 1.5 Compatibility. Remove when not used */
+body #community-wrap .cToolbar#cToolbarNav {
+	background: 		transparent url(../images/toolbar.png) no-repeat 0 0 !important;
+	height: 			50px !important;
+	padding-left:		10px !important;
+	margin-bottom:		10px !important;
+	line-height:        normal !important;
+}
+	#community-wrap .cToolbar .cToolbar {
+		background-position: 100% 0;
+		height: 			40px;
+		padding:			10px 0 0;
+		margin: 			0;
+	}
+	/* 1.5 Compatibility. Remove when not used */
+	body #community-wrap .cToolbar#cToolbarNav .cToolbar {
+		background-position: 100% 0 !important;
+		height: 			40px !important;
+		padding:			10px 0 0 !important;
+		margin: 			0 !important;		
+	}
+	
+	#community-wrap .cToolbar ul {
+		list-style: 		none;
+	}
+	
+	/* 1.5 Compatibility. Remove when not used */
+	body #community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList {
+		float: none !important;
+		height: 28px !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		line-height: auto !important;
+	}
+
+	#community-wrap .cToolbar ul,
+	#community-wrap .cToolbar ul li,
+	#community-wrap .cToolbar ul li a {
+	 	height:				28px;
+	}
+
+	#community-wrap .cToolbar ul li {
+		background: 		transparent url(../images/toolbar.png) no-repeat 0 -97px;
+	 	float: 				left;
+	 	padding:			0 0 0 12px;
+	 	margin-right:		3px;
+	 	position:			relative;
+	}
+	
+	/* 1.5 Compatibility. Remove when not used */
+	#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList li {
+		background: 		transparent url(../images/toolbar.png) no-repeat 0 -97px !important;
+	 	float: 				left !important;
+	 	padding:			0 0 0 12px !important;
+	 	margin:             0 !important;
+	 	margin-right:		3px !important;
+	 	position:			relative !important;
+	 	line-height:        normal !important;
+	 	list-style-image: none;
+	 	list-style-type: none;
+	 	list-style-image:   none;
+	}
+		#community-wrap .cToolbar ul li a {
+			background: 		transparent url(../images/toolbar.png) no-repeat 100% -97px;
+			color: 				#fff;
+			display: 			block;
+			line-height:		28px;
+			padding: 			0 12px 0 0;
+			text-decoration: 	none;
+		}
+		/* 1.5 Compatibility. Remove when not used */
+		#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList li a {
+			background: 		transparent url(../images/toolbar.png) no-repeat 100% -97px !important;
+			color: 				#fff !important;
+			display: 			block !important;
+			line-height:		28px !important;
+			padding: 			0 12px 0 0 !important;
+			text-decoration: 	none !important;
+			border: none !important;
+		}
+		
+		#community-wrap .cToolbar ul li a:focus {
+		 	outline-style: 		none;
+		}
+
+	#community-wrap .cToolbar ul li.toolbar-active {
+		background-position: 0 -60px;
+	}
+	/* 1.5 Compatibility. Remove when not used */
+	#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList li.toolbar-active {
+		background-position: 0 -60px !important;
+	}
+		#community-wrap .cToolbar ul li.toolbar-active a {
+			background: 		transparent url(../images/toolbar.png) no-repeat 100% -60px;
+			text-shadow:		0 1px 0 #506522;
+		}
+		/* 1.5 Compatibility. Remove when not used */
+		#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList li.toolbar-active a {
+			background: 		transparent url(../images/toolbar.png) no-repeat 100% -60px !important;			
+		}
+
+	/** this is for logout link **/
+	#community-wrap .cToolbar ul li#toolbar-item-logout,
+	#community-wrap .cToolbar ul li#toolbar-item-logout a {
+		color: 				#333;
+		background: 		none;
+		padding: 			1px 5px;
+		margin: 			0;
+		height: 			auto;
+		line-height: 		normal;
+		float: 				right;
+	}
+	/* 1.5 Compatibility. Remove when not used */
+	#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList li#toolbar-item-logout,
+	#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList li#toolbar-item-logout a {
+		color: 				#333 !important;
+		background: 		none !important;
+		padding: 			1px 5px !important;
+		margin: 			0 !important;
+		height: 			auto !important;
+		line-height: 		normal !important;
+		float: 				right !important;		
+	}
+		#community-wrap .cToolbar ul li#toolbar-item-logout a:hover {
+			text-decoration: 	underline;
+		}
+		/* 1.5 Compatibility. Remove when not used */
+		#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList li#toolbar-item-logout a:hover {
+			text-decoration: 	underline !important
+		}
+	
+	#community-wrap .cToolbar ul li#toolbar-item-notify {
+		background-position: 		0 -134px;
+		padding-left:				20px;
+	}
+	/* 1.5 Compatibility. Remove when not used */
+	#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList li#toolbar-item-notify {
+		background-position: 		0 -134px !important;
+		padding-left:				20px !important;		
+	}
+		#community-wrap .cToolbar ul li#toolbar-item-notify a {
+			background-position: 		100% -134px;
+		}
+		/* 1.5 Compatibility. Remove when not used */
+		#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList li#toolbar-item-notify a {
+			background-position: 		100% -134px !important;		
+		}
+		
+			#community-wrap .cToolbar ul li#toolbar-item-notify a span {
+				margin-top:		-2px;
+				padding: 		0 5px;
+			}
+			/* 1.5 Compatibility. Remove when not used */
+			#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList li#toolbar-item-notify a span {
+				margin-top:		-2px !important;
+				padding: 		0 5px !important;
+				display:        inline !important;
+				font-size:      inherit !important;
+				color:          inherit !important;
+				height:         auto !important;
+				line-height:    28px !important;
+			}
+	
+			/** here we hide the submenu container bt default **/
+			#community-wrap .cToolbar ul li div {
+				position:			absolute;
+				visibility:			hidden;
+				z-index:			99999;	/* make sure it always on top of everything */
+				left:				0;
+				width:				180px;
+				background: 		none;
+			}
+			/* 1.5 Compatibility. Remove when not used */
+			#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList div {
+				position:			absolute !important;
+				z-index:			99999 !important;	/* make sure it always on top of everything */
+				left:				0 !important;
+				width:				180px !important;
+				background: 		none !important;				
+			}
+				#community-wrap .cToolbar ul li div a {
+					background: 		#444;
+					padding:			2px 10px;
+					border-bottom: 		solid 1px #3d3d3d;
+				}
+				/* 1.5 Compatibility. Remove when not used */
+				#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList li div a {
+					background: 		#444 !important;
+					padding:			2px 10px !important;
+					border-bottom: 		solid 1px #3d3d3d !important;					
+				}
+				#community-wrap .cToolbar ul li div a:hover {
+					background: 		#333;
+				}
+				/* 1.5 Compatibility. Remove when not used */
+				#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList li div a:hover {
+					background: 		#333 !important;
+				}			
+				#community-wrap .cToolbar ul li div a.has-separator {
+					border-bottom: 		solid 2px #3d3d3d;
+				}
+				/* 1.5 Compatibility. Remove when not used */
+				#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList div a.has-separator {
+					border-bottom: 		solid 2px #3d3d3d !important;
+				}
+				#community-wrap .cToolbar ul li.toolbar-active div a {
+					background: 		#789539;
+					border-bottom: 		solid 1px #708b35;
+				}
+				/* 1.5 Compatibility. Remove when not used */
+				#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList li.toolbar-active div a {
+					background: 		#789539 !important;
+					border-bottom: 		solid 1px #708b35 !important;						
+				}
+				#community-wrap .cToolbar ul li.toolbar-active div a.has-separator {
+					border-bottom: 		solid 2px #708b35;
+				}
+				/* 1.5 Compatibility. Remove when not used */
+				#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList li.toolbar-active div a.has-separator {
+					border-bottom: 		solid 2px #708b35 !important;
+				}
+				#community-wrap .cToolbar ul li.toolbar-active div a:hover {
+					background: 		#93b746;
+				}
+				/* 1.5 Compatibility. Remove when not used */
+				#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList li.toolbar-active div a:hover {
+					background: 		#93b746 !important;
+				}
+
+#community-wrap div.filterlink a.p-active-profile-activity {
+	border: none;
+}
+
+body #community-wrap .inbox-read td,
+body #community-wrap .inbox-unread td {
+	vertical-align: middle;
+}
+
+#community-wrap #event-status label {
+	display: inline;
+}
+
+/**
+ * Friend suggest
+ */
+body .suggest-friends{
+    padding-top: 3em;
+} 
+
+
+
+				
+/*
+ * GLOBAL : PHOTO
+ * :: rewrite styling for the photo module
+ */
+
+body .community-photo-desc {
+	margin-bottom:10px;
+	}
+
+#cGallery .photoDisplay {
+	background:none repeat scroll 0 0 #d1d1d1;
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	position:relative;
+	z-index: 1 !important;
+	}
+#cGallery .photoDisplay img {
+    z-index: 1 !important;
+    }
+body #community-wrap #community-photo-walls-title {
+	font-weight: bold;
+	padding: 10px 0;
+	border-top: 1px solid #ddd;
+	margin-top: 20px;
+	}
+
+
+
+
+/*
+ * GLOBAL : RESTRICTION
+ * :: styling for restriction page
+ */
+
+body #community-wrap div.community-restricted {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	
+	background: #ffcccc;
+	border: 1px solid #FE8A8A;
+	font-weight: bold;
+	padding: 15px 20px;
+	
+	/* cancel all floating style */
+	width: auto;
+	float: none;
+	display: block;
+	}
+
+body #community-wrap div.community-restricted-note {
+	background: url(../images/action/icon-smiley-grin.png) 0 9px no-repeat;
+	padding: 10px 0 10px 22px;
+	}
+
+/*
+ * GLOBAL : SEARCH
+ * :: rewrite styling for the search result
+ */
+
+body #community-wrap .advance-not-found,
+body #community-wrap .event-not-found,
+body #community-wrap .group-not-found,
+body #community-wrap .people-not-found,
+body #community-wrap .video-not-found, 
+body #community-wrap .community-empty-list,
+#cWindow .community-empty-list {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	
+	background: #f5f5d2;
+	border: 1px solid #e8decc;
+	font-weight: bold;
+	padding: 15px 20px;
+	
+	/* cancel all floating style */
+	width: auto;
+	float: none;
+	display: block;
+	}
+body #community-wrap .photo-list-item .community-empty-list {
+	border: none;
+}
+body #community-wrap .albums .community-empty-list {
+	margin: 0 5px;
+}
+body #community-wrap .event-search-form,
+body #community-wrap .group-search-form,
+body #community-wrap .video-search-form {
+	margin:0 0 20px;
+}
+body #community-wrap .event-search-detail,
+body #community-wrap .group-search-detail,
+body #community-wrap .video-search-detail {
+	border: 1px solid #eee;
+	padding: 4px;
+	margin: 0 0 10px 0;
+	background-color: #f0f0f0;
+	}
+body #community-wrap .search-detail-left {
+	float: left;
+	width: 50%;
+	}
+body #community-wrap .search-detail-right {
+	float: right;
+	}
+
+/* advance search criteria really need some attention */
+body #community-wrap .infoGroupTitle {
+	border-bottom:1px solid #DDDDDD;
+	color:#333333;
+	font-size:100%;
+	font-weight:700;
+	margin:0;
+	padding: 0 0 10px 2px;
+	}
+body #community-wrap form div#optionContainer {
+	margin-top: 10px;
+	}
+body #criteriaContainer .criteria-row {
+	margin: 0;
+	padding: 10px 0;
+	border-bottom: 1px solid #ddd;
+	}
+body #criteriaContainer .criteria-row:hover {
+	background: #f7f7ed;
+	}
+body #optionContainer .criteria-option-btm {
+	margin-top: 10px;
+	}
+
+
+.people-search-form { margin: 20px 0; }
+.people-search-form div.labelradio { padding-top: 5px; }
+
+body #community-wrap .photo-action{
+	display: none;
+	position: absolute;
+	top:2px;
+	right:2px;
+	padding: 5px;
+	background: #fff;
+	width: 14px;
+	}
+
+/*
+ * GLOBAL : FRIEND SUGGESTION
+ * :: new styling add as friend link on friend suggestion module
+ */
+body #community-wrap span.btn-add-friend a {
+	background:url("../images/toolbar/profile-toolbar-icons.gif") no-repeat scroll 0 0 transparent;
+	padding: 0 0 0 20px;
+	margin: 0 15px 0 0;
+}
+
+
+/*
+ * GLOBAL : FRIEND INVITE FORM
+ * :: new styling for friend invite form
+ */
+body #community-wrap .community-form {
+	padding: 0 0 20px;
+	}
+body #community-wrap .community-form-instruction {
+	margin: 0 0 10px;
+	}
+body #community-wrap .community-form-row,
+body #community-wrap .community-form-submit {
+	padding: 5px 0 5px;
+	}
+body #community-wrap .community-form-row label {
+	font-weight: bold;
+	}
+
+
+/**
+ * COMMUNITY : APPS DRAG & DROP
+ * Affected files:
+   - applications.edit.php (Application/My Application)
+ * this class is reusable across the JomSocial application
+ */
+
+#community-wrap .joms-apps {
+}
+
+#community-wrap .joms-apps .app-position {
+}
+
+#community-wrap .joms-apps .app-position.onDrag,
+#community-wrap .joms-apps .app-position.onSave {
+	background: #FFFFDD;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	border: 1px solid #CCCCCC;
+	padding: 5px 5px 3px;
+}
+
+body #community-wrap .joms-apps .app-position.onDrag {
+	
+}
+
+#community-wrap .joms-apps .app-item {
+	background: #FFFFFF;
+	padding: 8px;
+	margin: 5px 0px;
+	cursor: move;
+	position: relative;
+}
+
+#community-wrap .joms-apps .app-placeholder {
+	margin-bottom: 5px;
+	border: 1px dashed #AAAAAA;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+#community-wrap .joms-apps .app-item.app-core {
+	background: #EEEEEE;
+	cursor: default;	
+}
+
+#community-wrap .joms-apps .app-item.onDrag {
+	width: 200px;
+	opacity: 0.5;
+}
+#community-wrap .joms-apps .app-item.onSave {
+	background-image: url(../images/wait.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	border: 1px dashed #AAAAAA;
+	opacity: 0.5;
+}
+#community-wrap .joms-apps .app-item .app-action-remove {
+	display: none;
+}
+
+#community-wrap .joms-apps .app-item:hover .app-action-remove {
+	display: inline-block;
+}
+
+#community-wrap .joms-apps .app-item .app-avatar {
+	display: inline;
+	width: 16px;
+	height: 16px;
+	padding: 0;
+	margin: 0 3px 0 0;
+}
+
+#community-wrap .joms-apps .app-item:hover .app-avatar {
+	display: none;
+}
+
+#community-wrap .joms-apps .app-item.app-core:hover .app-avatar {
+	display: inline;
+}
+
+#community-wrap .joms-apps .app-actions {
+	height: 25px;
+}
+
+#community-wrap .joms-apps .app-actions a {
+	display: inline-block;
+	height: 16px;
+	line-height: 16px;
+	padding-left: 20px;
+}
+
+#community-wrap .joms-apps .app-item .app-actions a span {
+	display: none;
+}
+
+#community-wrap .joms-apps .app-action-about {
+	background: transparent url(../images/icons/apps.png) 0px -2px no-repeat;
+}
+
+#community-wrap .joms-apps .app-action-settings {
+	background: transparent url(../images/icons/apps.png) 0px -42px no-repeat;
+}
+
+#community-wrap .joms-apps .app-action-privacy {
+	background: transparent url(../images/icons/apps.png) 0px -22px no-repeat;
+}
+
+#community-wrap .joms-apps .app-action-add {
+	background: transparent url(../images/add.png) no-repeat;
+	text-decoration: none;
+	margin-top: 5px;
+}
+
+#community-wrap .joms-apps .app-action-add:hover {
+	text-decoration: underline;
+}
+
+#community-wrap .joms-apps .app-action-remove {
+	background: transparent url(../images/action/icon-delete-remove.png) no-repeat 0 0px;
+	width: 14px !important;
+	height: 14px !important;
+	margin: 1px 4px 1px 1px;
+	padding: 0 !important;
+}
+
+#community-wrap .joms-apps .app-title {
+	overflow: hidden;
+	white-space: nowrap;
+	margin-right: 73px;
+	margin-left: 21px;
+	display: block;
+}
+
+#community-wrap .joms-apps .app-avatar {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+}
+
+#community-wrap .joms-apps .app-item .app-actions.joms_positionAbsolute {
+	top: 8px;
+	right: 8px;
+}
+
+#community-wrap .joms-apps .app-item .app-actions.joms_floatLeft.joms_positionAbsolute {
+	top: 8px;
+	left: 8px;
+}
+
+#community-wrap .joms-apps .app-action-remove:hover {
+	background: transparent url(../images/action/icon-delete-remove.png) no-repeat 0 -14px;
+}
+
+#community-wrap .joms_positionAbsolute {
+	position: absolute;
+}
+
+#community-wrap .joms_floatLeft {
+	float: left;
+}
+
+#community-wrap .joms_floatRight {
+	float: right;
+}
+
+
+#cWindow .app-item {
+	background: none repeat scroll 0 0 #FFFFFF;
+	margin: 5px 0;
+	padding: 8px;
+	
+	border: 1px solid #CCCCCC;
+	position: relative;
+	min-height: 48px;
+	
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+#cWindow .app-item .app-title {
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 75px;
+	margin-right: 65px;
+	display: block;
+}
+
+#cWindow .app-item .app-description {
+	margin-left: 75px;
+	margin-right: 65px;
+	display: block;
+}
+#cWindow .app-item .app-avatar {
+	float: left;
+}
+#cWindow .app-item .app-actions {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#cWindow .app-item .app-action-add {
+	height: 20px;
+	line-height: 20px;
+	padding: 0 15px;
+	font-size: 85%;
+	font-weight: 700;
+	color: #b3ca8f;
+	text-transform: uppercase;
+	background: #e1f4c4;
+	border: solid 1px #b3ca8f;
+	text-decoration: none;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;	
+	float: right;
+} 
+#cWindow .app-item .app-action-add:hover {
+ 	border: solid 1px #5d7d3d;
+ 	color: #5d7d3d;
+}
+
+
+#community-wrap .community-groups-pending-actions,
+#community-wrap .community-events-pending-actions {
+	position: absolute;
+	top: 28px;
+	right: 10px;
+}
+
+#community-wrap .community-groups-pending-actions a,
+#community-wrap .community-events-pending-actions a {
+	display: block;
+	margin: 0;
+}
+
+#community-wrap .community-invitation-message {
+	padding: 10px;
+	display: block;
+}
+
+#community-wrap .mini-profile .community-invitation-message {
+	padding: 0 10px;
+	display: block;
+}
+
+#community-wrap .community-form-validate .invalid {
+	border-color: #FF0000 !important;
+}

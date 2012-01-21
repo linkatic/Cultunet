@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+	<name>Video Comments</name>
+	<author>JomSocial Team</author>
+	<creationDate>20/06/2010</creationDate>
+	<copyright>Copyright (C) 2008 - 2010 JomSocial. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@jomsocial.com</authorEmail>
+	<authorUrl>http://www.jomsocial.com</authorUrl>	
+	<version>1.8.0</version>
+	<description>Displays recent video walls</description>
+	<languages>
+		<language tag="en-GB">en-GB.mod_videocomments.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_videocomments">mod_videocomments.php</filename>
+		<filename>mod_videocomments.xml</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+	</files>
+	<params>
+		<param name="count" type="text" default="5" label="Count" description="The number of wall posts to display (default is 5)" />
+		<param name="show_avatar" type="list" default="1" label="Show poster avatar" description="Select whether to show the avatar of the poster">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+	</params>
+</install>

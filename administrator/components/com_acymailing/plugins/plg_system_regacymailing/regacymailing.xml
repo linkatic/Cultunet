@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<install type="plugin" version="1.5" method="upgrade" group="system">
+	<name>AcyMailing : (auto)Subscribe during Joomla registration</name>
+	<creationDate>April 2010</creationDate>
+	<version>1.5.0</version>
+	<author>Acyba</author>
+	<authorEmail>dev@acyba.com</authorEmail>
+	<authorUrl>http://www.acyba.com</authorUrl>
+	<copyright>Copyright (C) 2009 - 2010 ACYBA SARL - All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<description>Automatically subscribe the user to AcyMailing during the Joomla registration process</description>
+	<files>
+		<filename plugin="regacymailing">regacymailing.php</filename>
+	</files>
+	<params addpath="/components/com_acymailing/params">
+		<param name="help" type="help" label="Help" description="Click on the help button to get some help" default="plugin-regacymailing"/>
+		<param name="autosub" type="lists" default="None" label="Auto-subscribe to" description="While a registered user is inserted in Joomla, AcyMailing will also save this user and subscribe him to the selected lists." />
+		<param name="lists" type="lists" default="None" label="Lists displayed on registration form" description="The following selected lists will be added to your Joomla registration form and will be visible." />
+		<param name="listschecked" type="lists" default="All" label="Lists checked by default" description="The selected lists will be checked by default on your registration form." />
+		<param name="subscribetext" type="text" size="50" default="" label="Subscribe Caption" description="Text displayed for the subscription field. If you don't specify anything, the default value will be used from the current language file" />
+		<param name="fieldafter" type="radio" default="password" label="Display the lists after" description="AcyMailing will display the lists after the selected field on your registration form">
+			<option value="password">Password</option>
+			<option value="email">Email</option>
+		</param>
+	</params>
+</install>

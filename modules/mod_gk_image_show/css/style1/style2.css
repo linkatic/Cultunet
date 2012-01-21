@@ -1,0 +1,79 @@
+.gk_is_wrapper-style1{
+	overflow: hidden;
+	position: relative;
+	background: #000;
+}
+.gk_is_wrapper-style1 .gk_is_image{
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+.gk_is_wrapper-style1 .gk_is_text_bg{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	z-index: 95;
+}
+.gk_is_wrapper-style1 .gk_is_text{
+	padding: 0 10px;
+	width: auto;
+	position: absolute;
+	z-index: 96;
+	color: #fff;
+}
+.gk_is_wrapper-style1 .gk_is_thumbs{
+}
+.gk_is_wrapper-style1 .gk_is_preloader{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	background: #000 url('../../images/style1/variation2/loader.gif') no-repeat center center;
+}
+.gk_is_wrapper-style1 .gk_is_text_data{
+	display: none;
+}
+.gk_is_wrapper-style1 .gk_is_thumb{
+	display: block;
+	float: left;
+	cursor: pointer;
+	border: 1px solid #3a3a3a;
+}
+.gk_is_wrapper-style1 .active{
+	border: 1px solid #888!important;
+}
+.gk_is_wrapper-style1 .gk_is_slide{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.gk_is_wrapper-style1 .gk_is_text h4{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.gk_is_wrapper-style1 .gk_is_text p{}
+.gk_is_wrapper-style1 .gk_is_text a{
+	color: #eee;
+}
+.gk_is_wrapper-style1 .gk_is_text a:hover{
+	color: #fff;
+}
+.gk_is_wrapper-style1 .gk_is_text p a{
+	border-bottom: 1px dashed;
+}
+.gk_is_wrapper-style1 .gk_is_text p a:hover{
+	text-decoration: none;
+}
+.is_style1-tip{
+	border: 1px solid #444;
+	background: #3a3a3a;
+	padding: 3px;
+}
+.is_style1-text{
+	color: #fff;
+}
+.is_style1-text span{}

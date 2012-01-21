@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="Photos">
+		<message>
+			<![CDATA[
+				Photo's view
+			]]>
+		</message>
+	</view>
+	<state>
+		<name>Photos Layout</name>
+		<description>Photo listings</description>
+	</state>
+</metadata>

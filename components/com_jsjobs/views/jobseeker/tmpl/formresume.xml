@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="New Resume Form">
+		<message>
+			<![CDATA[New resume form.]]>
+		</message>
+	</layout>
+	<state>
+		<name>New Rusume</name>
+		<description>New Rusume.</description>
+	</state>
+</metadata>

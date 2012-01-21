@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS `#__bloggies_authors`;
+DROP TABLE IF EXISTS `#__bloggies_bookmarks`;
+DROP TABLE IF EXISTS `#__bloggies_categories`;
+DROP TABLE IF EXISTS `#__bloggies_comments`;
+DROP TABLE IF EXISTS `#__bloggies_entries`;
+DROP TABLE IF EXISTS `#__bloggies_groups`;
+DROP TABLE IF EXISTS `#__bloggies_plugins`;
+DROP TABLE IF EXISTS `#__bloggies_relations`;
+DROP TABLE IF EXISTS `#__bloggies_reports`;
+DROP TABLE IF EXISTS `#__bloggies_settings`;
+DROP TABLE IF EXISTS `#__bloggies_tags`;
+DROP TABLE IF EXISTS `#__bloggies_themes`;

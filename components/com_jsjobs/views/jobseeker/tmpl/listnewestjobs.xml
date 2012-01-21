@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Newest Jobs">
+		<message>
+			<![CDATA[Newest jobs.]]>
+		</message>
+	</layout>
+	<state>
+		<name>Newest Jobs</name>
+		<description>Newest jobs.</description>
+	</state>
+</metadata>

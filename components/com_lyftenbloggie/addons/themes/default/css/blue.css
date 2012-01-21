@@ -1,0 +1,7 @@
+/* Blue Layout */
+#lyftenbloggie .blogcontent .section{border-bottom:solid 1px #355975;}
+#lyftenbloggie .blogcontent .entry-info{background:#3F6A8B;}
+#lyftenbloggie .blogcontent .entry-title a, #lyftenbloggie .blogcontent .entry-title a:hover{color:#FFFFFF;}
+#lyftenbloggie .blogcontent .entry-small, #lyftenbloggie .blogcontent .entry-small a{color:#FFFFFF;}
+#lyftenbloggie .blogcontent .authbox {border-top: #EEEEEE 1px solid;border-bottom: #EEEEEE 1px solid;background: #F2F6FC;}
+#lyftenbloggie .blogcontent p.authordesc {border-top: #EEEEEE 1px solid;}

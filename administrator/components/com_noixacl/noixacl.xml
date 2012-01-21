@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+  <name>noixACL</name>
+  <!-- The following elements are optional and free of formatting conttraints -->
+  <creationDate>January 2009</creationDate>
+  <author>joomila - NOIX</author>
+  <authorEmail>joomla@noix.com.br</authorEmail>
+  <authorUrl>http://www.noix.com.br</authorUrl>
+  <copyright>(C) 2009 All rights reserved.</copyright>
+  <license>GNU/GPL</license>
+  <!--  The version string is recorded in the components table -->
+  <version>2.0.6</version>
+  <!-- The description is optional and defaults to the name -->
+  <description><![CDATA[<strong>NOIX Control Access</strong>]]></description>
+  <!-- Custom Install Script to execute -->
+  <installfile>install.noixacl.php</installfile>
+  <!-- Custom Uninstall Script to execute -->
+  <uninstallfile>uninstall.noixacl.php</uninstallfile>
+  <!-- Install Database Section -->
+  <install>
+    <sql folder="admin">
+      <file driver="mysql" charset="utf8">install.noixacl.sql</file>
+    </sql>
+  </install>
+  <!-- Uninstall Database Section -->
+  <uninstall>
+    <sql folder="admin">
+      <file driver="mysql" charset="utf8">uninstall.noixacl.sql</file>
+    </sql>
+  </uninstall>
+  <installfile>install.noixacl.php</installfile>
+  <uninstallfile>uninstall.noixacl.php</uninstallfile>
+  <administration>
+    <!-- Administration Menu Section -->
+    <menu link="option=com_noixacl&amp;controller=groups">noixACL</menu>
+    <submenu>
+      <!-- Note that all & must be escaped to &amp; for the file to be valid XML and be parsed by the installer -->
+      <menu link="option=com_noixacl&amp;controller=groups">Manage Groups</menu>
+      <menu link="option=com_noixacl&amp;controller=accesslevels">Manage Levels</menu>
+      <menu link="option=com_noixacl&amp;controller=aclusers">Manage Users</menu>
+      <menu link="option=com_noixacl&amp;controller=adapters">Adapters</menu>
+      <menu link="option=com_noixacl&amp;controller=noixacl">About</menu>
+    </submenu>
+    <!-- Administration Main File Copy Section -->
+    <!-- Note the folder attribute: This attribute describes the folder    to copy FROM in the package to install therefore files copied    in this section are copied from /admin/ in the package -->
+    <files folder="admin">
+      <filename>noixacl.php</filename>
+      <!-- install controllers -->
+      <filename>controllers/groups.php</filename>
+      <filename>controllers/aclusers.php</filename>
+      <filename>controllers/adapters.php</filename>
+      <filename>controllers/noixacl.php</filename>
+      <filename>controllers/accesslevels.php</filename>
+	  <filename>controllers/index.html</filename>
+      <!-- install libraries -->
+      <filename>libraries/html/checkbox.php</filename>
+      <filename>libraries/html/index.html</filename>
+      <filename>libraries/js/noixACL.js</filename>
+      <filename>libraries/js/index.html</filename>
+      <filename>libraries/installer/adapters/adapter.php</filename>
+      <filename>libraries/installer/adapters/index.html</filename>
+      <filename>libraries/installer/index.html</filename>
+      <filename>libraries/adapter.php</filename>
+      <filename>libraries/version.php</filename>
+      <filename>libraries/index.html</filename>
+      <!-- images -->
+      <filename>images/index.html</filename>
+      <filename>images/noixacl.gif</filename>
+      <filename>images/banner.jpg</filename>
+      <!-- assets -->
+      <filename>assets/mootree.gif</filename>
+      <filename>assets/index.html</filename>
+      <!-- install model - one for all -->
+      <filename>tables/rules.php</filename>
+      <filename>tables/adapters.php</filename>
+      <filename>tables/accesslevels.php</filename>
+      <filename>tables/grouplevel.php</filename>
+      <!-- install system plugins - one for all -->
+      <filename>plugins/system/noixacl.php</filename>
+      <filename>plugins/system/noixacl.xml</filename>
+      <filename>plugins/system/index.html</filename>
+      <!-- install plugins - one for all -->
+      <filename>plugins/user/noixacl.php</filename>
+      <filename>plugins/user/noixacl.xml</filename>
+      <filename>plugins/user/index.html</filename>
+      <filename>plugins/index.html</filename>
+      <!-- install views -->
+	  <filename>views/index.html</filename>
+      <!-- adapters adapters view -->
+	  <filename>views/adapters/index.html</filename>
+	  <filename>views/adapters/view.html.php</filename>
+	  <filename>views/adapters/tmpl/default.php</filename>
+	  <filename>views/adapters/tmpl/index.html</filename>
+      <!-- group group view -->
+	  <filename>views/group/index.html</filename>
+      <filename>views/group/view.html.php</filename>
+	  <filename>views/group/tmpl/default.php</filename>
+      <filename>views/group/tmpl/default_adapters.php</filename>
+	  <filename>views/group/tmpl/index.html</filename>
+      <!-- groups groups view -->
+	  <filename>views/groups/index.html</filename>
+      <filename>views/groups/view.html.php</filename>
+	  <filename>views/groups/tmpl/default.php</filename>
+	  <filename>views/groups/tmpl/index.html</filename>
+      <!-- user user view -->
+	  <filename>views/user/index.html</filename>
+      <filename>views/user/view.html.php</filename>
+	  <filename>views/user/tmpl/form.php</filename>
+	  <filename>views/user/tmpl/index.html</filename>
+      <!-- users users view -->
+	  <filename>views/users/index.html</filename>
+      <filename>views/users/view.html.php</filename>
+	  <filename>views/users/tmpl/default.php</filename>
+	  <filename>views/users/tmpl/index.html</filename>
+      <!-- users noixacl view -->
+	  <filename>views/noixacl/index.html</filename>
+      <filename>views/noixacl/view.html.php</filename>
+	  <filename>views/noixacl/tmpl/default.php</filename>
+	  <filename>views/noixacl/tmpl/index.html</filename>
+	  <!-- view accesslevel level -->
+	  <filename>views/accesslevel/index.html</filename>
+      <filename>views/accesslevel/view.html.php</filename>
+	  <filename>views/accesslevel/tmpl/default.php</filename>
+	  <filename>views/accesslevel/tmpl/index.html</filename>
+	  <!-- view accesslevel levels -->
+	  <filename>views/accesslevels/index.html</filename>
+      <filename>views/accesslevels/view.html.php</filename>
+	  <filename>views/accesslevels/tmpl/default.php</filename>
+	  <filename>views/accesslevels/tmpl/index.html</filename>
+	  <!-- sql files -->
+      <filename>install.noixacl.sql</filename>
+      <filename>uninstall.noixacl.sql</filename>
+    </files>
+    <!-- Administration Language File Copy Section -->
+    <languages folder="admin">
+      <language tag="en-GB">en-GB.com_noixacl.ini</language>
+      <language tag="en-GB">en-GB.com_noixacl.menu.ini</language>
+    </languages>
+  </administration>
+</install>

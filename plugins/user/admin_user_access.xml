@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="user" method="upgrade">
+	<name>User - Admin-User-Access</name>
+	<author>Carsten Engel</author>
+	<creationDate>januari 2011</creationDate>
+	<copyright>Copyright 2009-2011 (C) Carsten Engel - Engelweb. All rights reserved.</copyright>	
+	<authorEmail></authorEmail>
+	<authorUrl>www.pages-and-items.com</authorUrl>
+	<version>1.2.0</version>
+	<description>Sets the default Admin-User-Access usergroup for new users as set in the Admin-User-Access configuration and redirects backend users on login as set in component Admin-User-Access</description>
+	<files>
+		<filename plugin="admin_user_access">admin_user_access.php</filename>
+	</files>
+	<params/>
+</install>

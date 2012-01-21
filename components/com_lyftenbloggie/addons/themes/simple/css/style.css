@@ -1,0 +1,34 @@
+#lyftenbloggie .blogentry{position:relative;float:left;width: 100%;clear: both;padding:0 0 50px 0px;overflow: hidden;}
+#lyftenbloggie .blogentry-no-pic .blogentry-content{width:100%;padding:0 0 50px 20px;float: left;margin:0 20px 0 0;overflow: hidden;}
+#lyftenbloggie .blogentry-image{float:left;margin:4px 20px 10px 0;padding:7px;}
+#lyftenbloggie .blogentry-image a{overflow: hidden;border:none;display:block;}
+#lyftenbloggie .blogentry-image a img{border:none;display:block;}
+#lyftenbloggie .blogentry-content{width:100%;display:block;}
+#lyftenbloggie .blogentry-no-pic .blogentry-content{padding:0;padding: 0;}
+#lyftenbloggie .blogentry-head{float: left;width:100%;padding: 0 0 11px 0;}
+#lyftenbloggie .blogentry-head span{margin-right:20px;padding-left:26px;float: left;display: block;}
+#lyftenbloggie .blogentry-head, .blogentry-bottom{font-size: 11px;}
+#lyftenbloggie .blogentry-head a, .blogentry-bottom a{text-decoration: none;}
+#lyftenbloggie .more-link, .blogentry-bottom .tags{-moz-border-radius: 2px;-webkit-border-radius:2px;border-radius:2px;display: block;float: left;padding:5px 7px;line-height: 1em;margin-bottom:5px;}
+#lyftenbloggie .blogentry-bottom{padding-top:5px;width:100%;float:left;clear: both;}
+#lyftenbloggie .blogentry-bottom .tags{float:right;}
+#lyftenbloggie .rounded{-moz-border-radius: 5px;-webkit-border-radius:5px;border-radius:5px;}
+
+#lyftenbloggie h1.blogentry-heading, h3.about-title{font-family:"Trebuchet MS",Arial,Helvetica,san-serif;font-weight:normal;letter-spacing:0.4px;line-height:1.4em;padding-bottom:5px;position:relative;}
+#lyftenbloggie h1.blogentry-heading{clear:both; font-size:24px;line-height:24px;padding-bottom:0;}
+#lyftenbloggie h3.about-title{font-size:16px; clear:both; padding-top:2px;line-height:16px;}
+
+#lyftenbloggie .blogentry-image{border:1px solid #E1E1E1;}
+#lyftenbloggie .blogentry-head, .blogentry-head a, .blogentry-bottom, .blogentry-bottom a{color:#888f96;}
+#lyftenbloggie .blogentry-head span{background: transparent url(simple/images/icons.png) no-repeat 0 0;height:24px;line-height:24px;}
+#lyftenbloggie .blogentry-head span.date{background-position:0 0px;}
+#lyftenbloggie .blogentry-head span.comments{background-position:0 -73px;}
+#lyftenbloggie .blogentry-head span.author{background-position:0 -25px;}
+#lyftenbloggie .blogentry-head span.cat{background-position:0 -50px;}
+#lyftenbloggie .more-link, .blogentry-bottom .tags{background: #f6f6f6;border:1px solid #e1e1e1;}
+
+#lyftenbloggie #author-box{border-top:1px solid #E1E1E1;border-bottom:1px solid #E1E1E1;padding:20px 0;margin:0 0 13px;width:100%;clear: both;overflow: hidden;}
+#lyftenbloggie #author-box .blogavatar{width:70px;height:90px;float:left;text-align: center;padding:0 30px 0 0;text-align:center;}
+#lyftenbloggie #author-box .blogavatar a{text-decoration: none;font-weight: bold;text-align:center;}
+#lyftenbloggie #author-box .blogavatar img{display:block;padding:5px;}
+#lyftenbloggie .author-info{width:100%;float:left;line-height: 1.4em;}

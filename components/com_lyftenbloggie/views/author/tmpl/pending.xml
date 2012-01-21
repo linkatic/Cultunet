@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="LYFTENBLOGGIE MANAGE PENDNING">
+		<message>
+			<![CDATA[LYFTENBLOGGIE MANAGE PENDNING TIP]]>
+		</message>
+	</layout>
+	<state>
+		<name>LYFTENBLOGGIE MANAGE PENDNING</name>
+		<description>LYFTENBLOGGIE MANAGE PENDNING DESC</description>
+	</state>
+</metadata>

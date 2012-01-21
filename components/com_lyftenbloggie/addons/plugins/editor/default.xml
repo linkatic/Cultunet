@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install component="lyftenbloggie" type="plugin" version="2.0" group="editor">
+	<title>LyftenBloggie Editor</title>
+	<author>Daniel Stainback</author>
+	<email>joomla@lyften.com</email>
+	<website>http://www.lyften.com</website>
+	<version>1.0.0</version>
+	<license></license>
+	<copyright></copyright>
+	<date>March 14, 2010</date>
+	<description>Default editor for LyftenBloggie (CKEditor v3)</description>
+	<files>
+		<file plugin="default">default.php</file>
+		<folder>ckeditor</folder>
+	</files>
+	<params>
+		<param name="uploads" type="radio" default="1" label="Allow Uploads" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="toolbar" type="list" default="Full" label="Toolbar Style" description="">
+			<option value="Full">Full</option>
+			<option value="Basic">Basic</option>
+		</param>
+		<param name="skin" type="list" default="kama" label="Editor Skin" description="">
+			<option value="kama">Kama</option>
+			<option value="office2003">Office 2003</option>
+			<option value="v2">Version 2</option>
+		</param>
+	</params>
+</install>

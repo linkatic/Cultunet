@@ -1,0 +1,483 @@
+function cValidate()
+{    
+	/**
+	 * Attach event to all form element with 'required' class
+	 */	
+	this.message 	 = '';
+	this.REM	 	 = 'info is required. Make sure it contains a valid value!'; //required enty missing.	 
+	this.noticeTitle = 'Notice';
+	this.errorField  = new Array();
+	
+	this.init = function(){	
+		
+			joms.jQuery('#community-wrap form.community-form-validate :input.required').blur(			
+				function(){
+					if( ! joms.jQuery(this).hasClass('validate-custom-date') && ! joms.jQuery(this).hasClass('validate-country') )
+					{
+						if(cvalidate.validateElement(this))
+							cvalidate.markValid(this);
+						else					
+							cvalidate.markInvalid(this);
+					}
+				}
+			);
+
+			joms.jQuery('#community-wrap form.community-form-validate :input.validate-profile-email').blur(
+				function(){					
+					if((joms.jQuery.trim(joms.jQuery(this).val()) != ''))
+					{				
+						if(cvalidate.validateElement(this))
+							cvalidate.markValid(this);
+						else					
+							cvalidate.markInvalid(this);
+					}	
+				}
+			);
+			
+			joms.jQuery('#community-wrap form.community-form-validate :input.validate-profile-url').blur(
+				function(){					
+					if((joms.jQuery.trim(joms.jQuery(this).val()) != ''))
+					{				
+						if(cvalidate.validateElement(this))
+							cvalidate.markValid(this);
+						else					
+							cvalidate.markInvalid(this);
+					}	
+				}
+			);
+			
+			joms.jQuery('#community-wrap form.community-form-validate :input.validate-country').change(
+				function(){
+					if(joms.jQuery(this).hasClass('required') )
+					{
+						if(cvalidate.validateElement(this))
+							cvalidate.markValid(this);
+						else					
+							cvalidate.markInvalid(this);
+					}	
+				}
+			);			
+			
+			joms.jQuery('#community-wrap form.community-form-validate :input.validate-custom-date').blur(
+				function(){
+					if(cvalidate.validateElement(this))
+						cvalidate.markValid(this);
+					else					
+						cvalidate.markInvalid(this);
+				}
+			);
+			
+			
+			joms.jQuery('#community-wrap form.community-form-validate :input.validateSubmit').click(			
+				function(){
+					if(cvalidate.validateForm()){
+						return true;
+					} else {						
+						var message = (cvalidate.REM == 'undefined' || cvalidate.REM == '') ? 'info is required. Make sure it contains a valid value!' : cvalidate.REM;
+
+						if (cvalidate.errorField.length > 1) {
+							lastField   = cvalidate.errorField.pop();
+							var joinText	= cvalidate.JOINTEXT == 'undefined' || cvalidate.JOINTEXT == '' ? ' and ' : cvalidate.JOINTEXT;
+							strErrField = cvalidate.errorField.join(', ') + ' ' + joinText + ' ' + lastField;
+						} else {
+							strErrField = cvalidate.errorField;
+						}
+						
+						message = strErrField + ' ' + message;
+						message	= message.replace(/\n/g,'');
+						cWindowShow('joms.jQuery(\'#cWindowContent\').html("'+message+'")' , cvalidate.noticeTitle , 450 , 70 , 'warning');
+						joms.jQuery("#community-wrap form.community-form-validate :input.required[value='']").each(
+							function(i){cvalidate.markInvalid(this);}
+						);
+						return false;
+					}
+				}
+			);
+			
+						
+				
+	}
+	/**
+	 * Sets a specific textarea element to certain character limit given the element id and max char.
+	 **/	 	
+	this.setMaxLength = function( element , maxChar ){
+
+		joms.jQuery( element ).keyup(function(){
+			var max = parseInt( maxChar );
+
+			if( joms.jQuery(this).val().length > max)
+			{
+				joms.jQuery(this).val( joms.jQuery(this).val().substr(0, maxChar ));
+			}
+		});
+
+	}
+	
+	this.markInvalid= function(el){
+	    var fieldName = el.name;
+	    
+        if(joms.jQuery(el).hasClass('validate-custom-date')){
+	       //since we knwo custom date come from an array. so we have to invalid all.
+	       joms.jQuery("#community-wrap form.community-form-validate input[name='"+fieldName+"']").addClass('invalid');
+	       joms.jQuery("#community-wrap form.community-form-validate select[name='"+fieldName+"']").addClass('invalid');
+	    } else {
+           joms.jQuery(el).addClass('invalid');
+	    }
+	}
+	
+	this.markValid= function(el){
+	    var fieldName = el.name;
+	    	    
+	    if(joms.jQuery(el).hasClass('validate-custom-date')){
+	       //since we knwo custom date come from an array. so we have to valid all.
+	       joms.jQuery("#community-wrap form.community-form-validate input[name='"+fieldName+"']").removeClass('invalid');
+	       joms.jQuery("#community-wrap form.community-form-validate select[name='"+fieldName+"']").removeClass('invalid');	       
+	       
+	    } else {	
+		    joms.jQuery(el).removeClass('invalid');
+		}
+
+	    //hide error only for those custom fields
+	    if(fieldName != null){
+			fieldName = fieldName.replace('[]','');
+		    joms.jQuery('#err'+fieldName+'msg').hide();	          
+			joms.jQuery('#err'+fieldName+'msg').html('&nbsp');
+		}		
+		
+	}
+	
+	/**
+	 *
+	 */	
+	this.validateElement = function(el){
+	    var isValid = true;
+	    var fieldName = el.name;
+	    
+	    if(joms.jQuery(el).attr('type') == 'text' || joms.jQuery(el).attr('type') == 'password' || joms.jQuery(el).attr('type') == 'textarea'){
+	    
+	       if(joms.jQuery.trim(joms.jQuery(el).val()) == '') {	       
+	          isValid = false;
+	          //show error only for those custom fields
+	          fieldName = fieldName.replace('[]','');	    		   
+	               	           
+	          lblName   = joms.jQuery('#lbl'+fieldName).html();
+	      
+	          if(lblName == null){
+		          lblName = 'Field';
+	          } else {	              
+	              lblName = lblName.replace('*','');
+	          }
+	          	          		      
+		      this.setMessage(fieldName, lblName, 'CC INVALID VALUE');		      
+	          
+		   } else {
+		   		   		   
+		       if(joms.jQuery(el).hasClass('validate-name')){
+		           //checking the string length
+		           if(joms.jQuery(el).val().length < 3){
+			           this.setMessage(fieldName, '', 'CC NAME TOO SHORT');
+		               isValid = false;
+		           } else {
+		               joms.jQuery('#err' + fieldName + 'msg').hide();
+					   joms.jQuery('#err' + fieldName + 'msg').html('&nbsp');
+		               isValid = true;		           
+		           }
+		       }		   
+		   
+		       if(joms.jQuery(el).hasClass('validate-username')){
+		           //use ajax to check the pages.
+		           if(joms.jQuery('#usernamepass').val() != joms.jQuery(el).val()){
+		               isValid = cvalidate.ajaxValidateUserName(joms.jQuery(el));
+		           }//end if
+		       }		   
+		       if(joms.jQuery(el).hasClass('validate-email')){
+		   		   //regex=/^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+\.)+[a-zA-Z0-9.-]{2,4}$/;
+		   		   regex=/^([*+!.&#$¦\'\\%\/0-9a-z^_`{}=?~:-]+)@(([0-9a-z-]+\.)+[0-9a-z]{2,4})$/i;
+			       isValid = regex.test(joms.jQuery(el).val());
+			       
+			       if(isValid == false){
+					   this.setMessage(fieldName, '', 'CC INVALID EMAIL');
+			       } else {
+		               joms.jQuery('#err' + fieldName + 'msg').hide();
+					   joms.jQuery('#err' + fieldName + 'msg').html('&nbsp');
+					   				   
+			           //use ajax to check the pages.
+			           if(joms.jQuery('#emailpass').val() != joms.jQuery(el).val()){
+			               isValid = cvalidate.ajaxValidateEmail(joms.jQuery(el));
+			           }//end if
+				   }				          
+		       }
+		       
+		       if(joms.jQuery(el).hasClass('validate-profile-email')){
+		   		   //regex=/^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+\.)+[a-zA-Z0-9.-]{2,4}$/;
+		   		   regex=/^([*+!.&#$¦\'\\%\/0-9a-z^_`{}=?~:-]+)@(([0-9a-z-]+\.)+[0-9a-z]{2,6})$/i;
+		   		   
+			       isValid = regex.test(joms.jQuery(el).val());
+			       
+			       if(isValid == false){
+					   this.setMessage(fieldName, '', 'CC INVALID EMAIL');
+			       } else {
+		               joms.jQuery('#err' + fieldName + 'msg').hide();
+					   joms.jQuery('#err' + fieldName + 'msg').html('&nbsp');
+				   }				          
+		       }
+			   
+		       if(joms.jQuery(el).hasClass('validate-profile-url')){		   		   
+					fieldName = fieldName.replace('[]','');
+					regex = /^(([\d\w]|%[a-fA-f\d]{2,2})+(:([\d\w]|%[a-fA-f\d]{2,2})+)?@)?([\d\w][-\d\w]{0,253}[\d\w]\.)+[\w]{2,6}(:[\d]+)?(\/([-+_~.\d\w]|%[a-fA-f\d]{2,2})*)*(\?(&?([-+_~.\d\w]|%[a-fA-f\d]{2,2})=?)*)?(#([-+_~.\d\w]|%[a-fA-f\d]{2,2})*)?$/;
+						  		   		
+			       	isValid = regex.test(joms.jQuery(el).val());
+   
+			       	if(isValid == false){
+					   this.setMessage(fieldName, '', 'CC INVALID URL');
+			       	} else {
+		               joms.jQuery('#err' + fieldName + 'msg').hide();
+					   joms.jQuery('#err' + fieldName + 'msg').html('&nbsp');
+				   	}				          
+		       }			   		       
+		       
+		       if(joms.jQuery(el).hasClass('validate-password') && el.name == 'jspassword'){
+		           if(joms.jQuery(el).val().length < 6){
+					   this.setMessage(fieldName, '', 'CC PASSWORD TOO SHORT');
+		               isValid = false;
+		           } else {
+		               joms.jQuery('#err' + fieldName + 'msg').hide();
+					   joms.jQuery('#err' + fieldName + 'msg').html('&nbsp');					   
+		               isValid = true;		           
+		           }
+		       }		       
+		       
+		       if(joms.jQuery(el).hasClass('validate-passverify') && el.name == 'jspassword2'){
+		           isValid = (joms.jQuery('#jspassword').val() == joms.jQuery(el).val());
+		           
+		           if(isValid == false){
+					   this.setMessage('jspassword2', '', 'CC PASSWORD NOT SAME');
+		           } else {
+		               joms.jQuery('#errjspassword2msg').hide();
+					   joms.jQuery('#errjspassword2msg').html('&nbsp');		           
+		           }
+		       }
+		       
+		       //now check for any custom field validation
+		       if(joms.jQuery(el).hasClass('validate-custom-date')){
+		           isValid = this.checkCustomDate(el);
+		       }
+		       
+           }//end if else
+	       
+	    } else if(joms.jQuery(el).attr('type') == 'checkbox'){
+	       if(joms.jQuery(el).hasClass('validate-custom-checkbox')){
+			   if(joms.jQuery("#community-wrap form.community-form-validate input[name='"+fieldName+"']:checked").size() == 0)
+			   {
+			   		isValid = false;
+			   }
+			   
+			   if(isValid == false){
+		          fieldName = fieldName.replace('[]','');
+		          lblName   = joms.jQuery('#lbl'+fieldName).html();		      
+		          if(lblName == null){
+			          lblName = 'Field';
+		          } else {	              
+		              lblName = lblName.replace('*','');
+		          }
+		          		          
+		          this.setMessage(fieldName, lblName, 'CC INVALID VALUE');
+			   }//end if
+	       
+	       } else {
+              if(! joms.jQuery(el).attr('checked')) isValid = false;
+	       }	    	    	       	       
+	       
+	       
+	    } else if(joms.jQuery(el).attr('type') == 'radio'){
+	       if(joms.jQuery(el).hasClass('validate-custom-radio')){
+			   if(joms.jQuery("#community-wrap form.community-form-validate input[name='"+fieldName+"']:checked").size() == 0)
+			   {
+			   		isValid = false;
+			   }
+			   
+			   if(isValid == false){
+		          //fieldName = fieldName.replace('[]','');
+		          lblName   = joms.jQuery('#lbl'+fieldName).html();		      
+		          if(lblName == null){
+			          lblName = 'Field';
+		          } else {	              
+		              lblName = lblName.replace('*','');
+		          }
+		          		          
+		          this.setMessage(fieldName, lblName, 'CC INVALID VALUE');
+			   }//end if
+	       
+	       } else {
+              if(! joms.jQuery(el).attr('checked')) isValid = false;
+	       }	    	    	       	       
+	       
+	       
+	    } else if(joms.jQuery(el).attr('type') == 'select-one'){	       
+	    
+	       if(joms.jQuery(el).children(':selected').length == 0)
+		   {
+		   		isValid = false;
+		   }
+		   else
+		   {
+		    	joms.jQuery(el).children(':selected').each(
+					function(){
+		    			if(joms.jQuery(el).val() == '') isValid = false;	
+		    		}
+		    	);
+		   }
+		   
+		   if(joms.jQuery(el).hasClass('validate-country')){
+				if(joms.jQuery(el).val() == 'selectcountry') isValid = false;
+		   }
+		   
+	       //now check for any custom field validation
+	       if(joms.jQuery(el).hasClass('validate-custom-date')){
+	           isValid = this.checkCustomDate(el);
+	       } else if(isValid == false){
+		          fieldName = fieldName.replace('[]','');	    		   
+		               	           
+		          lblName   = joms.jQuery('#lbl'+fieldName).html();
+		      
+		          if(lblName == null){
+			          lblName = 'Field';
+		          } else {
+		              lblName = lblName.replace('*','');
+		          }
+                  this.setMessage(fieldName, lblName, 'CC INVALID VALUE');
+	       }
+		   	       	       
+        } else if(joms.jQuery(el).attr('type') == 'select-multiple') {
+              if(joms.jQuery(el).children(':selected').length == 0) isValid = false;
+                            
+              if(isValid == false){
+		          fieldName = fieldName.replace('[]','');
+		          lblName   = joms.jQuery('#lbl'+fieldName).html();
+		      
+		          if(lblName == null){
+			          lblName = 'Field';
+		          } else {	              
+		              lblName = lblName.replace('*','');
+		          }
+		          this.setMessage(fieldName, lblName, 'CC INVALID VALUE');
+              }              
+        }
+        
+		return isValid;   
+	} 	
+	
+	/**
+	 * Check & validate form elements
+	 */	 	
+	this.validateForm = function(){
+	    var isValid 	= true;
+	    this.errorField = new Array();
+	    
+		joms.jQuery('#community-wrap form.community-form-validate :input.required').each(		    
+			function(i){
+				if(! cvalidate.validateElement(this)) isValid = false;
+			}
+		);
+		
+		joms.jQuery('#community-wrap form.community-form-validate :input.validate-profile-email').each(
+			function(){					
+				if((joms.jQuery.trim(joms.jQuery(this).val()) != ''))
+				{				
+					if(! cvalidate.validateElement(this)) isValid = false;
+				}	
+			}
+		);
+		
+		joms.jQuery('#community-wrap form.community-form-validate :input.validate-profile-url').each(
+			function(){					
+				if((joms.jQuery.trim(joms.jQuery(this).val()) != ''))
+				{				
+					if(! cvalidate.validateElement(this)) isValid = false;
+				}	
+			}
+		);		
+		
+		return isValid;
+	}
+	 
+	/**
+	 * Check the username whether already exisit or not.
+	 */	 
+	 this.ajaxValidateUserName = function(el){		 
+	     jax.call('community', 'register,ajaxCheckUserName',joms.jQuery(el).val());	      	     	 
+	 }
+	 
+	/**
+	 * Check the email whether already exisit or not.
+	 */
+	 this.ajaxValidateEmail = function(el){
+	     jax.call('community', 'register,ajaxCheckEmail',joms.jQuery(el).val());	 	     	     		 
+	 }
+	 
+	 /**
+	  * check custom date
+	  */
+	  this.checkCustomDate = function(el){
+	      var isValid = true;
+	      var fieldName = el.name;
+	       //now check for any custom field validation
+	       if(joms.jQuery(el).hasClass('validate-custom-date')){
+	           //we know this field is an array type.
+	           fieldId = fieldName.replace('[]','');
+	           var dateObj = joms.jQuery("#community-wrap form.community-form-validate input[name='"+fieldName+"']");
+	           
+	           for(var i=0; i < dateObj.length; i++){
+	               if (!/^-?\d+$/.test(dateObj[i].value)){
+					    isValid = false;
+				   }//end if
+	           }//end for
+	           
+	           //now check whether the date is valid or not.
+	           var dateObj2 = joms.jQuery("#community-wrap form.community-form-validate select[name='"+fieldName+"']");
+	           
+	           //dd / mm/ yyyy
+	           var dd = dateObj[0].value;
+	           var mm = dateObj2[0].value;
+	           var yy = dateObj[1].value;		           
+	           		           		           
+	           var dayobj = new Date(yy, eval(mm-1), dd);
+	           
+	           if ((dayobj.getMonth()+1!=mm)||(dayobj.getDate()!=dd)||(dayobj.getFullYear()!=yy)){
+	               isValid = false;
+	           }
+	           
+	           if(isValid == false){
+                   this.setMessage(fieldId, '', 'CC INVALID DATE');				   		           
+	           } else {
+                   joms.jQuery('#err'+fieldId+'msg').hide();
+		           joms.jQuery('#err'+fieldId+'msg').html('&nbsp');
+	           }
+	       }
+		   return isValid;
+	  
+	  }
+	  
+	  /*
+	   * Get the message text from langauge file using ajax
+	   */
+	  this.setMessage = function(fieldName, txtLabel, msgStr){
+	  	  
+	  	  errorLabel  = joms.jQuery('label[for="' + fieldName + '"]').html().replace('*', '');
+	  	  
+		  if (joms.jQuery.inArray(errorLabel, this.errorField) == -1)
+		  {
+		  	this.errorField.push(errorLabel);
+		  }
+	  	  
+	      jax.call('community', 'register,ajaxSetMessage',fieldName, txtLabel, msgStr);	      
+	  }
+	  
+	  //this.setREMText = function(text){
+	  this.setSystemText = function(key, text){
+	  	eval('cvalidate.' + key + ' = "' + text + '"');
+	  }
+
+}
+
+var cvalidate = new cValidate();
