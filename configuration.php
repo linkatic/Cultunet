@@ -32,7 +32,7 @@ class JConfig {
 	var $ftp_root = '';
 	var $dbtype = 'mysqli';
 	var $host = 'localhost';
-	var $user = 'usergc';
+	var $user = 'root';
 	var $db = 'gc_db';
 	var $dbprefix = 'gc_';
 	var $mailer = 'mail';
@@ -49,7 +49,7 @@ class JConfig {
 	var $MetaTitle = '1';
 	var $lifetime = '60';
 	var $session_handler = 'database';
-	var $password = 'revistagc01';
+	var $password = '';
 	var $sitename = 'cultunet.com';
 	var $MetaDesc = 'Cultunet, red cultural internacional que permite el desarrollo y profesionalización del sector. Tiene como principal objetivo ofrecer servicios especializados a los profesionales de la cultura de toda Iberoamérica y convertirse en una herramienta de utilidad para el desempeño de su actividad.';
 	var $MetaKeys = 'Cultunet, cultura, gestión, cultural, g+c, oei, iberoamericanos, iberoamérica';
