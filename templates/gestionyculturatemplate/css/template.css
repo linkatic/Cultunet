@@ -480,13 +480,13 @@ font-size:11px; padding:0px 10px;color:#000; margin-left:5px;}
 #content #system-message dd.error, #content #system-message dd.message, #content #system-message dd.notice{background:none;border:0;margin:0;padding:10px 40px; }
 
 /** Menu lateral **/
-#content ul.menu {background-color:#fff;border:1px solid #CCCCCC; width:335px; }
-#content ul.menu li {font-size:14px;padding:8px; border-bottom:1px dotted #333; margin:0 10px; background:url("../images/flecha_option.png") 0px 10px no-repeat;padding-left:20px}
-#content ul.menu li a:link{color:#555; text-decoration:none;}
-#content ul.menu li a:visited{color:#555; text-decoration:none}
-#content ul.menu li a:hover{color:#000; text-decoration:none;}
-#content ul.menu li.active{background:url("../images/flecha_option_active.png") 0px 10px no-repeat !important;}
-#content ul.menu li.active a{color:#000;}
+#content .untercio ul.menu {background-color:#fff;border:1px solid #CCCCCC; width:335px; }
+#content .untercio ul.menu li {font-size:14px;padding:8px; border-bottom:1px dotted #333; margin:0 10px; background:url("../images/flecha_option.png") 0px 10px no-repeat;padding-left:20px}
+#content .untercio ul.menu li a:link{color:#555; text-decoration:none;}
+#content .untercio ul.menu li a:visited{color:#555; text-decoration:none}
+#content .untercio ul.menu li a:hover{color:#000; text-decoration:none;}
+#content .untercio ul.menu li.active{background:url("../images/flecha_option_active.png") 0px 10px no-repeat !important;}
+#content .untercio ul.menu li.active a{color:#000;}
 
 #content #index{padding-left:0;width:606px;}
 #content #index .row{margin:0 35px;width:95%;}
