@@ -26,11 +26,10 @@
 </head>
 	<body id="gc"> 
 		<div id="page">
-			<!-- <div id="top-header">
+			<div id="top-header">
 				<div class="banner_t"><jdoc:include type="modules" name="banner_top" style="xhtml" /></div>
-			</div> -->
-			<div id="container" class="clearfix">
-				<jdoc:include type="modules" name="banner_top" style="xhtml" />					
+			</div>
+			<div id="container" class="clearfix">				
 				<jdoc:include type="modules" name="language" style="xhtml" />
 				<div id="header">
 					<div id="header-left">
