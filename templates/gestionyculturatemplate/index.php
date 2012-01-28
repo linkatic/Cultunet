@@ -4,7 +4,7 @@
 	# Gestion y Cultura Template - Julio 2010 (para Joomla 1.5)
 	# Copyright (C) 2010 Linkatic. Todos los derechos reservados.
 	# Licencia: Copyrighted Commercial Software
-	# Autores: Lorena Hernandez y Vicente Gimeno
+	# Autores: Lorena Henriquez y Vicente Gimeno
 	# Website: http://www.linkatic
 	# Soporte: info@linkatic.com 
 	---------------------------------------------------------------*/
@@ -24,21 +24,25 @@
 	<!--[if IE 8]><link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/css/styles_ie8.css" type="text/css" /><![endif]-->
 	<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/css/common.css" type="text/css" />
 </head>
-	<body id="gc">
+	<body id="gc"> 
 		<div id="page">
 			<!-- <div id="top-header">
 				<div class="banner_t"><jdoc:include type="modules" name="banner_top" style="xhtml" /></div>
 			</div> -->
 			<div id="container" class="clearfix">
+				<jdoc:include type="modules" name="banner_top" style="xhtml" />					
+				<jdoc:include type="modules" name="language" style="xhtml" />
 				<div id="header">
-					<div style="position:absolute; top:-2px; left:201px; z-index:10;">
-						<img src="/images/versionbeta.png" alt="Versión Beta" title="Versión Beta" />
-					</div>
-					<div id="logo">
-						<jdoc:include type="modules" name="logo" />
-						<a href="<?php echo $this->baseurl ?>">
-							<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/images/logoCultunet.png" alt="<?php echo JText::_('Cultunet'); ?>" />
-						</a>
+					<div id="header-left">
+						<div id="beta">
+							<img src="/images/versionbeta.png" alt="Versión Beta" title="Versión Beta" />
+						</div>
+						<div id="logo">
+							<jdoc:include type="modules" name="logo" />
+							<a href="<?php echo $this->baseurl ?>">
+								<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/images/logoCultunet.png" alt="<?php echo JText::_('Cultunet'); ?>" />
+							</a>
+						</div>
 						<div id="promotores">
 							<a href="<?php echo $this->baseurl ?>/index.php?option=com_content&view=article&id=2&Itemid=8">
 								<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/images/logo_areadetrabajo.png" alt="Área de Trabajo" class="l1" />
@@ -48,20 +52,15 @@
 							</a>
 						</div>
 					</div>
-					<div id="banner_t">
-						<jdoc:include type="modules" name="banner_top" style="xhtml" />					
-						<div id="login"><jdoc:include type="modules" name="login" style="xhtml" /></div>
+					<div id="header-right">
+						<jdoc:include type="modules" name="search" style="xhtml" />
+						<jdoc:include type="modules" name="icons_redes" style="xhtml" />
+						<jdoc:include type="modules" name="menu_extra" style="xhtml" />
 					</div>
-
 				</div><!-- Fin header -->
 				<div id="layer_nav">
 					<div id="menu">
 						<jdoc:include type="modules" name="menu" />
-					</div>
-					<div id="menu_extra">
-						<div id="language"><jdoc:include type="modules" name="language" style="xhtml" /></div>
-						<div id="search"><jdoc:include type="modules" name="search" style="xhtml" /></div>
-						<div id="icons_redes"><jdoc:include type="modules" name="icons_redes" style="xhtml" /></div>
 					</div>
 				</div><!-- Fin layer_nav -->
 				<div id="breadcrumb">
@@ -70,6 +69,7 @@
 				<div id="content">
 				<?php if($this->countModules('left_untercio')) { //dos columnas ?>
 					<div class="untercio">
+						<jdoc:include type="modules" name="login" style="xhtml" />
 						<jdoc:include type="modules" name="left_untercio" style="xhtml" />
 						<jdoc:include type="modules" name="left_untercio_content" style="cultunet" />
 					</div>
@@ -77,7 +77,9 @@
 						<jdoc:include type="message" style="xhtml" />
 						<jdoc:include type="modules" name="right_top" style="xhtml" />
 						<jdoc:include type="component" />
+						<jdoc:include type="modules" name="right1_unmedio" style="xhtml" />
 						<jdoc:include type="modules" name="right_dostercios" style="xhtml" />
+						<jdoc:include type="modules" name="right2_unmedio" style="xhtml" />
 					</div>
 				<?php } else { ?>
 					<div class="entero">
