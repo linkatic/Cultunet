@@ -29,8 +29,8 @@
 			<div id="top-header">
 				<div class="banner_t"><jdoc:include type="modules" name="banner_top" style="xhtml" /></div>
 			</div>
+			<jdoc:include type="modules" name="language" style="xhtml" />
 			<div id="container" class="clearfix">				
-				<jdoc:include type="modules" name="language" style="xhtml" />
 				<div id="header">
 					<div id="header-left">
 						<div id="beta">
