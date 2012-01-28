@@ -93,9 +93,9 @@
 				</div><!-- Fin content -->
 			</div><!-- Fin container -->
 			<div id="footer">
+				<jdoc:include type="modules" name="menu_footer" style="xhtml" />
 				<div class="unmedio"><div class="banner_bl"><jdoc:include type="modules" name="banner_bottom_l" style="xhtml" /></div></div>
 				<div class="unmedio"><div class="banner_br"><jdoc:include type="modules" name="banner_bottom_r" style="xhtml" /></div></div>
-				<div id="menu_footer"><jdoc:include type="modules" name="menu_footer" style="xhtml" /></div>
 				<div id="patrocinadores"><jdoc:include type="modules" name="patrocinadores" style="xhtml" /></div>
 				<div style="margin:0 0 20px 0; padding:10px 0; text-align: center; font-size: 11px; font-weight:bold; clear:both">Web desarrollada por <a href="http://www.linkatic.com" target="_blank">Linkatic</a></div>
 			</div>
