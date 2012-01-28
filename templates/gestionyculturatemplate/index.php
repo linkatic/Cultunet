@@ -77,9 +77,9 @@
 						<jdoc:include type="message" style="xhtml" />
 						<jdoc:include type="modules" name="right_top" style="xhtml" />
 						<jdoc:include type="component" />
-						<jdoc:include type="modules" name="right1_unmedio" style="xhtml" />
+						<div class="unmedio"><jdoc:include type="modules" name="right1_unmedio" style="xhtml" /></div>
 						<jdoc:include type="modules" name="right_dostercios" style="xhtml" />
-						<jdoc:include type="modules" name="right2_unmedio" style="xhtml" />
+						<div class="unmedio"><jdoc:include type="modules" name="right2_unmedio" style="xhtml" /></div>
 					</div>
 				<?php } else { ?>
 					<div class="entero">
