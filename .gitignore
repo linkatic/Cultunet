@@ -1,4 +1,8 @@
 *.class
 *.pyc
 *.pyo
+<<<<<<< HEAD
 configuration.php
+=======
+master
+>>>>>>> 0f4bdd9a1b39b46bb70f2cc804e2187a790fd291

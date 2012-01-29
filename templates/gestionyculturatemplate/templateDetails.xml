@@ -37,6 +37,7 @@
 		<position>banner_top</position>
 		<position>logo</position>
 		<position>login</position>
+		<position>menu_extra</position>
 		<position>menu</position>
 		<position>language</position>
 		<position>search</position>
@@ -45,7 +46,9 @@
 		<position>left_untercio</position>
 		<position>left_untercio_content</position>
 		<position>right_top</position>
+		<position>right1_unmedio</position>
 		<position>right_dostercios</position>
+		<position>right2_unmedio</position>
 		<position>banner_bottom_l</position>
 		<position>banner_bottom_r</position>
 		<position>menu_footer</position>
