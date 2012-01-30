@@ -18,7 +18,6 @@ table {border-collapse:collapse; border-spacing:0;}
 .clearfix:after{display:block; visibility:hidden; clear:both; height:0; content: '.';}
 .clearfix{display:inline-block;}
 * html .clearfix{height:1%;}
-.clearfix{display:block;}
 
 .clear{display:block; visibility:hidden; overflow:hidden; clear:both; width:0; height:0;}
 
@@ -45,7 +44,7 @@ img.right {float:right; padding:0px 0px 20px 20px;}
 .ml5{margin-left:5px;}
 .ml10{margin-left:10px;}
 .ml15{margin-left:15px;}
-.ml20{margin-left:20px;}
+.ml20{margin-left: 13px;}
 
 .mr5{margin-right:5px;}
 .mr10{margin-right:10px;}

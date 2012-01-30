@@ -26,12 +26,11 @@
 </head>
 	<body id="gc"> 
 		<div id="page">
-			<!-- <div id="top-header">
+			<div id="top-header">
 				<div class="banner_t"><jdoc:include type="modules" name="banner_top" style="xhtml" /></div>
-			</div> -->
-			<div id="container" class="clearfix">
-				<jdoc:include type="modules" name="banner_top" style="xhtml" />					
-				<jdoc:include type="modules" name="language" style="xhtml" />
+			</div>
+			<jdoc:include type="modules" name="language" style="xhtml" />
+			<div id="container" class="clearfix">				
 				<div id="header">
 					<div id="header-left">
 						<div id="beta">
@@ -77,9 +76,9 @@
 						<jdoc:include type="message" style="xhtml" />
 						<jdoc:include type="modules" name="right_top" style="xhtml" />
 						<jdoc:include type="component" />
-						<jdoc:include type="modules" name="right1_unmedio" style="xhtml" />
+						<div class="unmedio"><jdoc:include type="modules" name="right1_unmedio" style="xhtml" /></div>
 						<jdoc:include type="modules" name="right_dostercios" style="xhtml" />
-						<jdoc:include type="modules" name="right2_unmedio" style="xhtml" />
+						<div class="unmedio"><jdoc:include type="modules" name="right2_unmedio" style="xhtml" /></div>
 					</div>
 				<?php } else { ?>
 					<div class="entero">
@@ -89,16 +88,16 @@
 						<jdoc:include type="modules" name="right_dostercios" style="xhtml" />
 					</div>
 				<?php } ?>
+					<div id="footer">
+						<jdoc:include type="modules" name="menu_footer" style="xhtml" />
+						<div class="unmedio"><div class="banner_bl"><jdoc:include type="modules" name="banner_bottom_l" style="xhtml" /></div></div>
+						<div class="unmedio"><div class="banner_br"><jdoc:include type="modules" name="banner_bottom_r" style="xhtml" /></div></div>
+						<div id="patrocinadores"><jdoc:include type="modules" name="patrocinadores" style="xhtml" /></div>
+						<div style="margin:0 0 20px 0; padding:10px 0; text-align: center; font-size: 11px; font-weight:bold; clear:both">Web desarrollada por <a href="http://www.linkatic.com" target="_blank">Linkatic</a></div>
+					</div>
 					<div class="clear">&nbsp;</div>
 				</div><!-- Fin content -->
 			</div><!-- Fin container -->
-			<div id="footer">
-				<div class="unmedio"><div class="banner_bl"><jdoc:include type="modules" name="banner_bottom_l" style="xhtml" /></div></div>
-				<div class="unmedio"><div class="banner_br"><jdoc:include type="modules" name="banner_bottom_r" style="xhtml" /></div></div>
-				<div id="menu_footer"><jdoc:include type="modules" name="menu_footer" style="xhtml" /></div>
-				<div id="patrocinadores"><jdoc:include type="modules" name="patrocinadores" style="xhtml" /></div>
-				<div style="margin:0 0 20px 0; padding:10px 0; text-align: center; font-size: 11px; font-weight:bold; clear:both">Web desarrollada por <a href="http://www.linkatic.com" target="_blank">Linkatic</a></div>
-			</div>
 		</div>
 		<jdoc:include type="modules" name="debug" />
 		<script type="text/javascript">
