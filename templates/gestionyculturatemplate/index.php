@@ -88,7 +88,7 @@
 						<jdoc:include type="modules" name="right_dostercios" style="xhtml" />
 					</div>
 				<?php } ?>
-					<div id="footer">
+					<div id="footer" class="clearfix">
 						<jdoc:include type="modules" name="menu_footer" style="xhtml" />
 						<div class="unmedio"><div class="banner_bl"><jdoc:include type="modules" name="banner_bottom_l" style="xhtml" /></div></div>
 						<div class="unmedio"><div class="banner_br"><jdoc:include type="modules" name="banner_bottom_r" style="xhtml" /></div></div>

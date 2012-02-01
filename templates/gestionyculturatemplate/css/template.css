@@ -307,6 +307,8 @@ font-size:12px; padding:0px 10px;color:#000;  margin: 10px 0;}
 /** Formulario de registro **/
 #content form.community-form-validate{border:1px solid #ccc; margin-bottom:10px; background: #F4F4F4; padding:10px}
 #content form input.inputbox{border:1px solid #ccc; height:20px; color:#444;width:99.5%;}
+#content form #form-login-remember label{display:inline}
+#content form #form-login-remember input.inputbox{width:14px; height: 14px}
 #content form input#search_searchword{width:355px !important;}
 #content form select#usertype{border:1px solid #ccc; width:50%; margin-right:20px;margin-bottom:10px;}
 #content form input.acymailing_checkbox{width:15px; vertical-align:middle;}
