@@ -23,8 +23,8 @@ h5 {}
 
 
 	/* política de enlaces */
-a:link {color:#f19e27; text-decoration:none;}
-a:visited {color:#f19e27; text-decoration:underline;}
+a:link {color:#000; text-decoration:none;}
+a:visited {color:#000; text-decoration:underline;}
 a:hover, a:active {text-decoration:none;}
 a img {border:0 none;}
 
@@ -58,7 +58,7 @@ dd{}
 	/*tablas*/
 #container #content table{width:100%; margin:0 0 10px 0; empty-cells:show;}
 table thead th{padding:6px; font-size:14px; text-align:left;}
-#container #content table tbody td{padding:5px; font-size:12px; }
+#container #content table tbody td{ font-size:12px; }
 table tbody tr.even td{}
 table tbody tr.odd td{}
 table tbody tr.highlight td {}
@@ -125,7 +125,7 @@ font-size:11px; color:#000; margin-left:5px;}
 #header #header-right .menu-extra ul { margin:0 10px 0 0;float:left; }
 #header #header-right .menu-extra ul.menu li {float:left;  padding: 0 5px; border-right: solid 1px #ffcc00;}
 #header #header-right .menu-extra ul.menu li a{color:#ffcc00; text-transform: uppercase;}
-#header #header-right .links-siguenos { float: right;  margin: 10px 12px 8px 0;overflow:hidden; }
+#header #header-right .links-siguenos { float: right;  margin: 10px 12px 0 0;overflow:hidden; }
 #header #header-right .links-siguenos a {float:right;}
 
 /** LAYER_NAV **/
@@ -192,7 +192,7 @@ font-size:11px; color:#000; margin-left:5px;}
 #content h3, #content .componentheading,#content .m4j_heading, #acyarchivelisting .contentheading{background:url(../images/simbolo-titulos.jpg) top left no-repeat; font-size:18px; color:#101010; text-transform:uppercase; padding: 5px 5px 0 20px; margin-bottom:5px; font-weight:bold; border-bottom: 5px solid #ffc323;}
 #content h3.groupName{text-transform:none !important;}
 #content #slider{margin-bottom:10px}
-#container #content .moduletable_block table.poll_block{ background-color:transparent; padding:25px 10px 25px 12px; display:block; border:0; margin-bottom:5px;}
+#container #content .moduletable_block table.poll_block{ background-color:transparent; padding:5px 10px 25px 12px; display:block; border:0; margin-bottom:5px;}
 #content .moduletable_block2{background-color: #E2E2E2;
     border: 1px solid #F19E27;
     height: 220px;
@@ -245,10 +245,15 @@ font-size:11px; color:#000; margin-left:5px;}
 #content .moduletable_block{margin-top:5px;}
 #content .moduletable_block.top{margin-top:0px;}
 #content .border-container{ margin-bottom:10px}
-#content .bg-container{background: #F4F4F4;}
+#content .bg-container{ }
 #content div.featured{border:0}
 #content div.listing-summary.featured{border-bottom:1px solid #ccc	}
 #content button, #content input.button{background-color:#FAC42A; border:1px solid #FAC42A;
+border-radius: 5px;-ms-border-radius:5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;-o-border-radius: 5px;
+-khtml-border-radius: 5px; behavior:url(border-radius.htc); 
+font-size:12px; padding:0px 10px;color:#000;  margin: 10px 0;}
+.moduletable ul li {margin:10px 0;}
+#registro a {background-color:#FAC42A; border:1px solid #FAC42A;
 border-radius: 5px;-ms-border-radius:5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;-o-border-radius: 5px;
 -khtml-border-radius: 5px; behavior:url(border-radius.htc); 
 font-size:12px; padding:0px 10px;color:#000;  margin: 10px 0;}
@@ -294,7 +299,8 @@ font-size:12px; padding:0px 10px;color:#000;  margin: 10px 0;}
 #content .acceso_login li a:hover{color:#444;text-decoration:underline}
 
 /** Artículos **/
-#container #content table.contentpaneopen tbody td.contentheading{font-size:18px; color:#444; padding:6px 6px 0px 6px;}
+#container #content table.contentpaneopen tbody td.contentheading{font-size:18px; color:#444; padding: 8px 5px 3px 20px;background:url(../images/simbolo-titulos.jpg) top left no-repeat;  border-bottom: 5px solid #ffc323;}
+#container #content table.contentpaneopen tbody td.buttonheading{border-bottom: 5px solid #ffc323;padding: 0px 0px 3px 0px;}
 #container #content table.contentpaneopen p{line-height:22px; padding-bottom:10px;}
 #content .corporativa_title{color:#444444;font-size:18px;}
 
@@ -350,7 +356,7 @@ font-size:12px; padding:0px 10px;color:#000;  margin: 10px 0;}
 #content .blog .noticias_enlaces a{text-decoration:none;}
 #content .blog .noticias_enlaces .noticias_enlaces_title{font-size:18px;padding:10px 0}
 #content .blog .noticias_enlaces ul li{list-style:url(/images/M_images/arrow.png);margin:0 10px 10px 30px}
-#content #lyftenbloggie{padding: 0 10px}
+#content #lyftenbloggie{ }
 #content #lyftenbloggie .blogcontent .entry-info {height:auto!important}
 #content #lyftenbloggie .blogcontent .page-nav{margin:25px 0 !important}
 #content #lyftenbloggie .post-content{clear:both}
@@ -360,8 +366,16 @@ body #content #community-wrap table.ccontentTable td{vertical-align:text-top;}
 #content #community-wrap .cModule{-moz-border-radius:0px;border:none;}
 #content #community-wrap{min-width:595px; z-index:1}
 #content #community-wrap .app-box-header {background:none;height:auto;margin:0;padding:0px}
-#content #community-wrap .cModule h3, #content #community-wrap .app-box-title{background:url(../images/fondo_titulos.jpg) 0 0 repeat-x #000; font-size:15px;color:#fac42a; text-transform:uppercase; height:18px; width:98.5%; padding:5px; margin-bottom:5px; font-weight:normal;}
-#content #community-wrap h2.app-box-title{padding:0 5px 10px 5px !important;}
+
+#content #community-wrap .cModule h3, #content #community-wrap .app-box-title{ background: url("../images/simbolo-titulos.jpg") no-repeat scroll left top transparent;
+    border-bottom: 5px solid #FFC323;
+    color: #101010;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 5px 5px 0 20px;
+    text-transform: uppercase;}
+#content #community-wrap h2.app-box-title{padding:1px 5px 0 20px !important;}
 #content #community-wrap .cModule{padding:0px 5px;}
 #content #community-wrap .greybox{display:none}
 #content #community-wrap .app-box-menus{display:none}
@@ -386,11 +400,15 @@ body #content #community-wrap div.featured-items{width:90px; font-size:10px !imp
 #content #community-wrap .group-top{background:#F4F4F4; border: 1px solid #CCCCCC; padding:10px}
 body #content #community-wrap div.profile-box{background:#F4F4F4; border: 1px solid #CCCCCC; padding:10px}
 #content #community-wrap dl.profile-right-info{background:#F4F4F4; border: 1px solid #CCCCCC; padding:10px}
-#content #community-wrap .cThumbList{background:#F4F4F4; border: 1px solid #CCCCCC; padding:10px}
+#content #community-wrap .cThumbList{  }
 #content #community-wrap .app-box-content .cThumbList{border: none !important; padding:0px !important}
 #content #community-wrap .cThumbList .desc-details{width:195px;}
-
-body #community-wrap .video-item .video-item, body #community-wrap .album .album {background:#F4F4F4;}
+#content #community-wrap div.filterlink {margin: 0 10px 10px;}
+#community-wrap .video-title, #community-wrap .video-hits {padding: 0 0 5px 0 !important;}
+#community-wrap .video-lastupdated {color:#999; line-height:1.3em;}
+#community-wrap .video-title a {color:#000;}
+#community-wrap .video-title a:hover {text-decoration:underline;}
+body #community-wrap .video-item .video-item, body #community-wrap .album .album {border-top:1px solid #ddd;border-right:0; border-bottom:0; border-left:0; margin:0;}
 
 /** EMPLEO Y PRACTICAS **/
 #content #newest_jobs, #content #ficha_oferta_empleo, #content #results_search_jobs{line-height:1.2em;}
@@ -419,7 +437,7 @@ body #community-wrap .video-item .video-item, body #community-wrap .album .album
 
 /** AREA DE TRABAJO **/
 #content .area_hidden{display:none}
-#content .container-article{background:none repeat scroll 0 0 #F4F4F4;border:1px solid #CCCCCC;line-height:1.4em;margin-bottom:10px;padding:10px;}
+#content .container-article{ line-height:1.4em;margin-bottom:10px;padding:10px;}
 #container #content table tbody td.buttonheading{text-align:right;}
 #container #content table.contentpaneopen div.info-rrhh-aboutme p{padding-top:10px}
 #content .info-rrhh-left{background:url("../images/shadow_left.png") no-repeat scroll left bottom transparent;margin-top:12px;}
@@ -511,7 +529,7 @@ font-size:11px; padding:0px 10px;color:#000; margin-left:5px;}
 #content #system-message dd.error, #content #system-message dd.message, #content #system-message dd.notice{background:none;border:0;margin:0;padding:10px 40px; }
 
 /** Menu lateral **/
-#content .untercio ul.menu {background-color:#fff;border:1px solid #CCCCCC; width:335px; }
+#content .untercio ul.menu { }
 #content .untercio ul.menu li {font-size:14px;padding:8px; border-bottom:1px dotted #333; margin:0 10px; background:url("../images/flecha_option.png") 0px 10px no-repeat;padding-left:20px}
 #content .untercio ul.menu li a:link{color:#555; text-decoration:none;}
 #content .untercio ul.menu li a:visited{color:#555; text-decoration:none}
@@ -1066,18 +1084,16 @@ body #content #cToolbarNav.cToolbar {padding:0 !important;}
 #content #community-wrap form input.inputbox#keyword{height:12px; border:0}
 #content #community-wrap .cModule.searchbox .input_wrap{margin-right:0; margin-bottom:10px}
 body #content #community-wrap div.mini-profile-details h3.name{background:none}
-#content #community-wrap div.mini-profile{background:none repeat scroll 0 0 #F4F4F4}
-#content #community-wrap .app-box-content{background:none repeat scroll 0 0 #F4F4F4; border-top:1px solid #CCCCCC; border-left:1px solid #CCCCCC;border-right:1px solid #CCCCCC;padding:10px}
 
 #content #community-wrap div.cLayout .cRow, #content #community-wrap .videos.cRow, #content #community-wrap .cRow{    background: none repeat scroll 0 0 #F4F4F4;
     border: 1px solid #CCCCCC;
     padding: 15px;}
 #content #community-wrap .latest-photos .app-box-content{background:none !important;border:0!important;padding:0 !important}
-#content #community-wrap .latest-photos .app-box-content ul.cThumbList{background:none repeat scroll 0 0 #F4F4F4; border-top:1px solid #CCCCCC; border-left:1px solid #CCCCCC;border-right:1px solid #CCCCCC;padding:15px;}
+#content #community-wrap .latest-photos .app-box-content ul.cThumbList{ }
 body #community-wrap #cFilterBar {background:none repeat scroll 0 0 #F4F4F4; border:1px solid #CCCCCC;}
 
-body #community-wrap .cThumbList img{width:52px; height:52px}
-body #community-wrap .cSidebar .cThumbList img{width:40px; height:40px}
+body #community-wrap .cThumbList img{ }
+body #community-wrap .cSidebar .cThumbList img{ }
 body #community-wrap .latest-groups .cThumbList img{width:100px; height:auto;}
 
 #content #community-wrap h3.photoCaptionText{background:none; color:#404040; font-weight:normal;margin:0; text-transform:none;width:auto;}
@@ -1088,14 +1104,12 @@ body #community-wrap .latest-groups .cThumbList img{width:100px; height:auto;}
 
 #content #lyftenbloggie .dash_title h1{font-weight:bold;}
 #content #lyftenbloggie .blogcontent .section h1.entry-title {margin:0 0 10px 0;}
-#content #lyftenbloggie .blogcontent .section a{text-decoration:none}
-#content #lyftenbloggie .blogcontent .section a:hover{color:#F4F4F4}
+#content #lyftenbloggie .blogcontent .section a:hover{ text-decoration:underline;}
 #content #lyftenbloggie .blogcontent .section .entry-subtitle a:hover{color:#222}
 #content #lyftenbloggie .blogcontent .section .entry-options-actions a:hover{color:#222}
 #content #lyftenbloggie .blogcontent .section .right img{margin-right:5px;}
-#content #lyftenbloggie .blogcontent .entry-info {background:#333;padding:1px;}
+#content #lyftenbloggie .blogcontent .entry-info {background:#fff0c8;padding: 7px 7px 0;}
 #content .moduleblog-title{margin-bottom:5px;}
-#content #lyftenbloggie .blogcontent h3{background:#777;}
 #content #lyftenbloggie .blogcontent .right{float:right;}
 
 #content #lyftenbloggie .dashboard .dash_title h1{float:none;}
@@ -1124,7 +1138,7 @@ font-size:11px; padding:0px 10px;color:#000; margin-left:5px;}
 */
 
 /** Menu categorias **/
-#content .moduletable_content {background-color:#fff;border:1px solid #CCCCCC; width:335px; }
+#content .moduletable_content { }
 #content .moduletable_content a.mainlevel{display:block; width:250px;font-size:14px;padding:8px; border-bottom:1px dotted #333; margin:0 10px; background:url("../images/flecha_option.png") 0px 10px no-repeat;padding-left:20px}
 #content .moduletable_content a.mainlevel:link{color:#555; text-decoration:none;}
 #content .moduletable_content a.mainlevel:visited{color:#555; text-decoration:none}
@@ -1145,7 +1159,7 @@ font-size:11px; padding:0px 10px;color:#000; margin-left:5px;}
 #content #vmMainPage h3{background: none; text-transform:none;}
 #content #vmMainPage #nagl h3, 
 #content #vmMainPage .vmRecent h3, 
-#content #vmMainPage .feature h3{background: url("../images/fondo_titulos.jpg") repeat-x scroll 0 0 #000000; text-transform: uppercase !important;} 
+#content #vmMainPage .feature h3{ background:url(../images/simbolo-titulos.jpg) top left no-repeat; font-size:18px; color:#101010; text-transform:uppercase; padding: 5px 5px 0 20px; margin-bottom:5px; font-weight:bold; border-bottom: 5px solid #ffc323; text-transform: uppercase !important;} 
 #content #vmMainPage .recenlts h3{color:#1E1E1E; font-size:14px;}
 
 /** Enlaces **/
@@ -1158,13 +1172,15 @@ font-size:11px; padding:0px 10px;color:#000; margin-left:5px;}
 #content #vmMainPage .addtocart_button, #content #vmMainPage .notify_button{height:34px;}
 #content #vmMainPage .vmCartContainer{background:none; border:0;}
 #content #vmMainPage .vmCustomCategories{background: none repeat scroll 0 0 #F4F4F4; border: 1px solid #CCCCCC;padding:10px}
-#content #vmMainPage .fprod_con{float:left; padding:5px 9px; width:179px; text-align:center; line-height: 1.6; min-height:330px}
+#content #vmMainPage .fprod_con{float:left; padding:5px 9px; width:195px; text-align:center; line-height: 1.3; min-height:330px;  border-bottom: 1px solid #DDDDDD; margin-bottom:10px;}
 #content #vmMainPage .fprod_con h3{font-size:14px; margin:5px 0;}
 #content #vmMainPage .fprod_con span.productPrice{font-weight:bold; color:#333; font-size:14px; margin:5px 0; display:block}
 #content #vmMainPage .fprod_con form.addtocart_form{display:block; margin-bottom:5px}
 #content #vmMainPage .fprod_con form .inputboxquantity, #content #vmMainPage .fprod_con form .quantity_box, 
 #content #vmMainPage .fprod_con form .quantity_box_button_up, #content #vmMainPage .fprod_con form .quantity_box_button_down{display:none}
 #content #vmMainPage .fprod_con span.s_desc{height:50px; display:block}
+#content #vmMainPage a.fimage img {margin-bottom: 5px;}
+
 
 
 /** Listado de productos por categoría **/
@@ -1252,8 +1268,8 @@ font-size:11px; padding:0px 10px;color:#000; margin-left:5px;}
 
 
 /** Buscador de productos **/
-#content #buscador-productos{background:#F4F4F4;padding:10px}
-#content #buscador-productos input{margin-top:5px}
+#content #buscador-productos{ }
+#content #buscador-productos input{margin:8px 0;}
 #content #buscador-productos input.button{float:right}
 
 #content #form-search-parameter{background:#F4F4F4;border: 1px solid #CCCCCC;line-height: 1.4em;margin-bottom: 10px;padding: 10px;}
