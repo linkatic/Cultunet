@@ -58,7 +58,7 @@ dd{}
 	/*tablas*/
 #container #content table{width:100%; margin:0 0 10px 0; empty-cells:show;}
 table thead th{padding:6px; font-size:14px; text-align:left;}
-#container #content table tbody td{ font-size:12px; }
+#container #content table tbody td{ font-size:12px;  padding: 3px;}
 table tbody tr.even td{}
 table tbody tr.odd td{}
 table tbody tr.highlight td {}
@@ -212,7 +212,7 @@ font-size:11px; color:#000; margin-left:5px;}
 #footer{margin:0 auto; width: 954px;}
 
 /** MENU-FOOTER **/
-#footer .menu_footer ul.menu li {float:left;}
+#footer .menu_footer ul.menu li {float:left; }
 #footer .menu_footer {width:900px; height:27px; background:#d4d4d4;}
 #footer .unmedio{}
 
@@ -252,7 +252,7 @@ font-size:11px; color:#000; margin-left:5px;}
 border-radius: 5px;-ms-border-radius:5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;-o-border-radius: 5px;
 -khtml-border-radius: 5px; behavior:url(border-radius.htc); 
 font-size:12px; padding:0px 10px;color:#000;  margin: 10px 0;}
-.moduletable ul li {margin:10px 0;}
+.moduletable form ul li {margin:10px 0;}
 #registro a {background-color:#FAC42A; border:1px solid #FAC42A;
 border-radius: 5px;-ms-border-radius:5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;-o-border-radius: 5px;
 -khtml-border-radius: 5px; behavior:url(border-radius.htc); 
@@ -340,9 +340,9 @@ font-size:12px; padding:0px 10px;color:#000;  margin: 10px 0;}
 .unmedio .noticias-destacadas, .unmedio .recursos-destacados{margin-left:20px;}
 .latestnews.noticias-destacadas {margin-left:0px;}
 .noticias-destacadas ul.noticias-destacadas {margin: 5px 0;}
-.noticias-destacadas ul.noticias-destacadas li {padding:8px 0; border-bottom: solid 1px #D4D4D4;list-style: inside; list-style-image: url(/images/bullet-noticias.png);
-    padding: 8px 0;}
-.noticias-destacadas ul.noticias-destacadas li a{ color:#575757;line-height: 1.3em;}
+.noticias-destacadas ul.noticias-destacadas li {padding:5px 0; border-bottom: solid 1px #D4D4D4;list-style: inside; list-style-image: url(/images/bullet-noticias.png);}
+.noticias-destacadas ul.noticias-destacadas li a{ line-height: 1.3em;}
+.noticias-destacadas ul.noticias-destacadas li a:hover{text-decoration: underline; line-height: 1.3em;}
 #content .blog img.system-pagebreak{border:1px solid #555!important; padding:1px; margin:0 10px 20px 0;}
 #content img.system-pagebreak{border:1px solid #CCCCCC!important; padding:1px; margin:0 10px 20px 0;}
 #content .noticias_destacadas{background-color:#404040; border:1px solid #131313;color:#D4D4D4 !important}
@@ -414,7 +414,7 @@ body #community-wrap .video-item .video-item, body #community-wrap .album .album
 
 /** EMPLEO Y PRACTICAS **/
 #content #newest_jobs, #content #ficha_oferta_empleo, #content #results_search_jobs{line-height:1.2em;}
-#newest_jobs td u{ color: #575757; font-size: 13px; line-height: 1.3em; text-decoration: none;}
+#newest_jobs td u{ color: #000; font-size: 13px; line-height: 1.3em; text-decoration: none;}
 #content tr.odd{background-color: #fff}
 #content tr.even{background-color: #fff0c8}
 #content tr.odd td a, #content tr.even td a{text-decoration:none !important; color:#575757;}
