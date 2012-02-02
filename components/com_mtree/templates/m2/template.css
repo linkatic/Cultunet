@@ -25,7 +25,7 @@ h2.contentheading {
 	border-top: 1px solid #ccc;
 	}
 .alpha-index a.alpha:hover {
-	background-color: white;
+	background-color: #FFC323;
 	color: black;
 	}
 #index {
@@ -34,14 +34,15 @@ h2.contentheading {
 	padding-left: 10px;
 	}
 #index .title {
-	height: 18px;
-	width:100%;
-	margin-bottom:5px;
-	padding:5px;
-	color:#FAC42A;
-	text-transform:uppercase;
-	font-size: 15px;
-	background:url("../../img/fondo_titulos.jpg") repeat-x scroll 0 0 #000000;
+	background: url("../../images/simbolo-titulos.jpg") no-repeat scroll left top transparent;
+    border-bottom: 5px solid #FFC323;
+    color: #101010;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    
+    text-transform: uppercase;
+	
 	}
 #index .row {
 	float:left;
@@ -62,7 +63,7 @@ h2.contentheading {
 	font-weight: normal;
 	}
 #index h2 span {
-	font-size: 0.6em;
+	font-size: 0.7em;
 	position: relative;
 	top: -1px;
 	}
@@ -410,20 +411,20 @@ span.xlistings {
 #listing .fields .caption {
 	width:20%;float: left;
 	margin: 0 0 0 0;
-	padding: .3em;
-	border-top: 1px dotted #bebebe;
+	padding: .5em;
+	border-top: 0px dotted #bebebe;
 	font-weight: bold;
-	color: #666;
+	color: #000;
 	text-align: right;
 	clear:left;
 	}
 
 #listing .fields .data {
 	float: left;
-	width: 75%;
+	width: 73%;
 	margin: 0 0 0 1px;
-	padding: .3em;
-	border-top: 1px dotted #bebebe;
+	padding: .5em;
+	border-top: 1px solid #bebebe;
 	}
 #listing .fields .data a {
 	}
