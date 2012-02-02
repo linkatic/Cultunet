@@ -171,6 +171,14 @@ class CommunityViewProfile extends CommunityView {
 									$profileField[$key][$pKey]['searchLink'] = JRoute::_('index.php?option=com_community&view=search&task=field&'.$field['fieldcode'].'='. urlencode( $field['value'] ) );					
 								}
 								break;
+							case 'list': //HACK PARA FILTRAR EN SELECT MULTIPLE
+							{
+								$terms = explode(",", $field['value']);
+	                            for ($n = 1; $n <= count($terms); $n += 1) {
+	                               $profileField[$key][$pKey]['searchLink'.$n] = CRoute::_('index.php?option=com_community&view=search&task=field&'.$field['fieldcode'].'='. urlencode( $terms[$n-1] ) );   
+	                               $profileField[$key][$pKey]['value'.$n] = $terms[$n-1];   
+	                            }
+							}
 							case 'select':
 							case 'singleselect':
 							case 'radio':  

@@ -51,7 +51,7 @@ $query = "SELECT job.id, job.title, job.jobcategory, job.created, cat.cat_title
 	JOIN ". $db->nameQuote('#__js_job_categories')." AS cat ON job.jobcategory = cat.id 
 	JOIN ". $db->nameQuote('#__js_job_shifts')." AS jobtype ON job.shift = jobtype.id 
 	LEFT JOIN ". $db->nameQuote('#__js_job_companies')." AS company ON job.companyid = company.id 
-	WHERE job.status = 1 AND job.startpublishing <= " . $db->Quote($curdate) . " AND job.stoppublishing >= " . $db->Quote($curdate) ."
+	WHERE job.status = 1 AND job.startpublishing <= " . $db->Quote($curdate) . "
 	ORDER BY created DESC LIMIT {$noofjobs}";
 //echo $query;
 $db->setQuery($query);
@@ -63,8 +63,8 @@ if ($jobs = $db->loadObjectList()) {
 	foreach ($jobs as $job) {
 	    $isodd = 1 - $isodd;
 		echo '<tr class="'.$trclass[$isodd].'"><td>'
-			. '<a href="index.php?option=com_jsjobs&c=jsjobs&view=employer&layout=view_job&fr=lj&vj=2&jobcat=' .$job->jobcategory . '&oi=' . $job->id . '&Itemid='.$itemid.'"><u><strong>'
-	        . $job->title . '</strong></u></a><br />';
+			. '<a href="index.php?option=com_jsjobs&c=jsjobs&view=employer&layout=view_job&fr=lj&vj=2&jobcat=' .$job->jobcategory . '&oi=' . $job->id . '&Itemid='.$itemid.'">'
+	        . $job->title . '</a><br />';
 			
 		//Obtenmos algunos datos extras de cada oferta de empleo
 		$query_extra_data = "SELECT fieldtitle, company, city

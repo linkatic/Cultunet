@@ -86,7 +86,7 @@ class CommunityModelSearch extends JCCModel
 		$strict = true;
 		$regex = $strict? 
 		      '/^([.0-9a-z_-]+)@(([0-9a-z-]+\.)+[0-9a-z]{2,4})$/i' : 
-		       '/^([*+!.&#$¦\'\\%\/0-9a-z^_`{}=?~:-]+)@(([0-9a-z-]+\.)+[0-9a-z]{2,4})$/i' ;
+		       '/^([*+!.&#$ï¿½\'\\%\/0-9a-z^_`{}=?~:-]+)@(([0-9a-z-]+\.)+[0-9a-z]{2,4})$/i' ;
 			
 		$data = array();
 		//select only non empty field
@@ -178,11 +178,20 @@ class CommunityModelSearch extends JCCModel
 		
 		$fieldId = $this->_getFieldIdFromFieldCode($keys[0]);
 		
-		$sql = "SELECT `user_id` FROM #__community_fields_values AS a"
+		/* $sql = "SELECT `user_id` FROM #__community_fields_values AS a"
 		    ." INNER JOIN #__users AS b"
 		    ." ON a.`user_id` = b.`id`"
 			." WHERE a.`value`=". $db->Quote($vals[0]) 
-			." AND a.`field_id`=". $db->Quote($fieldId);
+			." AND a.`field_id`=". $db->Quote($fieldId); */
+			
+		/* CONSULTA PARA FILTRAR DESDE UN SELECT MULTIPLE */
+		
+		$sql = "SELECT `user_id` FROM #__community_fields_values AS a"
+		    ." INNER JOIN #__users AS b"
+		    ." ON a.`user_id` = b.`id`"
+			." WHERE a.`value` LIKE '%". $vals[0] 
+			."%' AND a.`field_id`=". $db->Quote($fieldId);
+		
 			
 		$limit		= $this->getState('limit');
 		$limitstart	= $this->getState('limitstart');
