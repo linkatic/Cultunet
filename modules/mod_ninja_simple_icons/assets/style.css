@@ -1,7 +1,7 @@
 /* Ninja Simple Icons (c) Richie Mortimer, www.ninjaforge.com  richie@ninjaforge.com */
 
 .nsi-container {overflow:hidden; position:relative; padding:0}
-.nsi-container div {float:left; position:relative; left:50%; text-align:left;}
+.nsi-container div {float:left; position:relative; left:43%; text-align:left;}
 .nsi-container ul {position:relative; padding:0; margin:0; list-style:none;}
 .nsi-container li {clear:left; float:left; margin:0; text-align:center; cursor:pointer;}
 .nsi-container span {margin-top:5px; display:block;}
